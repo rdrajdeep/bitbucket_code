@@ -16,27 +16,13 @@ When register with {"email":"kishor+expert140@atlogys.com","password":"testing12
 Then Verify Email
 
 Then login with expert2
+And get expert profile
 
 Then check profile completness
 
 Then add name as {"name": "Sarma Kishor", "toc_and_privacy_policy_accepted":true}
 
 Then add profile photo as C:\Users\Kishor\Desktop\4.jpg
-
-Then check profile completness
-
-Then Create a new Profile as
-{
-    "tags": [
-       1,2,3,4
-        ],
-    "medias":[],
-    "headline": "Java-8 Lambda",
-    "summary": "Java Expert",
-    "my_experience": "In test automation",
-    "year_of_experience":"3",
-    "educational_background": "Bachelor of Technology (Computer Science and Information Engineering)"
-}
 
 Then check profile completness
 

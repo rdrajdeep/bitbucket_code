@@ -9,16 +9,7 @@ Scenario: scenario description
 Given complete Social link flow
 Given an expert
 When login with expert1
-Then Create a new Profile as {
-                                 "tags": [
-                                     ],
-                                  "medias":[],
-                                 "headline": "Java-8 Lambda",
-                                 "summary": "Java Expert",
-                                 "my_experience": "In test automation",
-                                 "year_of_experience":"3",
-                                 "educational_background": "Bachelor of Technology (Computer Science and Information Engineering)"
-                             }
+And get expert profile
 
 When add {"url": "https://staff.tumblr.com/rss/"} as RSS Feed
 
@@ -36,11 +27,11 @@ Then get the social links
 
 Then count of social links should be 2
 
-Then add social link to expert profile
-
-When list all social links of a ExpertProfile
-
-Then count of social links should be 2
+!--Then add social link to expert profile
+!--
+!--When list all social links of a ExpertProfile
+!--
+!--Then count of social links should be 2
 
 Then get all the feeds
 
