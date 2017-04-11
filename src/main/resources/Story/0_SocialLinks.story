@@ -8,6 +8,11 @@ So that I can achieve a business goal
 Scenario: scenario description
 Given complete Social link flow
 Given an expert
+
+When register with {"email": "kishor+expert255@atlogys.com","password": "testing123" } as expert1
+
+Then Verify Email
+
 When login with expert1
 And get expert profile
 
