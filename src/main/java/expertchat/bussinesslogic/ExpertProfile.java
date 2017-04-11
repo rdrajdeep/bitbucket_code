@@ -75,20 +75,34 @@ public class ExpertProfile extends AbstractApiFactory implements HTTPCode{
     }
 
     /**
-     * @param expertID
+     * @param byExpert
      */
-    public void getProfileOfExpert(String expertID, boolean byExpert) {
+    public void getProfileOfExpert(boolean byExpert) {
 
         if ( byExpert ) {
 
         response.setResponse (
-                this.get ( EXPERT_PROFILE + expertID + "/", session.getToken ( ) )
+                this.get ( EXPERT_PROFILE , session.getToken ( ) )
         );
+        response.printResponse ();
     }else {
 
             response.setResponse (
-                    this.get ( EXPERT_PROFILE_BY_USER + expertID + "/", session.getToken ( ) )
+                    this.get ( EXPERT_PROFILE_BY_USER , session.getToken ( ) )
             );
+        }
+
+        if(response.statusCode ()==HTTP_OK){
+
+            setExpertProfileID(
+                    parseResponse.getJsonData("results[0].id", ResponseDataType.INT));
+
+
+            setExpertID(
+                    parseResponse.getJsonData("results[0].expert.id", ResponseDataType.INT));
+
+            getMap().put("expertProfileId", getExpertProfileID());
+            getMap().put("expertId",getExpertID());
         }
 
         response.printResponse();

@@ -42,7 +42,6 @@ public class AbstractApiFactory implements ApiFactories {
 
     @Override
     public Response post(String json, String url, String token, boolean port) {
-        System.out.println("Yo::"+url);
         Response r;
         Header header = new Header("authorization", "token " + token);
         if (port) {
@@ -126,7 +125,7 @@ public class AbstractApiFactory implements ApiFactories {
                 .request()
                 .header(header)
                 .spec(Specification.setupRequestSpecBuilder())
-                .body(url)
+                .body(json)
                 .delete(url);
 
         return r;
@@ -141,7 +140,7 @@ public class AbstractApiFactory implements ApiFactories {
                     .request()
                     .header(header)
                     .spec(Specification.setupRequestSpecBuilderWithPort())
-                    .body(url)
+                    .body(json)
                     .delete(url);
         }else {
             throw new ExpertChatException("Please Use proper URL");

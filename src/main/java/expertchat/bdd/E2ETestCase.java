@@ -73,7 +73,6 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     @When ( "an user" )
     public void user ( ) {
         isExpert = false;
-        onlyUser = true;
     }
 
     @Given ( "an expert" )
@@ -81,7 +80,6 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     @When ( "an expert" )
     public void expert ( ) {
         isExpert = true;
-        onlyUser = false;
     }
 
     @Given ( "negative scenario" )
@@ -467,16 +465,18 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         if ( isNegative ) {
 
             expertProfile.addExpertyProfile ( profile );
+
             responseLogger.writeResponseAsLog ( "Expert profile" );
 
         } else {
-            expertProfile.addExpertyProfile ( profile );
 
-            this.checkAndWriteToReport ( response.statusCode ( ),
+            expertProfile.addExpertyProfile ( profile );
+        }
+
+        this.checkAndWriteToReport ( response.statusCode ( ),
                     "Expert Profile Created", isNegative );
 
-            responseLogger.writeResponseAsLog ( "Expert profile" );
-        }
+        responseLogger.writeResponseAsLog ( "Expert profile" );
     }
 
     /**
@@ -493,13 +493,16 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
             responseLogger.writeResponseAsLog ( "Update Expert Profile" );
 
         } else {
-            expertProfile.updateExpertProfile ( json, getMap ( ).get ( "expertProfileId" ) );
 
-            this.checkAndWriteToReport ( response.statusCode ( ),
+            expertProfile.updateExpertProfile ( json, getMap ( ).get ( "expertProfileId" ) );
+            responseLogger.writeResponseAsLog ( "Update Expert Profile" );
+
+        }
+
+        this.checkAndWriteToReport ( response.statusCode ( ),
                     "Expert Profile updated with--" + json, isNegative );
 
-            responseLogger.writeResponseAsLog ( "Update Expert Profile" );
-        }
+        responseLogger.writeResponseAsLog ( "Update Expert Profile" );
     }
 
     /**
@@ -508,21 +511,22 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     @Then ( "get profile" )
     @When ( "get profile" )
     @Aliases ( values = { "get the profile" ,
-            "get the previously created expert profile" } )
+            "get the previously created expert profile","get expert profile"} )
 
     public void getProfile ( ) {
 
         this.info ( "GET Expert Profile" );
 
-        String expertProfileID = getMap ( ).get ( "expertProfileId" );
+      //  String expertProfileID = getMap ( ).get ( "expertProfileId" );
 
         if ( isNegative ) {
 
-            expertProfile.getProfileOfExpert ( expertProfileID, isExpert );
+            expertProfile.getProfileOfExpert (isExpert );
 
         } else {
 
-            expertProfile.getProfileOfExpert ( expertProfileID, isExpert );
+            expertProfile.getProfileOfExpert ( isExpert );
+        }
 
             if ( isExpert == false ) {
 
@@ -533,7 +537,6 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
                 this.checkAndWriteToReport ( response.statusCode ( ),
                         "Expert profile loaded by expert--" + expertProfile.getExpertCredential ( )[ 0 ], isNegative );
             }
-        }
     }
 
     /**
@@ -546,19 +549,18 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
         if ( isNegative ) {
 
-            expertProfile.getProfileOfExpert ( id, isExpert );
+            expertProfile.getProfileOfExpert (isExpert );
 
             responseLogger.writeResponseAsLog ( "Get Expert Profile-Negative" );
 
         } else {
 
-            expertProfile.getProfileOfExpert ( id, isExpert );
-
+            expertProfile.getProfileOfExpert ( isExpert );
+        }
             this.checkAndWriteToReport ( response.statusCode ( ),
                     "Get Profile successfully", isNegative );
 
             responseLogger.writeResponseAsLog ( "Get Expert Profile" );
-        }
     }
 
 
@@ -600,18 +602,20 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
         this.info ( "Deleting Expert Profile" );
 
+        boolean isDelete=false;
+
         if ( isNegative ) {
 
             expertProfile.deleteProfile ( expertProfile.getExpertProfileID ( ) );
 
         } else {
 
-            boolean isDelete = expertProfile.deleteProfile ( expertProfile.getExpertProfileID ( ) );
-
+          isDelete= expertProfile.deleteProfile ( expertProfile.getExpertProfileID ( ) );
+        }
             this.AssertAndWriteToReport ( isDelete,
                     "Expert profile deleted" );
 
-        }
+
     }
 
     /**
@@ -622,44 +626,70 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
         this.info ( "Delete Expert Profile" );
 
+        boolean isDelete=false;
+
         if ( isNegative ) {
 
             expertProfile.deleteProfile ( id );
 
         } else {
 
-            boolean isDelete = expertProfile.deleteProfile ( id );
-
+            isDelete = expertProfile.deleteProfile ( id );
+        }
             this.AssertAndWriteToReport ( isDelete,
                     "Profile deleted with id->" + id );
 
-        }
+
     }
 
     /**
      * Test cases to drive the Calling API
      */
     /*Calling API Test cases*/
-    @Then ( "generate a call with $json" )
-    public void generateCall ( @Named ( "json" ) String json ) {
 
-        if ( onlyUser ) {
-            this.info ( "Initiating a call" );
+    @When("register a device as $json")
+    @Then("register a device as $json")
+    public void registerDevice(@Named ("json")String json){
 
-            call.doCall ( json );
+        if(isNegative) {
+            call.registerDevice ( json, isExpert );
+            responseLogger.writeResponseAsLog ( "Register Device-Negative" );
+        }else {
 
-            this.checkAndWriteToReport ( response.statusCode ( ),
-                    "Call Intialted", isNegative );
-            responseLogger.writeResponseAsLog ( "Generate Call" );
+            call.registerDevice ( json, isExpert );
+            responseLogger.writeResponseAsLog ( "Register Device" );
         }
+
+        checkAndWriteToReport ( response.statusCode (), "Device Registered", false );
     }
+
+    @Then("initiate a call of scheduled_duration $time")
+    public void initiateCall(@Named ( "time" )String time){
+
+        info("Initiating a call to expert...");
+
+        if(isNegative) {
+
+            call.doCall ( time );
+
+            responseLogger.writeResponseAsLog ( "Call initiated by user-Negative" );
+
+        }else {
+
+            call.doCall ( time );
+
+            responseLogger.writeResponseAsLog ( "Call initiated by user-Negative");
+
+        }
+
+        checkAndWriteToReport ( response.statusCode (), "Call initiated", isNegative );
+    }
+
 
     @Then ( "accept the call" )
     public void acceptCall ( ) {
 
-        if ( onlyUser ) {
-
-            this.info ( "accepting Call" );
+            this.info ( "accepting Call..." );
 
             call.isAcceptCall ( );
 
@@ -667,13 +697,10 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
                     "Call Accepted", isNegative );
 
             responseLogger.writeResponseAsLog ( "Accept Call" );
-        }
     }
 
     @Then ( "decline the call" )
     public void declineCall ( ) {
-
-        if ( onlyUser ) {
 
             this.info ( "Declining a Call" );
 
@@ -683,7 +710,6 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
                     "Call Declined", isNegative );
 
             responseLogger.writeResponseAsLog ( "Decline Call" );
-        }
     }
 
     @Then ( "delay the call" )
@@ -702,12 +728,10 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         }
     }
 
-    @Then ( "disconnect the call" )
+    @Then ("disconnect the call" )
     public void disconnectCall ( ) {
 
-        if ( onlyUser ) {
-
-            this.info ( "Disconnecting a call" );
+            this.info ( "Disconnecting a call..." );
 
             call.isDissconnectCall ( );
 
@@ -716,7 +740,6 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
                     "Call Disconnected", isNegative );
 
             responseLogger.writeResponseAsLog ( "Disconnect Call" );
-        }
     }
 
     /* Phone code verification test cases*/
@@ -1077,12 +1100,13 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         } else {
 
             socialLinks.ignoreContent ( getMap ( ).get ( "unpublishedContentId" ) );
-
-            this.checkAndWriteToReport ( response.statusCode ( ), "Content Ignored", isNegative );
-
-            responseLogger.writeResponseAsLog ( "Ignore Content API" );
         }
+
+        this.checkAndWriteToReport ( response.statusCode ( ), "Content Ignored", isNegative );
+
+        responseLogger.writeResponseAsLog ( "Ignore Content API" );
     }
+
     @Then("check count of unpblished feed again")
     public void feedCount2() {
         socialLinks.getFeedListing();
@@ -1203,13 +1227,15 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         if ( isNegative ) {
 
             superAdmin.createContent ( json );
+
         } else {
+
             superAdmin.createContent ( json );
-
-            this.checkAndWriteToReport ( response.statusCode ( ), "Content with id\t" + superAdmin.getContentId ( ) + " created", isNegative );
-
-            responseLogger.writeResponseAsLog ( "Create a super admin content" );
         }
+
+        this.checkAndWriteToReport ( response.statusCode ( ), "Content with id\t" + superAdmin.getContentId ( ) + " created", isNegative );
+
+        responseLogger.writeResponseAsLog ( "Create a super admin content" );
     }
 
 
@@ -1284,13 +1310,14 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         if ( isNegative ) {
 
             superAdmin.updateContent ( json, cID );
+
         } else {
+
             superAdmin.updateContent ( json, cID );
-
-            this.checkAndWriteToReport ( response.statusCode ( ), "Content with id\t" + cID + " updated", isNegative );
-
-            responseLogger.writeResponseAsLog ( "Update Content" );
         }
+        this.checkAndWriteToReport ( response.statusCode ( ), "Content with id\t" + cID + " updated", isNegative );
+
+        responseLogger.writeResponseAsLog ( "Update Content" );
     }
 
     /**
@@ -1309,11 +1336,10 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
         } else {
             account.createAccount ( json );
-
-            this.checkAndWriteToReport ( response.statusCode ( ), "Account created ", isNegative );
-
-            responseLogger.writeResponseAsLog ( "Payment Account" );
         }
+        this.checkAndWriteToReport ( response.statusCode ( ), "Account created ", isNegative );
+
+        responseLogger.writeResponseAsLog ( "Payment Account" );
     }
 
     @Then("get the account")

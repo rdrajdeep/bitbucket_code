@@ -1,0 +1,184 @@
+API RESPONSES+
+========
+Registration
+========
+{
+    "metadata": {
+        "code": 2001,
+        "message": "You have successfully registered!"
+    },
+    "results": {
+        "email": "kishor+expert206@atlogys.com",
+        "verification_code": "15adb10a-b7b3-49f6-a21c-17b472427367"
+    }
+}
+API RESPONSES+
+========
+Resend Email Verification
+========
+{
+    "metadata": {
+        "code": 2042,
+        "message": "We have resent your email verification instructions."
+    },
+    "results": {
+        "email": "kishor+expert206@atlogys.com",
+        "verification_code": "15adb10a-b7b3-49f6-a21c-17b472427367"
+    }
+}
+API RESPONSES+
+========
+Login API
+========
+{
+    "results": {
+        "country_code": 1,
+        "phone_number": "",
+        "id": 295,
+        "is_profile_complete": false,
+        "profile_photo": null,
+        "is_phone_number_verified": false,
+        "name": "",
+        "is_superuser": false,
+        "display_name": null,
+        "token": "eyJ0aW1lc3RhbXAiOjE0OTE4OTkwMDUuNTgyNzY1LCJpcF9hZGRyZXNzIjoiNjEuMjQ2LjQ3LjkzIiwidXNlcl9pZCI6Mjk1fQ:1cxr5B:_wSd_cWqbl9zg2pnMBiEX8E5Arc",
+        "email": "kishor+expert206@atlogys.com",
+        "toc_and_privacy_policy_accepted": false
+    }
+}
+API RESPONSES+
+========
+Change Password
+========
+{
+    "metadata": {
+        "code": 2021,
+        "message": "You have successfully changed your password."
+    }
+}
+API RESPONSES+
+========
+Reset Password
+========
+{
+    "metadata": {
+        "code": 2032,
+        "message": "Your password has been successfully reset."
+    }
+}
+API RESPONSES+
+========
+Login API
+========
+{
+    "errors": {
+        "non_field_errors": [
+            {
+                "code": 1012,
+                "message": "Incorrect email or password provided.  Please check your information and try again."
+            }
+        ]
+    }
+}
+API RESPONSES+
+========
+Registration
+========
+{
+    "metadata": {
+        "code": 2001,
+        "message": "You have successfully registered!"
+    },
+    "results": {
+        "email": "kishor+user206@atlogys.com",
+        "verification_code": "707f608a-4d93-4a77-b1ee-a42b0d395562"
+    }
+}
+API RESPONSES+
+========
+Login API
+========
+{
+    "results": {
+        "country_code": 1,
+        "phone_number": "",
+        "id": 296,
+        "is_profile_complete": false,
+        "profile_photo": null,
+        "is_phone_number_verified": false,
+        "name": "",
+        "is_superuser": false,
+        "display_name": "",
+        "token": "eyJ0aW1lc3RhbXAiOjE0OTE4OTkwMTEuOTM2OTUzLCJpcF9hZGRyZXNzIjoiNjEuMjQ2LjQ3LjkzIiwidXNlcl9pZCI6Mjk2fQ:1cxr5H:8a9npn8HfaUjXKjOyh1pugBF9M4",
+        "email": "kishor+user206@atlogys.com",
+        "toc_and_privacy_policy_accepted": false
+    }
+}
+API RESPONSES+
+========
+Register Device
+========
+{
+    "results": {
+        "id": 1128,
+        "device_type": "ios",
+        "publisher": {
+            "channels": [
+                "user_ch_296",
+                "device_ch_1128"
+            ],
+            "subscribe_key": "sub-c-ada7962c-ef5b-11e6-9032-0619f8945a4f"
+        },
+        "created_timestamp": "2017-04-11T08:23:32.777735Z",
+        "modified_timestamp": "2017-04-11T08:23:32.777773Z",
+        "device_name": "USer device",
+        "device_sub_type": "sas",
+        "device_id": "sas",
+        "device_token": "sas",
+        "device_os": "sas"
+    }
+}
+API RESPONSES+
+========
+Login API
+========
+{
+    "results": {
+        "country_code": 1,
+        "phone_number": "",
+        "id": 295,
+        "is_profile_complete": false,
+        "profile_photo": null,
+        "is_phone_number_verified": false,
+        "name": "",
+        "is_superuser": false,
+        "display_name": null,
+        "token": "eyJ0aW1lc3RhbXAiOjE0OTE4OTkwMTMuNjY4NjczLCJpcF9hZGRyZXNzIjoiNjEuMjQ2LjQ3LjkzIiwidXNlcl9pZCI6Mjk1fQ:1cxr5J:bo_iNCFGQVJSkZ9bwFQKtH3o8VY",
+        "email": "kishor+expert206@atlogys.com",
+        "toc_and_privacy_policy_accepted": false
+    }
+}
+API RESPONSES+
+========
+Register Device
+========
+{
+    "results": {
+        "id": 1129,
+        "device_type": "ios",
+        "publisher": {
+            "channels": [
+                "expert_ch_295",
+                "device_ch_1129"
+            ],
+            "subscribe_key": "sub-c-ada7962c-ef5b-11e6-9032-0619f8945a4f"
+        },
+        "created_timestamp": "2017-04-11T08:23:34.525364Z",
+        "modified_timestamp": "2017-04-11T08:23:34.525403Z",
+        "device_name": "Expert device",
+        "device_sub_type": "sas",
+        "device_id": "sas",
+        "device_token": "sas",
+        "device_os": "sas"
+    }
+}

@@ -1,12 +1,14 @@
 Meta:
 
 Given complete Expert registration and login flow
+
 Given an expert
-When register with {"email": "kishor+expert129@atlogys.com","password": "testing123" } as expert1
+
+When register with {"email": "kishor+expert223@atlogys.com","password": "testing123" } as expert1
 
 Then check success code 2001
 
-Then Resend email verification instructions for {"email": "kishor+expert129@atlogys.com"}
+Then Resend email verification instructions for {"email": "kishor+expert223@atlogys.com"}
 
 Then check success code 2041
 
@@ -30,6 +32,6 @@ Then check error code 1012
 
 Given an user
 
-When register with {"email": "kishor+user129@atlogys.com","password": "testing123" } as user1
+When register with {"email": "kishor+user223@atlogys.com","password": "testing123" } as user1
 
 Then Verify Email

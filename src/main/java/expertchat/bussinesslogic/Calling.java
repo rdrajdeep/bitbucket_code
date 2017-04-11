@@ -1,6 +1,7 @@
 package expertchat.bussinesslogic;
 
 import expertchat.apioperation.AbstractApiFactory;
+import expertchat.apioperation.ExpertChatEndPoints;
 import expertchat.apioperation.apiresponse.ApiResponse;
 import expertchat.apioperation.apiresponse.HTTPCode;
 import expertchat.apioperation.apiresponse.ParseResponse;
@@ -10,12 +11,13 @@ import expertchat.report.Report;
 import expertchat.util.ExpertChatException;
 import java.util.concurrent.Callable;
 import static expertchat.apioperation.ExpertChatEndPoints.SESSION;
+import static expertchat.usermap.TestUserMap.getMap;
 
 /**
  * @Class contains methods to drive the calling APIs
  * Inherits AbstractApiFactory to use POST PUT GET DELETE methods
  */
-public class Calling extends AbstractApiFactory {
+public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatEndPoints {
 
     private ApiResponse response = ApiResponse.getObject();
 
@@ -37,7 +39,18 @@ public class Calling extends AbstractApiFactory {
         return parseResponse.getJsonData(key, ResponseDataType.INT);
     }
 
-    public void doCall(String json) {
+    public void doCall(String scheduled_duration) {
+
+        String expert_profile=getMap ().get ( "expertProfileId" );
+        String expert=getMap ().get ( "expertId" );
+        String user_device=getMap ().get ( "UserDevice" );
+
+        String json="{\n" +
+                "    \"expert_profile\":"+expert_profile+",\n" +
+                "    \"expert\": "+expert+",\n" +
+                "    \"user_device\": "+user_device+",\n" +
+                "    \"scheduled_duration\":"+scheduled_duration+"\n" +
+                "}";
 
         response.setResponse(
 
@@ -46,9 +59,9 @@ public class Calling extends AbstractApiFactory {
 
         response.printResponse();
 
-        if (response.statusCode() == HTTPCode.HTTP_ACCEPTED) {
+        if (response.statusCode() == HTTP_ACCEPTED || response.statusCode() == HTTP_OK) {
 
-            id = parseResponse.getJsonData("results.id", ResponseDataType.STRING);
+            id = parseResponse.getJsonData("results.id", ResponseDataType.INT);
 
         } else {
 
@@ -58,10 +71,16 @@ public class Calling extends AbstractApiFactory {
 
     public boolean isAcceptCall() {
 
-        String url = SESSION + getId() + "/accept/";
+        String url = SESSION+getId()+"/accept/";
+
+        String expert_device=getMap ().get ( "ExpertDevice" );
+
+        String json="{\n" +
+                "    \"expert_device\":"+expert_device+"\n" +
+                "}";
 
         response.setResponse(
-                this.post("", url, session.getToken(),true)
+                this.post(json, url, session.getToken(),true)
         );
 
         response.printResponse();
@@ -75,11 +94,17 @@ public class Calling extends AbstractApiFactory {
 
     public boolean isDissconnectCall() {
 
-        String url = SESSION + getId()+"/disconnect/";
+        String url = SESSION+getId()+"/disconnect/";
+        System.out.println (url );
+
+        String json="{\"tokbox_session_length\":20}";
 
         response.setResponse(
-                this.delete("{\"tokbox_session_length\": 20}", url, session.getToken(),true)
+
+                this.delete(json, url, session.getToken(),true)
         );
+
+        System.out.println (response.statusCode () );
 
         response.printResponse();
 
@@ -89,6 +114,7 @@ public class Calling extends AbstractApiFactory {
             return true;
         }
         return false;
+
     }
 
     public boolean isDecline() {
@@ -123,5 +149,20 @@ public class Calling extends AbstractApiFactory {
             return true;
         }
         return false;
+    }
+
+    public void registerDevice ( String json, boolean isExpert ) {
+
+        response.setResponse (
+
+                this.post ( json, REGISTER_DEVICE, session.getToken (), true));
+
+        if(isExpert){
+
+            getMap().put("ExpertDevice", parseResponse.getJsonData ( "results.id", ResponseDataType.INT ));
+        }else {
+
+            getMap().put("UserDevice", parseResponse.getJsonData ( "results.id", ResponseDataType.INT ));
+        }
     }
 }

@@ -1,17 +1,7 @@
 #org.jbehave.core.embedder.StoryManager
-#Fri Mar 31 12:23:44 IST 2017
-Story/3_ExpertProfile.story=56000
-Story/0_BasicFlow.story=15000
-Story/6_PhoneVerification.story=3000
-Story/2_BasicProfileLoad.story=10000
-Story/11_GetStreamAPI.story=2000
-Story/7_user_APIs.story=56000
-Story/8_paymentInfo.story=3000
-total=486000
-Story/12_SuperAdmin.story=23000
-Story/10_Searching.story=307000
-threadAverage=486000
-Story/4_SocialLinks.story=10000
+#Tue Apr 11 15:04:12 IST 2017
+Story/0_BasicFlow.story=16000
 threads=1
-Story/5_Calling.story=0
-Story/9_profilestatus.story=1000
+total=24000
+threadAverage=24000
+Story/5_Calling.story=8000

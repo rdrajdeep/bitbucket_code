@@ -50,8 +50,6 @@ public interface ExpertChatEndPoints {
 
     String IGNORE_CONTENT="ignored-contents/";
 
-    String SESSION="sessions/";
-
     /*PHONE CODE API END POINTS */
 
     String PHONECODEVERIFY="expert/phonecodeverify/";
@@ -89,5 +87,12 @@ public interface ExpertChatEndPoints {
      String BY_EXPERT="experts/";
 
      /*User End points*/
+
+
+     /*Call Endpoint*/
+
+    String SESSION="sessions/";
+
+    String REGISTER_DEVICE="devices/";
 
 }
