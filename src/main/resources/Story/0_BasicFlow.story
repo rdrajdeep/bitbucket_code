@@ -8,7 +8,7 @@ When register with {"email": "kishor+expert24@atlogys.com","password": "testing1
 
 Then check success code 2001
 
-Then Resend email verification instructions for {"email": "kishor+expert214@atlogys.com"}
+Then Resend email verification instructions for {"email": "kishor+expert24@atlogys.com"}
 
 Then check success code 2041
 
