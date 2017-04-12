@@ -43,7 +43,6 @@ public class StoryConfig extends JUnitStories {
                 /*After Test execution create json*/
         System.out.println ( new Gson ( ).toJson ( TestUserMap.getMap ( ) ).toString ( ) );
 
-        System.exit ( 0 );
     }
 
     public static void sendEmailNotificationOnException ( String param ) {
@@ -51,8 +50,6 @@ public class StoryConfig extends JUnitStories {
         Email.sendEmail ( getValue ( "EmailBodyError" ), getValue ( "From" ),
                 getValue ( "To" ), param, false );
 
-
-        System.exit ( 0 );
     }
 
     @Before

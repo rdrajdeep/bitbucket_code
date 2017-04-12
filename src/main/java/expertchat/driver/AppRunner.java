@@ -11,7 +11,7 @@ public class AppRunner {
     public static void main ( String args[] ) {
 
         JUnitCore.runClasses ( StoryConfig.class );
-
+        System.exit ( 0 );
     }
 
 }
