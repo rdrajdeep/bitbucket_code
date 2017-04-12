@@ -61,6 +61,8 @@ When login with user1
 
 Then get profile of expert
 
+Then get the avilable slot of expert1
+
 Then logout
 
 Then login with user1

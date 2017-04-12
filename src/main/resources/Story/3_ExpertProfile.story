@@ -10,7 +10,7 @@ Given complete expert profile flow
 
 Given an expert
 
-When login with expert1
+When login with {"email": "kishor+expert26@atlogys.com","password": "testing123" }
 And get the profile
 
 Given negative scenario
@@ -39,5 +39,28 @@ Then update information on expert profile as
     "year_of_experience":"3",
     "educational_background": "Bachelor of Technology (Computer Science and Information Engineering)"
 }
+
+Then create a calender as
+    {
+    "title": "a test",
+    "start_time": "02:00",
+    "end_time": "04:00",
+    "timezone": "Asia/Kolkata",
+    "week_days": [3]
+}
+
+Then get the calender
+
+And update the calender as  {
+                               "title": "a test",
+                               "start_time":"02:00",
+                               "end_time":"04:00",
+                               "timezone": "Asia/Kolkata",
+                               "week_days": [2]
+                           }
+
+Then get the calender again
+
+Then get the avilable slot of expert1
 
 Then upload media as TestData/4.jpg

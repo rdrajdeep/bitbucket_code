@@ -56,4 +56,10 @@ public class Calender extends AbstractApiFactory implements HTTPCode, ExpertChat
         return calenderId;
     }
 
+    public void getAvilableSlot(String epId) {
+
+        response.setResponse(
+                this.get(AVILABLE_SLOTS+epId+"/",session.getToken())
+        );
+    }
 }
