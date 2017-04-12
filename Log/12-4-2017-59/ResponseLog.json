@@ -2708,3 +2708,54 @@ Login API
 "is_phone_number_verified": false
 }
 }
+API RESPONSES+
+========
+Registration
+========
+{
+    "results": {
+        "email": "kishor+expert24@atlogys.com",
+        "verification_code": "a49e42c0-8aaa-4e90-98ad-44c7ea52c8be"
+    },
+    "metadata": {
+        "message": "You have successfully registered!",
+        "code": 2001
+    }
+}
+API RESPONSES+
+========
+Resend Email Verification
+========
+{
+    "errors": {
+        "non_field_errors": [
+            {
+                "message": "This email address is currently not registered.",
+                "code": 1032
+            }
+        ]
+    }
+}
+API RESPONSES+
+========
+Login API
+========
+{
+    "errors": {
+        "non_field_errors": [
+            {
+                "message": "Your email address has not been verified.  Please check your email for instructions.",
+                "code": 1011
+            }
+        ]
+    }
+}
+API RESPONSES+
+========
+My Info Load
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}

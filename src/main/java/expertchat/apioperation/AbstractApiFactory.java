@@ -6,7 +6,6 @@ import expertchat.apioperation.httpspecs.Specification;
 import expertchat.util.ExpertChatException;
 import io.restassured.http.Header;
 import io.restassured.response.Response;
-
 import static io.restassured.RestAssured.given;
 
 public class AbstractApiFactory implements ApiFactories {

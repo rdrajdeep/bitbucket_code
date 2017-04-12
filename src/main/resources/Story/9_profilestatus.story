@@ -11,7 +11,11 @@ Given complete profile status check flow
 
 Given an expert
 
-Then login with expert1
+Given an expert
+
+When register with {"email": "kishor+expert23@atlogys.com","password": "testing123" } as expert2
+Then Verify Email
+And login with expert2
 And get expert profile
 
 Then check profile completness

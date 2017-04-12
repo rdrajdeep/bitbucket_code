@@ -14,7 +14,7 @@ When login with expert1
 And get the profile
 
 Given negative scenario
-When try to create expert profile as
+Then try to create expert profile as
 {
     "tags": [
        1,2,3,4
@@ -26,7 +26,6 @@ When try to create expert profile as
     "year_of_experience":"2",
     "educational_background": "Bachelor of Technology (Computer Science and Information Engineering)"
 }
-Then should not allowed
 
 Then update information on expert profile as
 {

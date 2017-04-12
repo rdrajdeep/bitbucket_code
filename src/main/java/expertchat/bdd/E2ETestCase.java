@@ -1158,8 +1158,11 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
             case "freetext":
                 String searchText = searching.getSearchText ( );
 
-                searching.search ( searchText, Searching.SearchType.BY_TEXT );
-
+                if(isNegative) {
+                    searching.search ( searchText, Searching.SearchType.BY_TEXT );
+                }else {
+                    searching.search ( searchText, Searching.SearchType.BY_TEXT );
+                }
                 this.checkAndWriteToReport ( response.statusCode ( ), "Expert Related to text-> " + searchText + " has been loaded", isNegative );
 
                 responseLogger.writeResponseAsLog ( "Search by FreeText" );
@@ -1167,9 +1170,12 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
             case "tagid":
                 String tId = searching.getTagId ( );
+                if(isNegative) {
+                    searching.search ( tId, Searching.SearchType.BY_TAG );
+                }else {
 
-                searching.search ( tId, Searching.SearchType.BY_TAG );
-
+                    searching.search ( tId, Searching.SearchType.BY_TAG );
+                }
                 this.checkAndWriteToReport ( response.statusCode ( ), "Expert Related to tagID-> " + tId + " has been loaded", isNegative );
 
                 responseLogger.writeResponseAsLog ( "Search by TagId" );
@@ -1179,8 +1185,15 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
                 String eId = searching.getExpertId ( );
 
-                searching.search ( eId, Searching.SearchType.BY_ID );
+                System.out.println (searching.getExpertId ( )+"=========="+isNegative );
 
+                if(isNegative) {
+
+                    searching.search ( eId, Searching.SearchType.BY_ID );
+                }else {
+
+                    searching.search ( eId, Searching.SearchType.BY_ID );
+                }
                 this.checkAndWriteToReport ( response.statusCode ( ), "Expert Related to ExpertId-> " + eId + " has been loaded", isNegative );
 
                 responseLogger.writeResponseAsLog ( "Search by ExpertId" );
@@ -1190,14 +1203,14 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
     }
 
-    @Then ( "search expert by the newly created expert id" )
+    @Then ( "search expert1" )
     public void searchByDynamicExpertID ( ) {
 
         info ( "Dynamic Expert id Search" );
 
-        String expertID = getMap ( ).get ( "expertProfileId" );
+        expertProfile.getProfileOfExpert ("",isExpert);
 
-        System.out.print ( "The expert profile id is" + expertID );
+        String expertID = getMap ( ).get ( "expertProfileId" );
 
         searching.search ( expertID, Searching.SearchType.BY_ID );
 
