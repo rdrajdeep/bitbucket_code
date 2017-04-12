@@ -11,13 +11,27 @@ import java.util.concurrent.TimeUnit;
 
 public class FileUpload {
 
+    public static boolean ERROR = false;
     private static String json;
-
     private WebDriver driver;
 
-    public static boolean ERROR=false;
+    public static String getJson ( ) {
+        return json;
+    }
 
-    public  void uploadMedia(String mediaPath, String ExpertEmail, String password, Boolean isExpert) {
+    private static void waitSomeTime ( ) {
+
+        try {
+
+            TimeUnit.SECONDS.sleep ( 30 );
+
+        } catch ( InterruptedException e ) {
+
+            e.printStackTrace ( );
+        }
+    }
+
+    public void uploadMedia ( String mediaPath, String ExpertEmail, String password, Boolean isExpert ) {
 
         try {
             System.setProperty ( "webdriver.chrome.driver", "Driver/chromedriver.exe" );
@@ -68,26 +82,10 @@ public class FileUpload {
         } catch ( Exception e ) {
 
             driver.quit ( );
-            json=e.getMessage ();
-            ERROR=true;
-            System.out.println (e.getMessage ());
+            json = e.getMessage ( );
+            ERROR = true;
+            System.out.println ( e.getMessage ( ) );
 
-        }
-    }
-
-    public static String getJson(){
-        return json;
-    }
-
-    private static void waitSomeTime( ){
-
-        try{
-
-            TimeUnit.SECONDS.sleep(30);
-
-        }catch (InterruptedException e){
-
-            e.printStackTrace();
         }
     }
 

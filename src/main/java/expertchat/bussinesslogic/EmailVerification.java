@@ -10,13 +10,13 @@ public class EmailVerification {
     private static String verificationEndPoint;
 
 
-    public static String getVerificationEndPoint() {
+    public static String getVerificationEndPoint ( ) {
         return verificationEndPoint;
     }
 
-    public static void setVerificationEndPoint(String verificationCode) {
+    public static void setVerificationEndPoint ( String verificationCode ) {
 
-        verificationEndPoint = ExpertChatUtility.getValue("qa")+"verify/"+verificationCode+"/";
+        verificationEndPoint = ExpertChatUtility.getValue ( "qa" ) + "verify/" + verificationCode + "/";
 
     }
 }

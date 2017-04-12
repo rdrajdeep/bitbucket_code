@@ -18,50 +18,46 @@ import java.util.Base64;
 
 public class BasicProfile extends AbstractApiFactory implements ExpertChatEndPoints, HTTPCode {
 
-    private ApiResponse response=ApiResponse.getObject();
+    private ApiResponse response = ApiResponse.getObject ( );
 
-    private ParseResponse parseResponse=new ParseResponse(response);
+    private ParseResponse parseResponse = new ParseResponse ( response );
 
 
-    public void loadBasicProfile(boolean isExpert){
+    public void loadBasicProfile ( boolean isExpert ) {
 
-        if(isExpert) {
+        if ( isExpert ) {
 
             response.setResponse (
                     this.get ( BASIC_PROFILE, SessionManagement.session ( ).getToken ( ) )
             );
-        }else {
+        } else {
             response.setResponse (
                     this.get ( U_BASIC_PROFILE, SessionManagement.session ( ).getToken ( ) )
             );
 
         }
 
-        response.printResponse();
+        response.printResponse ( );
     }
 
-    public boolean verifyProfileEmail(String user){
+    public boolean verifyProfileEmail ( String user ) {
 
-        String actualEmail=parseResponse.getJsonData("results.email", ResponseDataType.STRING);
+        String actualEmail = parseResponse.getJsonData ( "results.email", ResponseDataType.STRING );
 
-        String expectedEmail= TestUserMap.getEmailOf(user);
-        System.out.println("same opopopop"+TestUserMap.getEmailOf(user));
-        if(actualEmail.equals(expectedEmail)){
-
-            return true;
-        }
-        return false;
+        String expectedEmail = TestUserMap.getEmailOf ( user );
+        System.out.println ( "same opopopop" + TestUserMap.getEmailOf ( user ) );
+        return actualEmail.equals ( expectedEmail );
     }
 
 
-    public void addName(String name, boolean isExpert){
+    public void addName ( String name, boolean isExpert ) {
 
-        if(isExpert) {
+        if ( isExpert ) {
             response.setResponse (
                     this.put (
 
-                            name, BASIC_PROFILE, SessionManagement.session ( ).getToken ( )) );
-        }else {
+                            name, BASIC_PROFILE, SessionManagement.session ( ).getToken ( ) ) );
+        } else {
 
             response.setResponse (
                     this.put (
@@ -69,36 +65,36 @@ public class BasicProfile extends AbstractApiFactory implements ExpertChatEndPoi
                             name, U_BASIC_PROFILE, SessionManagement.session ( ).getToken ( ) ) );
         }
 
-        response.printResponse();
+        response.printResponse ( );
     }
 
-    public void addProfilePhoto(String image , boolean isExpert) throws IOException{
+    public void addProfilePhoto ( String image, boolean isExpert ) throws IOException {
 
         byte[] imageInByte;
-        BufferedImage originalImage = ImageIO.read(new File(image));
+        BufferedImage originalImage = ImageIO.read ( new File ( image ) );
 
         // convert BufferedImage to byte array
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        ImageIO.write(originalImage, "jpg", baos);
-        baos.flush();
-        imageInByte = baos.toByteArray();
-        baos.close();
-        String b64String="\""+"data:image/png;base64,"+Base64.getEncoder().encodeToString(imageInByte)+"\"";
-        String json="{\"image\":"+b64String+"}";
+        ByteArrayOutputStream baos = new ByteArrayOutputStream ( );
+        ImageIO.write ( originalImage, "jpg", baos );
+        baos.flush ( );
+        imageInByte = baos.toByteArray ( );
+        baos.close ( );
+        String b64String = "\"" + "data:image/png;base64," + Base64.getEncoder ( ).encodeToString ( imageInByte ) + "\"";
+        String json = "{\"image\":" + b64String + "}";
 
-        if(isExpert) {
-
-            response.setResponse (
-                    this.post (
-                            json, ME_PHOTO, SessionManagement.session ().getToken ()));
-        }else {
+        if ( isExpert ) {
 
             response.setResponse (
                     this.post (
-                            json, U_ME_PHOTO, SessionManagement.session ().getToken ()));
+                            json, ME_PHOTO, SessionManagement.session ( ).getToken ( ) ) );
+        } else {
+
+            response.setResponse (
+                    this.post (
+                            json, U_ME_PHOTO, SessionManagement.session ( ).getToken ( ) ) );
         }
 
-        response.printResponse();
+        response.printResponse ( );
 
     }
 }

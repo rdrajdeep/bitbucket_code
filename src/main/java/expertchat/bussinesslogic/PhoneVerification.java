@@ -14,35 +14,35 @@ import expertchat.apioperation.session.SessionManagement;
  * Created by root on 18/2/17.
  */
 
-public class PhoneVerification extends AbstractApiFactory implements ExpertChatEndPoints{
+public class PhoneVerification extends AbstractApiFactory implements ExpertChatEndPoints {
 
-    ApiResponse response = ApiResponse.getObject();
+    ApiResponse response = ApiResponse.getObject ( );
 
-    ParseResponse jsonParser = new ParseResponse(response);
+    ParseResponse jsonParser = new ParseResponse ( response );
 
-    SessionManagement session = SessionManagement.session();
+    SessionManagement session = SessionManagement.session ( );
 
     private String code;
 
-    public void phoneCodeSend(String phone, boolean isExpert){
+    public void phoneCodeSend ( String phone, boolean isExpert ) {
 
-        if(isExpert) {
+        if ( isExpert ) {
             response.setResponse (
                     this.post ( phone, PHONECODESEND, session.getToken ( ) )
             );
-        }else {
+        } else {
             response.setResponse (
                     this.post ( phone, U_PHONECODESEND, session.getToken ( ) )
             );
         }
-        response.printResponse();
+        response.printResponse ( );
 
-        if(response.statusCode()==HTTPCode.HTTP_OK){
-            setCode(jsonParser.getJsonData("results.verification_code", ResponseDataType.STRING));
+        if ( response.statusCode ( ) == HTTPCode.HTTP_OK ) {
+            setCode ( jsonParser.getJsonData ( "results.verification_code", ResponseDataType.STRING ) );
         }
     }
 
-    public void phoneCodeResend(String phone, boolean isExpert) {
+    public void phoneCodeResend ( String phone, boolean isExpert ) {
 
         if ( isExpert ) {
 
@@ -65,39 +65,36 @@ public class PhoneVerification extends AbstractApiFactory implements ExpertChatE
         }
     }
 
-    public void verfiyPhone(String code, boolean isExpert){
-        String json="{\"passcode\":\""+code+"\"}";
+    public void verfiyPhone ( String code, boolean isExpert ) {
+        String json = "{\"passcode\":\"" + code + "\"}";
 
-        JsonObject phoneCodeJson=(JsonObject)new JsonParser().parse(json);
+        JsonObject phoneCodeJson = ( JsonObject ) new JsonParser ( ).parse ( json );
 
-        if(isExpert) {
+        if ( isExpert ) {
 
             response.setResponse (
                     this.post ( phoneCodeJson.toString ( ), PHONECODEVERIFY, session.getToken ( ) )
             );
 
-        }else {
+        } else {
 
             response.setResponse (
                     this.post ( phoneCodeJson.toString ( ), U_PHONECODEVERIFY, session.getToken ( ) )
             );
         }
 
-        response.printResponse();
+        response.printResponse ( );
     }
 
-    private void setCode(String code){
-        this.code=code;
-    }
-
-    public String getCode(){
+    public String getCode ( ) {
         return code;
     }
 
-    public boolean isCodeSent(){
-        if(this.getCode()!=null){
-            return true;
-        }
-        return false;
+    private void setCode ( String code ) {
+        this.code = code;
+    }
+
+    public boolean isCodeSent ( ) {
+        return this.getCode ( ) != null;
     }
 }

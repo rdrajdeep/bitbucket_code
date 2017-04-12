@@ -1,7 +1,0 @@
-#org.jbehave.core.embedder.StoryManager
-#Tue Apr 11 15:04:12 IST 2017
-Story/0_BasicFlow.story=16000
-threads=1
-total=24000
-threadAverage=24000
-Story/5_Calling.story=8000

@@ -8,19 +8,20 @@ import expertchat.apioperation.apiresponse.HTTPCode;
 import expertchat.apioperation.apiresponse.ParseResponse;
 import expertchat.apioperation.apiresponse.ResponseDataType;
 import expertchat.apioperation.session.SessionManagement;
+
 import static expertchat.apioperation.ExpertChatEndPoints.EXPERT_PROFILE;
 import static expertchat.apioperation.ExpertChatEndPoints.EXPERT_PROFILE_BY_USER;
 import static expertchat.usermap.TestUserMap.getMap;
 
-public class ExpertProfile extends AbstractApiFactory implements HTTPCode{
+public class ExpertProfile extends AbstractApiFactory implements HTTPCode {
 
-    private ApiResponse response = ApiResponse.getObject();
+    private ApiResponse response = ApiResponse.getObject ( );
 
-    private ParseResponse parseResponse = new ParseResponse(response);
+    private ParseResponse parseResponse = new ParseResponse ( response );
 
-    private SessionManagement session = SessionManagement.session();
+    private SessionManagement session = SessionManagement.session ( );
 
-    private FileUpload fileUpload=new FileUpload();
+    private FileUpload fileUpload = new FileUpload ( );
 
     private String expertProfileID;
 
@@ -30,167 +31,186 @@ public class ExpertProfile extends AbstractApiFactory implements HTTPCode{
 
     private String userCredential;
 
-    public void setExpertProfileID(String expertProfileID) {
-        this.expertProfileID = expertProfileID;
-    }
-
-    public String getExpertProfileID() {
+    public String getExpertProfileID ( ) {
         return expertProfileID;
     }
 
-    public void setExpertID(String expertID) {
-
-        this.expertID = expertID;
+    public void setExpertProfileID ( String expertProfileID ) {
+        this.expertProfileID = expertProfileID;
     }
 
-    public String getExpertID() {
+    public String getExpertID ( ) {
 
         return expertID;
+    }
+
+    public void setExpertID ( String expertID ) {
+
+        this.expertID = expertID;
     }
 
     /**
      * @param profile
      */
-    public void addExpertyProfile(String profile) {
+    public void addExpertyProfile ( String profile ) {
 
-        response.setResponse(
-                this.post(profile, EXPERT_PROFILE, session.getToken())
+        response.setResponse (
+                this.post ( profile, EXPERT_PROFILE, session.getToken ( ) )
         );
 
-        if(response.statusCode()== HTTP_ACCEPTED ||
-                response.statusCode()==HTTP_OK) {
+        if ( response.statusCode ( ) == HTTP_ACCEPTED ||
+                response.statusCode ( ) == HTTP_OK ) {
 
-            setExpertProfileID(
-                    parseResponse.getJsonData("results.id", ResponseDataType.INT));
+            setExpertProfileID (
+                    parseResponse.getJsonData ( "results.id", ResponseDataType.INT ) );
 
 
-            setExpertID(
-                    parseResponse.getJsonData("results.expert.id", ResponseDataType.INT));
+            setExpertID (
+                    parseResponse.getJsonData ( "results.expert.id", ResponseDataType.INT ) );
 
-            getMap().put("expertProfileId", getExpertProfileID());
-            getMap().put("expertId",getExpertID());
+            getMap ( ).put ( "expertProfileId", getExpertProfileID ( ) );
+            getMap ( ).put ( "expertId", getExpertID ( ) );
         }
 
-        response.printResponse();
+        response.printResponse ( );
     }
 
     /**
      * @param byExpert
      */
-    public void getProfileOfExpert(boolean byExpert) {
+    public void getProfileOfExpert ( String id, boolean byExpert ) {
 
         if ( byExpert ) {
 
+            if ( ! id.isEmpty ( ) ) {
+
+                response.setResponse (
+                        this.get ( EXPERT_PROFILE + id + "/", session.getToken ( ) )
+                );
+                response.printResponse ( );
+            } else {
+
+                response.setResponse (
+                        this.get ( EXPERT_PROFILE, session.getToken ( ) )
+                );
+                response.printResponse ( );
+            }
+        } else {
+
+            if ( ! id.isEmpty ( ) ) {
+
+                response.setResponse (
+                        this.get ( EXPERT_PROFILE_BY_USER + id + "/", session.getToken ( ) )
+                );
+                response.printResponse ( );
+            } else {
+
+                response.setResponse (
+                        this.get ( EXPERT_PROFILE_BY_USER, session.getToken ( ) )
+                );
+                response.printResponse ( );
+            }
+        }
+
+        if ( response.statusCode ( ) == HTTP_OK ) {
+
+            setExpertProfileID (
+                    parseResponse.getJsonData ( "results[0].id", ResponseDataType.INT ) );
+
+
+            setExpertID (
+                    parseResponse.getJsonData ( "results[0].expert.id", ResponseDataType.INT ) );
+
+            getMap ( ).put ( "expertProfileId", getExpertProfileID ( ) );
+            getMap ( ).put ( "expertId", getExpertID ( ) );
+        }
+
+        response.printResponse ( );
+    }
+
+    public void getAllProfileOfExpert ( ) {
+
         response.setResponse (
-                this.get ( EXPERT_PROFILE , session.getToken ( ) )
-        );
-        response.printResponse ();
-    }else {
-
-            response.setResponse (
-                    this.get ( EXPERT_PROFILE_BY_USER , session.getToken ( ) )
-            );
-        }
-
-        if(response.statusCode ()==HTTP_OK){
-
-            setExpertProfileID(
-                    parseResponse.getJsonData("results[0].id", ResponseDataType.INT));
-
-
-            setExpertID(
-                    parseResponse.getJsonData("results[0].expert.id", ResponseDataType.INT));
-
-            getMap().put("expertProfileId", getExpertProfileID());
-            getMap().put("expertId",getExpertID());
-        }
-
-        response.printResponse();
-    }
-
-    public void getAllProfileOfExpert() {
-
-        response.setResponse(
-                this.get(EXPERT_PROFILE, session.getToken())
+                this.get ( EXPERT_PROFILE, session.getToken ( ) )
         );
 
-        response.printResponse();
+        response.printResponse ( );
     }
 
-    public String getProfileCount() {
+    public String getProfileCount ( ) {
 
-        return parseResponse.getJsonData("metadata.count", ResponseDataType.INT);
+        return parseResponse.getJsonData ( "metadata.count", ResponseDataType.INT );
     }
 
-    public void getNextPage() {
+    public void getNextPage ( ) {
 
-        String page = parseResponse.getJsonData("metadata.next", ResponseDataType.STRING);
-        response.setResponse(
-                this.get(page, session.getToken())
+        String page = parseResponse.getJsonData ( "metadata.next", ResponseDataType.STRING );
+        response.setResponse (
+                this.get ( page, session.getToken ( ) )
         );
 
-        response.printResponse();
+        response.printResponse ( );
     }
 
-    public void updateExpertProfile(String profile, String id) {
+    public void updateExpertProfile ( String profile, String id ) {
 
-        response.setResponse(
-                this.patch(profile, EXPERT_PROFILE + id + "/", session.getToken())
+        response.setResponse (
+                this.patch ( profile, EXPERT_PROFILE + id + "/", session.getToken ( ) )
         );
 
-        response.printResponse();
+        response.printResponse ( );
     }
 
-    public boolean deleteProfile(String id) {
+    public boolean deleteProfile ( String id ) {
 
-        return this.isDelete(EXPERT_PROFILE + id + "/", session.getToken());
-
-    }
-
-    public void setExpertCredential(String expertCredential){
-
-        this.expertCredential=expertCredential;
+        return this.isDelete ( EXPERT_PROFILE + id + "/", session.getToken ( ) );
 
     }
 
-    public void setuserCredential(String userCredential){
+    public void setuserCredential ( String userCredential ) {
 
-        this.userCredential=userCredential;
+        this.userCredential = userCredential;
 
     }
 
-    public String [] getExpertCredential(){
+    public String[] getExpertCredential ( ) {
 
-        JsonObject jsonObject= (JsonObject) new JsonParser().parse(this.expertCredential);
+        JsonObject jsonObject = ( JsonObject ) new JsonParser ( ).parse ( this.expertCredential );
 
-        String credential[]={jsonObject.get("email").getAsString(), jsonObject.get("password").getAsString()};
+        String credential[] = { jsonObject.get ( "email" ).getAsString ( ) , jsonObject.get ( "password" ).getAsString ( ) };
 
         return credential;
     }
 
-    public String [] getUserCredential(){
+    public void setExpertCredential ( String expertCredential ) {
 
-        JsonObject jsonObject= (JsonObject) new JsonParser().parse(this.userCredential);
+        this.expertCredential = expertCredential;
 
-        String credential[]={jsonObject.get("email").getAsString(), jsonObject.get("password").getAsString()};
+    }
+
+    public String[] getUserCredential ( ) {
+
+        JsonObject jsonObject = ( JsonObject ) new JsonParser ( ).parse ( this.userCredential );
+
+        String credential[] = { jsonObject.get ( "email" ).getAsString ( ) , jsonObject.get ( "password" ).getAsString ( ) };
 
         return credential;
     }
 
-    public void uploadMedia(String mediaPath, boolean isExpert) {
+    public void uploadMedia ( String mediaPath, boolean isExpert ) {
 
-        if (isExpert) {
+        if ( isExpert ) {
 
-            fileUpload.uploadMedia(mediaPath, getExpertCredential()[0], getExpertCredential()[1],true);
+            fileUpload.uploadMedia ( mediaPath, getExpertCredential ( )[ 0 ], getExpertCredential ( )[ 1 ], true );
 
         } else {
 
-            fileUpload.uploadMedia(mediaPath, getUserCredential()[0], getUserCredential()[1],false);
+            fileUpload.uploadMedia ( mediaPath, getUserCredential ( )[ 0 ], getUserCredential ( )[ 1 ], false );
         }
     }
 
-    public String getResponseOfMediaUpload(){
+    public String getResponseOfMediaUpload ( ) {
 
-       return FileUpload.getJson();
+        return FileUpload.getJson ( );
     }
 }

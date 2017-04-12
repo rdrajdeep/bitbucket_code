@@ -2,41 +2,39 @@ package expertchat.apioperation.apiresponse;
 
 // Created by Kishor on 1/23/2017.
 
-import expertchat.util.ExpertChatException;
 import io.restassured.response.Response;
 
 public final class ApiResponse {
 
-    private ApiResponse(){}
+    private final static ApiResponse responseObj = new ApiResponse ( );
+    public static String VERIFICATION_CODE;
+    private Response response;
 
-    public static ApiResponse getObject(){
+    private ApiResponse ( ) {
+    }
+
+    public static ApiResponse getObject ( ) {
 
         return responseObj;
     }
 
-     private final static ApiResponse responseObj=new ApiResponse();
+    public Response getResponse ( ) {
 
-     public static String VERIFICATION_CODE;
+        return response;
+    }
 
-     private Response response;
+    public void setResponse ( Response response ) {
 
-     public void setResponse(Response response){
+        this.response = response;
+    }
 
-              this.response = response;
-     }
+    public void printResponse ( ) {
 
-     public Response getResponse(){
+        getResponse ( ).prettyPrint ( );
+    }
 
-          return response;
-     }
+    public int statusCode ( ) {
 
-     public void printResponse(){
-
-         getResponse().prettyPrint();
-     }
-
-     public int statusCode(){
-
-         return getResponse().statusCode();
-     }
+        return getResponse ( ).statusCode ( );
+    }
 }

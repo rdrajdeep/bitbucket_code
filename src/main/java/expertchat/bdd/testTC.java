@@ -9,14 +9,14 @@ import java.util.Date;
 public class testTC extends AbstractSteps implements HTTPCode {
 
 
-    public testTC(ExtentReports reports, String casName) {
+    public testTC ( ExtentReports reports, String casName ) {
 
-        super(reports, casName);
+        super ( reports, casName );
     }
 
 
-    @Given("system state")
-    public void date(){
-        System.out.println(new Date().getTime());
+    @Given ( "system state" )
+    public void date ( ) {
+        System.out.println ( new Date ( ).getTime ( ) );
     }
 }

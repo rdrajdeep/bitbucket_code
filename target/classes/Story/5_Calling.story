@@ -9,6 +9,7 @@ Scenario: scenario description
 
 Given an user
 When login with user1
+
 Then register a device as {
                           "device_type": "ios",
                           "device_name": "USer device",
@@ -17,6 +18,7 @@ Then register a device as {
                           "device_token": "sas",
                           "device_os": "sas"
                           }
+
 
 Given an expert
 When login with expert1

@@ -14,53 +14,37 @@ import expertchat.util.ExpertChatUtility;
 import expertchat.util.ResponseLogger;
 import org.jbehave.core.annotations.*;
 
-import javax.jws.Oneway;
 import java.io.IOException;
+
 import static expertchat.usermap.TestUserMap.getMap;
 
 
 public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
 
+    public static boolean isNegative = false;
+    private static boolean onlyUser = false;
+
+    private static boolean isExpert = true;
+    private ExpertChatApi expertChatApi = new ExpertChatApi ( );
+    private ApiResponse response = ApiResponse.getObject ( );
+    private ParseResponse jsonParser = new ParseResponse ( response );
+    private ResponseLogger responseLogger = new ResponseLogger ( jsonParser );
+    private ExpertProfile expertProfile = new ExpertProfile ( );
+    private BasicProfile basicProfile = new BasicProfile ( );
+    private Calling call = new Calling ( );
+    private PhoneVerification phone = new PhoneVerification ( );
+    private SocialLinks socialLinks = new SocialLinks ( );
+    private Searching searching = new Searching ( );
+    private SuperAdmin superAdmin = new SuperAdmin ( );
+    private Account account = new Account ( );
+    private ProfileComplete profileComplete = new ProfileComplete ( );
+    private GetStreamFeeds getStreamFeeds = new GetStreamFeeds ( );
+
     public E2ETestCase ( ExtentReports reports, String casName ) {
 
         super ( reports, casName );
     }
-
-    private static boolean onlyUser = false;
-
-    private static boolean isExpert = true;
-
-    public static boolean isNegative = false;
-
-    private ExpertChatApi expertChatApi = new ExpertChatApi ( );
-
-    private ApiResponse response = ApiResponse.getObject ( );
-
-    private ParseResponse jsonParser = new ParseResponse ( response );
-
-    private ResponseLogger responseLogger = new ResponseLogger ( jsonParser );
-
-    private ExpertProfile expertProfile = new ExpertProfile ( );
-
-    private BasicProfile basicProfile = new BasicProfile ( );
-
-    private Calling call = new Calling ( );
-
-    private PhoneVerification phone = new PhoneVerification ( );
-
-    private SocialLinks socialLinks = new SocialLinks ( );
-
-    private Searching searching = new Searching ( );
-
-    private SuperAdmin superAdmin = new SuperAdmin ( );
-
-    private Account account = new Account ( );
-
-    private ProfileComplete profileComplete = new ProfileComplete ( );
-
-    private GetStreamFeeds getStreamFeeds = new GetStreamFeeds ( );
-
 
     @Given ( "complete $flow" )
     public void flow ( @Named ( "flow" ) String flow ) {
@@ -88,15 +72,15 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     }
 
     /*log out from the system*/
-    @Then("logout")
-    @When("logout")
-    public void logout(){
+    @Then ( "logout" )
+    @When ( "logout" )
+    public void logout ( ) {
 
-        SessionManagement.session ().setToken(null);
+        SessionManagement.session ( ).setToken ( null );
 
-        if(SessionManagement.session ().getToken ()==null){
+        if ( SessionManagement.session ( ).getToken ( ) == null ) {
 
-            info("Logout from the system");
+            info ( "Logout from the system" );
         }
     }
 
@@ -363,6 +347,7 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
      * @param name
      */
     @Then ( "add name as $name" )
+    @Aliases ( values = { "update basic profile as $name" } )
     public void addName ( @Named ( "name" ) String name ) {
 
         this.info ( "Add name to basic profile" );
@@ -474,7 +459,7 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         }
 
         this.checkAndWriteToReport ( response.statusCode ( ),
-                    "Expert Profile Created", isNegative );
+                "Expert Profile Created", isNegative );
 
         responseLogger.writeResponseAsLog ( "Expert profile" );
     }
@@ -500,7 +485,7 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         }
 
         this.checkAndWriteToReport ( response.statusCode ( ),
-                    "Expert Profile updated with--" + json, isNegative );
+                "Expert Profile updated with--" + json, isNegative );
 
         responseLogger.writeResponseAsLog ( "Update Expert Profile" );
     }
@@ -511,56 +496,59 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     @Then ( "get profile" )
     @When ( "get profile" )
     @Aliases ( values = { "get the profile" ,
-            "get the previously created expert profile","get expert profile"} )
+            "get the previously created expert profile" , "get expert profile" } )
 
     public void getProfile ( ) {
 
         this.info ( "GET Expert Profile" );
 
-      //  String expertProfileID = getMap ( ).get ( "expertProfileId" );
+        //  String expertProfileID = getMap ( ).get ( "expertProfileId" );
 
         if ( isNegative ) {
 
-            expertProfile.getProfileOfExpert (isExpert );
+            expertProfile.getProfileOfExpert ( "", isExpert );
 
         } else {
 
-            expertProfile.getProfileOfExpert ( isExpert );
+            expertProfile.getProfileOfExpert ( "", isExpert );
         }
 
-            if ( isExpert == false ) {
+        if ( isExpert == false ) {
 
-                this.checkAndWriteToReport ( response.statusCode ( ),
-                        "Expert profile loaded by a user--" + expertProfile.getUserCredential ( )[ 0 ], isNegative );
-            } else {
+            this.checkAndWriteToReport ( response.statusCode ( ),
+                    "Expert profile loaded by a user--" + expertProfile.getUserCredential ( )[ 0 ], isNegative );
+        } else {
 
-                this.checkAndWriteToReport ( response.statusCode ( ),
-                        "Expert profile loaded by expert--" + expertProfile.getExpertCredential ( )[ 0 ], isNegative );
-            }
+            this.checkAndWriteToReport ( response.statusCode ( ),
+                    "Expert profile loaded by expert--" + expertProfile.getExpertCredential ( )[ 0 ], isNegative );
+        }
     }
 
     /**
      * @param id
      */
-    @Then ( "get profile with id $id" )
-    public void getProfileWithID ( @Named ( "id" ) String id ) {
+    @Then ( "get profile of expert" )
+    public void getProfileWithID ( ) {
 
         this.info ( "GET Expert Profile" );
 
+        String expertProfileID = getMap ( ).get ( "expertProfileId" );
+
         if ( isNegative ) {
 
-            expertProfile.getProfileOfExpert (isExpert );
+            expertProfile.getProfileOfExpert ( expertProfileID, isExpert );
 
             responseLogger.writeResponseAsLog ( "Get Expert Profile-Negative" );
 
         } else {
 
-            expertProfile.getProfileOfExpert ( isExpert );
+            expertProfile.getProfileOfExpert ( expertProfileID, isExpert );
         }
-            this.checkAndWriteToReport ( response.statusCode ( ),
-                    "Get Profile successfully", isNegative );
 
-            responseLogger.writeResponseAsLog ( "Get Expert Profile" );
+        this.checkAndWriteToReport ( response.statusCode ( ),
+                "Get Profile successfully", isNegative );
+
+        responseLogger.writeResponseAsLog ( "Get Expert Profile" );
     }
 
 
@@ -585,10 +573,10 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
             this.checkAndWriteToReport ( HTTPCode.HTTP_BAD,
                     "Something Went Wrong-::" + expertProfile.getResponseOfMediaUpload ( ), false );
-        }else if(FileUpload.ERROR){
+        } else if ( FileUpload.ERROR ) {
 
             this.checkAndWriteToReport ( HTTPCode.HTTP_BAD,
-                    "Media Upload failed--::" + expertProfile.getResponseOfMediaUpload ( ),false );
+                    "Media Upload failed--::" + expertProfile.getResponseOfMediaUpload ( ), false );
         }
 
         responseLogger.writeResponseAsLog ( "Upload Media" );
@@ -602,7 +590,7 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
         this.info ( "Deleting Expert Profile" );
 
-        boolean isDelete=false;
+        boolean isDelete = false;
 
         if ( isNegative ) {
 
@@ -610,10 +598,10 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
         } else {
 
-          isDelete= expertProfile.deleteProfile ( expertProfile.getExpertProfileID ( ) );
+            isDelete = expertProfile.deleteProfile ( expertProfile.getExpertProfileID ( ) );
         }
-            this.AssertAndWriteToReport ( isDelete,
-                    "Expert profile deleted" );
+        this.AssertAndWriteToReport ( isDelete,
+                "Expert profile deleted" );
 
 
     }
@@ -626,7 +614,7 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
         this.info ( "Delete Expert Profile" );
 
-        boolean isDelete=false;
+        boolean isDelete = false;
 
         if ( isNegative ) {
 
@@ -636,8 +624,8 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
             isDelete = expertProfile.deleteProfile ( id );
         }
-            this.AssertAndWriteToReport ( isDelete,
-                    "Profile deleted with id->" + id );
+        this.AssertAndWriteToReport ( isDelete,
+                "Profile deleted with id->" + id );
 
 
     }
@@ -646,100 +634,96 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
      * Test cases to drive the Calling API
      */
     /*Calling API Test cases*/
+    @When ( "register a device as $json" )
+    @Then ( "register a device as $json" )
+    public void registerDevice ( @Named ( "json" ) String json ) {
 
-    @When("register a device as $json")
-    @Then("register a device as $json")
-    public void registerDevice(@Named ("json")String json){
-
-        if(isNegative) {
+        if ( isNegative ) {
             call.registerDevice ( json, isExpert );
             responseLogger.writeResponseAsLog ( "Register Device-Negative" );
-        }else {
+        } else {
 
             call.registerDevice ( json, isExpert );
             responseLogger.writeResponseAsLog ( "Register Device" );
         }
 
-        checkAndWriteToReport ( response.statusCode (), "Device Registered", false );
+        checkAndWriteToReport ( response.statusCode ( ), "Device Registered", false );
     }
 
-    @Then("initiate a call of scheduled_duration $time")
-    public void initiateCall(@Named ( "time" )String time){
+    @Then ( "initiate a call of scheduled_duration $time" )
+    public void initiateCall ( @Named ( "time" ) String time ) {
 
-        info("Initiating a call to expert...");
+        info ( "Initiating a call to expert..." );
 
-        if(isNegative) {
+        if ( isNegative ) {
 
             call.doCall ( time );
 
             responseLogger.writeResponseAsLog ( "Call initiated by user-Negative" );
 
-        }else {
+        } else {
 
             call.doCall ( time );
 
-            responseLogger.writeResponseAsLog ( "Call initiated by user-Negative");
+            responseLogger.writeResponseAsLog ( "Call initiated by user-Negative" );
 
         }
 
-        checkAndWriteToReport ( response.statusCode (), "Call initiated", isNegative );
+        checkAndWriteToReport ( response.statusCode ( ), "Call initiated", isNegative );
     }
 
 
     @Then ( "accept the call" )
     public void acceptCall ( ) {
 
-            this.info ( "accepting Call..." );
+        this.info ( "accepting Call..." );
 
-            call.isAcceptCall ( );
+        call.isAcceptCall ( );
 
-            this.checkAndWriteToReport ( response.statusCode ( ),
-                    "Call Accepted", isNegative );
+        this.checkAndWriteToReport ( response.statusCode ( ),
+                "Call Accepted", isNegative );
 
-            responseLogger.writeResponseAsLog ( "Accept Call" );
+        responseLogger.writeResponseAsLog ( "Accept Call" );
     }
 
     @Then ( "decline the call" )
     public void declineCall ( ) {
 
-            this.info ( "Declining a Call" );
+        this.info ( "Declining a Call" );
 
-            call.isDecline ( );
+        call.isDecline ( );
 
-            this.checkAndWriteToReport ( response.statusCode ( ),
-                    "Call Declined", isNegative );
+        this.checkAndWriteToReport ( response.statusCode ( ),
+                "Call Declined", isNegative );
 
-            responseLogger.writeResponseAsLog ( "Decline Call" );
+        responseLogger.writeResponseAsLog ( "Decline Call" );
     }
 
     @Then ( "delay the call" )
     public void delayCall ( ) {
 
-        if ( onlyUser ) {
+        this.info ( "Delaying the call" );
 
-            this.info ( "Delaying the call" );
+        call.isDelay ( );
 
-            call.isDelay ( );
+        this.checkAndWriteToReport ( response.statusCode ( ),
+                "Call delayed", isNegative );
 
-            this.checkAndWriteToReport ( response.statusCode ( ),
-                    "Call delayed", isNegative );
-
-            responseLogger.writeResponseAsLog ( "Delay Call" );
-        }
+        responseLogger.writeResponseAsLog ( "Delay Call" );
     }
 
-    @Then ("disconnect the call" )
+    @Then ( "disconnect the call" )
     public void disconnectCall ( ) {
 
-            this.info ( "Disconnecting a call..." );
+        this.info ( "Disconnecting a call..." );
 
-            call.isDissconnectCall ( );
+        call.isDissconnectCall ( );
 
-            this.checkAndWriteToReport ( response.statusCode ( ),
+        this.checkAndWriteToReport ( response.statusCode ( ),
 
-                    "Call Disconnected", isNegative );
+                "Call Disconnected", isNegative );
 
-            responseLogger.writeResponseAsLog ( "Disconnect Call" );
+        responseLogger.writeResponseAsLog ( "Disconnect Call" );
     }
 
     /* Phone code verification test cases*/
@@ -834,12 +818,11 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         } else {
 
             socialLinks.getSocialLinks ( );
-
-            this.checkAndWriteToReport ( response.statusCode ( ),
-                    "Social link get Successful", isNegative );
-
-            responseLogger.writeResponseAsLog ( "Get Social Link" );
         }
+        this.checkAndWriteToReport ( response.statusCode ( ),
+                "Social link get Successful", isNegative );
+
+        responseLogger.writeResponseAsLog ( "Get Social Link" );
     }
 
     /**
@@ -935,6 +918,7 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     @When ( "remove one social link" )
     public void removeSocialLink ( ) {
 
+        boolean isDelete = false;
         this.info ( "Removing social link" );
 
         if ( isNegative ) {
@@ -942,83 +926,89 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
             socialLinks.deleteSocialLink ( socialLinks.getSocialLinkId ( ).get ( 0 ) );
         } else {
 
-        boolean isDelete = socialLinks.deleteSocialLink ( socialLinks.getSocialLinkId ( ).get ( 0 ) );
+            isDelete = socialLinks.deleteSocialLink ( socialLinks.getSocialLinkId ( ).get ( 0 ) );
+        }
 
         this.AssertAndWriteToReport ( isDelete,
                 "Successfully removed social links" );
     }
-}
 
-    @Then("count of social links should be $count")
-    public void assertCount(@Named("count") String count) {
+    @Then ( "count of social links should be $count" )
+    public void assertCount ( @Named ( "count" ) String count ) {
 
-        this.info("Asserting social link counts");
+        this.info ( "Asserting social link counts" );
 
-        String countOfSocialLinks = socialLinks.getSocialLinkCount();
+        String countOfSocialLinks = socialLinks.getSocialLinkCount ( );
 
-        if (count.equals(countOfSocialLinks)) {
+        if ( count.equals ( countOfSocialLinks ) ) {
 
-            this.AssertAndWriteToReport(true, "count matched. Count of social link is:" + countOfSocialLinks);
+            this.AssertAndWriteToReport ( true, "count matched. Count of social link is:" + countOfSocialLinks );
 
-        }else if(!count.equals(countOfSocialLinks) && isNegative){
+        } else if ( ! count.equals ( countOfSocialLinks ) && isNegative ) {
 
-            negativeCases ();
+            negativeCases ( );
         }
     }
 
-    @Then("after removing one link,count of social links should be $count")
-    public void assertCountAfterRemove(@Named("count") String count) {
+    @Then ( "after removing one link,count of social links should be $count" )
+    public void assertCountAfterRemove ( @Named ( "count" ) String count ) {
 
-        this.info("Asserting social link counts");
+        this.info ( "Asserting social link counts" );
 
-        socialLinks.getSocialLinks();
+        socialLinks.getSocialLinks ( );
 
-        String countOfSocialLinks = socialLinks.getSocialLinkCount();
+        String countOfSocialLinks = socialLinks.getSocialLinkCount ( );
 
-        if (count.equals(countOfSocialLinks)) {
+        if ( count.equals ( countOfSocialLinks ) ) {
 
-            this.AssertAndWriteToReport(true,
-                    "after removing one link,count of social link is:" + countOfSocialLinks);
-        }else if(!count.equals(countOfSocialLinks) && isNegative){
+            this.AssertAndWriteToReport ( true,
+                    "after removing one link,count of social link is:" + countOfSocialLinks );
+        } else if ( ! count.equals ( countOfSocialLinks ) && isNegative ) {
 
-            negativeCases ();
+            negativeCases ( );
         }
     }
 
-    @When("add $socialMedia to social Link")
-    @Then("add $socialMedia to social Link")
-    public void addSocialMedia(@Named("SocialMedia") String SocialMedia) {
+    @When ( "add $socialMedia to social Link" )
+    @Then ( "add $socialMedia to social Link" )
+    public void addSocialMedia ( @Named ( "SocialMedia" ) String SocialMedia ) {
 
 
     }
 
-    @Then("get all the feeds")
-    @When("get all the feeds")
-    public void getFeeds() {
+    @Then ( "get all the feeds" )
+    @When ( "get all the feeds" )
+    public void getFeeds ( ) {
 
-        this.info("Listing All the feed ");
+        this.info ( "Listing All the feed " );
 
-        socialLinks.getFeedListing();
+        socialLinks.getFeedListing ( );
 
-        this.checkAndWriteToReport(response.statusCode(), "Feed listed", isNegative);
+        if ( response.statusCode ( ) != HTTP_BAD ) {
 
-        responseLogger.writeResponseAsLog("FeedListing API");
+            socialLinks.setContentID ( jsonParser.getJsonData ( "results[0].id", ResponseDataType.STRING ) );
+            getMap ( ).put ( "unpublishedContentId", socialLinks.getContentID ( ) );
+        }
+
+        this.checkAndWriteToReport ( response.statusCode ( ), "Feed listed", isNegative );
+
+        responseLogger.writeResponseAsLog ( "FeedListing API" );
     }
 
-    @Then("check count of unpblished feed")
-    public void feedCount1() {
+    @Then ( "check count of unpblished feed" )
+    public void feedCount1 ( ) {
 
-        socialLinks.setCountOfFeeds(socialLinks.getSocialLinkCount());
+        socialLinks.getFeedListing ( );
+        socialLinks.setCountOfFeeds ( socialLinks.getSocialLinkCount ( ) );
 
-        this.AssertAndWriteToReport(true, "Number of feeds are:->" + socialLinks.getcountOfFeeds());
+        this.AssertAndWriteToReport ( true, "Number of feeds are:->" + socialLinks.getcountOfFeeds ( ) );
     }
 
-    @Then("publish a content")
-    @When("publish a content")
-    @Aliases(values = {"try to publish a ignored content",
-            "publish the same content again"})
+    @Then ( "publish a content" )
+    @When ( "publish a content" )
+    @Aliases ( values = { "try to publish a ignored content" , "publish the same content again" } )
 
-    public void publish() {
+    public void publish ( ) {
 
         info ( "Publishing a content" );
 
@@ -1029,27 +1019,36 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
             socialLinks.publishContent ( cId );
 
         } else {
+
             socialLinks.publishContent ( cId );
-
-            this.checkAndWriteToReport ( response.statusCode ( ), "Content published", isNegative );
-
-            responseLogger.writeResponseAsLog ( "Publish Content API" );
         }
-    }
-    @Then("get all contents")
-    public void getcontents() {
 
-        info("get all published contents");
+        this.checkAndWriteToReport ( response.statusCode ( ), "Content published", isNegative );
 
-        socialLinks.getContents();
-
-        this.checkAndWriteToReport(response.statusCode(), "All published content listed", isNegative);
-
-        responseLogger.writeResponseAsLog("Get Published contents");
+        responseLogger.writeResponseAsLog ( "Publish Content API" );
     }
 
-    @Then("get a particular content")
-    public void getContent() {
+    @Then ( "get all contents" )
+    public void getcontents ( ) {
+
+        info ( "get all published contents" );
+
+        socialLinks.getContents ( );
+
+        if ( response.statusCode ( ) != HTTP_BAD ) {
+
+            socialLinks.setPublishedContentId ( jsonParser.getJsonData ( "results[0].id", ResponseDataType.INT ) );
+
+            getMap ( ).put ( "publishedContentID", socialLinks.getPublishedContentId ( ) );
+        }
+
+        this.checkAndWriteToReport ( response.statusCode ( ), "All published content listed", isNegative );
+
+        responseLogger.writeResponseAsLog ( "Get Published contents" );
+    }
+
+    @Then ( "get a particular content" )
+    public void getContent ( ) {
 
         info ( "Listing a particular content" );
 
@@ -1067,31 +1066,34 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
             responseLogger.writeResponseAsLog ( "Get a particular Published contents" );
         }
     }
-    @Then("delete that content")
-    public void deleteContent() {
+
+    @Then ( "delete that content" )
+    public void deleteContent ( ) {
 
         info ( "Deleting a particular content" );
 
         if ( isNegative ) {
 
             socialLinks.deleteContent (
-                    getMap().get("publishedContentID"));
+                    getMap ( ).get ( "publishedContentID" ) );
         } else {
 
             boolean isDeleted = socialLinks.deleteContent (
-                    getMap().get("publishedContentID"));
+                    getMap ( ).get ( "publishedContentID" ) );
 
-            socialLinks.getContent(socialLinks.getPublishedContentId());
+            socialLinks.getContent ( socialLinks.getPublishedContentId ( ) );
 
-            this.AssertAndWriteToReport(isDeleted, "Content with id"+socialLinks.getPublishedContentId ( )+"deleted" );
+            this.AssertAndWriteToReport ( isDeleted, "Content with id" + socialLinks.getPublishedContentId ( ) + "deleted" );
         }
     }
 
-    @Then("ignore a content")
-    @Alias("Ignore the same content again")
-    public void ignore() {
+    @Then ( "ignore a content" )
+    @Alias ( "Ignore the same content again" )
+    public void ignore ( ) {
 
-        socialLinks.getFeedListing ( );
+        info ( "Ignore a content" );
+        info ( "Refresh the feeds again" );
+        getFeeds ( );
 
         if ( isNegative ) {
 
@@ -1107,120 +1109,121 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         responseLogger.writeResponseAsLog ( "Ignore Content API" );
     }
 
-    @Then("check count of unpblished feed again")
-    public void feedCount2() {
-        socialLinks.getFeedListing();
+    @Then ( "check count of unpblished feed again" )
+    public void feedCount2 ( ) {
 
-        socialLinks.setCountOfFeeds(getMap().get( "countOfTotalSocialLinks"));
+        socialLinks.getFeedListing ( );
 
-        this.AssertAndWriteToReport(true, "Number of unpublished feeds are:->" + socialLinks.getcountOfFeeds());
+        socialLinks.setCountOfFeeds ( socialLinks.getSocialLinkCount ( ) );
+
+        this.AssertAndWriteToReport ( true, "Number of unpublished feeds are:->" + socialLinks.getcountOfFeeds ( ) );
     }
 
 
     /*Searching TestCases*/
 
-    @Given("a $type $text")
-    public void getText(@Named("text") String text,
-                        @Named("type") String type) {
+    @Given ( "a $type $text" )
+    public void getText ( @Named ( "text" ) String text,
+                          @Named ( "type" ) String type ) {
 
-        if (text.isEmpty() && type.equals("tag_id")) {
+        if ( text.isEmpty ( ) && type.equals ( "tag_id" ) ) {
 
 
-            searching.setTagId(text);
+            searching.setTagId ( text );
         }
 
-        switch (type.toLowerCase()) {
+        switch ( type.toLowerCase ( ) ) {
 
             case "text":
-                searching.setSearchText(text);
+                searching.setSearchText ( text );
                 break;
 
             case "tag_id":
-                searching.setTagId(text);
+                searching.setTagId ( text );
                 break;
 
             case "expert_id":
-                searching.setExpertId(text);
+                searching.setExpertId ( text );
                 break;
         }
     }
 
-    @Then("search all the expert by $by")
-    public void searchExpert(@Named("by") String by) {
+    @Then ( "search all the expert by $by" )
+    public void searchExpert ( @Named ( "by" ) String by ) {
 
-        info("Searching through " + by);
+        info ( "Searching through " + by );
 
-        switch (by.toLowerCase()) {
+        switch ( by.toLowerCase ( ) ) {
 
             case "freetext":
-                String searchText = searching.getSearchText();
+                String searchText = searching.getSearchText ( );
 
-                searching.search(searchText, Searching.SearchType.BY_TEXT);
+                searching.search ( searchText, Searching.SearchType.BY_TEXT );
 
-                this.checkAndWriteToReport(response.statusCode(), "Expert Related to text-> " + searchText + " has been loaded", isNegative);
+                this.checkAndWriteToReport ( response.statusCode ( ), "Expert Related to text-> " + searchText + " has been loaded", isNegative );
 
-                responseLogger.writeResponseAsLog("Search by FreeText");
+                responseLogger.writeResponseAsLog ( "Search by FreeText" );
                 break;
 
             case "tagid":
-                String tId = searching.getTagId();
+                String tId = searching.getTagId ( );
 
-                searching.search(tId, Searching.SearchType.BY_TAG);
+                searching.search ( tId, Searching.SearchType.BY_TAG );
 
-                this.checkAndWriteToReport(response.statusCode(), "Expert Related to tagID-> " + tId + " has been loaded", isNegative);
+                this.checkAndWriteToReport ( response.statusCode ( ), "Expert Related to tagID-> " + tId + " has been loaded", isNegative );
 
-                responseLogger.writeResponseAsLog("Search by TagId");
+                responseLogger.writeResponseAsLog ( "Search by TagId" );
                 break;
 
             case "expertid":
 
-                String eId = searching.getExpertId();
+                String eId = searching.getExpertId ( );
 
-                searching.search(eId, Searching.SearchType.BY_ID);
+                searching.search ( eId, Searching.SearchType.BY_ID );
 
-                this.checkAndWriteToReport(response.statusCode(), "Expert Related to ExpertId-> " + eId + " has been loaded", isNegative);
+                this.checkAndWriteToReport ( response.statusCode ( ), "Expert Related to ExpertId-> " + eId + " has been loaded", isNegative );
 
-                responseLogger.writeResponseAsLog("Search by ExpertId");
+                responseLogger.writeResponseAsLog ( "Search by ExpertId" );
                 break;
 
         }
 
     }
 
-    @Then("search expert by the newly created expert id")
-    public void searchByDynamicExpertID() {
+    @Then ( "search expert by the newly created expert id" )
+    public void searchByDynamicExpertID ( ) {
 
-        info("Dynamic Expert id Search");
+        info ( "Dynamic Expert id Search" );
 
-        String expertID = getMap ().get("expertProfileId");
+        String expertID = getMap ( ).get ( "expertProfileId" );
 
-        System.out.print ("The expert profile id is"+ expertID );
+        System.out.print ( "The expert profile id is" + expertID );
 
-        searching.search(expertID, Searching.SearchType.BY_ID);
+        searching.search ( expertID, Searching.SearchType.BY_ID );
 
-        if (searching.verifyExpertInResult(expertID)) {
+        if ( searching.verifyExpertInResult ( expertID ) ) {
 
-            this.AssertAndWriteToReport(true, "Newly created Expert found in the result");
+            this.AssertAndWriteToReport ( true, "Newly created Expert found in the result" );
         }
     }
 
 
-    @Then("wait for 5 mintues to update SOLR")
-    public void waitFor5mint() {
+    @Then ( "wait for 5 mintues to update SOLR" )
+    public void waitFor5mint ( ) {
 
-        info("wait for 5 mintues to update SOLR");
+        info ( "wait for 5 mintues to update SOLR" );
 
-        System.out.println("Waiting.....");
+        System.out.println ( "Waiting....." );
 
-        ExpertChatUtility.delay();
+        ExpertChatUtility.delay ( );
     }
 
     /**
      * Super Admin test cases
      */
 
-    @Then("create a super admin content as $json")
-    public void createSuperAdminContent(@Named("json") String json) {
+    @Then ( "create a super admin content as $json" )
+    public void createSuperAdminContent ( @Named ( "json" ) String json ) {
 
         info ( "Creating super admin content as--" + json );
 
@@ -1239,69 +1242,69 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     }
 
 
-    @Then("$action the content")
-    @Alias("$action the content again")
-    public void actionOnContent(@Named("action") String action) {
+    @Then ( "$action the content" )
+    @Alias ( "$action the content again" )
+    public void actionOnContent ( @Named ( "action" ) String action ) {
 
-        String cID = getMap().get("superAdminContentId");
-        switch (action.toLowerCase()) {
+        String cID = getMap ( ).get ( "superAdminContentId" );
+        switch ( action.toLowerCase ( ) ) {
 
             case "get":
-                info(action + " the super Admin content");
+                info ( action + " the super Admin content" );
 
-                superAdmin.getContent(cID);
+                superAdmin.getContent ( cID );
 
-                this.checkAndWriteToReport(response.statusCode(), "Content\t" + superAdmin.getContentId() + "listed", isNegative);
+                this.checkAndWriteToReport ( response.statusCode ( ), "Content\t" + superAdmin.getContentId ( ) + "listed", isNegative );
 
-                responseLogger.writeResponseAsLog("Super Admin Content");
+                responseLogger.writeResponseAsLog ( "Super Admin Content" );
                 break;
 
             case "get all":
-                info(action + " the super Admin content");
+                info ( action + " the super Admin content" );
 
-                superAdmin.getContent("");
+                superAdmin.getContent ( "" );
 
-                this.checkAndWriteToReport(response.statusCode(), "Content listed", isNegative);
+                this.checkAndWriteToReport ( response.statusCode ( ), "Content listed", isNegative );
 
-                responseLogger.writeResponseAsLog("Super Admin Content");
+                responseLogger.writeResponseAsLog ( "Super Admin Content" );
                 break;
 
             case "delete":
-                info(action + " the super Admin content");
+                info ( action + " the super Admin content" );
 
-                boolean isDelete = superAdmin.deleteContent(cID);
+                boolean isDelete = superAdmin.deleteContent ( cID );
 
-                if (isDelete) {
-                    this.AssertAndWriteToReport(isDelete, "Content with id\t" + superAdmin.getContentId() + " deleted");
+                if ( isDelete ) {
+                    this.AssertAndWriteToReport ( isDelete, "Content with id\t" + superAdmin.getContentId ( ) + " deleted" );
                 }
                 break;
 
             case "unhide":
-                info(action + " the super Admin content");
+                info ( action + " the super Admin content" );
 
-                boolean isUnhide = superAdmin.unhide(cID);
+                boolean isUnhide = superAdmin.unhide ( cID );
 
-                if (isUnhide) {
-                    this.AssertAndWriteToReport(isUnhide, "Content with id\t" + superAdmin.getContentId() + " get visible again");
+                if ( isUnhide ) {
+                    this.AssertAndWriteToReport ( isUnhide, "Content with id\t" + superAdmin.getContentId ( ) + " get visible again" );
                 }
                 break;
         }
     }
 
-    @Then("check the count of $content")
-    public void checkSuperAdminContentCount(@Named("content") String content) {
+    @Then ( "check the count of $content" )
+    public void checkSuperAdminContentCount ( @Named ( "content" ) String content ) {
 
-        info("checking the count of\t" + content);
+        info ( "checking the count of\t" + content );
 
-        superAdmin.getContent("");
+        superAdmin.getContent ( "" );
 
-        this.checkAndWriteToReport(response.statusCode(),
-                "count of content is--" + superAdmin.getCountOfContent(), isNegative);
+        this.checkAndWriteToReport ( response.statusCode ( ),
+                "count of content is--" + superAdmin.getCountOfContent ( ), isNegative );
     }
 
-    @Then("update the content as $json")
-    @When("update the content as $json")
-    public void updateContent(@Named("json") String json) {
+    @Then ( "update the content as $json" )
+    @When ( "update the content as $json" )
+    public void updateContent ( @Named ( "json" ) String json ) {
 
         info ( "updating the previously created content as--" + json );
 
@@ -1324,9 +1327,9 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
      * Payment account test cases
      */
 
-    @When("create a payment account as $json")
-    @Then("create a payment account as $json")
-    public void createAccount(@Named("json") String json) {
+    @When ( "create a payment account as $json" )
+    @Then ( "create a payment account as $json" )
+    public void createAccount ( @Named ( "json" ) String json ) {
 
         info ( "Creating payment account" );
 
@@ -1342,40 +1345,40 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         responseLogger.writeResponseAsLog ( "Payment Account" );
     }
 
-    @Then("get the account")
-    public void getAccount() {
+    @Then ( "get the account" )
+    public void getAccount ( ) {
 
-        info("listing the payment account created");
+        info ( "listing the payment account created" );
 
-        String accountId = account.getAccountId();
+        String accountId = account.getAccountId ( );
 
-        account.getAccount(accountId);
+        account.getAccount ( accountId );
 
-        this.checkAndWriteToReport(response.statusCode(), "Account listed", isNegative);
+        this.checkAndWriteToReport ( response.statusCode ( ), "Account listed", isNegative );
 
-        responseLogger.writeResponseAsLog("get Payment Account");
+        responseLogger.writeResponseAsLog ( "get Payment Account" );
     }
 
-    @Then("check profile completness")
-    public void checkProfileComplete() {
+    @Then ( "check profile completness" )
+    public void checkProfileComplete ( ) {
 
-        info("Checking profile completeness");
+        info ( "Checking profile completeness" );
 
-        profileComplete.checkProfileCompletemness();
+        profileComplete.checkProfileCompletemness ( );
 
-        boolean isComplete = profileComplete.isProfileComplete();
+        boolean isComplete = profileComplete.isProfileComplete ( );
 
-        if (isComplete) {
+        if ( isComplete ) {
 
-            this.AssertAndWriteToReport(isComplete, "Profile completed");
+            this.AssertAndWriteToReport ( isComplete, "Profile completed" );
 
-        } else if(!isComplete && isNegative){
+        } else if ( ! isComplete && isNegative ) {
 
-             negativeCases ();
+            negativeCases ( );
 
-        }else {
+        } else {
 
-            this.AssertAndWriteToReport(false, "Profile Not Completed");
+            this.AssertAndWriteToReport ( false, "Profile Not Completed" );
         }
     }
 
@@ -1383,80 +1386,80 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
      * GET STREAM API
      */
     /*********************************************************************/
-    @Then("get the feeds from get stream by $by")
-    public void getFeeds(@Named("by") String by) {
+    @Then ( "get the feeds from get stream by $by" )
+    public void getFeeds ( @Named ( "by" ) String by ) {
 
-        info("Listing feed from getStream via-->" + by);
-        String eProfileId = getMap().get("expertProfileId");
+        info ( "Listing feed from getStream via-->" + by );
+        String eProfileId = getMap ( ).get ( "expertProfileId" );
 
-        switch (by.toLowerCase()) {
+        switch ( by.toLowerCase ( ) ) {
 
             case "expertprofileid":
-                getStreamFeeds.getFeeds(eProfileId, GetStreamFeeds.By.BY_EXPERTPROFILE);
+                getStreamFeeds.getFeeds ( eProfileId, GetStreamFeeds.By.BY_EXPERTPROFILE );
 
-                responseLogger.writeResponseAsLog("GetStream feed listing by expert Profile id");
+                responseLogger.writeResponseAsLog ( "GetStream feed listing by expert Profile id" );
 
-                this.checkAndWriteToReport(response.statusCode(), "Feed listed", isNegative);
+                this.checkAndWriteToReport ( response.statusCode ( ), "Feed listed", isNegative );
                 break;
 
             case "expertid":
-                getStreamFeeds.getFeeds(getMap().get("baseId"), GetStreamFeeds.By.BY_EXPERTID);
+                getStreamFeeds.getFeeds ( getMap ( ).get ( "baseId" ), GetStreamFeeds.By.BY_EXPERTID );
 
-                this.checkAndWriteToReport(response.statusCode(), "Feed listed", isNegative);
+                this.checkAndWriteToReport ( response.statusCode ( ), "Feed listed", isNegative );
 
-                responseLogger.writeResponseAsLog("GetStream feed listing by expert ID");
+                responseLogger.writeResponseAsLog ( "GetStream feed listing by expert ID" );
                 break;
 
             default:
-                throw new ExpertChatException("No Suitable option found..");
+                throw new ExpertChatException ( "No Suitable option found.." );
         }
 
     }
 
-    @Then("get the feeds from get stream using tag $tag")
-    public void getFeedsByTag(@Named("tag") String tag) {
+    @Then ( "get the feeds from get stream using tag $tag" )
+    public void getFeedsByTag ( @Named ( "tag" ) String tag ) {
 
-        info("Getting feeds by tag--" + tag);
+        info ( "Getting feeds by tag--" + tag );
 
-        if (!isNegative) {
+        if ( ! isNegative ) {
 
-            getStreamFeeds.getFeeds(tag, GetStreamFeeds.By.BY_TAGID);
+            getStreamFeeds.getFeeds ( tag, GetStreamFeeds.By.BY_TAGID );
 
-            this.checkAndWriteToReport(response.statusCode(), "Feed listed", isNegative);
+            this.checkAndWriteToReport ( response.statusCode ( ), "Feed listed", isNegative );
 
-            responseLogger.writeResponseAsLog("GetStream feed listing by Tag ID--" + tag);
+            responseLogger.writeResponseAsLog ( "GetStream feed listing by Tag ID--" + tag );
         } else {
 
-            getStreamFeeds.getFeeds(tag, GetStreamFeeds.By.BY_TAGID);
+            getStreamFeeds.getFeeds ( tag, GetStreamFeeds.By.BY_TAGID );
 
-            this.checkAndWriteToReport(response.statusCode(), "Feed listed", isNegative);
+            this.checkAndWriteToReport ( response.statusCode ( ), "Feed listed", isNegative );
 
-            responseLogger.writeResponseAsLog("GetStream feed listing by Tag ID--" + tag);
+            responseLogger.writeResponseAsLog ( "GetStream feed listing by Tag ID--" + tag );
         }
     }
 
-    @Then("verify the tags")
-    @Alias("verify the tags again")
-    public void verify() {
+    @Then ( "verify the tags" )
+    @Alias ( "verify the tags again" )
+    public void verify ( ) {
 
-        info("Verifying the tags");
+        info ( "Verifying the tags" );
 
-        info("Super Admin tags..."+getMap().get("su-stringOfTags"));
+        info ( "Super Admin tags..." + getMap ( ).get ( "su-stringOfTags" ) );
 
-        info("get stream tags..."+getMap().get("gs-stringOfTags"));
+        info ( "get stream tags..." + getMap ( ).get ( "gs-stringOfTags" ) );
 
-        if (getMap().get("su-stringOfTags").equals( getMap().get("gs-stringOfTags"))) {
+        if ( getMap ( ).get ( "su-stringOfTags" ).equals ( getMap ( ).get ( "gs-stringOfTags" ) ) ) {
 
-            this.AssertAndWriteToReport(true, "tags are found same");
+            this.AssertAndWriteToReport ( true, "tags are found same" );
 
-        }else  if(!getMap().get("getStreamId").equals( getMap().get("superAdminContentId")) && isNegative){
+        } else if ( ! getMap ( ).get ( "getStreamId" ).equals ( getMap ( ).get ( "superAdminContentId" ) ) && isNegative ) {
 
-            this.AssertAndWriteToReport(true,"Negative Test Passed.Content id--"+
+            this.AssertAndWriteToReport ( true, "Negative Test Passed.Content id--" +
 
-                    getMap().get("superAdminContentId")+"\t not found while searching on getStream via tag API");
-        }else {
+                    getMap ( ).get ( "superAdminContentId" ) + "\t not found while searching on getStream via tag API" );
+        } else {
 
-            info("Something went wrong");
+            info ( "Something went wrong" );
         }
     }
 }

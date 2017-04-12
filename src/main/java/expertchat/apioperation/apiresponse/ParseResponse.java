@@ -8,169 +8,157 @@ import expertchat.util.ExpertChatException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ParseResponse  implements HTTPCode{
+public class ParseResponse implements HTTPCode {
 
     private ApiResponse response;
 
-    public ParseResponse(ApiResponse response){
+    public ParseResponse ( ApiResponse response ) {
 
-        this.response=response;
+        this.response = response;
     }
 
     /**
-     *
      * @param keys
      * @param type
      * @return
      */
 
-    public String getJsonData(String keys, ResponseDataType type) {
+    public String getJsonData ( String keys, ResponseDataType type ) {
 
-        if (response.statusCode() == HTTP_OK ||
-                response.statusCode() == HTTP_ACCEPTED||
-                    response.statusCode() == HTTP_BAD){
+        if ( response.statusCode ( ) == HTTP_OK ||
+                response.statusCode ( ) == HTTP_ACCEPTED ||
+                response.statusCode ( ) == HTTP_BAD ) {
 
-            switch (type.ordinal()) {
+            switch ( type.ordinal ( ) ) {
 
                 case 0:
-                    return response.getResponse().jsonPath().getString(keys);
+                    return response.getResponse ( ).jsonPath ( ).getString ( keys );
 
                 case 1:
-                    return String.valueOf(response.getResponse().jsonPath().getInt(keys));
+                    return String.valueOf ( response.getResponse ( ).jsonPath ( ).getInt ( keys ) );
 
                 case 2:
-                    return String.valueOf(response.getResponse().jsonPath().getDouble(keys));
+                    return String.valueOf ( response.getResponse ( ).jsonPath ( ).getDouble ( keys ) );
 
                 case 3:
-                    return String.valueOf(response.getResponse().jsonPath().getFloat(keys));
+                    return String.valueOf ( response.getResponse ( ).jsonPath ( ).getFloat ( keys ) );
 
                 case 4:
-                    return String.valueOf(response.getResponse().jsonPath().getChar(keys));
+                    return String.valueOf ( response.getResponse ( ).jsonPath ( ).getChar ( keys ) );
                 case 5:
-                    return String.valueOf(response.getResponse().jsonPath().getBoolean(keys));
+                    return String.valueOf ( response.getResponse ( ).jsonPath ( ).getBoolean ( keys ) );
             }
 
-        }else {
+        } else {
 
-            throw new ExpertChatException("Error has occurred->"+response.statusCode()
-            +"Response::-->"+response.getResponse().prettyPrint());
+            throw new ExpertChatException ( "Error has occurred->" + response.statusCode ( )
+                    + "Response::-->" + response.getResponse ( ).prettyPrint ( ) );
         }
 
         return null;
     }
 
     /**
-     *
      * @return
      */
-    public String printError(){
+    public String printError ( ) {
 
-        return this.getJsonData("errors", ResponseDataType.STRING);
+        return this.getJsonData ( "errors", ResponseDataType.STRING );
     }
 
     /**
-     *
      * @return
      */
-    public String printSuccess(){
+    public String printSuccess ( ) {
 
-        return (String) this.getJsonData("metadata.message", ResponseDataType.STRING);
+        return this.getJsonData ( "metadata.message", ResponseDataType.STRING );
     }
+
     /**
-     *
      * @param status
      * @return
      */
-    public String  validate(String status) {
+    public String validate ( String status ) {
 
-        if(status.contains("success")){
+        if ( status.contains ( "success" ) ) {
 
-            return this.getJsonData("metadata", ResponseDataType.STRING);
+            return this.getJsonData ( "metadata", ResponseDataType.STRING );
 
-        }else if(status.contains("fail")){
+        } else if ( status.contains ( "fail" ) ) {
 
-            return this.getJsonData("errors", ResponseDataType.STRING);
+            return this.getJsonData ( "errors", ResponseDataType.STRING );
 
-        }else{
-            return this.getJsonData("results", ResponseDataType.STRING);
+        } else {
+            return this.getJsonData ( "results", ResponseDataType.STRING );
         }
     }
 
     /**
      * @return void
      */
-    public void printResponseOnConsole(){
+    public void printResponseOnConsole ( ) {
 
-        response.getResponse().prettyPrint();
+        response.getResponse ( ).prettyPrint ( );
     }
 
-    public String [] writeResponseToLog(String apiName){
+    public String[] writeResponseToLog ( String apiName ) {
 
-       String [] responseAsString={
+        String[] responseAsString = {
 
-               apiName,response.getResponse().getBody().prettyPrint()};
+                apiName , response.getResponse ( ).getBody ( ).prettyPrint ( ) };
 
-       return responseAsString;
+        return responseAsString;
     }
 
     /**
-     *
      * @return HTTP status code
      */
-    public int serverStatusCode(){
+    public int serverStatusCode ( ) {
 
-        return response.getResponse().statusCode();
+        return response.getResponse ( ).statusCode ( );
     }
 
     /**
-     *
      * @return
      */
-    public String getVerificationCode(){
+    public String getVerificationCode ( ) {
 
-        return getJsonData("results.verification_code", ResponseDataType.STRING);
+        return getJsonData ( "results.verification_code", ResponseDataType.STRING );
     }
 
 
+    private List < String > getNonFieldError ( ) {
 
-    private  List<String> getNonFieldError(){
+        List < String > nonFieldError = new ArrayList <> ( );
 
-        List<String> nonFieldError=new ArrayList<>();
+        nonFieldError.add ( getJsonData ( "errors.non_field_errors[0].message", ResponseDataType.STRING ) );
 
-        nonFieldError.add(getJsonData("errors.non_field_errors[0].message",ResponseDataType.STRING));
-
-        nonFieldError.add(String.valueOf(getJsonData("errors.non_field_errors[0].code",ResponseDataType.INT)));
+        nonFieldError.add ( String.valueOf ( getJsonData ( "errors.non_field_errors[0].code", ResponseDataType.INT ) ) );
 
         return nonFieldError;
 
     }
 
-    public String getNonFieldErrorCode(){
+    public String getNonFieldErrorCode ( ) {
 
-        return getNonFieldError().get(1);
+        return getNonFieldError ( ).get ( 1 );
     }
 
-    public String getNonFieldErrorMessage(){
+    public String getNonFieldErrorMessage ( ) {
 
-        return getNonFieldError().get(0);
+        return getNonFieldError ( ).get ( 0 );
     }
 
-    public String getSuccessCode(){
+    public String getSuccessCode ( ) {
 
-        return this.getJsonData("metadata.code", ResponseDataType.INT);
+        return this.getJsonData ( "metadata.code", ResponseDataType.INT );
     }
 
 
-    public boolean getNotFoundError(){
+    public boolean getNotFoundError ( ) {
 
-        String error=getJsonData("errors.detail",ResponseDataType.STRING);
-        if(error.equals("Not found.")){
-
-            return true;
-        }else {
-
-            return false;
-        }
+        String error = getJsonData ( "errors.detail", ResponseDataType.STRING );
+        return error.equals ( "Not found." );
     }
 }
 

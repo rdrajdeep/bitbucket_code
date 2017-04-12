@@ -8,45 +8,44 @@ import expertchat.apioperation.apiresponse.ParseResponse;
 import expertchat.apioperation.apiresponse.ResponseDataType;
 import expertchat.apioperation.session.SessionManagement;
 
-public class Account extends AbstractApiFactory implements ExpertChatEndPoints{
-
-    ApiResponse response=ApiResponse.getObject();
-    ParseResponse pr=new ParseResponse(response);
-    SessionManagement session=SessionManagement.session();
+public class Account extends AbstractApiFactory implements ExpertChatEndPoints {
 
     private static String accountId;
+    ApiResponse response = ApiResponse.getObject ( );
+    ParseResponse pr = new ParseResponse ( response );
+    SessionManagement session = SessionManagement.session ( );
 
-    public  String getAccountId() {
+    public String getAccountId ( ) {
 
         return accountId;
     }
 
-    public  void setAccountId(String accountId) {
+    public void setAccountId ( String accountId ) {
 
         Account.accountId = accountId;
     }
 
-    public void createAccount(String json){
+    public void createAccount ( String json ) {
 
-        response.setResponse(
+        response.setResponse (
 
-                this.post(json,EXPERT_ACCOUNT,session.getToken())
+                this.post ( json, EXPERT_ACCOUNT, session.getToken ( ) )
         );
 
-        if(response.getResponse().statusCode()== HTTPCode.HTTP_OK ||
-                response.getResponse().statusCode()== HTTPCode.HTTP_ACCEPTED ) {
+        if ( response.getResponse ( ).statusCode ( ) == HTTPCode.HTTP_OK ||
+                response.getResponse ( ).statusCode ( ) == HTTPCode.HTTP_ACCEPTED ) {
 
-            this.setAccountId(pr.getJsonData("results.id", ResponseDataType.INT));
+            this.setAccountId ( pr.getJsonData ( "results.id", ResponseDataType.INT ) );
         }
 
-        response.printResponse();
+        response.printResponse ( );
     }
 
-    public void getAccount(String id){
+    public void getAccount ( String id ) {
 
-        response.setResponse(
-                this.get(EXPERT_ACCOUNT+id+"/", session.getToken())
+        response.setResponse (
+                this.get ( EXPERT_ACCOUNT + id + "/", session.getToken ( ) )
         );
-        response.printResponse();
+        response.printResponse ( );
     }
 }

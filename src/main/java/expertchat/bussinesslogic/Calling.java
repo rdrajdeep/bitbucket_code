@@ -7,10 +7,8 @@ import expertchat.apioperation.apiresponse.HTTPCode;
 import expertchat.apioperation.apiresponse.ParseResponse;
 import expertchat.apioperation.apiresponse.ResponseDataType;
 import expertchat.apioperation.session.SessionManagement;
-import expertchat.report.Report;
 import expertchat.util.ExpertChatException;
-import java.util.concurrent.Callable;
-import static expertchat.apioperation.ExpertChatEndPoints.SESSION;
+
 import static expertchat.usermap.TestUserMap.getMap;
 
 /**
@@ -19,150 +17,138 @@ import static expertchat.usermap.TestUserMap.getMap;
  */
 public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatEndPoints {
 
-    private ApiResponse response = ApiResponse.getObject();
+    private ApiResponse response = ApiResponse.getObject ( );
 
-    private ParseResponse parseResponse = new ParseResponse(response);
+    private ParseResponse parseResponse = new ParseResponse ( response );
 
-    private SessionManagement session = SessionManagement.session();
+    private SessionManagement session = SessionManagement.session ( );
 
     private String id;
 
-    public String getId() {
+    public String getId ( ) {
         return id;
     }
 
     /**
      *
      */
-    public String getStatusOfCall(String key) {
+    public String getStatusOfCall ( String key ) {
 
-        return parseResponse.getJsonData(key, ResponseDataType.INT);
+        return parseResponse.getJsonData ( key, ResponseDataType.INT );
     }
 
-    public void doCall(String scheduled_duration) {
+    public void doCall ( String scheduled_duration ) {
 
-        String expert_profile=getMap ().get ( "expertProfileId" );
-        String expert=getMap ().get ( "expertId" );
-        String user_device=getMap ().get ( "UserDevice" );
+        String expert_profile = getMap ( ).get ( "expertProfileId" );
+        String expert = getMap ( ).get ( "expertId" );
+        String user_device = getMap ( ).get ( "UserDevice" );
 
-        String json="{\n" +
-                "    \"expert_profile\":"+expert_profile+",\n" +
-                "    \"expert\": "+expert+",\n" +
-                "    \"user_device\": "+user_device+",\n" +
-                "    \"scheduled_duration\":"+scheduled_duration+"\n" +
+        String json = "{\n" +
+                "    \"expert_profile\":" + expert_profile + ",\n" +
+                "    \"expert\": " + expert + ",\n" +
+                "    \"user_device\": " + user_device + ",\n" +
+                "    \"scheduled_duration\":" + scheduled_duration + "\n" +
                 "}";
 
-        response.setResponse(
+        response.setResponse (
 
-                this.post(json, SESSION, session.getToken(),true)
+                this.post ( json, SESSION, session.getToken ( ), true )
         );
 
-        response.printResponse();
+        response.printResponse ( );
 
-        if (response.statusCode() == HTTP_ACCEPTED || response.statusCode() == HTTP_OK) {
+        if ( response.statusCode ( ) == HTTP_ACCEPTED || response.statusCode ( ) == HTTP_OK ) {
 
-            id = parseResponse.getJsonData("results.id", ResponseDataType.INT);
+            id = parseResponse.getJsonData ( "results.id", ResponseDataType.INT );
 
         } else {
 
-            throw new ExpertChatException("Server Error-(Calling.doCall):->" + response.statusCode());
+            throw new ExpertChatException ( "Server Error-(Calling.doCall):->" + response.statusCode ( ) );
         }
     }
 
-    public boolean isAcceptCall() {
+    public boolean isAcceptCall ( ) {
 
-        String url = SESSION+getId()+"/accept/";
+        String url = SESSION + getId ( ) + "/accept/";
 
-        String expert_device=getMap ().get ( "ExpertDevice" );
+        String expert_device = getMap ( ).get ( "ExpertDevice" );
 
-        String json="{\n" +
-                "    \"expert_device\":"+expert_device+"\n" +
+        String json = "{\n" +
+                "    \"expert_device\":" + expert_device + "\n" +
                 "}";
 
-        response.setResponse(
-                this.post(json, url, session.getToken(),true)
+        response.setResponse (
+                this.post ( json, url, session.getToken ( ), true )
         );
 
-        response.printResponse();
+        response.printResponse ( );
 
-        if (getStatusOfCall("results.status").equals(CallStatus.ACCEPTED)) {
-
-            return true;
-        }
-        return false;
+        return getStatusOfCall ( "results.status" ).equals ( CallStatus.ACCEPTED );
     }
 
-    public boolean isDissconnectCall() {
+    public boolean isDissconnectCall ( ) {
 
-        String url = SESSION+getId()+"/disconnect/";
-        System.out.println (url );
+        String url = SESSION + getId ( ) + "/disconnect/";
+        System.out.println ( url );
 
-        String json="{\"tokbox_session_length\":20}";
+        String json = "{\"tokbox_session_length\":20}";
 
-        response.setResponse(
+        response.setResponse (
 
-                this.delete(json, url, session.getToken(),true)
+                this.delete ( json, url, session.getToken ( ), true )
         );
 
-        System.out.println (response.statusCode () );
+        System.out.println ( response.statusCode ( ) );
 
-        response.printResponse();
+        response.printResponse ( );
 
-        if (getStatusOfCall("results.status").equals(CallStatus.COMPLETED)) {
+        if ( getStatusOfCall ( "results.status" ).equals ( CallStatus.COMPLETED ) ) {
 
-            System.out.println(getStatusOfCall("results.status"));
+            System.out.println ( getStatusOfCall ( "results.status" ) );
             return true;
         }
         return false;
 
     }
 
-    public boolean isDecline() {
+    public boolean isDecline ( ) {
 
-        String url = SESSION+ getId() + "/decline/";
+        String url = SESSION + getId ( ) + "/decline/";
 
-        response.setResponse(
-                this.delete("", url, session.getToken(),true)
+        response.setResponse (
+                this.delete ( "", url, session.getToken ( ), true )
         );
 
-        response.printResponse();
+        response.printResponse ( );
 
-        if (getStatusOfCall("results.status").equals(CallStatus.DECLINED)) {
-
-            return true;
-        }
-        return false;
+        return getStatusOfCall ( "results.status" ).equals ( CallStatus.DECLINED );
     }
 
-    public boolean isDelay() {
+    public boolean isDelay ( ) {
 
-        String url = SESSION+ getId() + "/delay/";
+        String url = SESSION + getId ( ) + "/delay/";
 
-        response.setResponse(
-                this.put("{\"delay_time\":1}", url, session.getToken(),true)
+        response.setResponse (
+                this.put ( "{\"delay_time\":1}", url, session.getToken ( ), true )
         );
 
-        response.printResponse();
+        response.printResponse ( );
 
-        if (getStatusOfCall("results.status").equals(CallStatus.DELAYED)) {
-
-            return true;
-        }
-        return false;
+        return getStatusOfCall ( "results.status" ).equals ( CallStatus.DELAYED );
     }
 
     public void registerDevice ( String json, boolean isExpert ) {
 
         response.setResponse (
 
-                this.post ( json, REGISTER_DEVICE, session.getToken (), true));
+                this.post ( json, REGISTER_DEVICE, session.getToken ( ), true ) );
 
-        if(isExpert){
+        if ( isExpert ) {
 
-            getMap().put("ExpertDevice", parseResponse.getJsonData ( "results.id", ResponseDataType.INT ));
-        }else {
+            getMap ( ).put ( "ExpertDevice", parseResponse.getJsonData ( "results.id", ResponseDataType.INT ) );
+        } else {
 
-            getMap().put("UserDevice", parseResponse.getJsonData ( "results.id", ResponseDataType.INT ));
+            getMap ( ).put ( "UserDevice", parseResponse.getJsonData ( "results.id", ResponseDataType.INT ) );
         }
     }
 }

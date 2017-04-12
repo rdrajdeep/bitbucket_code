@@ -1,11 +1,328 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/FileUpload.java" line="98" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/FileUpload.java" line="96" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8693fbd6-8234-4202-ac15-ee04ea59d911" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backUp/Updated/0_BasicFlow.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backUp/Updated/10_Searching.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backUp/Updated/11_GetStreamAPI.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backUp/Updated/12_SuperAdmin.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backUp/Updated/2_BasicProfileLoad.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backUp/Updated/3_ExpertProfile.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backUp/Updated/4_SocialLinks.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backUp/Updated/5_Calling.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backUp/Updated/6_PhoneVerification.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backUp/Updated/7_user_APIs.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backUp/Updated/8_paymentInfo.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backUp/Updated/9_profilestatus.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Not for CI/10_Searching.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Not for CI/11_GetStreamAPI.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Not for CI/12_SuperAdmin.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Not for CI/2_BasicProfileLoad.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Not for CI/3_ExpertProfile.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Not for CI/4_SocialLinks.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Not for CI/5_Calling.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Not for CI/6_PhoneVerification.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Not for CI/7_user_APIs.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Not for CI/8_paymentInfo.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Not for CI/9_profilestatus.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/Story/0_SocialLinks.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/storyDurations.props" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/bootstrap/css/bootstrap-responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/bootstrap/css/bootstrap-responsive.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/bootstrap/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/bootstrap/img/glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/bootstrap/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/css/core.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/css/link.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/css/screen.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/datatables/media/images/Sorting icons.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/datatables/media/images/back_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/datatables/media/images/back_enabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/datatables/media/images/back_enabled_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/datatables/media/images/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/datatables/media/images/forward_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/datatables/media/images/forward_enabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/datatables/media/images/forward_enabled_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/datatables/media/images/sort_asc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/datatables/media/images/sort_asc_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/datatables/media/images/sort_both.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/datatables/media/images/sort_desc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/datatables/media/images/sort_desc_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/datatables/media/js/jquery.dataTables.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/datatables/media/js/jquery.dataTables.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/datatables/media/js/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/e80c4bcbea918c98d83fd147b31b14d8c683ef683a79dfefb1ab425ad40104e1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/e80c4bcbea918c98d83fd147b31b14d8c683ef683a79dfefb1ab425ad40104e1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/css/font-awesome-ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/css/font-awesome-ie7.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/font/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/font/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/font/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/font/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/font/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/less/bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/less/core.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/less/extras.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/less/font-awesome-ie7.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/less/font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/less/icons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/less/path.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/scss/_bootstrap.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/scss/_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/scss/_extras.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/scss/_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/scss/_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/scss/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/scss/font-awesome-ie7.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/font-awesome/scss/font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/bg_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/bg_04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/bottomm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/cross.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/fail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/greenline.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/ico-q.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/icon-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/ignor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/links_menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/menu_f.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/menu_h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/menu_s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/middle-left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/middle-right.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/middle.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/minus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/pending.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/plus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/screen.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/skip.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/small-middle-left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/small-middle-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/small-middle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/success.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/tablebg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/tick.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/top-left.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/top-right.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/top.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/topm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/traffic-green.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/traffic-in-progress.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/traffic-orange.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/traffic-red.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/traffic-yellow.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/video.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/images/worker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/Extras/excanvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/AreaChart.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/BarChart.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/ForceDirected.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/ForceDirected3D.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/HeatMap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/Hypertree.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/Icicle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/Other.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/PieChart.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/RGraph.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/Spacetree.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/Sunburst.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/TimeGraph.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/Treemap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/col1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/col2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/css/gradient.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/jit-yc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jit/jit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/excanvas.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/jquery.jqplot.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/jquery.jqplot.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.BezierCurveRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.BezierCurveRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.barRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.barRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.blockRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.blockRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.bubbleRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.bubbleRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.canvasAxisLabelRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.canvasAxisLabelRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.canvasAxisTickRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.canvasAxisTickRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.canvasOverlay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.canvasOverlay.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.canvasTextRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.canvasTextRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.categoryAxisRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.categoryAxisRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.ciParser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.ciParser.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.cursor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.cursor.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.dateAxisRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.dateAxisRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.donutRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.donutRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.dragable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.dragable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.enhancedLegendRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.enhancedLegendRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.funnelRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.funnelRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.highlighter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.highlighter.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.json2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.json2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.logAxisRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.logAxisRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.mekkoAxisRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.mekkoAxisRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.mekkoRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.mekkoRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.meterGaugeRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.meterGaugeRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.ohlcRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.ohlcRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.pieRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.pieRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.pointLabels.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.pointLabels.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.pyramidAxisRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.pyramidAxisRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.pyramidGridRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.pyramidGridRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.pyramidRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.pyramidRenderer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.trendline.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqplot/plugins/jqplot.trendline.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqtree/jqtree-circle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqtree/jqtree.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqtree/tree.jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/css/start/images/ui-bg_flat_55_999999_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/css/start/images/ui-bg_flat_75_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/css/start/images/ui-bg_glass_45_0078ae_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/css/start/images/ui-bg_glass_55_f8da4e_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/css/start/images/ui-bg_glass_75_79c9ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/css/start/images/ui-bg_gloss-wave_45_e14f1c_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/css/start/images/ui-bg_gloss-wave_50_6eac2c_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/css/start/images/ui-bg_gloss-wave_75_2191c0_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/css/start/images/ui-bg_inset-hard_100_fcfdfd_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/css/start/images/ui-icons_0078ae_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/css/start/images/ui-icons_056b93_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/css/start/images/ui-icons_d8e7f3_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/css/start/images/ui-icons_e0fdff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/css/start/images/ui-icons_f5e175_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/css/start/images/ui-icons_f7a50d_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/css/start/images/ui-icons_fcd113_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/css/start/jquery-ui-1.8.18.custom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/js/jquery-1.7.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/jqueryui/js/jquery-ui-1.8.18.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/nivo-slider/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/nivo-slider/jquery.nivo.slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/nivo-slider/jquery.nivo.slider.pack.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/nivo-slider/license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/nivo-slider/nivo-slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/nivo-slider/themes/default/arrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/nivo-slider/themes/default/bullets.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/nivo-slider/themes/default/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/nivo-slider/themes/default/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/nivo-slider/themes/default/roundarrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/scripts/dygraph-combined.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/scripts/excanvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/scripts/imgpreview.full.jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/thucydides/scripts/jquery.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ExpertChat.Properties" afterPath="$PROJECT_DIR$/ExpertChat.Properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-11/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-11/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-13/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-13/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-15/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-15/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-16/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-16/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-20/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-20/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-21/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-21/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-28/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-28/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-31/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-31/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-38/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-38/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-4/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-4/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-40/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-40/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-44/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-44/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-45/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-45/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-47/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-47/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-48/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-48/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-51/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-51/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-53/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-53/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-56/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-56/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-7/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-7/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/11-4-2017-8/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/11-4-2017-8/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/30-3-2017-12/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/30-3-2017-12/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/30-3-2017-16/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/30-3-2017-16/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/30-3-2017-18/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/30-3-2017-18/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/30-3-2017-3/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/30-3-2017-3/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/30-3-2017-41/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/30-3-2017-41/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/30-3-2017-46/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/30-3-2017-46/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/31-3-2017-0/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/31-3-2017-0/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/31-3-2017-26/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/31-3-2017-26/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/31-3-2017-30/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/31-3-2017-30/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/31-3-2017-5/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/31-3-2017-5/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Log/31-3-2017-59/ResponseLog.json" afterPath="$PROJECT_DIR$/Log/31-3-2017-59/ResponseLog.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/AbstractApiFactory.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/AbstractApiFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/ApiFactories.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/ApiFactories.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/ExpertChatEndPoints.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/ExpertChatEndPoints.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/apiresponse/ApiResponse.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/apiresponse/ApiResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/apiresponse/HTTPCode.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/apiresponse/HTTPCode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/apiresponse/ParseResponse.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/apiresponse/ParseResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/httpspecs/Specification.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/httpspecs/Specification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/session/SessionManagement.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/session/SessionManagement.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bdd/AbstractSteps.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bdd/AbstractSteps.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bdd/testTC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bdd/testTC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Account.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Account.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/BasicProfile.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/BasicProfile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/CallStatus.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/CallStatus.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calling.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calling.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/EmailVerification.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/EmailVerification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertChatApi.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertChatApi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertProfile.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertProfile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/FileUpload.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/FileUpload.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/GetStreamFeeds.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/GetStreamFeeds.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/PhoneVerification.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/PhoneVerification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ProfileComplete.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ProfileComplete.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Searching.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Searching.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SocialLinks.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SocialLinks.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SuperAdmin.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SuperAdmin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/driver/AppRunner.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/driver/AppRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/driver/StoryConfig.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/driver/StoryConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/report/Report.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/report/Report.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/usermap/TestUserMap.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/usermap/TestUserMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/util/Email.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/util/Email.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/util/ExpertChatException.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/util/ExpertChatException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/util/ExpertChatUtility.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/util/ExpertChatUtility.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/util/JsonBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/util/JsonBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/util/OpenBrowser.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/util/OpenBrowser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/util/ResponseLogger.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/util/ResponseLogger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Story/0_BasicFlow.story" afterPath="$PROJECT_DIR$/src/main/resources/Story/0_BasicFlow.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Story/2_BasicProfileLoad.story" afterPath="$PROJECT_DIR$/src/main/resources/Story/2_BasicProfileLoad.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Story/5_Calling.story" afterPath="$PROJECT_DIR$/src/main/resources/Story/5_Calling.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story" afterPath="$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Story/9_profilestatus.story" afterPath="$PROJECT_DIR$/src/main/resources/Story/9_profilestatus.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Story/0_BasicFlow.story" afterPath="$PROJECT_DIR$/target/classes/Story/0_BasicFlow.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Story/5_Calling.story" afterPath="$PROJECT_DIR$/target/classes/Story/5_Calling.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,101 +347,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ExpertChat.Properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ExpertChat.Properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="4_SocialLinks.story" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Story/4_SocialLinks.story">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-242">
-              <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="5_Calling.story" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/Story/5_Calling.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+            <state relative-caret-position="1100">
+              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="6_PhoneVerification.story" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Story/6_PhoneVerification.story">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="7_user_APIs.story" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1481">
-              <caret line="16" column="73" lean-forward="false" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="8_paymentInfo.story" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Story/8_paymentInfo.story">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="9_profilestatus.story" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Story/9_profilestatus.story">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2_BasicProfileLoad.story" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Story/2_BasicProfileLoad.story">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="E2ETestCase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="1067" column="9" lean-forward="true" selection-start-line="1067" selection-start-column="9" selection-end-line="1067" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="0_BasicFlow.story" pinned="false" current-in-tab="false">
+      <file leaf-file-name="0_BasicFlow.story" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/Story/0_BasicFlow.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="34" column="44" lean-forward="false" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+            <state relative-caret-position="900">
+              <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -161,6 +398,9 @@
       <find>The expert</find>
       <find>call</find>
       <find>Negative</find>
+      <find>rs_9_1680339_16</find>
+      <find>true</find>
+      <find>Error has occurred</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -178,9 +418,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/Story/getStreamAPI.story" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/By.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/Story/GetStreamAPI.story" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/apioperation/apiresponse/ApiResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/apioperation/apiresponse/ParseResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/apioperation/httpspecs/Specification.java" />
@@ -198,17 +435,13 @@
         <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/PhoneVerification.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/7_UserMedia.story" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/report/Report.java" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/BasicProfile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SocialLinks.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/11_GetStreamAPI.story" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/8_paymentInfo.story" />
-        <option value="$PROJECT_DIR$/src/main/resources/Story/3_ExpertProfile.story" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/0_SuperAdmin.story" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/1_BasicFlow.story" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/FileUpload.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/10_Searching.story" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Searching.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/12_SuperAdmin.story" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/driver/StoryConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/driver/AppRunner.java" />
@@ -218,17 +451,24 @@
         <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/EmailVerification.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertChatApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/apioperation/ExpertChatEndPoints.java" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertProfile.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calling.java" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/apioperation/AbstractApiFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/Story/0_BasicFlow.story" />
-        <option value="$PROJECT_DIR$/src/main/resources/Story/4_SocialLinks.story" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/6_PhoneVerification.story" />
-        <option value="$PROJECT_DIR$/src/main/resources/Story/9_profilestatus.story" />
-        <option value="$PROJECT_DIR$/src/main/resources/Story/2_BasicProfileLoad.story" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertProfile.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Story/testStory.story" />
+        <option value="$PROJECT_DIR$/src/main/resources/Story/0_SocialLinks.story" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SocialLinks.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Story/4_SocialLinks.story" />
+        <option value="$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/5_Calling.story" />
         <option value="$PROJECT_DIR$/ExpertChat.Properties" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/apioperation/AbstractApiFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Story/9_profilestatus.story" />
+        <option value="$PROJECT_DIR$/src/main/resources/Story/0_BasicFlow.story" />
+        <option value="$PROJECT_DIR$/backUp/10_Searching.story" />
+        <option value="$PROJECT_DIR$/src/main/resources/Story/2_BasicProfileLoad.story" />
+        <option value="$PROJECT_DIR$/src/main/resources/Story/3_ExpertProfile.story" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/BasicProfile.java" />
       </list>
     </option>
   </component>
@@ -291,8 +531,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -315,7 +555,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -329,7 +569,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ec_testing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ec_testing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -355,10 +609,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -377,10 +627,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -400,40 +646,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ec_testing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expertchat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="report" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ec_testing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ec_testing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -463,10 +675,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -493,97 +701,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expertchat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apioperation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ec_testing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ec_testing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expertchat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apioperation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="httpspecs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ec_testing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ec_testing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expertchat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apioperation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apiresponse" />
+              <option name="myItemId" value="backUp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -606,7 +730,7 @@
       <recent name="D:\Expertchat_Test_Automation\src\main\java\expertchat\apioperation\apiresponse" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AppRunner">
+  <component name="RunManager" selected="JUnit.All in Expertchat_Test_Automation">
     <configuration default="false" name="AppRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -653,46 +777,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="test1111" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="expertchat.bussinesslogic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="expertchat.bussinesslogic.test1111" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Expertchat_Test_Automation" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="FileUpload" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="expertchat.bussinesslogic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="expertchat.bussinesslogic.FileUpload" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Expertchat_Test_Automation" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="TimesAgo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -711,6 +795,53 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="Expertchat_Test_Automation" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in Expertchat_Test_Automation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Expertchat_Test_Automation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Story in Expertchat_Test_Automation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Story.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Expertchat_Test_Automation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Story" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -916,17 +1047,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.AppRunner" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.StoryConfig" />
-      <item index="2" class="java.lang.String" itemvalue="Application.test1111" />
-      <item index="3" class="java.lang.String" itemvalue="Application.FileUpload" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TimesAgo" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TimesAgo" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.All in Expertchat_Test_Automation" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Story in Expertchat_Test_Automation" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.AppRunner" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TimesAgo" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in Expertchat_Test_Automation" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Story in Expertchat_Test_Automation" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.StoryConfig" />
-        <item index="3" class="java.lang.String" itemvalue="Application.FileUpload" />
-        <item index="4" class="java.lang.String" itemvalue="Application.test1111" />
+        <item index="3" class="java.lang.String" itemvalue="Application.AppRunner" />
+        <item index="4" class="java.lang.String" itemvalue="Application.TimesAgo" />
       </list>
     </recent_temporary>
   </component>
@@ -1016,35 +1147,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StoryConfig - 2017.03.30 at 19h 11m 37s.xml">
+    <history-entry file="All_in_Expertchat_Test_Automation - 2017.04.12 at 16h 20m 48s.xml">
+      <configuration name="All in Expertchat_Test_Automation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Expertchat_Test_Automation - 2017.04.12 at 16h 36m 23s.xml">
+      <configuration name="All in Expertchat_Test_Automation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StoryConfig - 2017.04.12 at 15h 55m 49s.xml">
       <configuration name="StoryConfig" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoryConfig - 2017.03.30 at 19h 21m 30s.xml">
+    <history-entry file="StoryConfig - 2017.04.12 at 16h 01m 22s.xml">
       <configuration name="StoryConfig" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoryConfig - 2017.03.30 at 19h 23m 08s.xml">
+    <history-entry file="StoryConfig - 2017.04.12 at 16h 04m 19s.xml">
       <configuration name="StoryConfig" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoryConfig - 2017.03.30 at 19h 32m 41s.xml">
+    <history-entry file="StoryConfig - 2017.04.12 at 16h 06m 55s.xml">
       <configuration name="StoryConfig" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoryConfig - 2017.03.30 at 19h 36m 41s.xml">
+    <history-entry file="StoryConfig - 2017.04.12 at 16h 14m 28s.xml">
       <configuration name="StoryConfig" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoryConfig - 2017.03.31 at 11h 27m 46s.xml">
+    <history-entry file="StoryConfig - 2017.04.12 at 16h 18m 25s.xml">
       <configuration name="StoryConfig" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoryConfig - 2017.03.31 at 11h 40m 41s.xml">
-      <configuration name="StoryConfig" configurationId="JUnit" />
+    <history-entry file="Story_in_Expertchat_Test_Automation - 2017.04.12 at 16h 24m 35s.xml">
+      <configuration name="Story in Expertchat_Test_Automation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoryConfig - 2017.03.31 at 11h 52m 53s.xml">
-      <configuration name="StoryConfig" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StoryConfig - 2017.03.31 at 12h 04m 30s.xml">
-      <configuration name="StoryConfig" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StoryConfig - 2017.03.31 at 12h 23m 52s.xml">
-      <configuration name="StoryConfig" configurationId="JUnit" />
+    <history-entry file="Story_in_Expertchat_Test_Automation - 2017.04.12 at 16h 34m 19s.xml">
+      <configuration name="Story in Expertchat_Test_Automation" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -1061,23 +1192,24 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13747954" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44844517" sideWeight="0.5060514" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47790506" sideWeight="0.4969743" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7594108" sideWeight="0.49394855" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.84288055" sideWeight="0.49394855" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9394435" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25718608" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22692889" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7283142" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9148936" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1110,7 +1242,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="54" />
+      <option name="time" value="57" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1119,35 +1251,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/thucydides.properties" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/util/ExpertChatUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-181">
-          <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/jre/lib/rt.jar!/javax/activation/FileDataSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.4/mail-1.4.jar!/javax/mail/Transport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="28" column="23" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/util/ExpertChatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/src.zip!/java/lang/RuntimeException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -1190,13 +1293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/BasicProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="71" column="33" lean-forward="true" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/PhoneVerification.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
@@ -1208,13 +1304,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/GetStreamFeeds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-415">
-          <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1234,13 +1323,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/12_SuperAdmin.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-692">
-          <caret line="32" column="61" lean-forward="false" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/12_SuperAdmin.story" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/Story/10_Searching.story" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -1261,13 +1344,6 @@
         <state relative-caret-position="1050">
           <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SocialLinks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="272" column="0" lean-forward="true" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1294,51 +1370,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/driver/StoryConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2025">
-          <caret line="128" column="11" lean-forward="true" selection-start-line="128" selection-start-column="11" selection-end-line="128" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertChatApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="214" column="5" lean-forward="false" selection-start-line="214" selection-start-column="5" selection-end-line="214" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/3_ExpertProfile.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/apioperation/ExpertChatEndPoints.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Not for CI/3_ExpertProfile.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Not for CI/3_ExpertProfile.story" />
     <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/CallStatus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1346,31 +1389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/apioperation/apiresponse/ParseResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-631">
-          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="90" column="54" lean-forward="false" selection-start-line="90" selection-start-column="54" selection-end-line="90" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/apioperation/AbstractApiFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="142" column="31" lean-forward="false" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1378,7 +1396,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="103" column="24" lean-forward="false" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1386,86 +1403,181 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="719">
           <caret line="77" column="16" lean-forward="false" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/apioperation/ExpertChatEndPoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/8_paymentInfo.story" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/driver/StoryConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2500">
+          <caret line="126" column="7" lean-forward="false" selection-start-line="126" selection-start-column="7" selection-end-line="126" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/0_BasicFlow.story">
+    <entry file="file://$PROJECT_DIR$/target/classes/Story/0_BasicFlow.story" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jbehave/jbehave-core/4.0.5/jbehave-core-4.0.5.jar!/org/jbehave/core/junit/JUnitStories.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="34" column="44" lean-forward="false" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+        <state relative-caret-position="325">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/apioperation/apiresponse/ParseResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/testStory.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="1067" column="9" lean-forward="true" selection-start-line="1067" selection-start-column="9" selection-end-line="1067" selection-end-column="9" />
+        <state relative-caret-position="344">
+          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/6_PhoneVerification.story">
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SocialLinks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="275">
+          <caret line="182" column="5" lean-forward="false" selection-start-line="182" selection-start-column="5" selection-end-line="182" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/0_SocialLinks.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1481">
-          <caret line="16" column="73" lean-forward="false" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/8_paymentInfo.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/9_profilestatus.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/2_BasicProfileLoad.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        <state relative-caret-position="333">
+          <caret line="52" column="29" lean-forward="true" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Story/4_SocialLinks.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+        <state relative-caret-position="300">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/5_Calling.story">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        <state relative-caret-position="183">
+          <caret line="55" column="49" lean-forward="false" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ExpertChat.Properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="22" column="31" lean-forward="false" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        <state relative-caret-position="325">
+          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/apioperation/AbstractApiFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/GetStreamFeeds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/6_PhoneVerification.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/2_BasicProfileLoad.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="19" column="77" lean-forward="false" selection-start-line="19" selection-start-column="77" selection-end-line="19" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backUp/10_Searching.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/3_ExpertProfile.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/9_profilestatus.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/BasicProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-650">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="475" column="0" lean-forward="true" selection-start-line="475" selection-start-column="0" selection-end-line="475" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/5_Calling.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/0_BasicFlow.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
           <folding />
         </state>
       </provider>

@@ -8,9 +8,9 @@ public class AppRunner {
 
     /*My superhero class*/
     /*It is JUnit runner inside main class*/
-    public static void main(String args[]){
+    public static void main ( String args[] ) {
 
-        JUnitCore.runClasses(StoryConfig.class);
+        JUnitCore.runClasses ( StoryConfig.class );
 
     }
 

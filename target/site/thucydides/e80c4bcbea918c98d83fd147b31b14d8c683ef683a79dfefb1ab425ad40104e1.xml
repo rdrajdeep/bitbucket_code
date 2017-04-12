@@ -1,6 +1,0 @@
-<acceptance-test-run title="Run" name="run" steps="0" successful="0" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="179262" timestamp="2017-03-28T18:27:32.969+05:30">
-  <user-story id="expertchat.driver.StoryConfig" name="Story config" path="expertchat.driver"/>
-  <tags>
-    <tag name="Story config" type="story"/>
-  </tags>
-</acceptance-test-run>

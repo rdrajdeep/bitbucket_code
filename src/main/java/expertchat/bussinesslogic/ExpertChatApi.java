@@ -15,202 +15,194 @@ import expertchat.util.ExpertChatUtility;
 import static expertchat.usermap.TestUserMap.getMap;
 
 
-public class ExpertChatApi extends AbstractApiFactory implements ExpertChatEndPoints{
+public class ExpertChatApi extends AbstractApiFactory implements ExpertChatEndPoints {
 
-    private  ApiResponse response=ApiResponse.getObject();
-
-    private ParseResponse jsonParser=new ParseResponse(response);
-
+    public static boolean REGISTRATION_ERROR = false;
+    public static boolean LOGIN_ERROR = false;
+    private ApiResponse response = ApiResponse.getObject ( );
+    private ParseResponse jsonParser = new ParseResponse ( response );
     private String baseID;
 
-    public static boolean  REGISTRATION_ERROR=false;
-
-    public static boolean  LOGIN_ERROR=false;
-
     /**
-     *
      * @param json
      */
-    public void doRegistration(String json, boolean isExpert){
+    public void doRegistration ( String json, boolean isExpert ) {
 
-        System.out.println("REGISTRATION");
+        System.out.println ( "REGISTRATION" );
 
-        if(isExpert) {
-            response.setResponse(
-                    this.post(json, ExpertChatEndPoints.REGISTER)
+        if ( isExpert ) {
+            response.setResponse (
+                    this.post ( json, ExpertChatEndPoints.REGISTER )
             );
-        }else {
+        } else {
 
-            response.setResponse(
-                    this.post(json, ExpertChatEndPoints.REGISTER_USER)
+            response.setResponse (
+                    this.post ( json, ExpertChatEndPoints.REGISTER_USER )
             );
 
         }
 
-        if(response.statusCode()==HTTPCode.HTTP_BAD){
+        if ( response.statusCode ( ) == HTTPCode.HTTP_BAD ) {
 
-            REGISTRATION_ERROR=true;
+            REGISTRATION_ERROR = true;
             return;
         }
 
-        EmailVerification.setVerificationEndPoint(jsonParser.getVerificationCode());
+        EmailVerification.setVerificationEndPoint ( jsonParser.getVerificationCode ( ) );
 
-        response.printResponse();
+        response.printResponse ( );
     }
 
     /**
-     *
      * @param json
      */
 
-    public void doLogIn(String json, boolean isExpert){
+    public void doLogIn ( String json, boolean isExpert ) {
 
-        System.out.println("LOGIN");
+        System.out.println ( "LOGIN" );
 
-        if(isExpert) {
+        if ( isExpert ) {
 
-            response.setResponse(this.post(json, ExpertChatEndPoints.LOGIN));
+            response.setResponse ( this.post ( json, ExpertChatEndPoints.LOGIN ) );
 
-        }else {
+        } else {
 
-            response.setResponse(this.post(json, ExpertChatEndPoints.LOGIN_USER));
+            response.setResponse ( this.post ( json, ExpertChatEndPoints.LOGIN_USER ) );
         }
 
-        if(response.statusCode()==HTTPCode.HTTP_BAD){
+        if ( response.statusCode ( ) == HTTPCode.HTTP_BAD ) {
 
-            LOGIN_ERROR=true;
+            LOGIN_ERROR = true;
             return;
         }
-        response.printResponse();
+        response.printResponse ( );
 
-        SessionManagement.session().setToken(
-                jsonParser.getJsonData("results.token", ResponseDataType.STRING)
+        SessionManagement.session ( ).setToken (
+                jsonParser.getJsonData ( "results.token", ResponseDataType.STRING )
         );
 
-        baseID=jsonParser.getJsonData("results.id", ResponseDataType.INT);
-        getMap().put("baseId", getBaseID());
+        baseID = jsonParser.getJsonData ( "results.id", ResponseDataType.INT );
+        getMap ( ).put ( "baseId", getBaseID ( ) );
     }
 
-    public String getBaseID(){
+    public String getBaseID ( ) {
 
         return baseID;
     }
 
-    public void verifyUser(){
+    public void verifyUser ( ) {
 
-        System.out.println("VERIFY USER");
-        response.setResponse(
-                this.get(EmailVerification.getVerificationEndPoint())
+        System.out.println ( "VERIFY USER" );
+        response.setResponse (
+                this.get ( EmailVerification.getVerificationEndPoint ( ) )
         );
 
-        response.printResponse();
+        response.printResponse ( );
     }
 
     /**
-     *
      * @param password
      * @param user
      */
-    public void changePassword(String password, String user, boolean isExpert) {
+    public void changePassword ( String password, String user, boolean isExpert ) {
 
-        System.out.println("CHANGE PASSWORD");
-        String json="{\"current_password\":\"jyoti1032\",  \"new_password\":\"1032kishor\"}";
+        System.out.println ( "CHANGE PASSWORD" );
+        String json = "{\"current_password\":\"jyoti1032\",  \"new_password\":\"1032kishor\"}";
 
-        JsonObject jsonObject=(JsonObject)new JsonParser().parse(json);
-        jsonObject.remove("current_password");
-        jsonObject.addProperty("current_password",TestUserMap.getPasswordOf(user));
-        jsonObject.remove("new_password");
-        jsonObject.addProperty("new_password",password);
+        JsonObject jsonObject = ( JsonObject ) new JsonParser ( ).parse ( json );
+        jsonObject.remove ( "current_password" );
+        jsonObject.addProperty ( "current_password", TestUserMap.getPasswordOf ( user ) );
+        jsonObject.remove ( "new_password" );
+        jsonObject.addProperty ( "new_password", password );
 
-        if(isExpert) {
+        if ( isExpert ) {
             response.setResponse (
                     this.post ( jsonObject.toString ( ), CHANGE_PASSWORD, SessionManagement.session ( ).getToken ( ) )
             );
-        }else {
+        } else {
             response.setResponse (
                     this.post ( jsonObject.toString ( ), U_CHANGE_PASSWORD, SessionManagement.session ( ).getToken ( ) )
             );
 
         }
 
-        response.printResponse();
+        response.printResponse ( );
 
-        if(response.statusCode()== HTTPCode.HTTP_OK ||
-                response.statusCode()==HTTPCode.HTTP_ACCEPTED) {
+        if ( response.statusCode ( ) == HTTPCode.HTTP_OK ||
+                response.statusCode ( ) == HTTPCode.HTTP_ACCEPTED ) {
 
-            String updateTestData = TestUserMap.getUserCredentialsByKey(user);
-            JsonObject userData = (JsonObject) new JsonParser().parse(updateTestData);
-            jsonObject.remove("password");
-            jsonObject.addProperty("password", password);
-            TestUserMap.setTestData(user, userData.toString());
+            String updateTestData = TestUserMap.getUserCredentialsByKey ( user );
+            JsonObject userData = ( JsonObject ) new JsonParser ( ).parse ( updateTestData );
+            jsonObject.remove ( "password" );
+            jsonObject.addProperty ( "password", password );
+            TestUserMap.setTestData ( user, userData.toString ( ) );
         }
 
     }
 
     /**
-     *
      * @param password
      */
-    public void resetPassword(String password , String user, boolean isExpert) {
+    public void resetPassword ( String password, String user, boolean isExpert ) {
 
-        System.out.println("RESTING PASSWORD..");
-        String json="{\"email\": \""+TestUserMap.getEmailOf(user)+"\"}";
-        JsonObject jsonObject=(JsonObject)new JsonParser().parse(json);
+        System.out.println ( "RESTING PASSWORD.." );
+        String json = "{\"email\": \"" + TestUserMap.getEmailOf ( user ) + "\"}";
+        JsonObject jsonObject = ( JsonObject ) new JsonParser ( ).parse ( json );
 
-        if(isExpert) {
+        if ( isExpert ) {
             response.setResponse (
-                    this.post ( jsonObject.toString ( ), ExpertChatUtility.getValue("qa")+"expert/password/reset/" )
+                    this.post ( jsonObject.toString ( ), ExpertChatUtility.getValue ( "qa" ) + "expert/password/reset/" )
             );
 
-        }else {
+        } else {
 
             response.setResponse (
-                    this.post ( jsonObject.toString ( ), ExpertChatUtility.getValue("qa")+"user/password/reset/" )
+                    this.post ( jsonObject.toString ( ), ExpertChatUtility.getValue ( "qa" ) + "user/password/reset/" )
             );
         }
-        String token=jsonParser.getJsonData("results.token", ResponseDataType.STRING);
-        String uid=jsonParser.getJsonData("results.uid", ResponseDataType.STRING);
-        String resetUrl=ExpertChatUtility.getValue("qa")+"password/reset/confirm/"+uid+"/"+token+"/";
-        String newJSon="{\"password\":\""+password+"\",\"uid\":\""+uid+"\",\"token\":\""+token+"\"}";
-        JsonObject newJson=(JsonObject)new JsonParser().parse(newJSon);
+        String token = jsonParser.getJsonData ( "results.token", ResponseDataType.STRING );
+        String uid = jsonParser.getJsonData ( "results.uid", ResponseDataType.STRING );
+        String resetUrl = ExpertChatUtility.getValue ( "qa" ) + "password/reset/confirm/" + uid + "/" + token + "/";
+        String newJSon = "{\"password\":\"" + password + "\",\"uid\":\"" + uid + "\",\"token\":\"" + token + "\"}";
+        JsonObject newJson = ( JsonObject ) new JsonParser ( ).parse ( newJSon );
 
-        response.setResponse(
-                this.post(newJson.toString(), resetUrl)
+        response.setResponse (
+                this.post ( newJson.toString ( ), resetUrl )
         );
-        response.printResponse();
+        response.printResponse ( );
 
-        if(response.statusCode()== HTTPCode.HTTP_OK ||
-                response.statusCode()==HTTPCode.HTTP_ACCEPTED) {
+        if ( response.statusCode ( ) == HTTPCode.HTTP_OK ||
+                response.statusCode ( ) == HTTPCode.HTTP_ACCEPTED ) {
 
-            String updateTestData = TestUserMap.getUserCredentialsByKey(user);
-            System.out.println(updateTestData);
-            JsonObject userData = (JsonObject) new JsonParser().parse(updateTestData);
-            userData.remove("password");
-            userData.addProperty("password", password);
-            TestUserMap.setTestData(user, userData.toString());
-            System.out.println("Updated data after reset"+userData.toString());
-            System.out.println("Updated data after reset"+TestUserMap.getUserCredentialsByKey(user));
+            String updateTestData = TestUserMap.getUserCredentialsByKey ( user );
+            System.out.println ( updateTestData );
+            JsonObject userData = ( JsonObject ) new JsonParser ( ).parse ( updateTestData );
+            userData.remove ( "password" );
+            userData.addProperty ( "password", password );
+            TestUserMap.setTestData ( user, userData.toString ( ) );
+            System.out.println ( "Updated data after reset" + userData.toString ( ) );
+            System.out.println ( "Updated data after reset" + TestUserMap.getUserCredentialsByKey ( user ) );
         }
     }
 
-    public void resendEmailVerification(String json, boolean isExpert) {
+    public void resendEmailVerification ( String json, boolean isExpert ) {
 
-        System.out.println("RESEND EMAIL VERIFICATION");
+        System.out.println ( "RESEND EMAIL VERIFICATION" );
 
-        if(isExpert) {
+        if ( isExpert ) {
 
             response.setResponse (
                     this.post ( json, RESEND_EMAIL_VERIFICATION )
             );
 
-        }else {
+        } else {
 
             response.setResponse (
                     this.post ( json, U_RESEND_EMAIL_VERIFICATION )
             );
         }
 
-        response.printResponse();
+        response.printResponse ( );
 
     }
 

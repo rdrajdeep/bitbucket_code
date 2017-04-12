@@ -15,22 +15,22 @@ public class ExpertChatUtility {
     private static FileInputStream ins = null;
 
 
-    private static void setProp(String fileName) {
+    private static void setProp ( String fileName ) {
         try {
-            ins = new FileInputStream(fileName);
+            ins = new FileInputStream ( fileName );
 
-        } catch (IOException e) {
+        } catch ( IOException e ) {
 
-            System.out.print(e.getMessage());
+            System.out.print ( e.getMessage ( ) );
         }
-        prop = new Properties();
+        prop = new Properties ( );
 
         try {
-            prop.load(ins);
+            prop.load ( ins );
 
-        } catch (IOException e) {
+        } catch ( IOException e ) {
 
-            System.out.println(e.getMessage());
+            System.out.println ( e.getMessage ( ) );
         }
 
     }
@@ -40,30 +40,30 @@ public class ExpertChatUtility {
      * @param key
      * @return value based on key presents in the properties file
      */
-    public static String getValue(String key) {
-        setProp("ExpertChat.Properties");
-        return prop.getProperty(key);
+    public static String getValue ( String key ) {
+        setProp ( "ExpertChat.Properties" );
+        return prop.getProperty ( key );
     }
 
     /**
      * @param
      * @return
      */
-    public static Set<Object> keySet() {
+    public static Set < Object > keySet ( ) {
 
-        setProp("ExpertChat.Properties");
-        return prop.keySet();
+        setProp ( "ExpertChat.Properties" );
+        return prop.keySet ( );
     }
 
-    public static String directoryName() {
+    public static String directoryName ( ) {
 
-        LocalDateTime localDateTime = LocalDateTime.now();
-        String day = String.valueOf(localDateTime.getDayOfMonth());
-        String month = String.valueOf(localDateTime.getMonthValue());
-        String year = String.valueOf(localDateTime.getYear());
-        String seconds = String.valueOf(localDateTime.getSecond());
+        LocalDateTime localDateTime = LocalDateTime.now ( );
+        String day = String.valueOf ( localDateTime.getDayOfMonth ( ) );
+        String month = String.valueOf ( localDateTime.getMonthValue ( ) );
+        String year = String.valueOf ( localDateTime.getYear ( ) );
+        String seconds = String.valueOf ( localDateTime.getSecond ( ) );
 
-        return (day + "-" + month + "-" + year + "-" + seconds);
+        return ( day + "-" + month + "-" + year + "-" + seconds );
     }
 
     /**
@@ -71,9 +71,9 @@ public class ExpertChatUtility {
      * @return value based on key presents in the properties file
      * @Author: Kishor Jyoti Sarma
      */
-    public static String getValueFromUserMap(String key) {
-        setProp("usermap.properties");
-        return prop.getProperty(key);
+    public static String getValueFromUserMap ( String key ) {
+        setProp ( "usermap.properties" );
+        return prop.getProperty ( key );
     }
 
     /***
@@ -83,28 +83,28 @@ public class ExpertChatUtility {
      * In  our story file params are enclosed with curly braces. But we are not sending those
      * ugly braces to server. call this method to clean anything that is not a word character
      */
-    public static String clean(String param) {
+    public static String clean ( String param ) {
 
-        return param.replaceAll("[^\\w\\s]", "");
+        return param.replaceAll ( "[^\\w\\s]", "" );
     }
 
-    public static void nullCheker(String[] array) {
+    public static void nullCheker ( String[] array ) {
 
-        if (array.length == 0) {
+        if ( array.length == 0 ) {
 
-            throw new ExpertChatException("Empty array. Please provide data");
+            throw new ExpertChatException ( "Empty array. Please provide data" );
         }
     }
 
-    public static void delay() {
+    public static void delay ( ) {
 
         try {
 
-            TimeUnit.MINUTES.sleep(5);
+            TimeUnit.MINUTES.sleep ( 5 );
 
-        } catch (InterruptedException e) {
+        } catch ( InterruptedException e ) {
 
-            System.out.println(e.getMessage());
+            System.out.println ( e.getMessage ( ) );
         }
     }
 }

@@ -6,97 +6,89 @@ import expertchat.apioperation.apiresponse.ApiResponse;
 import expertchat.apioperation.apiresponse.ParseResponse;
 import expertchat.apioperation.apiresponse.ResponseDataType;
 
-import java.util.List;
-
-public class Searching extends AbstractApiFactory implements ExpertChatEndPoints{
-
-    public enum SearchType{
-
-        BY_ID,
-        BY_TAG,
-        BY_TEXT
-    }
-
-    private ApiResponse response=ApiResponse.getObject();
-    private ParseResponse pr=new ParseResponse(response);
+public class Searching extends AbstractApiFactory implements ExpertChatEndPoints {
 
     private static String searchText;
     private static String tagId;
     private static String expertId;
+    private ApiResponse response = ApiResponse.getObject ( );
+    private ParseResponse pr = new ParseResponse ( response );
 
-    public  String getTagId() {
+    public static void main ( String[] args ) {
+
+
+    }
+
+    public String getTagId ( ) {
         return tagId;
     }
 
-    public  void setTagId(String tagId) {
+    public void setTagId ( String tagId ) {
         Searching.tagId = tagId;
     }
 
-    public  String getExpertId() {
+    public String getExpertId ( ) {
         return expertId;
     }
 
-    public void setExpertId(String expertId) {
+    public void setExpertId ( String expertId ) {
         Searching.expertId = expertId;
     }
 
-
-    public void setSearchText(String searchText){
-
-        Searching.searchText=searchText;
-    }
-
-    public String getSearchText(){
+    public String getSearchText ( ) {
 
         return searchText;
     }
 
-    public void search(String value , SearchType sType) {
+    public void setSearchText ( String searchText ) {
 
-        System.out.println(SEARCH_BY_TEXT);
+        Searching.searchText = searchText;
+    }
 
-        if (sType.ordinal() == 2) {
+    public void search ( String value, SearchType sType ) {
 
-            response.setResponse(
-                    this.get(SEARCH_BY_TEXT + value)
+        System.out.println ( SEARCH_BY_TEXT );
+
+        if ( sType.ordinal ( ) == 2 ) {
+
+            response.setResponse (
+                    this.get ( SEARCH_BY_TEXT + value )
             );
 
-            response.printResponse();
+            response.printResponse ( );
             return;
-        } else if (sType.ordinal() == 1) {
-            response.setResponse(
+        } else if ( sType.ordinal ( ) == 1 ) {
+            response.setResponse (
 
-                    this.get(SEARCH_BY_TAG_ID + value)
+                    this.get ( SEARCH_BY_TAG_ID + value )
             );
-            response.printResponse();
+            response.printResponse ( );
             return;
-        } else if (sType.ordinal() == 0) {
+        } else if ( sType.ordinal ( ) == 0 ) {
 
-            response.setResponse(
+            response.setResponse (
 
-                    this.get(SEARCH_BY_EXPERT_ID+value+"/")
+                    this.get ( SEARCH_BY_EXPERT_ID + value + "/" )
             );
-            response.printResponse();
+            response.printResponse ( );
             return;
         }
     }
 
 
-    public boolean verifyExpertInResult(String expertId) {
+    public boolean verifyExpertInResult ( String expertId ) {
 
-       String id=pr.getJsonData ( "results.id", ResponseDataType.INT );
+        String id = pr.getJsonData ( "results.id", ResponseDataType.INT );
 
-           if(expertId.equals ( id )){
-
-              return true;
-       }
-       return false;
+        return expertId.equals ( id );
     }
 
 
-  public static void main(String [] args){
+    public enum SearchType {
 
-
-  }
+        BY_ID,
+        BY_TAG,
+        BY_TEXT
+    }
 
 }

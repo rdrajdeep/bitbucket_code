@@ -5,27 +5,26 @@ package expertchat.apioperation.session;
 
 public final class SessionManagement {
 
-    private static SessionManagement sm=new SessionManagement();
+    private static SessionManagement sm = new SessionManagement ( );
+    private String token;
 
-    private SessionManagement(){
+    private SessionManagement ( ) {
 
     }
 
-    public static SessionManagement session(){
+    public static SessionManagement session ( ) {
 
         return sm;
     }
 
-    private String token;
-
-    public void setToken(String token){
-
-        this.token=token;
-    }
-
-    public String getToken(){
+    public String getToken ( ) {
 
         return token;
+    }
+
+    public void setToken ( String token ) {
+
+        this.token = token;
     }
 
 }
