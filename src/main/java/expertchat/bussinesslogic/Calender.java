@@ -25,7 +25,7 @@ public class Calender extends AbstractApiFactory implements HTTPCode, ExpertChat
     public void createCalender(String json){
 
         response.setResponse(
-                this.post(json, SLOT, session.getToken())
+                this.post(json, SLOTS, session.getToken())
         );
 
         response.printResponse();
@@ -40,14 +40,14 @@ public class Calender extends AbstractApiFactory implements HTTPCode, ExpertChat
     public void getCalender(String id){
 
         response.setResponse(
-                this.get(SLOT+id+"/",session.getToken())
+                this.get(SLOTS+id+"/",session.getToken())
         );
     }
 
     public void updateCalender(String json, String id){
 
         response.setResponse(
-                this.put( json, SLOT+id+"/", session.getToken())
+                this.put( json, SLOTS+id+"/", session.getToken())
         );
     }
 

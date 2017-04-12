@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ExpertChat" />
         <module name="Expertchat_Test_Automation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ExpertChat" target="1.8" />
       <module name="Expertchat_Test_Automation" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -95,4 +95,7 @@ public interface ExpertChatEndPoints {
 
     String REGISTER_DEVICE = "devices/";
 
+    String SLOTS="expert/slots";
+    String AVILABLE_SLOTS="expert/available-slots/";
+
 }
