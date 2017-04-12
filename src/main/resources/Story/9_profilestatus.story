@@ -18,11 +18,24 @@ Then Verify Email
 And login with expert2
 And get expert profile
 
+Then update information on expert profile as
+{
+    "tags": [
+       1,2,3,4
+        ],
+    "medias":[],
+    "headline": "Java-8 Lambda",
+    "summary": "Java Expert",
+    "my_experience": "In test automation",
+    "year_of_experience":"3",
+    "educational_background": "Bachelor of Technology (Computer Science and Information Engineering)"
+}
+
 Then check profile completness
 
 Then add name as {"name": "Sarma Kishor","display_name": "sarma", "toc_and_privacy_policy_accepted":true}
 
-Then add profile photo as C:\Users\Kishor\Desktop\4.jpg
+Then add profile photo as TestData/4.jpg
 
 Then check profile completness
 

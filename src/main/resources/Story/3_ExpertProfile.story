@@ -40,4 +40,4 @@ Then update information on expert profile as
     "educational_background": "Bachelor of Technology (Computer Science and Information Engineering)"
 }
 
-Then upload media as C:\Users\Kishor\Downloads\tv.mp4
+Then upload media as TestData/4.jpg
