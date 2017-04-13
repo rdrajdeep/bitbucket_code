@@ -5,6 +5,7 @@ import expertchat.apioperation.ExpertChatEndPoints;
 import expertchat.apioperation.apiresponse.ApiResponse;
 import expertchat.apioperation.apiresponse.ParseResponse;
 import expertchat.apioperation.apiresponse.ResponseDataType;
+import expertchat.apioperation.session.SessionManagement;
 
 public class Searching extends AbstractApiFactory implements ExpertChatEndPoints {
 
@@ -13,6 +14,7 @@ public class Searching extends AbstractApiFactory implements ExpertChatEndPoints
     private static String expertId;
     private ApiResponse response = ApiResponse.getObject ( );
     private ParseResponse pr = new ParseResponse ( response );
+    private SessionManagement session=SessionManagement.session ();
 
     public static void main ( String[] args ) {
 
@@ -45,33 +47,40 @@ public class Searching extends AbstractApiFactory implements ExpertChatEndPoints
         Searching.searchText = searchText;
     }
 
-    public void search ( String value, SearchType sType ) {
+    public void search ( String value, SearchType sType , boolean isAnonymous) {
 
         System.out.println ( SEARCH_BY_TEXT );
 
         if ( sType.ordinal ( ) == 2 ) {
 
-            response.setResponse (
-                    this.get ( SEARCH_BY_TEXT + value )
-            );
+            if ( isAnonymous ) {
+                response.setResponse (this.get ( SEARCH_BY_TEXT + value));
+                response.printResponse ();
+            }else {
 
-            response.printResponse ( );
-            return;
+                response.setResponse (this.get ( SEARCH_BY_TEXT + value,session.getToken () ));
+                response.printResponse ();
+            }
         } else if ( sType.ordinal ( ) == 1 ) {
-            response.setResponse (
 
-                    this.get ( SEARCH_BY_TAG_ID + value )
-            );
-            response.printResponse ( );
-            return;
+            if(isAnonymous) {
+                response.setResponse ( this.get ( SEARCH_BY_TAG_ID + value ));
+                response.printResponse ( );
+            }else {
+                response.setResponse ( this.get ( SEARCH_BY_TAG_ID + value, session.getToken () ));
+                response.printResponse ( );
+            }
         } else if ( sType.ordinal ( ) == 0 ) {
 
-            response.setResponse (
+            if(isAnonymous) {
+                response.setResponse ( this.get ( SEARCH_BY_EXPERT_ID + value + "/" ) );
+                response.printResponse ( );
+            }else {
 
-                    this.get ( SEARCH_BY_EXPERT_ID + value + "/" )
-            );
-            response.printResponse ( );
-            return;
+                response.setResponse ( this.get ( SEARCH_BY_EXPERT_ID + value + "/" , session.getToken ()));
+                System.out.println ( "Buy User" );
+                response.printResponse ( );
+            }
         }
     }
 

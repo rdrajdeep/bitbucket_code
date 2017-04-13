@@ -318,3 +318,97 @@ Mobile no verify
         }
     }
 }
+API RESPONSES+
+========
+Registration
+========
+{
+    "results": {
+        "email": "kishor+expert69@atlogys.com",
+        "verification_code": "29c97f62-b25d-4eb8-811f-852995c5ab59"
+    },
+    "metadata": {
+        "message": "You have successfully registered!",
+        "code": 2001
+    }
+}
+API RESPONSES+
+========
+Login API
+========
+{
+    "results": {
+        "id": 79,
+        "toc_and_privacy_policy_accepted": false,
+        "is_profile_complete": false,
+        "phone_number": "",
+        "name": "",
+        "display_name": null,
+        "is_superuser": false,
+        "country_code": 1,
+        "token": "eyJpcF9hZGRyZXNzIjoiNjEuMjQ2LjQ3LjkzIiwidGltZXN0YW1wIjoxNDkyMDg1NjQ5LjYwNTQwMSwidXNlcl9pZCI6Nzl9:1cyddZ:4-YJpq34hDP4x3iz54XuxcQLUMI",
+        "email": "kishor+expert69@atlogys.com",
+        "profile_photo": null,
+        "is_phone_number_verified": false
+    }
+}
+API RESPONSES+
+========
+Login API
+========
+{
+    "results": {
+        "id": 79,
+        "toc_and_privacy_policy_accepted": false,
+        "is_profile_complete": false,
+        "phone_number": "",
+        "name": "",
+        "display_name": null,
+        "is_superuser": false,
+        "country_code": 1,
+        "token": "eyJpcF9hZGRyZXNzIjoiNjEuMjQ2LjQ3LjkzIiwidGltZXN0YW1wIjoxNDkyMDg1NjUyLjQ0MzM5LCJ1c2VyX2lkIjo3OX0:1cyddc:aNcLykZ0GJkDSMKtlzIxkQzD3Qg",
+        "email": "kishor+expert69@atlogys.com",
+        "profile_photo": null,
+        "is_phone_number_verified": false
+    }
+}
+API RESPONSES+
+========
+Login API
+========
+{
+    "results": {
+        "id": 3,
+        "toc_and_privacy_policy_accepted": false,
+        "is_profile_complete": false,
+        "phone_number": "",
+        "name": "KIshor Sarma",
+        "display_name": "batman",
+        "is_superuser": false,
+        "country_code": 1,
+        "token": "eyJpcF9hZGRyZXNzIjoiNjEuMjQ2LjQ3LjkzIiwidGltZXN0YW1wIjoxNDkyMDg1NjUzLjc5ODM4OCwidXNlcl9pZCI6M30:1cyddd:ADk9j-U4KFmuryj2cl9Bl37jQWA",
+        "email": "kishor+user@atlogys.com",
+        "profile_photo": "https://experchatqa.s3.amazonaws.com/c445345cbd683fff9307f9dbd4f8709ad97657fd.png",
+        "is_phone_number_verified": false
+    }
+}
+API RESPONSES+
+========
+Login API
+========
+{
+    "results": {
+        "id": 79,
+        "toc_and_privacy_policy_accepted": false,
+        "is_profile_complete": false,
+        "phone_number": "",
+        "name": "",
+        "display_name": null,
+        "is_superuser": false,
+        "country_code": 1,
+        "token": "eyJpcF9hZGRyZXNzIjoiNjEuMjQ2LjQ3LjkzIiwidGltZXN0YW1wIjoxNDkyMDg1NjU1LjExMzA2OSwidXNlcl9pZCI6Nzl9:1cyddf:a0ss2Y8h4MZewdQdbwBtop6cB4w",
+        "email": "kishor+expert69@atlogys.com",
+        "profile_photo": null,
+        "is_phone_number_verified": false
+    }
+}

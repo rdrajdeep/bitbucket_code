@@ -118,3 +118,37 @@ Calender API
     <p>The requested URL /v1/slots/ was not found on this server.</p>
   </body>
 </html>
+API RESPONSES+
+========
+Login API
+========
+{
+    "results": {
+        "id": 63,
+        "toc_and_privacy_policy_accepted": false,
+        "is_profile_complete": false,
+        "phone_number": "",
+        "name": "",
+        "display_name": null,
+        "is_superuser": false,
+        "country_code": 1,
+        "token": "eyJpcF9hZGRyZXNzIjoiNjEuMjQ2LjQ3LjkzIiwidGltZXN0YW1wIjoxNDkyMDc2NDE2LjU1MjI3NiwidXNlcl9pZCI6NjN9:1cybEe:zu2NNs_H7tdn7bI9fmed7Xw49b0",
+        "email": "kishor+expert50@atlogys.com",
+        "profile_photo": null,
+        "is_phone_number_verified": false
+    }
+}
+API RESPONSES+
+========
+Registration
+========
+{
+    "errors": {
+        "email": [
+            {
+                "message": "This email address is already tied to an existing account.",
+                "code": 1001
+            }
+        ]
+    }
+}

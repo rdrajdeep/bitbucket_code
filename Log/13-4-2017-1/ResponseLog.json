@@ -151,3 +151,290 @@ Get CAlender
         "detail": "Not found."
     }
 }
+API RESPONSES+
+========
+Registration
+========
+{
+    "errors": {
+        "email": [
+            {
+                "message": "This email address is already tied to an existing account.",
+                "code": 1001
+            }
+        ]
+    }
+}
+API RESPONSES+
+========
+Login API
+========
+{
+    "errors": {
+        "non_field_errors": [
+            {
+                "message": "Incorrect email or password provided.  Please check your information and try again.",
+                "code": 1012
+            }
+        ]
+    }
+}
+API RESPONSES+
+========
+Create a super admin content
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Expert profile
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Update Expert Profile
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Update Expert Profile
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Upload Media
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Expert profile
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Add RSS feed
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Add RSS feed
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Get Social Link
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Phone code sent
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Phone code resent
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Mobile no verify
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Phone code sent
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Phone code resent
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Payment Account
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Payment Account
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Registration
+========
+{
+    "errors": {
+        "email": [
+            {
+                "message": "This email address is already tied to an existing account.",
+                "code": 1001
+            }
+        ]
+    }
+}
+API RESPONSES+
+========
+Login API
+========
+{
+    "errors": {
+        "non_field_errors": [
+            {
+                "message": "Incorrect email or password provided.  Please check your information and try again.",
+                "code": 1012
+            }
+        ]
+    }
+}
+API RESPONSES+
+========
+Create a super admin content
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Registration
+========
+{
+    "metadata": {
+        "message": "You have successfully registered!",
+        "code": 2001
+    },
+    "results": {
+        "email": "kishor+user138@atlogys.com",
+        "verification_code": "3d5a2e09-c9e7-4caf-a7fb-02cf91c0c624"
+    }
+}
+API RESPONSES+
+========
+Resend Email Verification
+========
+{
+    "metadata": {
+        "message": "We have resent your email verification instructions.",
+        "code": 2042
+    },
+    "results": {
+        "email": "kishor+user138@atlogys.com",
+        "verification_code": "3d5a2e09-c9e7-4caf-a7fb-02cf91c0c624"
+    }
+}
+API RESPONSES+
+========
+Login API
+========
+{
+    "results": {
+        "is_phone_number_verified": false,
+        "display_name": "",
+        "id": 56,
+        "country_code": 1,
+        "phone_number": "",
+        "is_superuser": false,
+        "profile_photo": null,
+        "email": "kishor+user138@atlogys.com",
+        "name": "",
+        "is_profile_complete": false,
+        "token": "eyJ0aW1lc3RhbXAiOjE0OTIwNjU4MTAuNTc0MjUxLCJ1c2VyX2lkIjo1NiwiaXBfYWRkcmVzcyI6IjYxLjI0Ni40Ny45MyJ9:1cyYTa:Fx8M7cbei4t0Ttpw-HvAC5Mra8c",
+        "toc_and_privacy_policy_accepted": false
+    }
+}
+API RESPONSES+
+========
+Change Password
+========
+{
+    "metadata": {
+        "message": "You have successfully changed your password.",
+        "code": 2021
+    }
+}
+API RESPONSES+
+========
+Login API
+========
+{
+    "results": {
+        "id": 63,
+        "toc_and_privacy_policy_accepted": false,
+        "is_profile_complete": false,
+        "phone_number": "",
+        "name": "",
+        "display_name": null,
+        "is_superuser": false,
+        "country_code": 1,
+        "token": "eyJpcF9hZGRyZXNzIjoiNjEuMjQ2LjQ3LjkzIiwidGltZXN0YW1wIjoxNDkyMDc1OTg2LjA2MTIyMywidXNlcl9pZCI6NjN9:1cyb7i:IVIIqQ0BZ5e0tEQpGFIthDNYZXo",
+        "email": "kishor+expert50@atlogys.com",
+        "profile_photo": null,
+        "is_phone_number_verified": false
+    }
+}

@@ -15,6 +15,10 @@ import expertchat.util.ResponseLogger;
 import org.jbehave.core.annotations.*;
 
 import java.io.IOException;
+import java.sql.Time;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 import static expertchat.usermap.TestUserMap.getMap;
 
@@ -41,6 +45,7 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     private ProfileComplete profileComplete = new ProfileComplete();
     private GetStreamFeeds getStreamFeeds = new GetStreamFeeds();
     private Calender calender = new Calender();
+    private MeStats stats=new MeStats ();
 
     public E2ETestCase(ExtentReports reports, String casName) {
 
@@ -75,6 +80,7 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     /*log out from the system*/
     @Then("logout")
     @When("logout")
+    @Aliases ( values = {"logout the expert","logout the user"})
     public void logout() {
 
         SessionManagement.session().setToken(null);
@@ -526,7 +532,7 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     }
 
     /**
-     * @param id
+     * @param
      */
     @Then("get profile of expert")
     public void getProfileWithID() {
@@ -1160,9 +1166,9 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
                 String searchText = searching.getSearchText();
 
                 if (isNegative) {
-                    searching.search(searchText, Searching.SearchType.BY_TEXT);
+                    searching.search(searchText, Searching.SearchType.BY_TEXT, true);
                 } else {
-                    searching.search(searchText, Searching.SearchType.BY_TEXT);
+                    searching.search(searchText, Searching.SearchType.BY_TEXT, true);
                 }
                 this.checkAndWriteToReport(response.statusCode(), "Expert Related to text-> " + searchText + " has been loaded", isNegative);
 
@@ -1172,10 +1178,10 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
             case "tagid":
                 String tId = searching.getTagId();
                 if (isNegative) {
-                    searching.search(tId, Searching.SearchType.BY_TAG);
+                    searching.search(tId, Searching.SearchType.BY_TAG, true);
                 } else {
 
-                    searching.search(tId, Searching.SearchType.BY_TAG);
+                    searching.search(tId, Searching.SearchType.BY_TAG, true);
                 }
                 this.checkAndWriteToReport(response.statusCode(), "Expert Related to tagID-> " + tId + " has been loaded", isNegative);
 
@@ -1190,10 +1196,10 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
                 if (isNegative) {
 
-                    searching.search(eId, Searching.SearchType.BY_ID);
+                    searching.search(eId, Searching.SearchType.BY_ID, true);
                 } else {
 
-                    searching.search(eId, Searching.SearchType.BY_ID);
+                    searching.search(eId, Searching.SearchType.BY_ID, true);
                 }
                 this.checkAndWriteToReport(response.statusCode(), "Expert Related to ExpertId-> " + eId + " has been loaded", isNegative);
 
@@ -1204,16 +1210,22 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
     }
 
-    @Then("search expert1")
-    public void searchByDynamicExpertID() {
+    @Then("search $expert")
+    public void searchByDynamicExpertID(@Named ( "expert" )String expert) {
 
         info("Dynamic Expert id Search");
 
-        expertProfile.getProfileOfExpert("", isExpert);
-
         String expertID = getMap().get("expertProfileId");
 
-        searching.search(expertID, Searching.SearchType.BY_ID);
+        if(expert.contains ( "anonymously" )){
+
+            info("Searching Expert anonymously");
+
+            searching.search(expertID, Searching.SearchType.BY_ID, true);
+        }else {
+
+            searching.search(expertID, Searching.SearchType.BY_ID, false);
+        }
 
         if (searching.verifyExpertInResult(expertID)) {
 
@@ -1507,23 +1519,113 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     public void updateCalender(@Named("json") String json) {
 
         info("Updating a calender...");
+
         if (isNegative) {
+
             calender.updateCalender(json, calender.getCalenderId());
         } else {
+
             calender.updateCalender(json, calender.getCalenderId());
         }
+
         checkAndWriteToReport(response.statusCode(),"Calender with id->" + calender.getCalenderId() + "\t updated", isNegative);
+
         responseLogger.writeResponseAsLog("Calender API");
     }
 
     @Then("get the avilable slot of expert1")
     public void getAvilableSlots(){
         info("Listing all the avilable slots of expert1");
-        expertProfile.getProfileOfExpert("", isExpert);
-        String epId=getMap().get("expertProfileId");
-        calender.getAvilableSlot(epId);
+
+        expertProfile.getProfileOfExpert ( "",isExpert );
+
+        String eId=getMap().get("expertId");
+
+        calender.getAvilableSlot(eId);
+
         checkAndWriteToReport(response.statusCode(),"All avilable slot listed", isNegative);
+
         responseLogger.writeResponseAsLog("GET Avilable slots");
+    }
+
+    @Then("chek the profile visits and count should be $count")
+    public void profileVisits(@Named ("count")String count){
+
+        info("Checking Number of profile visits");
+
+        String date="";
+
+        stats.getAllcounts ();
+
+        try{
+
+            TimeUnit.SECONDS.sleep ( 5 );
+
+        }catch ( Exception e ){
+
+
+        }
+
+        int size=response.getResponse ().jsonPath ().getList ( "results.profile_visits.summary" ).size ();
+
+        if(size>0) {
+
+            String ActualCount=jsonParser.getJsonData ( "results.profile_visits.summary[0].count", ResponseDataType.INT);
+
+            date=jsonParser.getJsonData ( "results.profile_visits.summary[0].date", ResponseDataType.STRING );
+
+            if(count.equals (ActualCount)){
+
+                AssertAndWriteToReport ( true, "Number of profile visits for\t"+date+"\tis\t"+ActualCount);
+            }else {
+
+                AssertAndWriteToReport ( false, "Number of profile visits for\t"+date+"\tis\t"+ActualCount);
+            }
+        }else {
+
+            AssertAndWriteToReport ( true, "Number of profile visits for\t"+date+"\tis\t"+size);
+        }
+
+    }
+
+    @Then("check the session count and count should be $count")
+    public void sessionCounr(@Named ( "count" )String count){
+        info("Checking Number of session");
+
+        String date="";
+
+        stats.getAllcounts ();
+
+        try{
+
+            TimeUnit.SECONDS.sleep ( 5 );
+
+        }catch ( Exception e ){
+
+
+        }
+
+        int size=response.getResponse ().jsonPath ().getList ( "results.sessions_count.summary" ).size ();
+
+        if(size>0) {
+
+            String ActualCount=jsonParser.getJsonData ( "results.sessions_count.summary[0].count", ResponseDataType.INT);
+
+            date=jsonParser.getJsonData ( "results.sessions_count.summary[0].date", ResponseDataType.STRING );
+
+            if(count.equals (ActualCount)){
+
+                AssertAndWriteToReport ( true, "Number of Session for\t"+date+"\tis\t"+ActualCount);
+            }else {
+
+                AssertAndWriteToReport ( false, "Number of Session for\t"+date+"\tis\t"+ActualCount);
+            }
+        }else {
+
+            AssertAndWriteToReport ( true, "Number of Session for\t"+date+"\tis\t"+size);
+        }
+
+
     }
 
 }
