@@ -1624,8 +1624,28 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
             AssertAndWriteToReport ( true, "Number of Session for\t"+date+"\tis\t"+size);
         }
+    }
+
+    @Then("check the total statistics between $from and $to")
+    public void getStats(@Named ( "to" )String to,
+                         @Named ( "from" )String from){
 
 
+        info("Getting all expert statistics..");
+        String toDate;
+
+        if(to.toLowerCase ().equals ( "today" )){
+
+            toDate=new SimpleDateFormat ( "yyyy-mm-dd" ).format (new Date());
+        }else {
+            toDate=to;
+        }
+
+        stats.getAllStats(toDate, from);
+        checkAndWriteToReport (response.statusCode (),
+
+                "Total profile visit bewtween\t"+toDate+"\t"+from+"\tis"+stats.getNumProfileVisit ()+"\n"+
+                            "Total Number of session bewtween\t"+toDate+"\t"+from+"\tis"+stats.getNumSession (), isNegative);
     }
 
 }

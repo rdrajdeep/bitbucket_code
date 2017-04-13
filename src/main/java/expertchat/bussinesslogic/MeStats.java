@@ -7,12 +7,12 @@ import expertchat.apioperation.apiresponse.HTTPCode;
 import expertchat.apioperation.apiresponse.ParseResponse;
 import expertchat.apioperation.apiresponse.ResponseDataType;
 import expertchat.apioperation.session.SessionManagement;
+import org.yecht.Data;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+
+import static expertchat.usermap.TestUserMap.getMap;
 
 /* Get the states of expert*/
 
@@ -21,9 +21,8 @@ public class MeStats extends AbstractApiFactory implements HTTPCode, ExpertChatE
     private ApiResponse response=ApiResponse.getObject ();
     private ParseResponse pr=new ParseResponse ( response );
     private SessionManagement session=SessionManagement.session ();
-    private LinkedHashMap<String, String> sessionCount=new LinkedHashMap <> ();
-    private LinkedHashMap<String, String> profileVisits=new LinkedHashMap <> ();
-
+    private String numProfileVisit;
+    private String numSession;
 
     public void  getAllcounts() {
 
@@ -36,8 +35,29 @@ public class MeStats extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
     }
 
-    public Map getProfileVisits(){
 
-        return  profileVisits;
+    public void getAllStats ( String to, String fromDate ) {
+
+        String url="me-stats/?from_date="+fromDate+"&to_date="+to+"&stats=profile_visits&stats=sessions_count";
+
+        response.setResponse ( this.get ( SEARCH_BASE+url, session.getToken ( ) ) );
+
+        response.printResponse ();
+
+       if ( response.statusCode ()!=HTTP_BAD ){
+
+           numProfileVisit=pr.getJsonData ( "results.profile_visits.total", ResponseDataType.INT);
+           numSession=pr.getJsonData ( "results.sessions_count.total", ResponseDataType.INT);
+        }
     }
+
+    public String getNumProfileVisit(){
+        return numProfileVisit;
+    }
+
+    public String getNumSession(){
+
+        return numSession;
+    }
+
 }
