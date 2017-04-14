@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8693fbd6-8234-4202-ac15-ee04ea59d911" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story" afterPath="$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Story/10_Searching.story" afterPath="$PROJECT_DIR$/src/main/resources/Story/10_Searching.story" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,11 +40,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="7_user_APIs.story" pinned="false" current-in-tab="true">
+      <file leaf-file-name="7_user_APIs.story" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
               <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="10_Searching.story" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/Story/10_Searching.story">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="433">
+              <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -85,16 +95,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
               <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="48" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2_BasicProfileLoad.story" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Story/2_BasicProfileLoad.story">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -222,7 +222,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/Story/4_SocialLinks.story" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/6_PhoneVerification.story" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/8_paymentInfo.story" />
-        <option value="$PROJECT_DIR$/src/main/resources/Story/10_Searching.story" />
         <option value="$PROJECT_DIR$/ExpertChat.Properties" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calling.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/2_BasicProfileLoad.story" />
@@ -232,6 +231,7 @@
         <option value="$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/11_MyStates.story" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story" />
+        <option value="$PROJECT_DIR$/src/main/resources/Story/10_Searching.story" />
       </list>
     </option>
   </component>
@@ -1186,14 +1186,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/10_Searching.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Story/8_paymentInfo.story">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1302,6 +1294,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/10_Searching.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding />
         </state>
       </provider>

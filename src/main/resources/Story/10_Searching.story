@@ -18,7 +18,3 @@ Then search all the expert by freetext
 Given a tag_id 1
 
 Then search all the expert by tagid
-
-Then login with user1
-
-Then search expert1
