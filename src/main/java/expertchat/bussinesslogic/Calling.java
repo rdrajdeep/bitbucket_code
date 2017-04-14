@@ -151,4 +151,19 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
             getMap ( ).put ( "UserDevice", parseResponse.getJsonData ( "results.id", ResponseDataType.INT ) );
         }
     }
+
+    public void extendSession ( String realTime ) {
+
+        String url=SESSION+getId ()+"extend_session/";
+
+        String json="{\n" +
+                "    \"expert_profile\": "+getMap ().get ( "expertProfileId" )+",\n" +
+                "    \"expert\": "+getMap ().get ( "expertId" )+",\n" +
+                "    \"user_device\": "+getMap ().get ( "UserDevice" )+",\n" +
+                "    \"scheduled_duration\": "+realTime+"\n" +
+                "}";
+
+        response.setResponse (this.put(url, json, session.getToken (), true));
+        response.printResponse ();
+    }
 }

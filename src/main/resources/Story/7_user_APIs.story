@@ -51,7 +51,7 @@ Then should not get Verified
 
 Given complete media upload flow
 
-Then upload media as C:\Users\Kishor\Desktop\4.jpg
+Then upload media as TestData\4.jpg
 
 Given complete expert profile get flow by an user
 

@@ -9,8 +9,7 @@ Scenario: scenario description
 Given complete expert profile flow
 
 Given an expert
-
-When login with {"email": "kishor+expert26@atlogys.com","password": "testing123" }
+When login with expert1
 And get the profile
 
 Given negative scenario

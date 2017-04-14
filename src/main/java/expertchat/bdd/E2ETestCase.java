@@ -1648,6 +1648,24 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
                             "Total Number of session bewtween\t"+toDate+"\t"+from+"\tis"+stats.getNumSession (), isNegative);
     }
 
+    @Then("extend the session for $time")
+    @When("extend the session for $time")
+    @Given("extend the session for $time")
+    @Aliases ( values = {"extend the session for $time"})
+    public void extendSession(@Named ( "time" )String time){
+
+        info("Extending the current ongoing session by\t"+time);
+
+        String realTime= time.substring (0,time.indexOf( "m" )-1);
+
+        call.extendSession(realTime);
+
+        checkAndWriteToReport ( response.statusCode (), "Call extended by\t"+time , isNegative);
+
+        responseLogger.writeResponseAsLog ( "Extend call" );
+
+    }
+
 }
 
 

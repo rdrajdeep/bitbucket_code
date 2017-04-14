@@ -19,6 +19,6 @@ Then verify email of the profile is same as expert1
 
 Then update basic profile as {"name": "Sarma Kishor", "display_name":"eeeee78", "toc_and_privacy_policy_accepted":true}
 
-Then add profile photo as C:\Users\Kishor\Desktop\4.jpg
+Then add profile photo as TestData/4.jpg
 
 Then verify profile photo of expert1
