@@ -67,9 +67,13 @@ public class ProfileComplete extends AbstractApiFactory implements ExpertChatEnd
         response.printResponse ( );
 
         setExpertProfile ( parse.getJsonData ( "results.is_expertprofiles_exist", ResponseDataType.BOOLEAN ) );
+
         setIs_myinfo_complete ( parse.getJsonData ( "results.is_myinfo_complete", ResponseDataType.BOOLEAN ) );
+
         setIs_socialink_exist ( parse.getJsonData ( "results.is_socialink_exist", ResponseDataType.BOOLEAN ) );
+
         sethas_availibility_slot(parse.getJsonData ( "results.has_availibility_slot", ResponseDataType.BOOLEAN));
+
         if ( is_myinfo_complete.equals ( "false" ) || is_socialink_exist.equals ( "false" ) || isExpertProfile.equals ( "false" ) || has_availibility_slot.equals ( "false" )) {
 
             setProfileComplete ( false );
