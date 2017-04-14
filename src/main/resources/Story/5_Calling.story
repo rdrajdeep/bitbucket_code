@@ -50,8 +50,3 @@ Then initiate a call of scheduled_duration 10
 Given an expert
 Then login with expert1
 And accept the call
-
-!--Given an user
-!--When login with user1
-!--
-!--Then extend the session for 10 mins
