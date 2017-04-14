@@ -19,8 +19,7 @@ Given an user
 When register with {"email": "kishor+user80@atlogys.com","password": "testing123" } as user3
 Then Verify Email
 
-
-Then logout the expert
+Then logout the user
 
 Then search the expert profile anonymously
 

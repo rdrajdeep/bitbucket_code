@@ -1556,16 +1556,6 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         String date="";
 
         stats.getAllcounts ();
-
-        try{
-
-            TimeUnit.SECONDS.sleep ( 5 );
-
-        }catch ( Exception e ){
-
-
-        }
-
         int size=response.getResponse ().jsonPath ().getList ( "results.profile_visits.summary" ).size ();
 
         if(size>0) {
