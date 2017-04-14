@@ -8,7 +8,7 @@ So that I can achieve a business goal
 Scenario: scenario description
 
 Given complete registration and login flow
-
+Given an user
 Then login with user1
 
 Then Change password to jyoti1032 for user1

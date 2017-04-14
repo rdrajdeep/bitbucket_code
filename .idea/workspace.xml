@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8693fbd6-8234-4202-ac15-ee04ea59d911" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Story/11_MyStates.story" afterPath="$PROJECT_DIR$/src/main/resources/Story/11_MyStates.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Story/9_profilestatus.story" afterPath="$PROJECT_DIR$/src/main/resources/Story/9_profilestatus.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story" afterPath="$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,11 +30,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="11_MyStates.story" pinned="false" current-in-tab="true">
+      <file leaf-file-name="11_MyStates.story" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/Story/11_MyStates.story">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-775">
               <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="7_user_APIs.story" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -77,16 +85,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
               <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="48" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="0_BasicFlow.story" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Story/0_BasicFlow.story">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-125">
-              <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -227,13 +225,13 @@
         <option value="$PROJECT_DIR$/src/main/resources/Story/10_Searching.story" />
         <option value="$PROJECT_DIR$/ExpertChat.Properties" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calling.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/2_BasicProfileLoad.story" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/3_ExpertProfile.story" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/5_Calling.story" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/9_profilestatus.story" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/11_MyStates.story" />
+        <option value="$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story" />
       </list>
     </option>
   </component>
@@ -1204,14 +1202,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1325">
-          <caret line="53" column="35" lean-forward="false" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Story/6_PhoneVerification.story">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -1304,6 +1294,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-775">
           <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/7_user_APIs.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
           <folding />
         </state>
       </provider>
