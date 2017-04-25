@@ -5,12 +5,10 @@ package bdd;
 import com.relevantcodes.extentreports.ExtentReports;
 import expertchat.apioperation.apiresponse.ApiResponse;
 import expertchat.apioperation.apiresponse.ParseResponse;
+import expertchat.apioperation.session.SessionManagement;
 import expertchat.report.Report;
 import expertchat.util.ResponseLogger;
-import org.jbehave.core.annotations.Given;
-import org.jbehave.core.annotations.Named;
-import org.jbehave.core.annotations.Then;
-import org.jbehave.core.annotations.When;
+import org.jbehave.core.annotations.*;
 import expertchat.params.parameter;
 public abstract class AbstractSteps extends Report {
 
@@ -47,6 +45,46 @@ public abstract class AbstractSteps extends Report {
     @Given("negative scenario")
     public void negative() {
         parameter.setIsNegative ( true );
+    }
+
+    @Then("should not $allowed")
+    public void negativeCases() {
+
+        this.checkAndWriteToReport(response.statusCode(), jsonParser.printError(), true);
+    }
+
+
+    @Then("check error code $code")
+    public void check_error_code(@Named("code") String code) {
+
+        this.checkErrorCode(jsonParser.serverStatusCode(), code);
+    }
+
+    @Then("check non-field error code $code")
+    public void check_non_filed_error_code(@Named("code") String code) {
+
+        this.checkNonFiledError(response.statusCode(),
+                jsonParser.getNonFieldErrorCode(), code);
+    }
+
+
+    @Then("check success code $code")
+    public void check_success_code(@Named("code") String code) {
+
+        this.checkSuccessCode(response.statusCode(), jsonParser.getSuccessCode(), code, false);
+    }
+
+    @Then("logout")
+    @When("logout")
+    @Aliases ( values = {"logout the expert","logout the user"})
+    public void logout() {
+
+        SessionManagement.session().setToken(null);
+
+        if (SessionManagement.session().getToken() == null) {
+
+            info("Logout from the system");
+        }
     }
 
 }

@@ -9,9 +9,9 @@ import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import expertchat.params.*;
 
-public class BasicFlow extends AbstractSteps{
+public class BasicFlowTC extends AbstractSteps{
 
-    public BasicFlow ( ExtentReports reports, String casName) {
+    public BasicFlowTC ( ExtentReports reports, String casName) {
 
         super(reports, casName);
     }
@@ -189,5 +189,27 @@ public class BasicFlow extends AbstractSteps{
 
         }
     }
+    @Then("Resend $email for $json")
+    @When("Resend $email for $json")
+    public void resendEmailVerification(@Named("json") String json) {
+
+        this.info("Resend Verification Information");
+
+        if (parameter.isNegative ()) {
+
+            expertChatApi.resendEmailVerification(json, parameter.isExpert ());
+
+            responseLogger.writeResponseAsLog("Resend Email Verification");
+
+        } else {
+            expertChatApi.resendEmailVerification(json, parameter.isExpert ());
+
+            this.checkAndWriteToReport(response.statusCode(),
+                    "Resend email Verification", parameter.isNegative ());
+
+            responseLogger.writeResponseAsLog("Resend Email Verification");
+        }
+    }
+
 
 }

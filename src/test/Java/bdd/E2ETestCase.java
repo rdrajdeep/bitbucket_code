@@ -1,16 +1,14 @@
+/*
 package bdd;
 
 import com.relevantcodes.extentreports.ExtentReports;
-import expertchat.apioperation.apiresponse.ApiResponse;
 import expertchat.apioperation.apiresponse.HTTPCode;
-import expertchat.apioperation.apiresponse.ParseResponse;
 import expertchat.apioperation.apiresponse.ResponseDataType;
 import expertchat.apioperation.session.SessionManagement;
 import expertchat.bussinesslogic.*;
 import expertchat.usermap.TestUserMap;
 import expertchat.util.ExpertChatException;
 import expertchat.util.ExpertChatUtility;
-import expertchat.util.ResponseLogger;
 import org.jbehave.core.annotations.*;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -29,7 +27,7 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     private ExpertChatApi expertChatApi = new ExpertChatApi();
 
     private ExpertProfile expertProfile = new ExpertProfile();
-    private BasicProfile basicProfile = new BasicProfile();
+    private BasicProfile basicProfile = new BasicProfile ();
     private Calling call = new Calling();
     private PhoneVerification phone = new PhoneVerification();
     private SocialLinks socialLinks = new SocialLinks();
@@ -71,7 +69,9 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         isNegative = true;
     }
 
-    /*log out from the system*/
+    */
+/*log out from the system*//*
+
     @Then("logout")
     @When("logout")
     @Aliases ( values = {"logout the expert","logout the user"})
@@ -86,10 +86,12 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     }
 
 
-    /**
+    */
+/**
      * @param json
      * @param name
-     */
+     *//*
+
     @When("register with $json as $name")
     public void register(@Named("json") String json,
                          @Named("name") String name) {
@@ -141,9 +143,11 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     }
 
 
-    /**
+    */
+/**
      * Email verification
-     */
+     *//*
+
     @Then("Verify Email")
     public void verifyUser() {
 
@@ -155,9 +159,11 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
     }
 
-    /**
+    */
+/**
      * @param user
-     */
+     *//*
+
     @When("login with $user")
     @Then("login with $user")
     public void login(@Named("user") String user) {
@@ -202,11 +208,13 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         responseLogger.writeResponseAsLog("Login API");
     }
 
-    /**
+    */
+/**
      * @param state
      * @param password
      * @param user
-     */
+     *//*
+
     @Then("$state password to $password for $user")
     @When("$state password to $password for $user")
     public void change_or_reset_password(@Named("state") String state,
@@ -258,18 +266,22 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     }
 
 
-    /**
+    */
+/**
      * @param code
-     */
+     *//*
+
     @Then("check error code $code")
     public void check_error_code(@Named("code") String code) {
 
         this.checkErrorCode(jsonParser.serverStatusCode(), code);
     }
 
-    /**
+    */
+/**
      * @param code
-     */
+     *//*
+
     @Then("check non-field error code $code")
     public void check_non_filed_error_code(@Named("code") String code) {
 
@@ -278,9 +290,11 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     }
 
 
-    /**
+    */
+/**
      * @param code
-     */
+     *//*
+
     @Then("check success code $code")
     public void check_success_code(@Named("code") String code) {
 
@@ -288,9 +302,11 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     }
 
 
-    /**
+    */
+/**
      * @param json
-     */
+     *//*
+
     @Then("Resend $email for $json")
     @When("Resend $email for $json")
     public void resendEmailVerification(@Named("json") String json) {
@@ -312,11 +328,15 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
             responseLogger.writeResponseAsLog("Resend Email Verification");
         }
     }
-    /*Basic Profile Load Test Cases*/
+    */
+/*Basic Profile Load Test Cases*//*
 
-    /**
+
+    */
+/**
      * @param user
-     */
+     *//*
+
     @Then("Load basic profile of $user")
     public void loadBasicProfile(@Named("user") String user) {
 
@@ -331,9 +351,11 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
     }
 
-    /**
+    */
+/**
      * @param user
-     */
+     *//*
+
     @Then("verify email of the profile is same as $user")
     public void verifyEmailOfUser(@Named("user") String user) {
 
@@ -343,9 +365,11 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
                 "Email is same as login user");
     }
 
-    /**
+    */
+/**
      * @param name
-     */
+     *//*
+
     @Then("add name as $name")
     @Aliases(values = {"update basic profile as $name"})
     public void addName(@Named("name") String name) {
@@ -433,11 +457,15 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
     }
 
-    /*EXPERT PROFILE TEST CASES*/
+    */
+/*EXPERT PROFILE TEST CASES*//*
 
-    /**
+
+    */
+/**
      * @param profile
-     */
+     *//*
+
     @Then("expert should be able to post expert profile as $profile")
     @When("expert should be able to post expert profile as $profile")
     @Aliases(values = {"Create a new Profile as $profile",
@@ -464,9 +492,11 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         responseLogger.writeResponseAsLog("Expert profile");
     }
 
-    /**
+    */
+/**
      * @param json
-     */
+     *//*
+
     @Then("update information on expert profile as $json")
     public void updateProfile(@Named("json") String json) {
 
@@ -490,9 +520,11 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         responseLogger.writeResponseAsLog("Update Expert Profile");
     }
 
-    /**
+    */
+/**
      *
-     */
+     *//*
+
     @Then("get profile")
     @When("get profile")
     @Aliases(values = {"get the profile",
@@ -524,9 +556,11 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         }
     }
 
-    /**
+    */
+/**
      * @param
-     */
+     *//*
+
     @Then("get profile of expert")
     public void getProfileWithID() {
 
@@ -582,9 +616,11 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         responseLogger.writeResponseAsLog("Upload Media");
     }
 
-    /**
+    */
+/**
      * Deleting an Expert profile
-     **/
+     **//*
+
     @Then("delete the profile")
     public void deleteProfile() {
 
@@ -606,9 +642,11 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
     }
 
-    /**
+    */
+/**
      * @param id
-     */
+     *//*
+
     @Then("delete the profile with id $id")
     public void deleteProfile(@Named("id") String id) {
 
@@ -630,10 +668,14 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
     }
 
-    /**
+    */
+/**
      * Test cases to drive the Calling API
-     */
-    /*Calling API Test cases*/
+     *//*
+
+    */
+/*Calling API Test cases*//*
+
     @When("register a device as $json")
     @Then("register a device as $json")
     public void registerDevice(@Named("json") String json) {
@@ -727,7 +769,9 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         responseLogger.writeResponseAsLog("Disconnect Call");
     }
 
-    /* Phone code verification test cases*/
+    */
+/* Phone code verification test cases*//*
+
 
     @When("we provide phone number as $phone")
     @Then("we provide phone number as $phone")
@@ -749,7 +793,9 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
             responseLogger.writeResponseAsLog("Phone code sent");
 
-            /*Phone code resent*/
+            */
+/*Phone code resent*//*
+
 
             this.info("Resending phone code--" + phoneNo);
 
@@ -789,7 +835,9 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         this.checkAndWriteToReport(response.statusCode(), jsonParser.printError(), true);
     }
 
-    /*Social Links Test Cases*/
+    */
+/*Social Links Test Cases*//*
+
 
     @When("post social links from $social")
     @Then("post social links from $social")
@@ -826,9 +874,11 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         responseLogger.writeResponseAsLog("Get Social Link");
     }
 
-    /**
+    */
+/**
      * Adding social link to expert profile
-     */
+     *//*
+
 
     @Then("add social link to expert profile")
     @When("add social link to expert profile")
@@ -854,9 +904,11 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         }
     }
 
-    /**
+    */
+/**
      *
-     */
+     *//*
+
     @Then("list all social links of a ExpertProfile")
     @When("list all social links of a ExpertProfile")
     public void listAllSocialLinks() {
@@ -1121,7 +1173,9 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
     }
 
 
-    /*Searching TestCases*/
+    */
+/*Searching TestCases*//*
+
 
     @Given("a $type $text")
     public void getText(@Named("text") String text,
@@ -1238,9 +1292,11 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         ExpertChatUtility.delay();
     }
 
-    /**
+    */
+/**
      * Super Admin test cases
-     */
+     *//*
+
 
     @Then("create a super admin content as $json")
     public void createSuperAdminContent(@Named("json") String json) {
@@ -1343,9 +1399,11 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         responseLogger.writeResponseAsLog("Update Content");
     }
 
-    /**
+    */
+/**
      * Payment account test cases
-     */
+     *//*
+
 
     @When("create a payment account as $json")
     @Then("create a payment account as $json")
@@ -1402,10 +1460,14 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         }
     }
 
-    /**
+    */
+/**
      * GET STREAM API
-     */
-    /*********************************************************************/
+     *//*
+
+    */
+/*********************************************************************//*
+
     @Then("get the feeds from get stream by $by")
     public void getFeeds(@Named("by") String by) {
 
@@ -1654,3 +1716,4 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 }
 
 
+*/

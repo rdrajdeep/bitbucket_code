@@ -1,6 +1,6 @@
 // Created by Kishor on 1/24/2017.
 
-import bdd.BasicFlow;
+import bdd.*;
 import com.relevantcodes.extentreports.ExtentReports;
 import expertchat.report.Report;
 import expertchat.util.ExpertChatException;
@@ -17,19 +17,19 @@ import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
 import org.junit.AfterClass;
 import org.junit.Before;
+import org.junit.BeforeClass;
+
 import java.util.List;
 
 /* Story configurator*/
 
 public class TestStoryConfig extends JUnitStories {
 
-    private ExtentReports extent = null;
-
-    @AfterClass
+    private  static ExtentReports extent = null;
 
 
-    @Before
-    public void setReports ( ) {
+    @BeforeClass
+    public static void setReport ( ) {
 
         extent = new ExtentReports ( Report.rPath, false );
 
@@ -100,7 +100,19 @@ public class TestStoryConfig extends JUnitStories {
 
         return new InstanceStepsFactory ( configuration ( ),
 
-                new BasicFlow( getReport (), "Log-in and registration flow")
+                new BasicFlowTC ( getReport (), "Log-in and registration flow"),
+                new BasicProfileTC (getReport (), "Basic profile flow"),
+                new ExpertProfileTC (getReport (), "Expert profile flow"),
+                new SocialLinkTC ( getReport (), "Social Link  flow" ),
+                new CallingTC ( getReport (), "Calling flow" ),
+                new PhoneVerificationTC ( getReport (), "Phone number verification flow"),
+                new PaymentInfoTC ( getReport (), "Payment information flow"),
+                new ProfileStatusTC ( getReport (), "profile status check flow" ),
+                new SearchTC (getReport (), "SOLR Search flow"),
+                new MyStatesTC (getReport (), "Expert Analytics flow"),
+                new SuperAdminTC ( getReport (), "Super Admin flow" ),
+                new GetStreamTC (getReport (), "Get Stream flow")
+
         );
     }
 }

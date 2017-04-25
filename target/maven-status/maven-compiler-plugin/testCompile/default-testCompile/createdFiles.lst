@@ -1,3 +1,17 @@
 TestStoryConfig.class
+bdd\AbstractSteps.class
 TestStoryConfig$1.class
+bdd\ExpertProfileTC.class
+bdd\SocialLinkTC.class
+bdd\PaymentInfoTC.class
 TestRunner.class
+bdd\BasicFlowTC.class
+bdd\GetStreamTC.class
+bdd\ProfileStatusTC.class
+bdd\PhoneVerificationTC.class
+bdd\SuperAdminTC.class
+bdd\MyStatesTC.class
+bdd\UserAPITC.class
+bdd\CallingTC.class
+bdd\SearchTC.class
+bdd\BasicProfileTC.class

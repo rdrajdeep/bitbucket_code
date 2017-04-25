@@ -5,7 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8693fbd6-8234-4202-ac15-ee04ea59d911" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/BasicProfileTC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/CallingTC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/ExpertProfileTC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/GetStreamTC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/MyStatesTC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/PaymentInfoTC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/PhoneVerificationTC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/ProfileStatusTC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/SearchTC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/SocialLinkTC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/SuperAdminTC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/UserAPITC.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/0_BasicFlow.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/10_Searching.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/2_BasicProfileLoad.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/3_ExpertProfile.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/4_SocialLinks.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/5_Calling.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/6_PhoneVerification.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/7_user_APIs.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/8_paymentInfo.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/9_profilestatus.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/storyDurations.props" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Java/TestStoryConfig.java" afterPath="$PROJECT_DIR$/src/test/Java/TestStoryConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Java/bdd/AbstractSteps.java" afterPath="$PROJECT_DIR$/src/test/Java/bdd/AbstractSteps.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Java/bdd/E2ETestCase.java" afterPath="$PROJECT_DIR$/src/test/Java/bdd/E2ETestCase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/bdd/BasicFlow.java" afterPath="$PROJECT_DIR$/src/test/Java/bdd/BasicFlowTC.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,21 +61,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="BasicFlowTC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/BasicFlowTC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="204" column="10" lean-forward="true" selection-start-line="204" selection-start-column="10" selection-end-line="204" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/AbstractSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="905">
-              <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+            <state relative-caret-position="-915">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicFlow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/BasicFlow.java">
+      <file leaf-file-name="AbstractSteps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/AbstractSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2690">
-              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="1200">
+              <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,8 +88,8 @@
       <file leaf-file-name="TestStoryConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/Java/TestStoryConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+            <state relative-caret-position="197">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,11 +110,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>MultipartEntity</find>
-      <find>expert</find>
-      <find>this</find>
-      <find>jsonParser.checkNonFiledError</find>
-      <find>setEx</find>
       <find>getconte</find>
       <find>JUni</find>
       <find>resend</find>
@@ -111,7 +127,19 @@
       <find>true</find>
       <find>Error has occurred</find>
       <find>build</find>
+      <find>basicProfile</find>
+      <find>Negativecase</find>
+      <find>negativeCases()</find>
       <find>juni</find>
+      <find>negativeCases</find>
+      <find>User</find>
+      <find>Paym</find>
+      <find>search</find>
+      <find>Sta</find>
+      <find>superAdmin</find>
+      <find>GET</find>
+      <find>S</find>
+      <find>verify email of the profile</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,20 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/Story/11_GetStreamAPI.story" />
-        <option value="$PROJECT_DIR$/src/main/resources/Story/0_SuperAdmin.story" />
-        <option value="$PROJECT_DIR$/src/main/resources/Story/1_BasicFlow.story" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/FileUpload.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/Story/12_SuperAdmin.story" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/util/test.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/util/TimesAgo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/EmailVerification.java" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertChatApi.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/Story/testStory.story" />
-        <option value="$PROJECT_DIR$/src/main/resources/Story/0_SocialLinks.story" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SocialLinks.java" />
-        <option value="$PROJECT_DIR$/backUp/10_Searching.story" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/BasicProfile.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/apioperation/AbstractApiFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/driver/StoryConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/apioperation/ExpertChatEndPoints.java" />
@@ -171,14 +185,28 @@
         <option value="$PROJECT_DIR$/src/main/java/expertchat/util/ExpertChatException.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/Java/TestRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/Java/bdd/E2ETestCase.java" />
         <option value="$PROJECT_DIR$/src/test/Java/bdd/Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/report/Report.java" />
-        <option value="$PROJECT_DIR$/src/test/Java/bdd/AbstractSteps.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/params/Credentials.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/params/parameter.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertProfile.java" />
         <option value="$PROJECT_DIR$/src/test/Java/bdd/BasicFlow.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/bdd/BasicProfile.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/bdd/SocialLinkTC.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/bdd/CallingTC.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/bdd/PhoneVerificationTC.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/bdd/UserAPITC.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/bdd/PaymentInfoTC.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/bdd/ProfileStatusTC.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/bdd/SearchTC.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/bdd/ExpertProfileTC.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/bdd/MyStatesTC.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/bdd/SuperAdminTC.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/bdd/GetStreamTC.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/bdd/E2ETestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/bdd/BasicFlowTC.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/bdd/BasicProfileTC.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/bdd/AbstractSteps.java" />
         <option value="$PROJECT_DIR$/src/test/Java/TestStoryConfig.java" />
       </list>
     </option>
@@ -963,23 +991,8 @@
     <history-entry file="AppRunner - 2017.04.25 at 11h 28m 36s.xml">
       <configuration name="AppRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StoryConfig - 2017.04.13 at 12h 03m 13s.xml">
-      <configuration name="StoryConfig" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StoryConfig - 2017.04.13 at 12h 13m 33s.xml">
-      <configuration name="StoryConfig" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StoryConfig - 2017.04.14 at 15h 30m 37s.xml">
-      <configuration name="StoryConfig" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StoryConfig - 2017.04.14 at 15h 33m 04s.xml">
-      <configuration name="StoryConfig" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StoryConfig - 2017.04.25 at 11h 15m 41s.xml">
       <configuration name="StoryConfig" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StoryConfig_run - 2017.04.13 at 01h 36m 41s.xml">
-      <configuration name="StoryConfig.run" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestRunner_(1) - 2017.04.25 at 13h 01m 57s.xml">
       <configuration name="TestRunner (1)" configurationId="JUnit" />
@@ -988,6 +1001,21 @@
       <configuration name="TestStoryConfig" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestStoryConfig - 2017.04.25 at 13h 03m 41s.xml">
+      <configuration name="TestStoryConfig" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStoryConfig - 2017.04.25 at 15h 42m 19s.xml">
+      <configuration name="TestStoryConfig" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStoryConfig - 2017.04.25 at 15h 43m 07s.xml">
+      <configuration name="TestStoryConfig" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStoryConfig - 2017.04.25 at 15h 43m 31s.xml">
+      <configuration name="TestStoryConfig" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStoryConfig - 2017.04.25 at 15h 47m 23s.xml">
+      <configuration name="TestStoryConfig" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStoryConfig - 2017.04.25 at 15h 48m 46s.xml">
       <configuration name="TestStoryConfig" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1014,7 +1042,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.88707036" sideWeight="0.4909091" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9394435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2375189" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23373677" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1075,67 +1103,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/EmailVerification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertChatApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="214" column="5" lean-forward="false" selection-start-line="214" selection-start-column="5" selection-end-line="214" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Not for CI/3_ExpertProfile.story" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/CallStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/apioperation/httpspecs/Specification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/classes/Story/0_BasicFlow.story" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jbehave/jbehave-core/4.0.5/jbehave-core-4.0.5.jar!/org/jbehave/core/junit/JUnitStories.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/apioperation/apiresponse/ParseResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/testStory.story" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SocialLinks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="182" column="5" lean-forward="false" selection-start-line="182" selection-start-column="5" selection-end-line="182" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/0_SocialLinks.story" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/GetStreamFeeds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backUp/10_Searching.story">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-56">
@@ -1193,13 +1160,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/8_paymentInfo.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Account.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1235,88 +1195,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/10_Searching.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/7_user_APIs.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/0_BasicFlow.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/2_BasicProfileLoad.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/4_SocialLinks.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/6_PhoneVerification.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/3_ExpertProfile.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="50" column="21" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/9_profilestatus.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="63" column="30" lean-forward="false" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/util/ExpertChatException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/5_Calling.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/11_MyStates.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2000">
-          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1365,16 +1247,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/E2ETestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="170" column="35" lean-forward="true" selection-start-line="170" selection-start-column="35" selection-end-line="170" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/params/Credentials.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1401,16 +1273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/AbstractSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="905">
-          <caret line="48" column="41" lean-forward="true" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/testTC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1419,10 +1281,236 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/BasicFlow.java">
+    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/SocialLinkTC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2690">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="3650">
+          <caret line="146" column="36" lean-forward="true" selection-start-line="146" selection-start-column="36" selection-end-line="146" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/CallingTC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2750">
+          <caret line="110" column="37" lean-forward="false" selection-start-line="110" selection-start-column="37" selection-end-line="110" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/PhoneVerificationTC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1475">
+          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/UserAPITC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/ProfileStatusTC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/SearchTC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1300">
+          <caret line="52" column="35" lean-forward="true" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/ExpertProfileTC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/MyStatesTC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2525">
+          <caret line="109" column="133" lean-forward="false" selection-start-line="109" selection-start-column="133" selection-end-line="109" selection-end-column="133" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/SuperAdminTC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/PaymentInfoTC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/GetStreamTC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="52" lean-forward="true" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/BasicProfileTC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="128" column="5" lean-forward="true" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/0_BasicFlow.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/2_BasicProfileLoad.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/3_ExpertProfile.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="50" column="21" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/5_Calling.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/10_Searching.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/11_MyStates.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1319">
+          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/E2ETestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="85" column="5" lean-forward="true" selection-start-line="74" selection-start-column="4" selection-end-line="85" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#47799#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/9_profilestatus.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="794">
+          <caret line="63" column="30" lean-forward="false" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/8_paymentInfo.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/7_user_APIs.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/6_PhoneVerification.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Story/4_SocialLinks.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-675">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/BasicFlowTC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-915">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/AbstractSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1431,8 +1519,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Java/TestStoryConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        <state relative-caret-position="197">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

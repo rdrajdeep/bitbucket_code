@@ -5,7 +5,6 @@ D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bussinesslogic\Ex
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\apioperation\apiresponse\ResponseDataType.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bussinesslogic\Searching.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\util\OpenBrowser.java
-D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bdd\Social.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\util\ExpertChatUtility.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bussinesslogic\Account.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bussinesslogic\Calender.java
@@ -16,8 +15,6 @@ D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bussinesslogic\Ba
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\apioperation\apiresponse\ApiResponse.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\util\JsonBuilder.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\apioperation\apiresponse\HTTPCode.java
-D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bdd\E2ETestCase.java
-D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bdd\AbstractSteps.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bussinesslogic\CallStatus.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bussinesslogic\PhoneVerification.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\report\Report.java
@@ -25,14 +22,15 @@ D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\apioperation\ApiF
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\apioperation\httpspecs\Specification.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bussinesslogic\EmailVerification.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bussinesslogic\GetStreamFeeds.java
+D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\params\parameter.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\util\ResponseLogger.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\util\ExpertChatException.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\apioperation\session\SessionManagement.java
+D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\params\Credentials.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bussinesslogic\FileUpload.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bussinesslogic\Calling.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bussinesslogic\SocialLinks.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\usermap\TestUserMap.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\apioperation\ExpertChatEndPoints.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\apioperation\apiresponse\ParseResponse.java
-D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bdd\testTC.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\apioperation\AbstractApiFactory.java
