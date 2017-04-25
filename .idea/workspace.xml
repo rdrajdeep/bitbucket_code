@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/FileUpload.java" line="96" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8693fbd6-8234-4202-ac15-ee04ea59d911" name="Default" comment="" />
+    <list default="true" id="8693fbd6-8234-4202-ac15-ee04ea59d911" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Java/TestStoryConfig.java" afterPath="$PROJECT_DIR$/src/test/Java/TestStoryConfig.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,11 +52,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicFlow.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BasicFlow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/BasicFlow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+            <state relative-caret-position="-2690">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestStoryConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/Java/TestStoryConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,8 +178,8 @@
         <option value="$PROJECT_DIR$/src/main/java/expertchat/params/Credentials.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/params/parameter.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertProfile.java" />
-        <option value="$PROJECT_DIR$/src/test/Java/TestStoryConfig.java" />
         <option value="$PROJECT_DIR$/src/test/Java/bdd/BasicFlow.java" />
+        <option value="$PROJECT_DIR$/src/test/Java/TestStoryConfig.java" />
       </list>
     </option>
   </component>
@@ -1387,16 +1401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/Java/TestStoryConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/AbstractSteps.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="905">
@@ -1417,8 +1421,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/BasicFlow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+        <state relative-caret-position="-2690">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/Java/TestStoryConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

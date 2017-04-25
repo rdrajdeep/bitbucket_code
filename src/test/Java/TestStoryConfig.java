@@ -100,7 +100,7 @@ public class TestStoryConfig extends JUnitStories {
 
         return new InstanceStepsFactory ( configuration ( ),
 
-                new BasicFlow( getReport ( ), "Log-in and Registration flow")
+                new BasicFlow( getReport (), "Log-in and registration flow")
         );
     }
 }
