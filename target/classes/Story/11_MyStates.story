@@ -6,14 +6,15 @@ I want to perform an action
 So that I can achieve a business goal
 
 Scenario: scenario description
-Given a complete Expert analytics flow
+Given complete Expert analytics flow
 
 Given an expert
 When register with {"email": "kishor+expert80@atlogys.com","password": "testing123" } as expert2
 Then Verify Email
 Then login with expert2
 And get profile
-Then chek the profile visits and count should be 0
+
+Then check the profile visits and count should be 0
 
 Given an user
 When register with {"email": "kishor+user80@atlogys.com","password": "testing123" } as user3
@@ -75,4 +76,4 @@ Then disconnect the call
 Then login with expert2
 Then check the session count and count should be 1
 
-!--Then check the total statistics between 2017-03-21 and today
+Then check the total statistics between 2017-03-21 and today

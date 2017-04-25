@@ -26,10 +26,8 @@ public class MeStats extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
     public void  getAllcounts() {
 
-
-        String date = new SimpleDateFormat ( "yyyy-mm-dd" ).format ( new Date ( ) );
-
-        response.setResponse ( this.get ( SEARCH_BASE + "me-stats/", session.getToken ( ) ) );
+        response.setResponse (
+                this.get ( SEARCH_BASE + "me-stats/", session.getToken ( ) ) );
 
         response.printResponse ( );
 

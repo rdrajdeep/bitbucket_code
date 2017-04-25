@@ -1549,7 +1549,7 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         responseLogger.writeResponseAsLog("GET Avilable slots");
     }
 
-    @Then("chek the profile visits and count should be $count")
+    @Then("check the profile visits and count should be $count")
     public void profileVisits(@Named ("count")String count){
 
         info("Checking Number of profile visits");
@@ -1557,6 +1557,7 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
         String date="";
 
         stats.getAllcounts ();
+
         int size=response.getResponse ().jsonPath ().getList ( "results.profile_visits.summary" ).size ();
 
         if(size>0) {
@@ -1565,7 +1566,7 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
             date=jsonParser.getJsonData ( "results.profile_visits.summary[0].date", ResponseDataType.STRING );
 
-            if(count.equals (ActualCount)){
+            if(String.valueOf (count).equals (ActualCount)){
 
                 AssertAndWriteToReport ( true, "Number of profile visits for\t"+date+"\tis\t"+ActualCount);
             }else {

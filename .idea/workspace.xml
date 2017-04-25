@@ -5,25 +5,922 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8693fbd6-8234-4202-ac15-ee04ea59d911" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/artifacts/Expertchat_Test_Automation_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/codeStyleSettings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__asm_asm_3_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__cglib_cglib_2_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__cglib_cglib_nodep_2_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_beust_jcommander_1_48.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_guava_2_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_joda_2_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_github_detro_ghostdriver_phantomjsdriver_1_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_github_fge_btf_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_github_fge_jackson_coreutils_1_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_github_fge_json_schema_core_1_2_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_github_fge_json_schema_validator_2_2_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_github_fge_msg_simple_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_github_fge_uri_template_0_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_github_kevinsawicki_timeago_1_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_google_code_gson_gson_2_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_google_guava_guava_17_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_google_inject_guice_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_googlecode_lambdaj_lambdaj_2_3_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_googlecode_libphonenumber_libphonenumber_6_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_jhlabs_filters_2_0_235.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_opera_operadriver_1_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_opera_operalaunchers_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_relevantcodes_extentreports_2_41_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_8_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__commons_jxpath_commons_jxpath_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__de_codecentric_jbehave_junit_runner_1_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__io_netty_netty_3_5_7_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__io_rest_assured_json_path_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__io_rest_assured_json_schema_validator_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__io_rest_assured_rest_assured_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__io_rest_assured_rest_assured_common_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__io_rest_assured_xml_path_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__javassist_javassist_3_12_1_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__javax_el_javax_el_api_2_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__javax_mail_mail_1_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__javax_mail_mailapi_1_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__joda_time_joda_time_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__mx4j_mx4j_tools_3_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__net_java_dev_jna_jna_4_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__net_jcip_jcip_annotations_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__net_sf_flexjson_flexjson_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_4_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__net_sf_opencsv_opencsv_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_16.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_18.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_17.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__net_sourceforge_jexcelapi_jxl_2_6_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_22.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__net_thucydides_thucydides_core_0_9_275.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__net_thucydides_thucydides_jbehave_plugin_0_9_275.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__net_thucydides_thucydides_junit_0_9_275.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__net_thucydides_thucydides_report_resources_0_9_275.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__net_thucydides_thucydides_test_utils_0_9_275.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_apache_poi_poi_3_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_asciidoctor_asciidoctor_java_integration_0_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_48.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_48.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_ccil_cowan_tagsoup_tagsoup_1_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_codehaus_groovy_groovy_json_2_4_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_codehaus_groovy_groovy_xml_2_4_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_0_10.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_easytesting_fest_assert_1_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_easytesting_fest_util_1_1_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_3_5_v20151012.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_3_5_v20151012.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_3_5_v20151012.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_3_5_v20151012.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_3_5_v20151012.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_fluentlenium_fluentlenium_core_0_10_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_glassfish_web_javax_el_2_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_hamcrest_hamcrest_integration_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_1_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_ini4j_ini4j_0_5_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_jbehave_jbehave_core_4_0_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_jruby_jruby_complete_1_7_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_jsoup_jsoup_1_8_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_mockito_mockito_core_1_9_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_mongodb_bson_3_0_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_0_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_0_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_mortbay_jetty_servlet_api_2_5_6_1_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_mozilla_rhino_1_7R4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_objenesis_objenesis_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_reflections_reflections_0_9_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_htmlunit_driver_2_21.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_jetty_rc_repacked_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_jetty_repacked_7_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_htmlunit_driver_2_52_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_leg_rc_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_server_2_43_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_8_11_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__org_yaml_snakeyaml_1_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__xmlunit_xmlunit_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/ExpertChat.Properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/JsonFiles/Register.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/JsonFiles/login.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-11/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-13/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-14/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-15/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-16/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-20/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-21/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-28/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-30/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-31/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-34/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-38/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-4/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-40/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-44/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-45/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-47/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-48/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-51/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-53/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-56/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-7/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/11-4-2017-8/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-12/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-18/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-21/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-23/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-24/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-26/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-28/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-31/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-33/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-35/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-40/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-41/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-44/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-47/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-48/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-54/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-57/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-58/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-59/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/12-4-2017-6/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-0/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-1/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-11/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-12/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-13/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-14/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-15/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-19/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-2/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-20/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-22/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-23/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-28/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-29/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-3/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-30/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-31/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-32/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-34/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-35/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-36/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-4/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-40/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-43/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-44/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-45/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-47/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-48/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-5/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-53/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-57/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-58/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-59/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-6/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-8/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/13-4-2017-9/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/30-3-2017-12/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/30-3-2017-16/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/30-3-2017-18/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/30-3-2017-3/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/30-3-2017-41/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/30-3-2017-46/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/31-3-2017-0/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/31-3-2017-26/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/31-3-2017-30/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/31-3-2017-5/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Log/31-3-2017-59/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/TestData/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/TestData/tv.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Usermap.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/10_Searching.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/11_GetStreamAPI.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/1_SuperAdmin.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/2_BasicProfileLoad.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/3_ExpertProfile.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/4_SocialLinks.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/5_Calling.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/6_PhoneVerification.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/7_UserMedia.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/8_paymentInfo.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/9_profilestatus.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/Not for CI/10_Searching.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/Not for CI/11_GetStreamAPI.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/Not for CI/12_SuperAdmin.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/Not for CI/2_BasicProfileLoad.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/Not for CI/3_ExpertProfile.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/Not for CI/4_SocialLinks.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/Not for CI/5_Calling.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/Not for CI/6_PhoneVerification.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/Not for CI/7_user_APIs.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/Not for CI/8_paymentInfo.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/Not for CI/9_profilestatus.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/bkp/0_BasicFlow.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/bkp/12_SuperAdmin.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/bkp/2_BasicProfileLoad.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/bkp/5_Calling.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/bkp/6_PhoneVerification.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/bkp/7_user_APIs.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/bkp/8_paymentInfo.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/backUp/Updated/bkp/9_profilestatus.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/src/main/resources/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/0_BasicFlow.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/10_Searching.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/11_MyStates.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/2_BasicProfileLoad.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/3_ExpertProfile.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/4_SocialLinks.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/5_Calling.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/6_PhoneVerification.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/7_user_APIs.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/8_paymentInfo.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/9_profilestatus.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/classes/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/classes/Story/0_BasicFlow.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/classes/Story/10_Searching.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/classes/Story/11_MyStates.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/classes/Story/2_BasicProfileLoad.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/classes/Story/3_ExpertProfile.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/classes/Story/4_SocialLinks.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/classes/Story/5_Calling.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/classes/Story/6_PhoneVerification.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/classes/Story/7_user_APIs.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/classes/Story/8_paymentInfo.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/classes/Story/9_profilestatus.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/jbehave/storyDurations.props" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/artifacts/Expertchat_Test_Automation_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/codeStyleSettings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__asm_asm_3_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__cglib_cglib_2_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__cglib_cglib_nodep_2_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_beust_jcommander_1_48.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_guava_2_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_joda_2_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_github_detro_ghostdriver_phantomjsdriver_1_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_github_fge_btf_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_github_fge_jackson_coreutils_1_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_github_fge_json_schema_core_1_2_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_github_fge_json_schema_validator_2_2_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_github_fge_msg_simple_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_github_fge_uri_template_0_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_github_kevinsawicki_timeago_1_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_google_code_gson_gson_2_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_google_guava_guava_17_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_google_inject_guice_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_googlecode_lambdaj_lambdaj_2_3_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_googlecode_libphonenumber_libphonenumber_6_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_jhlabs_filters_2_0_235.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_opera_operadriver_1_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_opera_operalaunchers_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_relevantcodes_extentreports_2_41_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_8_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__commons_jxpath_commons_jxpath_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__de_codecentric_jbehave_junit_runner_1_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__io_netty_netty_3_5_7_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__io_rest_assured_json_path_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__io_rest_assured_json_schema_validator_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__io_rest_assured_rest_assured_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__io_rest_assured_rest_assured_common_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__io_rest_assured_xml_path_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__javassist_javassist_3_12_1_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__javax_el_javax_el_api_2_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__javax_mail_mail_1_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__javax_mail_mailapi_1_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__joda_time_joda_time_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__mx4j_mx4j_tools_3_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__net_java_dev_jna_jna_4_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__net_jcip_jcip_annotations_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__net_sf_flexjson_flexjson_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_4_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__net_sf_opencsv_opencsv_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_16.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_18.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_17.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__net_sourceforge_jexcelapi_jxl_2_6_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_22.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__net_thucydides_thucydides_core_0_9_275.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__net_thucydides_thucydides_jbehave_plugin_0_9_275.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__net_thucydides_thucydides_junit_0_9_275.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__net_thucydides_thucydides_report_resources_0_9_275.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__net_thucydides_thucydides_test_utils_0_9_275.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_poi_poi_3_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_asciidoctor_asciidoctor_java_integration_0_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_48.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_48.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_ccil_cowan_tagsoup_tagsoup_1_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_codehaus_groovy_groovy_json_2_4_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_codehaus_groovy_groovy_xml_2_4_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_0_10.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_easytesting_fest_assert_1_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_easytesting_fest_util_1_1_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_3_5_v20151012.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_3_5_v20151012.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_3_5_v20151012.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_3_5_v20151012.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_3_5_v20151012.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_fluentlenium_fluentlenium_core_0_10_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_glassfish_web_javax_el_2_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_hamcrest_hamcrest_integration_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_1_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_ini4j_ini4j_0_5_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_jbehave_jbehave_core_4_0_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_jruby_jruby_complete_1_7_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_jsoup_jsoup_1_8_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_mockito_mockito_core_1_9_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_mongodb_bson_3_0_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_0_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_0_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_mortbay_jetty_servlet_api_2_5_6_1_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_mozilla_rhino_1_7R4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_objenesis_objenesis_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_reflections_reflections_0_9_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_htmlunit_driver_2_21.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_jetty_rc_repacked_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_jetty_repacked_7_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_htmlunit_driver_2_52_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_leg_rc_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_server_2_43_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_8_11_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__org_yaml_snakeyaml_1_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__xmlunit_xmlunit_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/ExpertChat.Properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/JsonFiles/Register.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/JsonFiles/login.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-11/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-13/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-14/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-15/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-16/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-20/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-21/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-28/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-30/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-31/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-34/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-38/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-4/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-40/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-44/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-45/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-47/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-48/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-51/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-53/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-56/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-7/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/11-4-2017-8/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-12/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-18/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-21/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-23/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-24/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-26/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-28/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-31/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-33/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-35/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-40/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-41/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-44/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-47/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-48/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-54/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-57/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-58/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-59/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/12-4-2017-6/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-0/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-1/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-11/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-12/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-13/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-14/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-15/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-19/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-2/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-20/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-22/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-23/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-28/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-29/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-3/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-30/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-31/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-32/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-34/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-35/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-36/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-4/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-40/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-43/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-44/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-45/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-47/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-48/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-5/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-53/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-57/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-58/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-59/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-6/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-8/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/13-4-2017-9/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/30-3-2017-12/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/30-3-2017-16/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/30-3-2017-18/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/30-3-2017-3/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/30-3-2017-41/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/30-3-2017-46/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/31-3-2017-0/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/31-3-2017-26/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/31-3-2017-30/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/31-3-2017-5/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Log/31-3-2017-59/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/TestData/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/TestData/tv.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/Usermap.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/10_Searching.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/11_GetStreamAPI.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/1_SuperAdmin.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/2_BasicProfileLoad.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/3_ExpertProfile.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/4_SocialLinks.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/5_Calling.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/6_PhoneVerification.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/7_UserMedia.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/8_paymentInfo.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/9_profilestatus.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/Not for CI/10_Searching.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/Not for CI/11_GetStreamAPI.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/Not for CI/12_SuperAdmin.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/Not for CI/2_BasicProfileLoad.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/Not for CI/3_ExpertProfile.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/Not for CI/4_SocialLinks.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/Not for CI/5_Calling.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/Not for CI/6_PhoneVerification.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/Not for CI/7_user_APIs.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/Not for CI/8_paymentInfo.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/Not for CI/9_profilestatus.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/bkp/0_BasicFlow.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/bkp/12_SuperAdmin.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/bkp/2_BasicProfileLoad.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/bkp/5_Calling.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/bkp/6_PhoneVerification.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/bkp/7_user_APIs.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/bkp/8_paymentInfo.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/backUp/Updated/bkp/9_profilestatus.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/src/main/resources/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/src/main/resources/Story/0_BasicFlow.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/src/main/resources/Story/10_Searching.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/src/main/resources/Story/11_MyStates.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/src/main/resources/Story/2_BasicProfileLoad.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/src/main/resources/Story/3_ExpertProfile.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/src/main/resources/Story/4_SocialLinks.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/src/main/resources/Story/5_Calling.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/src/main/resources/Story/6_PhoneVerification.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/src/main/resources/Story/7_user_APIs.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/src/main/resources/Story/8_paymentInfo.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/src/main/resources/Story/9_profilestatus.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/classes/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/classes/Story/0_BasicFlow.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/classes/Story/10_Searching.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/classes/Story/11_MyStates.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/classes/Story/2_BasicProfileLoad.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/classes/Story/3_ExpertProfile.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/classes/Story/4_SocialLinks.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/classes/Story/6_PhoneVerification.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/classes/Story/7_user_APIs.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/classes/Story/8_paymentInfo.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/classes/Story/9_profilestatus.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/jbehave/storyDurations.props" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/artifacts/Expertchat_Test_Automation_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/codeStyleSettings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__asm_asm_3_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__cglib_cglib_2_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__cglib_cglib_nodep_2_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_beust_jcommander_1_48.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_guava_2_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_joda_2_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_github_detro_ghostdriver_phantomjsdriver_1_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_github_fge_btf_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_github_fge_jackson_coreutils_1_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_github_fge_json_schema_core_1_2_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_github_fge_json_schema_validator_2_2_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_github_fge_msg_simple_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_github_fge_uri_template_0_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_github_kevinsawicki_timeago_1_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_google_code_gson_gson_2_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_google_guava_guava_17_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_google_inject_guice_3_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_googlecode_lambdaj_lambdaj_2_3_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_googlecode_libphonenumber_libphonenumber_6_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_jhlabs_filters_2_0_235.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_opera_operadriver_1_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_opera_operalaunchers_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_relevantcodes_extentreports_2_41_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_8_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__commons_jxpath_commons_jxpath_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__de_codecentric_jbehave_junit_runner_1_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__io_netty_netty_3_5_7_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__io_rest_assured_json_path_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__io_rest_assured_json_schema_validator_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__io_rest_assured_rest_assured_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__io_rest_assured_rest_assured_common_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__io_rest_assured_xml_path_3_0_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__javassist_javassist_3_12_1_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__javax_el_javax_el_api_2_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__javax_mail_mail_1_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__javax_mail_mailapi_1_4_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__joda_time_joda_time_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__mx4j_mx4j_tools_3_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__net_java_dev_jna_jna_4_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__net_java_dev_jna_jna_platform_4_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__net_jcip_jcip_annotations_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__net_sf_flexjson_flexjson_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__net_sf_jopt_simple_jopt_simple_4_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__net_sf_opencsv_opencsv_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_16.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_18.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_17.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__net_sourceforge_jexcelapi_jxl_2_6_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_22.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__net_thucydides_thucydides_core_0_9_275.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__net_thucydides_thucydides_jbehave_plugin_0_9_275.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__net_thucydides_thucydides_junit_0_9_275.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__net_thucydides_thucydides_report_resources_0_9_275.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__net_thucydides_thucydides_test_utils_0_9_275.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_poi_poi_3_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_asciidoctor_asciidoctor_java_integration_0_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_48.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_48.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_ccil_cowan_tagsoup_tagsoup_1_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_codehaus_groovy_groovy_json_2_4_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_codehaus_groovy_groovy_xml_2_4_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_0_10.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_easytesting_fest_assert_1_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_easytesting_fest_util_1_1_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_3_5_v20151012.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_3_5_v20151012.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_3_5_v20151012.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_3_5_v20151012.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_3_5_v20151012.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_fluentlenium_fluentlenium_core_0_10_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_glassfish_web_javax_el_2_2_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_hamcrest_hamcrest_integration_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_1_Final.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_ini4j_ini4j_0_5_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_jbehave_jbehave_core_4_0_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_jruby_jruby_complete_1_7_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_jsoup_jsoup_1_8_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_mockito_mockito_core_1_9_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_mongodb_bson_3_0_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_0_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_0_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_mortbay_jetty_servlet_api_2_5_6_1_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_mozilla_rhino_1_7R4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_objenesis_objenesis_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_reflections_reflections_0_9_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_htmlunit_driver_2_21.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_jetty_rc_repacked_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_jetty_repacked_7_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_htmlunit_driver_2_52_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_leg_rc_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_server_2_43_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_2_53_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_8_11_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__org_yaml_snakeyaml_1_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__xmlpull_xmlpull_1_1_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__xmlunit_xmlunit_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/libraries/Maven__xpp3_xpp3_min_1_1_4c.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/ExpertChat.Properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/JsonFiles/Register.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/JsonFiles/login.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-11/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-13/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-14/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-15/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-16/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-20/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-21/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-28/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-30/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-31/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-34/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-38/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-4/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-40/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-44/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-45/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-47/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-48/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-51/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-53/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-56/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-7/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/11-4-2017-8/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-12/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-18/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-21/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-23/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-24/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-26/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-28/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-31/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-33/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-35/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-40/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-41/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-44/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-47/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-48/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-54/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-57/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-58/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-59/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/12-4-2017-6/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-0/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-1/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-11/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-12/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-13/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-14/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-15/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-19/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-2/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-20/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-22/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-23/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-28/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-29/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-3/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-30/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-31/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-32/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-34/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-35/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-36/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-4/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-40/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-43/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-44/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-45/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-47/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-48/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-5/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-53/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-57/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-58/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-59/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-6/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-8/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/13-4-2017-9/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/30-3-2017-12/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/30-3-2017-16/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/30-3-2017-18/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/30-3-2017-3/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/30-3-2017-41/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/30-3-2017-46/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/31-3-2017-0/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/31-3-2017-26/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/31-3-2017-30/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/31-3-2017-5/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Log/31-3-2017-59/ResponseLog.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/TestData/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/TestData/tv.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/Usermap.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/10_Searching.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/11_GetStreamAPI.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/1_SuperAdmin.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/2_BasicProfileLoad.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/3_ExpertProfile.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/4_SocialLinks.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/5_Calling.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/6_PhoneVerification.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/7_UserMedia.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/8_paymentInfo.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/9_profilestatus.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/Not for CI/10_Searching.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/Not for CI/11_GetStreamAPI.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/Not for CI/12_SuperAdmin.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/Not for CI/2_BasicProfileLoad.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/Not for CI/3_ExpertProfile.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/Not for CI/4_SocialLinks.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/Not for CI/5_Calling.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/Not for CI/6_PhoneVerification.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/Not for CI/7_user_APIs.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/Not for CI/8_paymentInfo.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/Not for CI/9_profilestatus.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/bkp/0_BasicFlow.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/bkp/12_SuperAdmin.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/bkp/2_BasicProfileLoad.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/bkp/5_Calling.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/bkp/6_PhoneVerification.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/bkp/7_user_APIs.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/bkp/8_paymentInfo.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/backUp/Updated/bkp/9_profilestatus.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/src/main/resources/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/src/main/resources/Story/0_BasicFlow.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/src/main/resources/Story/10_Searching.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/src/main/resources/Story/11_MyStates.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/src/main/resources/Story/2_BasicProfileLoad.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/src/main/resources/Story/3_ExpertProfile.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/src/main/resources/Story/4_SocialLinks.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/src/main/resources/Story/6_PhoneVerification.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/src/main/resources/Story/7_user_APIs.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/src/main/resources/Story/8_paymentInfo.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/src/main/resources/Story/9_profilestatus.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/target/classes/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/target/test-classes/target/test-classes/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/MeStats.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/MeStats.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Story/11_MyStates.story" afterPath="$PROJECT_DIR$/src/main/resources/Story/11_MyStates.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Story/10_Searching.story" afterPath="$PROJECT_DIR$/target/classes/Story/10_Searching.story" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Story/11_MyStates.story" afterPath="$PROJECT_DIR$/target/classes/Story/11_MyStates.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Story/7_user_APIs.story" afterPath="$PROJECT_DIR$/target/classes/Story/7_user_APIs.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Story/9_profilestatus.story" afterPath="$PROJECT_DIR$/target/classes/Story/9_profilestatus.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/.idea/workspace.xml" afterPath="$PROJECT_DIR$/target/test-classes/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/ExpertChat.Properties" afterPath="$PROJECT_DIR$/target/test-classes/ExpertChat.Properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/pom.xml" afterPath="$PROJECT_DIR$/target/test-classes/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/10_Searching.story" afterPath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/10_Searching.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/11_MyStates.story" afterPath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/11_MyStates.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/7_user_APIs.story" afterPath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/7_user_APIs.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/9_profilestatus.story" afterPath="$PROJECT_DIR$/target/test-classes/src/main/resources/Story/9_profilestatus.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/target/classes/Story/5_Calling.story" afterPath="$PROJECT_DIR$/target/test-classes/target/classes/Story/5_Calling.story" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -101,8 +998,8 @@
       <file leaf-file-name="11_MyStates.story" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/Story/11_MyStates.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="77" column="22" lean-forward="true" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+            <state relative-caret-position="250">
+              <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -111,18 +1008,18 @@
       <file leaf-file-name="9_profilestatus.story" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/Story/9_profilestatus.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
+            <state relative-caret-position="433">
               <caret line="63" column="30" lean-forward="false" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="E2ETestCase.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="E2ETestCase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="1634" column="17" lean-forward="false" selection-start-line="1634" selection-start-column="17" selection-end-line="1634" selection-end-column="17" />
+            <state relative-caret-position="260">
+              <caret line="1567" column="0" lean-forward="true" selection-start-line="1567" selection-start-column="0" selection-end-line="1567" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -131,18 +1028,18 @@
       <file leaf-file-name="MeStats.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/MeStats.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-181">
-              <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+            <state relative-caret-position="335">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="5_Calling.story" pinned="false" current-in-tab="true">
+      <file leaf-file-name="5_Calling.story" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/Story/5_Calling.story">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="258">
-              <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+              <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -234,7 +1131,6 @@
         <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calender.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Searching.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/MyStates.story" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/MeStats.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/0_BasicFlow.story" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/4_SocialLinks.story" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/6_PhoneVerification.story" />
@@ -249,8 +1145,9 @@
         <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ProfileComplete.java" />
         <option value="$PROJECT_DIR$/ExpertChat.Properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/11_MyStates.story" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/MeStats.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java" />
       </list>
     </option>
   </component>
@@ -898,9 +1795,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StoryConfig - 2017.04.13 at 01h 23m 58s.xml">
-      <configuration name="StoryConfig" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StoryConfig - 2017.04.13 at 01h 25m 21s.xml">
       <configuration name="StoryConfig" configurationId="JUnit" />
     </history-entry>
@@ -925,6 +1819,9 @@
     <history-entry file="StoryConfig - 2017.04.14 at 15h 33m 04s.xml">
       <configuration name="StoryConfig" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StoryConfig - 2017.04.25 at 11h 15m 41s.xml">
+      <configuration name="StoryConfig" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="StoryConfig_run - 2017.04.13 at 01h 36m 41s.xml">
       <configuration name="StoryConfig.run" configurationId="JUnit" />
     </history-entry>
@@ -944,17 +1841,20 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13747954" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.887522" sideWeight="0.5090909" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47790506" sideWeight="0.4969743" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.88707036" sideWeight="0.4909091" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9394435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24659607" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18835099" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.88379705" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -963,12 +1863,9 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8851351" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13747954" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.88707036" sideWeight="0.4909091" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1004,7 +1901,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="57" />
+      <option name="time" value="65" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1289,42 +2186,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/9_profilestatus.story">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/5_Calling.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="63" column="30" lean-forward="false" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+        <state relative-caret-position="258">
+          <caret line="45" column="13" lean-forward="false" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Story/11_MyStates.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="77" column="22" lean-forward="true" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="1634" column="17" lean-forward="false" selection-start-line="1634" selection-start-column="17" selection-end-line="1634" selection-end-column="17" />
+        <state relative-caret-position="250">
+          <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/MeStats.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-181">
-          <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        <state relative-caret-position="335">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/5_Calling.story">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/9_profilestatus.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        <state relative-caret-position="433">
+          <caret line="63" column="30" lean-forward="false" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="1567" column="0" lean-forward="true" selection-start-line="1567" selection-start-column="0" selection-end-line="1567" selection-end-column="0" />
           <folding />
         </state>
       </provider>
