@@ -5,38 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8693fbd6-8234-4202-ac15-ee04ea59d911" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/BasicProfileTC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/CallingTC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/ExpertProfileTC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/GetStreamTC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/MyStatesTC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/PaymentInfoTC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/PhoneVerificationTC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/ProfileStatusTC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/SearchTC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/SocialLinkTC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/SuperAdminTC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/UserAPITC.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/0_BasicFlow.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/10_Searching.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/2_BasicProfileLoad.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/3_ExpertProfile.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/4_SocialLinks.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/5_Calling.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/6_PhoneVerification.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/7_user_APIs.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/8_paymentInfo.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/9_profilestatus.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/storyDurations.props" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Java/TestStoryConfig.java" afterPath="$PROJECT_DIR$/src/test/Java/TestStoryConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Java/bdd/AbstractSteps.java" afterPath="$PROJECT_DIR$/src/test/Java/bdd/AbstractSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Java/bdd/E2ETestCase.java" afterPath="$PROJECT_DIR$/src/test/Java/bdd/E2ETestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/bdd/BasicFlow.java" afterPath="$PROJECT_DIR$/src/test/Java/bdd/BasicFlowTC.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -88,11 +57,9 @@
       <file leaf-file-name="TestStoryConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/Java/TestStoryConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-1934">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1029,7 +996,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1519,11 +1486,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Java/TestStoryConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1934">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

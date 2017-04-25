@@ -15,10 +15,7 @@ import org.jbehave.core.io.StoryFinder;
 import org.jbehave.core.junit.JUnitStories;
 import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
-import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.BeforeClass;
-
 import java.util.List;
 
 /* Story configurator*/
@@ -112,7 +109,6 @@ public class TestStoryConfig extends JUnitStories {
                 new MyStatesTC (getReport (), "Expert Analytics flow"),
                 new SuperAdminTC ( getReport (), "Super Admin flow" ),
                 new GetStreamTC (getReport (), "Get Stream flow")
-
         );
     }
 }
