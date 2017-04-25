@@ -1,7 +1,6 @@
 expertchat\util\ExpertChatException.class
 expertchat\bussinesslogic\FileUpload.class
 expertchat\bussinesslogic\MeStats.class
-expertchat\driver\AppRunner.class
 expertchat\bussinesslogic\Account.class
 expertchat\bussinesslogic\ProfileComplete.class
 expertchat\apioperation\apiresponse\ResponseDataType.class
@@ -20,7 +19,6 @@ expertchat\apioperation\session\SessionManagement.class
 expertchat\bdd\E2ETestCase.class
 expertchat\bussinesslogic\CallStatus.class
 expertchat\util\Email$1.class
-expertchat\driver\StoryConfig.class
 expertchat\bussinesslogic\GetStreamFeeds.class
 expertchat\bussinesslogic\ExpertChatApi.class
 expertchat\apioperation\AbstractApiFactory.class
@@ -34,7 +32,6 @@ expertchat\util\JsonBuilder.class
 expertchat\bussinesslogic\Calender.class
 expertchat\bussinesslogic\Calling.class
 expertchat\bussinesslogic\EmailVerification.class
-expertchat\driver\StoryConfig$1.class
 expertchat\bussinesslogic\Searching.class
 expertchat\usermap\TestUserMap.class
 expertchat\bussinesslogic\GetStreamFeeds$By.class

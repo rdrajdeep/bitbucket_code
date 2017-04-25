@@ -67,23 +67,11 @@
             <artifactId>jcommander</artifactId>
             <version>1.48</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/net.thucydides/thucydides-core -->
-        <dependency>
-            <groupId>net.thucydides</groupId>
-            <artifactId>thucydides-core</artifactId>
-            <version>0.9.275</version>
-        </dependency>
 
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>3.12</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/net.thucydides/thucydides-junit -->
-        <dependency>
-            <groupId>net.thucydides</groupId>
-            <artifactId>thucydides-junit</artifactId>
-            <version>0.9.275</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/net.thucydides/thucydides-test-utils -->
         <dependency>
@@ -101,12 +89,6 @@
             <groupId>com.relevantcodes</groupId>
             <artifactId>extentreports</artifactId>
             <version>2.41.1</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/net.thucydides/thucydides-jbehave-plugin -->
-        <dependency>
-            <groupId>net.thucydides</groupId>
-            <artifactId>thucydides-jbehave-plugin</artifactId>
-            <version>0.9.275</version>
         </dependency>
 
         <dependency>
@@ -158,11 +140,7 @@
             <artifactId>websocket-client</artifactId>
             <version>9.3.5.v20151012</version>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-        </dependency>
+
         <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
         <dependency>
             <groupId>javax.mail</groupId>
@@ -178,6 +156,7 @@
     </dependencies>
 
     <build>
+        <pluginManagement>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -193,6 +172,17 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.20</version>
+                <configuration>
+                    <properties>
+                        <property>
+                            <name>junit</name>
+                            <value>true</value>
+                        </property>
+                    </properties>
+                    <includes>
+                        <include>"TestRunner.java</include>
+                    </includes>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -206,10 +196,11 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>expertchat.driver.AppRunner</mainClass>
+                    <mainClass>test.java.TestRunner</mainClass>
                 </configuration>
             </plugin>
         </plugins>
+        </pluginManagement>
     </build>
 </project>
 

@@ -1,8 +1,7 @@
 package expertchat.util;
+import static expertchat.util.ExpertChatUtility.getValue;
 
 // Created by Kishor on 1/24/2017.
-
-import expertchat.driver.StoryConfig;
 
 public class ExpertChatException extends RuntimeException {
 
@@ -14,7 +13,14 @@ public class ExpertChatException extends RuntimeException {
         super ( msg );
         message = msg;
         EXIT = true;
-        StoryConfig.sendEmailNotificationOnException ( message );
+        sendEmailNotificationOnException ( message );
     }
 
+
+    public static void sendEmailNotificationOnException ( String param ) {
+
+        Email.sendEmail ( getValue ( "EmailBodyError" ), getValue ( "From" ),
+                getValue ( "To" ), param, false );
+
+    }
 }

@@ -6,7 +6,6 @@ D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\apioperation\apir
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bussinesslogic\Searching.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\util\OpenBrowser.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bdd\Social.java
-D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\driver\AppRunner.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\util\ExpertChatUtility.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bussinesslogic\Account.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bussinesslogic\Calender.java
@@ -26,7 +25,6 @@ D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\apioperation\ApiF
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\apioperation\httpspecs\Specification.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bussinesslogic\EmailVerification.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\bussinesslogic\GetStreamFeeds.java
-D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\driver\StoryConfig.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\util\ResponseLogger.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\util\ExpertChatException.java
 D:\Java_Project\ExpertChat\ec_testing\src\main\java\expertchat\apioperation\session\SessionManagement.java

@@ -7,27 +7,23 @@ import expertchat.apioperation.apiresponse.ParseResponse;
 import expertchat.apioperation.apiresponse.ResponseDataType;
 import expertchat.apioperation.session.SessionManagement;
 import expertchat.bussinesslogic.*;
-import expertchat.driver.StoryConfig;
 import expertchat.usermap.TestUserMap;
 import expertchat.util.ExpertChatException;
 import expertchat.util.ExpertChatUtility;
 import expertchat.util.ResponseLogger;
 import org.jbehave.core.annotations.*;
-
 import java.io.IOException;
-import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
-
 import static expertchat.usermap.TestUserMap.getMap;
+
 
 
 public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
 
     public static boolean isNegative = false;
-    private static boolean onlyUser = false;
 
     private static boolean isExpert = true;
     private ExpertChatApi expertChatApi = new ExpertChatApi();
@@ -141,7 +137,6 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
             System.out.println(jsonParser.getJsonData("errors.email[0].message", ResponseDataType.STRING));
 
-            StoryConfig.sendEmailNotification();
         }
 
         responseLogger.writeResponseAsLog("Registration");
