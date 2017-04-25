@@ -4,21 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/FileUpload.java" line="96" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8693fbd6-8234-4202-ac15-ee04ea59d911" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/expertchat/params/Credentials.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/expertchat/params/parameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Java/bdd/BasicFlow.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bdd/Social.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bdd/testTC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire/surefire8633172605522565939tmp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire/surefire_08454097077963563452tmp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertProfile.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertProfile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/report/Report.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/report/Report.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/Java/TestStoryConfig.java" afterPath="$PROJECT_DIR$/src/test/Java/TestStoryConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bdd/AbstractSteps.java" afterPath="$PROJECT_DIR$/src/test/Java/bdd/AbstractSteps.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bdd/E2ETestCase.java" afterPath="$PROJECT_DIR$/src/test/Java/bdd/E2ETestCase.java" />
-    </list>
+    <list default="true" id="8693fbd6-8234-4202-ac15-ee04ea59d911" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,8 +53,8 @@
       <file leaf-file-name="BasicFlow.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/BasicFlow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2085">
-              <caret line="92" column="7" lean-forward="true" selection-start-line="92" selection-start-column="7" selection-end-line="92" selection-end-column="7" />
+            <state relative-caret-position="235">
+              <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1431,8 +1417,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/Java/bdd/BasicFlow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2085">
-          <caret line="92" column="7" lean-forward="true" selection-start-line="92" selection-start-column="7" selection-end-line="92" selection-end-column="7" />
+        <state relative-caret-position="235">
+          <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
