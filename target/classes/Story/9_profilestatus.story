@@ -50,3 +50,15 @@ Then we provide phone number as {
 Then phone should be verified
 
 Then check profile completness
+
+
+Then create a calender as
+    {
+    "title": "a test",
+    "start_time": "02:00",
+    "end_time": "04:00",
+    "timezone": "Asia/Kolkata",
+    "week_days": [3]
+}
+
+Then check profile completness

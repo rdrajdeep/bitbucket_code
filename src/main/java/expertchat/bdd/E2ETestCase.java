@@ -656,6 +656,7 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
         checkAndWriteToReport(response.statusCode(), "Device Registered", false);
     }
+    
 
     @Then("initiate a call of scheduled_duration $time")
     public void initiateCall(@Named("time") String time) {

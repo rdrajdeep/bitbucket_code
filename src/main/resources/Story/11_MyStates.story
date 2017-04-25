@@ -75,4 +75,4 @@ Then disconnect the call
 Then login with expert2
 Then check the session count and count should be 1
 
-!--Then check the total statistics between 2017-03-21 and today
+Then check the total statistics between 2017-03-21 and today
