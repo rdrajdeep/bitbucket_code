@@ -5,11 +5,10 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import expertchat.apioperation.apiresponse.ApiResponse;
 import expertchat.apioperation.apiresponse.HTTPCode;
-import expertchat.bdd.E2ETestCase;
+import expertchat.params.parameter;
 import expertchat.util.ExpertChatUtility;
 import org.jbehave.core.annotations.AfterStory;
 import org.jbehave.core.steps.Steps;
-
 import static expertchat.apioperation.apiresponse.HTTPCode.HTTP_BAD;
 import static expertchat.apioperation.apiresponse.HTTPCode.HTTP_OK;
 
@@ -79,7 +78,7 @@ public class Report extends Steps {
         } else if ( isNegative && statusCode == HTTPCode.HTTP_BAD ) {
 
             pass ( "Negative Test Passed--" + ApiResponse.getObject ( ).getResponse ( ).prettyPrint ( ) );
-            E2ETestCase.isNegative = false;
+            parameter.setIsNegative ( false );
 
         } else {
             fail ( "Something went wrong. Please check--" +

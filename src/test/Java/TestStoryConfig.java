@@ -1,11 +1,8 @@
 // Created by Kishor on 1/24/2017.
 
-import com.google.gson.Gson;
+import bdd.BasicFlow;
 import com.relevantcodes.extentreports.ExtentReports;
-import expertchat.bdd.E2ETestCase;
 import expertchat.report.Report;
-import expertchat.usermap.TestUserMap;
-import expertchat.util.Email;
 import expertchat.util.ExpertChatException;
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.configuration.MostUsefulConfiguration;
@@ -20,10 +17,7 @@ import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
 import org.junit.AfterClass;
 import org.junit.Before;
-
 import java.util.List;
-
-import static expertchat.util.ExpertChatUtility.getValue;
 
 /* Story configurator*/
 
@@ -32,16 +26,7 @@ public class TestStoryConfig extends JUnitStories {
     private ExtentReports extent = null;
 
     @AfterClass
-    public static void sendEmailNotification ( ) {
 
-                /*After Test Execution send email notification*/
-        Email.sendEmail ( getValue ( "EmailBody" ), getValue ( "From" ),
-                getValue ( "To" ), getValue ( "subject" ), true );
-
-                /*After Test execution create json*/
-        System.out.println ( new Gson ( ).toJson ( TestUserMap.getMap ( ) ).toString ( ) );
-
-    }
 
     @Before
     public void setReports ( ) {
@@ -114,7 +99,8 @@ public class TestStoryConfig extends JUnitStories {
     public InjectableStepsFactory stepsFactory ( ) {
 
         return new InstanceStepsFactory ( configuration ( ),
-                new E2ETestCase ( getReport ( ), "End-to-End Scenario" )
+
+                new BasicFlow( getReport ( ), "Log-in and Registration flow")
         );
     }
 }

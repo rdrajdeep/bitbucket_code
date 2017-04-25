@@ -1,4 +1,4 @@
-package expertchat.bdd;
+package bdd;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import expertchat.apioperation.apiresponse.ApiResponse;
@@ -27,9 +27,7 @@ public class E2ETestCase extends AbstractSteps implements HTTPCode {
 
     private static boolean isExpert = true;
     private ExpertChatApi expertChatApi = new ExpertChatApi();
-    private ApiResponse response = ApiResponse.getObject();
-    private ParseResponse jsonParser = new ParseResponse(response);
-    private ResponseLogger responseLogger = new ResponseLogger(jsonParser);
+
     private ExpertProfile expertProfile = new ExpertProfile();
     private BasicProfile basicProfile = new BasicProfile();
     private Calling call = new Calling();

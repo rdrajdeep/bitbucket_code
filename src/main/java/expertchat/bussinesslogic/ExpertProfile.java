@@ -8,6 +8,7 @@ import expertchat.apioperation.apiresponse.HTTPCode;
 import expertchat.apioperation.apiresponse.ParseResponse;
 import expertchat.apioperation.apiresponse.ResponseDataType;
 import expertchat.apioperation.session.SessionManagement;
+import expertchat.params.Credentials;
 
 import static expertchat.apioperation.ExpertChatEndPoints.EXPERT_PROFILE;
 import static expertchat.apioperation.ExpertChatEndPoints.EXPERT_PROFILE_BY_USER;
@@ -27,9 +28,6 @@ public class ExpertProfile extends AbstractApiFactory implements HTTPCode {
 
     private String expertID;
 
-    private String expertCredential;
-
-    private String userCredential;
 
     public String getExpertProfileID ( ) {
         return expertProfileID;
@@ -167,45 +165,17 @@ public class ExpertProfile extends AbstractApiFactory implements HTTPCode {
 
     }
 
-    public void setuserCredential ( String userCredential ) {
 
-        this.userCredential = userCredential;
-
-    }
-
-    public String[] getExpertCredential ( ) {
-
-        JsonObject jsonObject = ( JsonObject ) new JsonParser ( ).parse ( this.expertCredential );
-
-        String credential[] = { jsonObject.get ( "email" ).getAsString ( ) , jsonObject.get ( "password" ).getAsString ( ) };
-
-        return credential;
-    }
-
-    public void setExpertCredential ( String expertCredential ) {
-
-        this.expertCredential = expertCredential;
-
-    }
-
-    public String[] getUserCredential ( ) {
-
-        JsonObject jsonObject = ( JsonObject ) new JsonParser ( ).parse ( this.userCredential );
-
-        String credential[] = { jsonObject.get ( "email" ).getAsString ( ) , jsonObject.get ( "password" ).getAsString ( ) };
-
-        return credential;
-    }
 
     public void uploadMedia ( String mediaPath, boolean isExpert ) {
 
         if ( isExpert ) {
 
-            fileUpload.uploadMedia ( mediaPath, getExpertCredential ( )[ 0 ], getExpertCredential ( )[ 1 ], true );
+            fileUpload.uploadMedia ( mediaPath, Credentials.getCredentials ().getExpertCredential ( )[ 0 ], Credentials.getCredentials ().getExpertCredential ( )[ 1 ], true );
 
         } else {
 
-            fileUpload.uploadMedia ( mediaPath, getUserCredential ( )[ 0 ], getUserCredential ( )[ 1 ], false );
+            fileUpload.uploadMedia ( mediaPath, Credentials.getCredentials ().getUserCredential ( )[ 0 ], Credentials.getCredentials ().getUserCredential ( )[ 1 ], false );
         }
     }
 
