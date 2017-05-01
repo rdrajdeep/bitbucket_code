@@ -180,7 +180,7 @@
                         </property>
                     </properties>
                     <includes>
-                        <include>"TestRunner.java</include>
+                        <include>"expertchat.test.TestRunner.java</include>
                     </includes>
                 </configuration>
             </plugin>
@@ -196,7 +196,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>test.java.TestRunner</mainClass>
+                    <mainClass>expertchat.test.TestRunner</mainClass>
                 </configuration>
             </plugin>
         </plugins>
