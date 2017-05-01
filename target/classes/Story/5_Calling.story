@@ -54,7 +54,7 @@ And accept the call
 Then disconnect the call
 
 Then provide review as {
-                           "overall_rating": null,
+                           "overall_rating": 1,
                            "knowledge_rating": null,
                            "communication_rating": null,
                            "professionalism_rating": null,

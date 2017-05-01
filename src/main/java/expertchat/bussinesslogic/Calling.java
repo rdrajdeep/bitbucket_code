@@ -8,6 +8,7 @@ import expertchat.apioperation.apiresponse.ParseResponse;
 import expertchat.apioperation.apiresponse.ResponseDataType;
 import expertchat.apioperation.session.SessionManagement;
 import expertchat.util.ExpertChatException;
+import expertchat.util.ExpertChatUtility;
 
 import static expertchat.usermap.TestUserMap.getMap;
 
@@ -152,6 +153,10 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
         }
     }
 
+    /**
+     *
+     * @param realTime
+     */
     public void extendSession ( String realTime ) {
 
         String url=SESSION+getId ()+"extend_session/";
@@ -164,6 +169,79 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
                 "}";
 
         response.setResponse (this.put(url, json, session.getToken (), true));
+
+        response.printResponse ();
+
+    }
+
+    /**
+     *
+     * @param json
+     */
+    public void addReview(String json){
+
+        String url=SESSION+getId ()+"review/";
+
+        response.setResponse (
+
+                this.post ( url, json, session.getToken (), true ));
+
         response.printResponse ();
     }
+
+    public void scheduleSession(String json){
+
+        String url=SESSION+"schedule/";
+        response.setResponse (
+                this.post ( url, json, session.getToken (), true));
+
+        getMap ().put ( "scheduled_session_id", parseResponse.getJsonData ( "results.id", ResponseDataType.INT ));
+
+        getMap ().put ( "scheduled_datetime", parseResponse.getJsonData ( "results.scheduled_datetime", ResponseDataType.STRING ));
+
+        response.printResponse ();
+    }
+
+    public boolean isCancelSession(){
+
+        String id= getMap ().get ( "scheduled_session_id");
+
+        String url=SESSION+id+"cancel/";
+
+        response.setResponse (
+                this.delete ( "", url, session.getToken ( ), true ));
+
+        if(response.statusCode ()==HTTP_NO_CONTENT){
+
+            return true;
+        }
+        return false;
+    }
+
+    public void getPastSession(){
+
+        String id= getMap ().get ( "scheduled_session_id");
+
+        String url= ExpertChatUtility.getValue ( "qawithport" )+"past-sessions/";
+
+        response.setResponse (
+                this.get ( url, session.getToken (), true ));
+
+        response.printResponse ();
+    }
+
+    public void getFutureSession(){
+
+        String id= getMap ().get ( "scheduled_session_id");
+
+        String url= ExpertChatUtility.getValue ( "qawithport" )+"future-sessions/";
+
+        response.setResponse (
+                this.get ( url, session.getToken (), true ));
+
+        response.printResponse ();
+    }
+
+
+
 }

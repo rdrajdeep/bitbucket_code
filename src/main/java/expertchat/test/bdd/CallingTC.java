@@ -1,12 +1,15 @@
 package expertchat.test.bdd;// Created by Kishor on 4/25/2017.
 
 import com.relevantcodes.extentreports.ExtentReports;
+import expertchat.apioperation.apiresponse.ResponseDataType;
 import expertchat.bussinesslogic.Calling;
 import expertchat.params.parameter;
 import org.jbehave.core.annotations.Named;
 import org.jbehave.core.annotations.Pending;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
+
+import static expertchat.usermap.TestUserMap.getMap;
 
 public class CallingTC extends AbstractSteps{
 
@@ -111,14 +114,114 @@ public class CallingTC extends AbstractSteps{
 
                 "Call Disconnected", parameter.isNegative ());
 
-        responseLogger.writeResponseAsLog("Disconnect Call");
     }
 
     @Then("provide review as $review")
-    @Pending
     public void review(@Named ( "review" )String review){
 
+        if(parameter.isNegative ()){
 
+            call.addReview ( review );
+        }else {
+
+            call.addReview ( review );
+        }
+
+        this.checkAndWriteToReport ( response.statusCode (), "Review added" , parameter.isNegative ());
+    }
+
+    @Then("schedule a session as $session")
+    public void scheduleSession(@Named ( "session" )String session){
+
+        if(parameter.isNegative ()){
+
+            call.scheduleSession ( session );
+        }else {
+
+            call.scheduleSession ( session );
+        }
+
+        this.checkAndWriteToReport ( response.statusCode (), "Session scheduled", parameter.isNegative ());
+    }
+
+    @Then("cancel the session")
+    public void cancelSession(){
+
+        boolean isCancel=call.isCancelSession ();
+
+        if(isCancel){
+
+            AssertAndWriteToReport ( isCancel, "Session canceled");
+
+        }else if(parameter.isNegative () && isCancel==false) {
+
+            AssertAndWriteToReport ( isCancel, "Negative Test--Session could not be canceled");
+
+        }else {
+            AssertAndWriteToReport ( false, "" );
+        }
+    }
+
+    @Then("extend an ongoing session by scheduled_duration of $time")
+    public void extendSession(@Named ( "time" )String time){
+
+        if(parameter.isNegative ()){
+
+            call.extendSession ( time );
+        }else {
+
+            call.extendSession ( time );
+        }
+
+        this.checkAndWriteToReport (response.statusCode (), "Session extended by\t\t"+time, parameter.isNegative ());
+    }
+
+    @Then ( "get all the past session and verify" )
+    public void getPastSession() {
+
+        String dateTime = null;
+
+        if ( parameter.isNegative ( ) ) {
+
+            call.getPastSession ( );
+        } else {
+
+            call.getPastSession ( );
+
+            dateTime = jsonParser.getJsonData ( "results.scheduled_datetime", ResponseDataType.STRING );
+        }
+
+        if ( getMap ( ).get ( "scheduled_datetime" ).equals ( dateTime ) ) {
+
+            this.checkAndWriteToReport ( response.statusCode (), "Pst session loaded", parameter.isNegative ());
+
+        }else {
+
+            this.fail ("Verification failed");
+        }
+    }
+
+    @Then ( "get all the future session and verify" )
+    public void getFutureSession(){
+
+        String dateTime=null;
+
+        if(parameter.isNegative ()){
+
+            call.getFutureSession ();
+
+        }else {
+
+            call.getFutureSession ();
+
+            dateTime = jsonParser.getJsonData ( "results.scheduled_datetime", ResponseDataType.STRING );
+        }
+        if ( getMap ().get ("scheduled_datetime").equals(dateTime)) {
+
+            this.checkAndWriteToReport (response.statusCode (), "Future session loaded", parameter.isNegative());
+        }else {
+            this.fail ("Verification failed");
+        }
     }
 
 }

@@ -134,7 +134,7 @@ public class Report extends Steps {
             pass ( successMessage[ 0 ] );
         } else {
 
-            warning ( "something went wrong.\t" + successMessage[ 0 ] );
+            fail ( "something went wrong.\t"+ApiResponse.getObject ().getResponse ().prettyPrint ());
         }
     }
 

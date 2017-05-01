@@ -54,9 +54,28 @@ And accept the call
 Then disconnect the call
 
 Then provide review as {
-                           "overall_rating": null,
+                           "overall_rating": 1,
                            "knowledge_rating": null,
                            "communication_rating": null,
                            "professionalism_rating": null,
                            "text_review": ""
                        }
+
+Then schedule a session as {
+                               "title": "",
+                               "details": "",
+                               "scheduled_datetime": null,
+                               "expert_profile": null,
+                               "expert": null,
+                               "user_device": null,
+                               "scheduled_duration": null,
+                               "card": null
+                           }
+
+Then cancel the session
+
+Then extend an ongoing session by scheduled_duration of 20
+
+Then get all the past session and verify
+
+Then get all the future session and verify

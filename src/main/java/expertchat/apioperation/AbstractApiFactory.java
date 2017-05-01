@@ -82,6 +82,23 @@ public class AbstractApiFactory implements ApiFactories {
         return r;
     }
 
+    @Override
+    public Response get ( String url, String token, boolean port ) {
+        Response r;
+        if ( port ) {
+
+            Header header = new Header ( "authorization", "token " + token );
+            r = given ( )
+                    .request ( )
+                    .header ( header )
+                    .spec ( Specification.setupRequestSpecBuilderWithPort ( ) )
+                    .put ( url );
+        } else {
+            throw new ExpertChatException ( "Please Use proper URL" );
+        }
+        return r;
+    }
+
 
     @Override
     public Response put ( String json, String url, String token ) {

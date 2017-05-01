@@ -83,12 +83,12 @@ public interface ExpertChatEndPoints {
 
     /*GET STREAM*/
     String BY_EXPERT_PROFILE = "expertprofiles/";
+
     String BY_TAGS = "tags/";
+
     String BY_EXPERT = "experts/";
 
      /*User End points*/
-
-
      /*Call Endpoint*/
 
     String SESSION = "sessions/";
@@ -96,6 +96,7 @@ public interface ExpertChatEndPoints {
     String REGISTER_DEVICE = "devices/";
 
     String SLOTS="expert/slots/";
+
     String AVILABLE_SLOTS="expert/available-slots/";
 
 }
