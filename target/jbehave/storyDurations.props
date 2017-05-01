@@ -1,0 +1,10 @@
+#org.jbehave.core.embedder.StoryManager
+#Mon May 01 12:40:25 IST 2017
+Story/2_BasicProfileLoad.story=11000
+Story/0_BasicFlow.story=4000
+Story/3_ExpertProfile.story=0
+threads=1
+total=22000
+threadAverage=22000
+Story/5_Calling.story=0
+Story/4_SocialLinks.story=7000

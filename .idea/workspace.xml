@@ -5,55 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8693fbd6-8234-4202-ac15-ee04ea59d911" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/Story/10_Searching.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/Story/11_MyStates.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/Story/6_PhoneVerification.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/Story/7_user_APIs.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/Story/8_paymentInfo.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/resources/Story/9_profilestatus.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Story/0_BasicFlow.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Story/10_Searching.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Story/11_MyStates.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Story/2_BasicProfileLoad.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Story/3_ExpertProfile.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Story/4_SocialLinks.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Story/5_Calling.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Story/6_PhoneVerification.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Story/7_user_APIs.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Story/8_paymentInfo.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/Story/9_profilestatus.story" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/TestRunner.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/TestRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/TestStoryConfig.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/TestStoryConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/bdd/AbstractSteps.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/AbstractSteps.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/bdd/BasicFlowTC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/BasicFlowTC.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/bdd/BasicProfileTC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/BasicProfileTC.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/bdd/CallingTC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/CallingTC.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/bdd/E2ETestCase.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/E2ETestCase.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/bdd/ExpertProfileTC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/ExpertProfileTC.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/bdd/GetStreamTC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/GetStreamTC.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/bdd/MyStatesTC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/MyStatesTC.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/bdd/PaymentInfoTC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/PaymentInfoTC.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/bdd/PhoneVerificationTC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/PhoneVerificationTC.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/bdd/ProfileStatusTC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/ProfileStatusTC.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/bdd/SearchTC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/SearchTC.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/bdd/SocialLinkTC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/SocialLinkTC.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/bdd/SuperAdminTC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/SuperAdminTC.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/Java/bdd/UserAPITC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/UserAPITC.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/resources/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/resources/Story/0_BasicFlow.story" afterPath="$PROJECT_DIR$/src/main/resources/Story/0_BasicFlow.story" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/resources/Story/2_BasicProfileLoad.story" afterPath="$PROJECT_DIR$/src/main/resources/Story/2_BasicProfileLoad.story" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/resources/Story/3_ExpertProfile.story" afterPath="$PROJECT_DIR$/src/main/resources/Story/3_ExpertProfile.story" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/resources/Story/4_SocialLinks.story" afterPath="$PROJECT_DIR$/src/main/resources/Story/4_SocialLinks.story" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/resources/Story/5_Calling.story" afterPath="$PROJECT_DIR$/src/main/resources/Story/5_Calling.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/report/Report.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/report/Report.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -98,11 +50,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestRunner.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestRunner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/test/TestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="377">
               <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Email.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/util/Email.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="82" column="36" lean-forward="true" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Report.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/report/Report.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="17" column="87" lean-forward="false" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -221,7 +193,6 @@
         <option value="$PROJECT_DIR$/src/main/java/expertchat/util/ExpertChatException.java" />
         <option value="$PROJECT_DIR$/src/test/Java/TestRunner.java" />
         <option value="$PROJECT_DIR$/src/test/Java/bdd/Config.java" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/report/Report.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/params/Credentials.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/params/parameter.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertProfile.java" />
@@ -251,6 +222,7 @@
         <option value="$PROJECT_DIR$/src/main/java/expertchat/test/TestStoryConfig.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/test/TestRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/report/Report.java" />
       </list>
     </option>
   </component>
@@ -383,6 +355,36 @@
               <option name="myItemId" value="expertchat" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restless_moon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restless_moon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="expertchat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -411,6 +413,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restless_moon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restless_moon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="expertchat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="report" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1010,13 +1042,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SuperAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ExpertChat.Properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -1162,16 +1187,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
           <caret line="272" column="23" lean-forward="false" selection-start-line="272" selection-start-column="23" selection-end-line="272" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/report/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="73" column="61" lean-forward="false" selection-start-line="73" selection-start-column="61" selection-end-line="73" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1344,6 +1359,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/util/Email.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="82" column="36" lean-forward="true" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/report/Report.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="17" column="87" lean-forward="false" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="87" />
           <folding />
         </state>
       </provider>

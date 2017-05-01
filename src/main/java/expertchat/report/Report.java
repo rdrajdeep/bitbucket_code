@@ -15,8 +15,7 @@ import static expertchat.apioperation.apiresponse.HTTPCode.HTTP_OK;
 
 public class Report extends Steps {
 
-    public static String rPath = ExpertChatUtility.getValue ( "report" ) +
-            ExpertChatUtility.directoryName ( ) + "/Report.html";
+    public static String rPath = ExpertChatUtility.getValue ( "report" ) +"/Report.html";
     protected ExtentReports reports;
     protected ExtentTest test;
 
