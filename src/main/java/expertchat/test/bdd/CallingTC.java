@@ -21,19 +21,32 @@ public class CallingTC extends AbstractSteps{
     private Calling call = new Calling();
 
     /**
+     * register a device
+     */
+    @Then ("test")
+    @When ("test")
+    public void test(){
+
+            System.out.println ( "dsdasdasd" );
+    }
+
+    /**
      * Test cases to drive the Calling API
      */
     /*Calling API Test cases*/
-    @When ("register a device as $json")
-    @Then ("register a device as $json")
+    @When("register a device as $json")
+    @Then("register a device as $json")
     public void registerDevice(@Named ("json") String json) {
 
         if (parameter.isNegative ()) {
+
             call.registerDevice(json, parameter.isExpert ());
-            responseLogger.writeResponseAsLog("Register Device-Negative");
+
+            checkAndWriteToReport(response.statusCode(), "Device not Registered--Negative Test case", true);
         } else {
 
             call.registerDevice(json, parameter.isExpert ());
+
             responseLogger.writeResponseAsLog("Register Device");
         }
 
@@ -130,7 +143,7 @@ public class CallingTC extends AbstractSteps{
         this.checkAndWriteToReport ( response.statusCode (), "Review added" , parameter.isNegative ());
     }
 
-    @Then("schedule a session as $session")
+    @Then("schedule a session of $session mint")
     public void scheduleSession(@Named ( "session" )String session){
 
         if(parameter.isNegative ()){
@@ -222,6 +235,42 @@ public class CallingTC extends AbstractSteps{
         }else {
             this.fail ("Verification failed");
         }
+    }
+
+    /**
+     *
+     * @param time
+     * @param money
+     */
+    @Then("create a session for $time mint and the revenue should be $money $")
+    public void checkRevenue(@Named ( "time" )String time,
+                            @Named ( "money" )String money){
+
+        info("Checking revenue");
+
+    }
+
+    @Then("extend the session by $time mint and check the revenue")
+    public void revenueAfterExtend(@Named ( "time" )String time){
+
+
+    }
+
+    @Then("check the session status")
+    public void sessionStatus(){
+
+    }
+
+    @Then("check the notification")
+    public void checkNotification(){
+
+
+    }
+
+    @Then("create a card with $nonce")
+    public void cardCreation(@Named("nonce")String nonce){
+
+        call.createCard (nonce);
     }
 
 }

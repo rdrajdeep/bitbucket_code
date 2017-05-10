@@ -29,7 +29,7 @@ public class Account extends AbstractApiFactory implements ExpertChatEndPoints {
 
         response.setResponse (
 
-                this.post ( json, EXPERT_ACCOUNT, session.getToken ( ) )
+                this.post ( json, EXPERT_ACCOUNT, session.getExpertToken ( ) )
         );
 
         if ( response.getResponse ( ).statusCode ( ) == HTTPCode.HTTP_OK ||
@@ -44,7 +44,7 @@ public class Account extends AbstractApiFactory implements ExpertChatEndPoints {
     public void getAccount ( String id ) {
 
         response.setResponse (
-                this.get ( EXPERT_ACCOUNT + id + "/", session.getToken ( ) )
+                this.get ( EXPERT_ACCOUNT + id + "/", session.getExpertToken ( ) )
         );
         response.printResponse ( );
     }

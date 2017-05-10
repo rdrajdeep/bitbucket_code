@@ -21,7 +21,7 @@ public class MeStats extends AbstractApiFactory implements HTTPCode, ExpertChatE
     public void  getAllcounts() {
 
         response.setResponse (
-                this.get ( SEARCH_BASE + "me-stats/", session.getToken ( ) ) );
+                this.get ( SEARCH_BASE + "me-stats/", session.getExpertToken ( ) ) );
 
         response.printResponse ( );
 
@@ -32,7 +32,7 @@ public class MeStats extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
         String url="me-stats/?from_date="+fromDate+"&to_date="+to+"&stats=profile_visits&stats=sessions_count";
 
-        response.setResponse ( this.get ( SEARCH_BASE+url, session.getToken ( ) ) );
+        response.setResponse ( this.get ( SEARCH_BASE+url, session.getExpertToken ( ) ) );
 
         response.printResponse ();
 

@@ -28,11 +28,11 @@ public class PhoneVerification extends AbstractApiFactory implements ExpertChatE
 
         if ( isExpert ) {
             response.setResponse (
-                    this.post ( phone, PHONECODESEND, session.getToken ( ) )
+                    this.post ( phone, PHONECODESEND, session.getExpertToken ( ) )
             );
         } else {
             response.setResponse (
-                    this.post ( phone, U_PHONECODESEND, session.getToken ( ) )
+                    this.post ( phone, U_PHONECODESEND, session.getExpertToken ( ) )
             );
         }
         response.printResponse ( );
@@ -47,13 +47,13 @@ public class PhoneVerification extends AbstractApiFactory implements ExpertChatE
         if ( isExpert ) {
 
             response.setResponse (
-                    this.post ( phone, PHONECODERESEND, session.getToken ( ) )
+                    this.post ( phone, PHONECODERESEND, session.getExpertToken ( ) )
             );
 
         } else {
 
             response.setResponse (
-                    this.post ( phone, U_PHONECODERESEND, session.getToken ( ) )
+                    this.post ( phone, U_PHONECODERESEND, session.getExpertToken ( ) )
             );
         }
         response.printResponse ( );
@@ -73,13 +73,13 @@ public class PhoneVerification extends AbstractApiFactory implements ExpertChatE
         if ( isExpert ) {
 
             response.setResponse (
-                    this.post ( phoneCodeJson.toString ( ), PHONECODEVERIFY, session.getToken ( ) )
+                    this.post ( phoneCodeJson.toString ( ), PHONECODEVERIFY, session.getExpertToken ( ) )
             );
 
         } else {
 
             response.setResponse (
-                    this.post ( phoneCodeJson.toString ( ), U_PHONECODEVERIFY, session.getToken ( ) )
+                    this.post ( phoneCodeJson.toString ( ), U_PHONECODEVERIFY, session.getExpertToken ( ) )
             );
         }
 

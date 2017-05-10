@@ -57,7 +57,7 @@ public class SuperAdmin extends AbstractApiFactory implements ExpertChatEndPoint
 
         response.setResponse (
 
-                this.post ( json, SUPER_ADMIN_CONTENTS, session.getToken ( ) )
+                this.post ( json, SUPER_ADMIN_CONTENTS, session.getExpertToken ( ) )
         );
 
         if ( response.statusCode ( ) == HTTPCode.HTTP_OK ||
@@ -83,7 +83,7 @@ public class SuperAdmin extends AbstractApiFactory implements ExpertChatEndPoint
 
         response.setResponse (
 
-                this.get ( url, session.getToken ( ) )
+                this.get ( url, session.getExpertToken ( ) )
         );
 
         if ( contentId.equals ( "" ) && response.statusCode ( ) != HTTP_BAD ) {
@@ -110,13 +110,13 @@ public class SuperAdmin extends AbstractApiFactory implements ExpertChatEndPoint
 
     public boolean deleteContent ( String contentId ) {
 
-        return this.isDelete ( SUPER_ADMIN_CONTENTS + contentId + "/", session.getToken ( ) );
+        return this.isDelete ( SUPER_ADMIN_CONTENTS + contentId + "/", session.getExpertToken ( ) );
     }
 
     public void updateContent ( String json, String contentId ) {
 
         response.setResponse (
-                this.put ( json, SUPER_ADMIN_CONTENTS + contentId + "/", session.getToken ( ) )
+                this.put ( json, SUPER_ADMIN_CONTENTS + contentId + "/", session.getExpertToken ( ) )
         );
 
         response.printResponse ( );
@@ -143,7 +143,7 @@ public class SuperAdmin extends AbstractApiFactory implements ExpertChatEndPoint
 
         response.setResponse (
 
-                this.get ( SUPER_ADMIN_CONTENTS + contentId + "/" + "unhide/", session.getToken ( ) )
+                this.get ( SUPER_ADMIN_CONTENTS + contentId + "/" + "unhide/", session.getExpertToken ( ) )
         );
 
         response.printResponse ( );

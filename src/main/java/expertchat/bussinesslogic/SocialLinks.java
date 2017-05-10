@@ -73,7 +73,7 @@ public class SocialLinks extends AbstractApiFactory implements ExpertChatEndPoin
     private void setResponse ( String social ) {
         response.setResponse (
 
-                this.get ( "http://api.qa.experchat.com/v1/social/" + social + "/", SessionManagement.session ( ).getToken ( ) )
+                this.get ( "http://api.qa.experchat.com/v1/social/" + social + "/", SessionManagement.session ( ).getExpertToken ( ) )
         );
         response.printResponse ( );
 
@@ -116,7 +116,7 @@ public class SocialLinks extends AbstractApiFactory implements ExpertChatEndPoin
         System.out.println ( "Code url-->" + url );
 
         response.setResponse (
-                this.get ( url, SessionManagement.session ( ).getToken ( ) )
+                this.get ( url, SessionManagement.session ( ).getExpertToken ( ) )
         );
 
         response.printResponse ( );
@@ -174,7 +174,7 @@ public class SocialLinks extends AbstractApiFactory implements ExpertChatEndPoin
         }
 
         response.setResponse (
-                this.post ( json, SOCIAL_LINKS, SessionManagement.session ( ).getToken ( ) )
+                this.post ( json, SOCIAL_LINKS, SessionManagement.session ( ).getExpertToken ( ) )
         );
 
         response.printResponse ( );
@@ -183,7 +183,7 @@ public class SocialLinks extends AbstractApiFactory implements ExpertChatEndPoin
 
     public void getSocialLinks ( ) {
 
-        response.setResponse ( this.get ( SOCIAL_LINKS, SessionManagement.session ( ).getToken ( ) ) );
+        response.setResponse ( this.get ( SOCIAL_LINKS, SessionManagement.session ( ).getExpertToken ( ) ) );
 
         if ( response.statusCode ( ) == HTTP_OK ) {
 
@@ -202,7 +202,7 @@ public class SocialLinks extends AbstractApiFactory implements ExpertChatEndPoin
 
     public boolean deleteSocialLink ( String id ) {
 
-        return this.isDelete ( SOCIAL_LINKS + id + "/", SessionManagement.session ( ).getToken ( ) );
+        return this.isDelete ( SOCIAL_LINKS + id + "/", SessionManagement.session ( ).getExpertToken ( ) );
     }
 
 
@@ -231,7 +231,7 @@ public class SocialLinks extends AbstractApiFactory implements ExpertChatEndPoin
 
         response.setResponse (
 
-                this.put ( json, url, SessionManagement.session ( ).getToken ( ) )
+                this.put ( json, url, SessionManagement.session ( ).getExpertToken ( ) )
         );
 
         response.printResponse ( );
@@ -243,7 +243,7 @@ public class SocialLinks extends AbstractApiFactory implements ExpertChatEndPoin
 
         response.setResponse (
 
-                this.get ( url, SessionManagement.session ( ).getToken ( ) )
+                this.get ( url, SessionManagement.session ( ).getExpertToken ( ) )
         );
 
         response.printResponse ( );
@@ -255,7 +255,7 @@ public class SocialLinks extends AbstractApiFactory implements ExpertChatEndPoin
 
         response.setResponse (
 
-                this.post ( rssFeedUrl, FEED_LINK, SessionManagement.session ( ).getToken ( ) )
+                this.post ( rssFeedUrl, FEED_LINK, SessionManagement.session ( ).getExpertToken ( ) )
         );
 
         response.printResponse ( );
@@ -278,7 +278,7 @@ public class SocialLinks extends AbstractApiFactory implements ExpertChatEndPoin
 
         response.setResponse (
 
-                this.get ( GET_FEEDS + unixTimeStamps, SessionManagement.session ( ).getToken ( ) )
+                this.get ( GET_FEEDS + unixTimeStamps, SessionManagement.session ( ).getExpertToken ( ) )
         );
 
         response.printResponse ( );
@@ -288,7 +288,7 @@ public class SocialLinks extends AbstractApiFactory implements ExpertChatEndPoin
 
         String json = "{\"content_id\":\"" + contentID + "\"}";
 
-        response.setResponse ( this.post ( json, PUBLISH_CONTENT, SessionManagement.session ( ).getToken ( ) ) );
+        response.setResponse ( this.post ( json, PUBLISH_CONTENT, SessionManagement.session ( ).getExpertToken ( ) ) );
 
         response.printResponse ( );
     }
@@ -296,7 +296,7 @@ public class SocialLinks extends AbstractApiFactory implements ExpertChatEndPoin
 
     public void getContents ( ) {
 
-        response.setResponse ( this.get ( PUBLISH_CONTENT, SessionManagement.session ( ).getToken ( ) ) );
+        response.setResponse ( this.get ( PUBLISH_CONTENT, SessionManagement.session ( ).getExpertToken ( ) ) );
 
         response.printResponse ( );
     }
@@ -306,14 +306,14 @@ public class SocialLinks extends AbstractApiFactory implements ExpertChatEndPoin
 
         response.setResponse (
 
-                this.get ( PUBLISH_CONTENT + id + "/", SessionManagement.session ( ).getToken ( ) ) );
+                this.get ( PUBLISH_CONTENT + id + "/", SessionManagement.session ( ).getExpertToken ( ) ) );
 
         response.printResponse ( );
     }
 
     public boolean deleteContent ( String id ) {
 
-        return this.isDelete ( PUBLISH_CONTENT + id + "/", SessionManagement.session ( ).getToken ( ) );
+        return this.isDelete ( PUBLISH_CONTENT + id + "/", SessionManagement.session ( ).getExpertToken ( ) );
     }
 
     public boolean isPublished ( String contentID ) {
@@ -335,7 +335,7 @@ public class SocialLinks extends AbstractApiFactory implements ExpertChatEndPoin
 
         String json = "{\"content_id\":\"" + contentID + "\"}";
 
-        response.setResponse ( this.post ( json, IGNORE_CONTENT, SessionManagement.session ( ).getToken ( ) ) );
+        response.setResponse ( this.post ( json, IGNORE_CONTENT, SessionManagement.session ( ).getExpertToken ( ) ) );
         response.printResponse ( );
 
     }

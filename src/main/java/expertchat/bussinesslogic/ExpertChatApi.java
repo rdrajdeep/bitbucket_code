@@ -65,9 +65,23 @@ public class ExpertChatApi extends AbstractApiFactory implements ExpertChatEndPo
 
             response.setResponse ( this.post ( json, ExpertChatEndPoints.LOGIN ) );
 
+            SessionManagement.session ( ).setExpertToken (
+                    jsonParser.getJsonData ( "results.token", ResponseDataType.STRING )
+            );
+
+            baseID = jsonParser.getJsonData ( "results.id", ResponseDataType.INT );
+            getMap ( ).put ( "expert_baseId", baseID);
+
         } else {
 
             response.setResponse ( this.post ( json, ExpertChatEndPoints.LOGIN_USER ) );
+
+            SessionManagement.session ( ).setUserToken (
+                    jsonParser.getJsonData ( "results.token", ResponseDataType.STRING )
+            );
+
+            baseID = jsonParser.getJsonData ( "results.id", ResponseDataType.INT );
+            getMap ( ).put ( "user_baseId", baseID);
         }
 
         if ( response.statusCode ( ) == HTTPCode.HTTP_BAD ) {
@@ -76,13 +90,6 @@ public class ExpertChatApi extends AbstractApiFactory implements ExpertChatEndPo
             return;
         }
         response.printResponse ( );
-
-        SessionManagement.session ( ).setToken (
-                jsonParser.getJsonData ( "results.token", ResponseDataType.STRING )
-        );
-
-        baseID = jsonParser.getJsonData ( "results.id", ResponseDataType.INT );
-        getMap ( ).put ( "baseId", getBaseID ( ) );
     }
 
     public String getBaseID ( ) {
@@ -117,11 +124,11 @@ public class ExpertChatApi extends AbstractApiFactory implements ExpertChatEndPo
 
         if ( isExpert ) {
             response.setResponse (
-                    this.post ( jsonObject.toString ( ), CHANGE_PASSWORD, SessionManagement.session ( ).getToken ( ) )
+                    this.post ( jsonObject.toString ( ), CHANGE_PASSWORD, SessionManagement.session ( ).getExpertToken ( ) )
             );
         } else {
             response.setResponse (
-                    this.post ( jsonObject.toString ( ), U_CHANGE_PASSWORD, SessionManagement.session ( ).getToken ( ) )
+                    this.post ( jsonObject.toString ( ), U_CHANGE_PASSWORD, SessionManagement.session ( ).getExpertToken ( ) )
             );
 
         }

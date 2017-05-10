@@ -37,13 +37,13 @@ public class GetStreamFeeds extends AbstractApiFactory implements HTTPCode, Expe
 
     private void getFeedsByExpertProfileId ( String id ) {
 
-        response.setResponse ( this.get ( BY_EXPERT_PROFILE + id + "/feeds/", session.getToken ( ) ) );
+        response.setResponse ( this.get ( BY_EXPERT_PROFILE + id + "/feeds/", session.getExpertToken ( ) ) );
         response.printResponse ( );
     }
 
     private void getFeedsByExpertId ( String id ) {
 
-        response.setResponse ( this.get ( BY_EXPERT + id + "/feeds/", session.getToken ( ) ) );
+        response.setResponse ( this.get ( BY_EXPERT + id + "/feeds/", session.getExpertToken ( ) ) );
         response.printResponse ( );
     }
 
@@ -53,7 +53,7 @@ public class GetStreamFeeds extends AbstractApiFactory implements HTTPCode, Expe
         stringOfTags = getStreamId = null;
         stringOfTags = "";
         getStreamId = "";
-        response.setResponse ( this.get ( BY_TAGS + id + "/feeds/", session.getToken ( ) ) );
+        response.setResponse ( this.get ( BY_TAGS + id + "/feeds/", session.getExpertToken ( ) ) );
 
         if ( response.statusCode ( ) != HTTP_BAD ) {
 

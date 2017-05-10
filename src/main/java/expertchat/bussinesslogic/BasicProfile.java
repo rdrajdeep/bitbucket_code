@@ -28,11 +28,11 @@ public class BasicProfile extends AbstractApiFactory implements ExpertChatEndPoi
         if ( isExpert ) {
 
             response.setResponse (
-                    this.get ( BASIC_PROFILE, SessionManagement.session ( ).getToken ( ) )
+                    this.get ( BASIC_PROFILE, SessionManagement.session ( ).getExpertToken ( ) )
             );
         } else {
             response.setResponse (
-                    this.get ( U_BASIC_PROFILE, SessionManagement.session ( ).getToken ( ) )
+                    this.get ( U_BASIC_PROFILE, SessionManagement.session ( ).getExpertToken ( ) )
             );
 
         }
@@ -56,13 +56,13 @@ public class BasicProfile extends AbstractApiFactory implements ExpertChatEndPoi
             response.setResponse (
                     this.put (
 
-                            name, BASIC_PROFILE, SessionManagement.session ( ).getToken ( ) ) );
+                            name, BASIC_PROFILE, SessionManagement.session ( ).getExpertToken ( ) ) );
         } else {
 
             response.setResponse (
                     this.put (
 
-                            name, U_BASIC_PROFILE, SessionManagement.session ( ).getToken ( ) ) );
+                            name, U_BASIC_PROFILE, SessionManagement.session ( ).getExpertToken ( ) ) );
         }
 
         response.printResponse ( );
@@ -86,12 +86,12 @@ public class BasicProfile extends AbstractApiFactory implements ExpertChatEndPoi
 
             response.setResponse (
                     this.post (
-                            json, ME_PHOTO, SessionManagement.session ( ).getToken ( ) ) );
+                            json, ME_PHOTO, SessionManagement.session ( ).getExpertToken ( ) ) );
         } else {
 
             response.setResponse (
                     this.post (
-                            json, U_ME_PHOTO, SessionManagement.session ( ).getToken ( ) ) );
+                            json, U_ME_PHOTO, SessionManagement.session ( ).getExpertToken ( ) ) );
         }
 
         response.printResponse ( );

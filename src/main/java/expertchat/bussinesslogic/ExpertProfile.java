@@ -1,7 +1,5 @@
 package expertchat.bussinesslogic;
 
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import expertchat.apioperation.AbstractApiFactory;
 import expertchat.apioperation.apiresponse.ApiResponse;
 import expertchat.apioperation.apiresponse.HTTPCode;
@@ -53,7 +51,7 @@ public class ExpertProfile extends AbstractApiFactory implements HTTPCode {
     public void addExpertyProfile ( String profile ) {
 
         response.setResponse (
-                this.post ( profile, EXPERT_PROFILE, session.getToken ( ) )
+                this.post ( profile, EXPERT_PROFILE, session.getExpertToken ( ) )
         );
 
         if ( response.statusCode ( ) == HTTP_ACCEPTED ||
@@ -83,13 +81,13 @@ public class ExpertProfile extends AbstractApiFactory implements HTTPCode {
             if ( ! id.isEmpty ( ) ) {
 
                 response.setResponse (
-                        this.get ( EXPERT_PROFILE + id + "/", session.getToken ( ) )
+                        this.get ( EXPERT_PROFILE + id + "/", session.getExpertToken ( ) )
                 );
                 response.printResponse ( );
             } else {
 
                 response.setResponse (
-                        this.get ( EXPERT_PROFILE, session.getToken ( ) )
+                        this.get ( EXPERT_PROFILE, session.getExpertToken ( ) )
                 );
                 response.printResponse ( );
             }
@@ -98,13 +96,13 @@ public class ExpertProfile extends AbstractApiFactory implements HTTPCode {
             if ( ! id.isEmpty ( ) ) {
 
                 response.setResponse (
-                        this.get ( EXPERT_PROFILE_BY_USER + id + "/", session.getToken ( ) )
+                        this.get ( EXPERT_PROFILE_BY_USER + id + "/", session.getExpertToken ( ) )
                 );
                 response.printResponse ( );
             } else {
 
                 response.setResponse (
-                        this.get ( EXPERT_PROFILE_BY_USER, session.getToken ( ) )
+                        this.get ( EXPERT_PROFILE_BY_USER, session.getExpertToken ( ) )
                 );
                 response.printResponse ( );
             }
@@ -129,7 +127,7 @@ public class ExpertProfile extends AbstractApiFactory implements HTTPCode {
     public void getAllProfileOfExpert ( ) {
 
         response.setResponse (
-                this.get ( EXPERT_PROFILE, session.getToken ( ) )
+                this.get ( EXPERT_PROFILE, session.getExpertToken ( ) )
         );
 
         response.printResponse ( );
@@ -144,7 +142,7 @@ public class ExpertProfile extends AbstractApiFactory implements HTTPCode {
 
         String page = parseResponse.getJsonData ( "metadata.next", ResponseDataType.STRING );
         response.setResponse (
-                this.get ( page, session.getToken ( ) )
+                this.get ( page, session.getExpertToken ( ) )
         );
 
         response.printResponse ( );
@@ -153,7 +151,7 @@ public class ExpertProfile extends AbstractApiFactory implements HTTPCode {
     public void updateExpertProfile ( String profile, String id ) {
 
         response.setResponse (
-                this.patch ( profile, EXPERT_PROFILE + id + "/", session.getToken ( ) )
+                this.patch ( profile, EXPERT_PROFILE + id + "/", session.getExpertToken ( ) )
         );
 
         response.printResponse ( );
@@ -161,7 +159,7 @@ public class ExpertProfile extends AbstractApiFactory implements HTTPCode {
 
     public boolean deleteProfile ( String id ) {
 
-        return this.isDelete ( EXPERT_PROFILE + id + "/", session.getToken ( ) );
+        return this.isDelete ( EXPERT_PROFILE + id + "/", session.getExpertToken ( ) );
 
     }
 

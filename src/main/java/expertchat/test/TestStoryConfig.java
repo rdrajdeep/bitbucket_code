@@ -4,10 +4,7 @@ package expertchat.test;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import expertchat.report.Report;
-import expertchat.test.bdd.BasicFlowTC;
-import expertchat.test.bdd.BasicProfileTC;
-import expertchat.test.bdd.ExpertProfileTC;
-import expertchat.test.bdd.SocialLinkTC;
+import expertchat.test.bdd.*;
 import expertchat.util.ExpertChatException;
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.configuration.MostUsefulConfiguration;
@@ -33,7 +30,7 @@ public class TestStoryConfig extends JUnitStories {
     @BeforeClass
     public static void setReport ( ) {
 
-        extent = new ExtentReports ( Report.rPath, false );
+        extent = new ExtentReports ( Report.rPath, true );
 
         if ( extent == null ) {
             throw new ExpertChatException ( "Something serious has just happened!!!!!" );
@@ -105,9 +102,9 @@ public class TestStoryConfig extends JUnitStories {
                 new BasicFlowTC ( getReport (), "Log-in and registration flow"),
                 new BasicProfileTC (getReport (), "Basic profile flow"),
                 new ExpertProfileTC (getReport (), "Expert profile flow"),
-                new SocialLinkTC ( getReport (), "Social Link  flow" )
-              /*  new CallingTC ( getReport (), "Calling flow" ),
-                new PhoneVerificationTC ( getReport (), "Phone number verification flow"),
+                new SocialLinkTC ( getReport (), "Social Link  flow" ),
+                new CallingTC ( getReport (), "Calling flow" )
+                /*new PhoneVerificationTC ( getReport (), "Phone number verification flow"),
                 new PaymentInfoTC ( getReport (), "Payment information flow"),
                 new ProfileStatusTC ( getReport (), "profile status check flow" ),
                 new SearchTC (getReport (), "SOLR Search flow"),

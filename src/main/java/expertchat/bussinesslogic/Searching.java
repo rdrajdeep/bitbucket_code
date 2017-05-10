@@ -58,7 +58,7 @@ public class Searching extends AbstractApiFactory implements ExpertChatEndPoints
                 response.printResponse ();
             }else {
 
-                response.setResponse (this.get ( SEARCH_BY_TEXT + value,session.getToken () ));
+                response.setResponse (this.get ( SEARCH_BY_TEXT + value,session.getExpertToken () ));
                 response.printResponse ();
             }
         } else if ( sType.ordinal ( ) == 1 ) {
@@ -67,7 +67,7 @@ public class Searching extends AbstractApiFactory implements ExpertChatEndPoints
                 response.setResponse ( this.get ( SEARCH_BY_TAG_ID + value ));
                 response.printResponse ( );
             }else {
-                response.setResponse ( this.get ( SEARCH_BY_TAG_ID + value, session.getToken () ));
+                response.setResponse ( this.get ( SEARCH_BY_TAG_ID + value, session.getExpertToken () ));
                 response.printResponse ( );
             }
         } else if ( sType.ordinal ( ) == 0 ) {
@@ -77,7 +77,7 @@ public class Searching extends AbstractApiFactory implements ExpertChatEndPoints
                 response.printResponse ( );
             }else {
 
-                response.setResponse ( this.get ( SEARCH_BY_EXPERT_ID + value + "/" , session.getToken ()));
+                response.setResponse ( this.get ( SEARCH_BY_EXPERT_ID + value + "/" , session.getExpertToken ()));
                 System.out.println ( "Buy User" );
                 response.printResponse ( );
             }

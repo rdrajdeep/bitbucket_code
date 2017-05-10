@@ -10,6 +10,8 @@ import expertchat.report.Report;
 import expertchat.util.ResponseLogger;
 import org.jbehave.core.annotations.*;
 import expertchat.params.parameter;
+
+
 public abstract class AbstractSteps extends Report {
 
     protected ApiResponse response = ApiResponse.getObject();
@@ -32,6 +34,8 @@ public abstract class AbstractSteps extends Report {
     @Then ("an user")
     @When ("an user")
     public void user() {
+
+        System.out.println ( "I am user now" );
         parameter.setExpert ( false );
     }
 
@@ -39,11 +43,13 @@ public abstract class AbstractSteps extends Report {
     @Then("an expert")
     @When("an expert")
     public void expert() {
+        System.out.println ( "I am expert now" );
         parameter.setExpert ( true );
     }
 
     @Given("negative scenario")
     public void negative() {
+
         parameter.setIsNegative ( true );
     }
 
@@ -79,9 +85,9 @@ public abstract class AbstractSteps extends Report {
     @Aliases ( values = {"logout the expert","logout the user"})
     public void logout() {
 
-        SessionManagement.session().setToken(null);
+        SessionManagement.session().setExpertToken (null);
 
-        if (SessionManagement.session().getToken() == null) {
+        if (SessionManagement.session().getExpertToken () == null) {
 
             info("Logout from the system");
         }

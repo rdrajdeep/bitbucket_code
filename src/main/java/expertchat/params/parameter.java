@@ -2,9 +2,9 @@ package expertchat.params;// Created by Kishor on 4/25/2017.
 
 public class parameter {
 
-    protected static boolean isNegative = false;
+    protected static boolean isNegative ;
 
-    protected static boolean isExpert = false;
+    protected static boolean isExpert;
 
     public static void setIsNegative ( boolean isNegative ) {
 

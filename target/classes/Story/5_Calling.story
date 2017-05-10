@@ -1,15 +1,4 @@
-Meta:
-
-Narrative:
-As a user
-I want to perform an action
-So that I can achieve a business goal
-
-Scenario: scenario description
-
 Given an user
-When login with user1
-
 Then register a device as {
                           "device_type": "ios",
                           "device_name": "USer device",
@@ -21,8 +10,6 @@ Then register a device as {
 
 
 Given an expert
-When login with expert1
-And get expert profile
 Then register a device as {
                           "device_type": "ios",
                           "device_name": "Expert device",
@@ -34,22 +21,19 @@ Then register a device as {
 
 
 Given an user
-When login with user1
-Then initiate a call of scheduled_duration 10
+Then create a card with fake-masterpass-mastercard-nonce
+Then schedule a session of 10 mint
 
 Given an expert
-Then login with expert1
-And accept the call
+Then accept the call
 
 Then disconnect the call
 
 Given an user
-When login with user1
 Then initiate a call of scheduled_duration 10
 
 Given an expert
-Then login with expert1
-And accept the call
+Then accept the call
 
 Then disconnect the call
 
@@ -60,3 +44,19 @@ Then provide review as {
                            "professionalism_rating": null,
                            "text_review": ""
                        }
+
+Then cancel the session
+
+Then extend an ongoing session by scheduled_duration of 20
+
+Then get all the past session and verify
+
+Then get all the future session and verify
+
+Then create a session for 60 mint and the revenue should be 90 $
+
+Then extend the session by 10 mint and check the revenue
+
+Then check the session status
+
+Then check the notification

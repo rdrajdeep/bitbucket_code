@@ -8,8 +8,7 @@ import expertchat.apioperation.apiresponse.ParseResponse;
 import expertchat.apioperation.apiresponse.ResponseDataType;
 import expertchat.apioperation.session.SessionManagement;
 import expertchat.util.ExpertChatException;
-import expertchat.util.ExpertChatUtility;
-
+import static expertchat.util.ExpertChatUtility.getValue;
 import static expertchat.usermap.TestUserMap.getMap;
 
 /**
@@ -25,6 +24,9 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
     private SessionManagement session = SessionManagement.session ( );
 
     private String id;
+
+    private String card_id;
+
 
     public String getId ( ) {
         return id;
@@ -53,7 +55,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
         response.setResponse (
 
-                this.post ( json, SESSION, session.getToken ( ), true )
+                this.post ( json, SESSION, session.getUserToken ( ), true )
         );
 
         response.printResponse ( );
@@ -79,7 +81,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
                 "}";
 
         response.setResponse (
-                this.post ( json, url, session.getToken ( ), true )
+                this.post ( json, url, session.getExpertToken ( ), true )
         );
 
         response.printResponse ( );
@@ -94,10 +96,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
         String json = "{\"tokbox_session_length\":20}";
 
-        response.setResponse (
-
-                this.delete ( json, url, session.getToken ( ), true )
-        );
+        response.setResponse (this.delete ( json, url, session.getExpertToken ( ), true ));
 
         System.out.println ( response.statusCode ( ) );
 
@@ -117,7 +116,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
         String url = SESSION + getId ( ) + "/decline/";
 
         response.setResponse (
-                this.delete ( "", url, session.getToken ( ), true )
+                this.delete ( "", url, session.getExpertToken ( ), true )
         );
 
         response.printResponse ( );
@@ -130,7 +129,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
         String url = SESSION + getId ( ) + "/delay/";
 
         response.setResponse (
-                this.put ( "{\"delay_time\":1}", url, session.getToken ( ), true )
+                this.put ( "{\"delay_time\":1}", url, session.getExpertToken ( ), true )
         );
 
         response.printResponse ( );
@@ -138,16 +137,22 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
         return getStatusOfCall ( "results.status" ).equals ( CallStatus.DELAYED );
     }
 
+    /**
+     *
+     * @param json
+     * @param isExpert
+     */
     public void registerDevice ( String json, boolean isExpert ) {
-
-        response.setResponse (
-
-                this.post ( json, REGISTER_DEVICE, session.getToken ( ), true ) );
 
         if ( isExpert ) {
 
+            response.setResponse (this.post ( json, REGISTER_DEVICE, session.getExpertToken ( ), true ) );
+
             getMap ( ).put ( "ExpertDevice", parseResponse.getJsonData ( "results.id", ResponseDataType.INT ) );
+
         } else {
+
+            response.setResponse (this.post ( json, REGISTER_DEVICE, session.getUserToken ( ), true ) );
 
             getMap ( ).put ( "UserDevice", parseResponse.getJsonData ( "results.id", ResponseDataType.INT ) );
         }
@@ -168,7 +173,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
                 "    \"scheduled_duration\": "+realTime+"\n" +
                 "}";
 
-        response.setResponse (this.put(url, json, session.getToken (), true));
+        response.setResponse (this.put(url, json, session.getExpertToken (), true));
 
         response.printResponse ();
 
@@ -184,20 +189,41 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
         response.setResponse (
 
-                this.post ( url, json, session.getToken (), true ));
+                this.post ( url, json, session.getExpertToken (), true ));
 
         response.printResponse ();
     }
 
-    public void scheduleSession(String json){
+    /**
+     * @param
+     */
+    public void scheduleSession(String time){
 
         String url=SESSION+"schedule/";
-        response.setResponse (
-                this.post ( url, json, session.getToken (), true));
 
-        getMap ().put ( "scheduled_session_id", parseResponse.getJsonData ( "results.id", ResponseDataType.INT ));
+        String json="{\n" +
+                " \"title\": \"a test call \",\n" +
+                "\"details\": \"ddadadadadadadadadadadadadad\",\n" +
+                "\"scheduled_datetime\":\"2017-05-10T2:30:00Z\",\n" +
+                "\"expert_profile\":"+Integer.parseInt(getMap ().get ("expertProfileId"))+",\n" +
+                "\"expert\":"+Integer.parseInt(getMap ().get ("expertId"))+",\n" +
+                "\"user_device\":"+getMap().get( "UserDevice" )+",\n" +
+                "\"scheduled_duration\":"+Integer.parseInt (time)+",\n" +
+                "\"card\":"+card_id+"\n" +
+                "}";
 
-        getMap ().put ( "scheduled_datetime", parseResponse.getJsonData ( "results.scheduled_datetime", ResponseDataType.STRING ));
+        response.setResponse (this.post (json, url, session.getUserToken (), true));
+
+        if(response.statusCode ()==HTTP_ACCEPTED || response.statusCode ()==HTTP_OK) {
+
+            getMap ( ).put ( "scheduled_session_id", parseResponse.getJsonData ( "results.id", ResponseDataType.INT ) );
+
+            getMap ( ).put ( "scheduled_datetime", parseResponse.getJsonData ( "results.scheduled_datetime", ResponseDataType.STRING ));
+
+        }else {
+
+            System.out.println ("SERVER ERROR");
+        }
 
         response.printResponse ();
     }
@@ -209,7 +235,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
         String url=SESSION+id+"cancel/";
 
         response.setResponse (
-                this.delete ( "", url, session.getToken ( ), true ));
+                this.delete ( "", url, session.getExpertToken ( ), true ));
 
         if(response.statusCode ()==HTTP_NO_CONTENT){
 
@@ -222,10 +248,9 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
         String id= getMap ().get ( "scheduled_session_id");
 
-        String url= ExpertChatUtility.getValue ( "qawithport" )+"past-sessions/";
+        String url= getValue ( "qawithport" )+"past-sessions/";
 
-        response.setResponse (
-                this.get ( url, session.getToken (), true ));
+        response.setResponse (this.get ( url, session.getExpertToken (), true ));
 
         response.printResponse ();
     }
@@ -234,14 +259,41 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
         String id= getMap ().get ( "scheduled_session_id");
 
-        String url= ExpertChatUtility.getValue ( "qawithport" )+"future-sessions/";
+        String url= getValue ( "qawithport" )+"future-sessions/";
 
         response.setResponse (
-                this.get ( url, session.getToken (), true ));
+                this.get ( url, session.getExpertToken (), true ));
 
         response.printResponse ();
     }
 
+    /**
+     *
+     * @param nonce
+     */
+    public void createCard( String nonce){
 
+        String json="{\n" +
+                "\"payment_method_nonce\":\""+nonce+"\"\n" +
+                "}";
+
+        response.setResponse(this.post (json, "cards/", session.getUserToken (), true));
+
+        if(response.statusCode ()==HTTP_UNAVAILABLE || response.statusCode ()==HTTP_BAD){
+
+            System.out.println ("==SERVER ERROR==");
+
+            response.printResponse ();
+
+            System.out.println ("Requested URL::"+getValue ( "qawithport")+"cards/");
+
+        }else {
+            response.printResponse ();
+
+            card_id=parseResponse.getJsonData ( "results.id", ResponseDataType.INT );
+
+            getMap ().put ( "user_card_id" , card_id);
+        }
+    }
 
 }

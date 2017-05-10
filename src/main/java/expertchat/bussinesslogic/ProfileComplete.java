@@ -61,7 +61,7 @@ public class ProfileComplete extends AbstractApiFactory implements ExpertChatEnd
 
         response.setResponse (
 
-                this.get ( PROFILE_STATUS, session.getToken ( ) )
+                this.get ( PROFILE_STATUS, session.getExpertToken ( ) )
         );
 
         response.printResponse ( );
