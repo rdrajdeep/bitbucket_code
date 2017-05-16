@@ -168,9 +168,13 @@ public class ExpertChatApi extends AbstractApiFactory implements ExpertChatEndPo
             );
         }
         String token = jsonParser.getJsonData ( "results.token", ResponseDataType.STRING );
+
         String uid = jsonParser.getJsonData ( "results.uid", ResponseDataType.STRING );
+
         String resetUrl = ExpertChatUtility.getValue ( "qa" ) + "password/reset/confirm/" + uid + "/" + token + "/";
+
         String newJSon = "{\"password\":\"" + password + "\",\"uid\":\"" + uid + "\",\"token\":\"" + token + "\"}";
+
         JsonObject newJson = ( JsonObject ) new JsonParser ( ).parse ( newJSon );
 
         response.setResponse (
@@ -182,12 +186,19 @@ public class ExpertChatApi extends AbstractApiFactory implements ExpertChatEndPo
                 response.statusCode ( ) == HTTPCode.HTTP_ACCEPTED ) {
 
             String updateTestData = TestUserMap.getUserCredentialsByKey ( user );
-            System.out.println ( updateTestData );
+
+            System.out.println (updateTestData);
+
             JsonObject userData = ( JsonObject ) new JsonParser ( ).parse ( updateTestData );
+
             userData.remove ( "password" );
+
             userData.addProperty ( "password", password );
+
             TestUserMap.setTestData ( user, userData.toString ( ) );
+
             System.out.println ( "Updated data after reset" + userData.toString ( ) );
+
             System.out.println ( "Updated data after reset" + TestUserMap.getUserCredentialsByKey ( user ) );
         }
     }

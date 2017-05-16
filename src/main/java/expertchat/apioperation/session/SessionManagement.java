@@ -7,12 +7,12 @@ public final class SessionManagement {
 
     private static SessionManagement sm = new SessionManagement ( );
 
-    private static String expert_token="eyJ1c2VyX2lkIjozLCJ0aW1lc3RhbXAiOjE0OTQ0MjI4MTMuNjgyMDM1LCJpcF9hZGRyZXNzIjoiMTIyLjE2MC4yNTMuMjEifQ:1d8Rdl:VUTXGQL1vzawP_NB8D2qWQPvL1Q";
-
-    private static String user_token="eyJ1c2VyX2lkIjo0LCJ0aW1lc3RhbXAiOjE0OTQ0MjI4NzIuMjYyMDI3LCJpcF9hZGRyZXNzIjoiMTIyLjE2MC4yNTMuMjEifQ:1d8Rei:ilSa-_n40TzLMasSKhgDHpJKHRg";
+    private static String user_token;
+    private static String expert_token;
 
     private SessionManagement ( ) {
 
+        /* preventing from creating more than one object of this class */
     }
 
     public static SessionManagement session ( ) {

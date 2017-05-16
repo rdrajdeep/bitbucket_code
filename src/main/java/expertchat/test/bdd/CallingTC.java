@@ -143,7 +143,7 @@ public class CallingTC extends AbstractSteps{
         this.checkAndWriteToReport ( response.statusCode (), "Review added" , parameter.isNegative ());
     }
 
-    @Then("schedule a session of $session mint")
+    @Then("schedule a session as $session")
     public void scheduleSession(@Named ( "session" )String session){
 
         if(parameter.isNegative ()){

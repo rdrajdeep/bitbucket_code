@@ -173,7 +173,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
                 "    \"scheduled_duration\": "+realTime+"\n" +
                 "}";
 
-        response.setResponse (this.put(url, json, session.getExpertToken (), true));
+        response.setResponse (this.put(url, json, session.getUserToken (), true));
 
         response.printResponse ();
 
@@ -197,20 +197,9 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
     /**
      * @param
      */
-    public void scheduleSession(String time){
+    public void scheduleSession(String json){
 
         String url=SESSION+"schedule/";
-
-        String json="{\n" +
-                " \"title\": \"a test call \",\n" +
-                "\"details\": \"ddadadadadadadadadadadadadad\",\n" +
-                "\"scheduled_datetime\":\"2017-05-10T2:30:00Z\",\n" +
-                "\"expert_profile\":"+Integer.parseInt(getMap ().get ("expertProfileId"))+",\n" +
-                "\"expert\":"+Integer.parseInt(getMap ().get ("expertId"))+",\n" +
-                "\"user_device\":"+getMap().get( "UserDevice" )+",\n" +
-                "\"scheduled_duration\":"+Integer.parseInt (time)+",\n" +
-                "\"card\":"+card_id+"\n" +
-                "}";
 
         response.setResponse (this.post (json, url, session.getUserToken (), true));
 
@@ -235,7 +224,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
         String url=SESSION+id+"cancel/";
 
         response.setResponse (
-                this.delete ( "", url, session.getExpertToken ( ), true ));
+                this.delete ( "", url, session.getUserToken ( ), true ));
 
         if(response.statusCode ()==HTTP_NO_CONTENT){
 
@@ -250,7 +239,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
         String url= getValue ( "qawithport" )+"past-sessions/";
 
-        response.setResponse (this.get ( url, session.getExpertToken (), true ));
+        response.setResponse (this.get ( url, session.getUserToken (), true ));
 
         response.printResponse ();
     }
@@ -262,7 +251,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
         String url= getValue ( "qawithport" )+"future-sessions/";
 
         response.setResponse (
-                this.get ( url, session.getExpertToken (), true ));
+                this.get ( url, session.getUserToken (), true ));
 
         response.printResponse ();
     }
