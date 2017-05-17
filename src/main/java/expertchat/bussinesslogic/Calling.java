@@ -320,4 +320,13 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
         return parseResponse.getJsonData ( "results.status", ResponseDataType.STRING);
     }
+
+    public String getAllNotifications ( ) {
+
+        response.setResponse(this.get ("notifications/", session.getUserToken (), true));
+
+        response.printResponse ();
+
+        return response.getResponse ().toString ();
+    }
 }

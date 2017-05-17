@@ -1,31 +1,4 @@
 Given an expert
-
-When register with {"email": "kishor+test23@atlogys.com","password": "qwerty12" } as expert1
-
-Then Verify Email
-
-Then login with expert1
-
-Then create a calender as    {
-                             "title": "Experchatesting",
-                                "start_time": "8:00:00",
-                                "end_time": "11:00:00",
-                                "timezone": "Asia/Kolkata",
-                                "week_days": [
-                                  1,2,3,4,5,6,7
-                                ]
-                            }
-
-
-Then get the avilable slot of expert1
-Given an user
-
-When register with {"email": "kishor+test23@atlogys.com","password": "qwerty12" } as user1
-
-Then Verify Email
-
-Then login with user1
-
 Then register a device as {
                           "device_type": "ios",
                           "device_name": "USer device",

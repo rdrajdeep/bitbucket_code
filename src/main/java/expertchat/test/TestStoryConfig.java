@@ -103,14 +103,14 @@ public class TestStoryConfig extends JUnitStories {
                 new BasicProfileTC (getReport (), "Basic profile flow"),
                 new ExpertProfileTC (getReport (), "Expert profile flow"),
                 new SocialLinkTC ( getReport (), "Social Link  flow" ),
-                new CallingTC ( getReport (), "Calling flow" )
-                /*new PhoneVerificationTC ( getReport (), "Phone number verification flow"),
+                new CallingTC ( getReport (), "Calling flow" ),
+                new PhoneVerificationTC ( getReport (), "Phone number verification flow"),
                 new PaymentInfoTC ( getReport (), "Payment information flow"),
                 new ProfileStatusTC ( getReport (), "profile status check flow" ),
                 new SearchTC (getReport (), "SOLR Search flow"),
                 new MyStatesTC (getReport (), "Expert Analytics flow"),
                 new SuperAdminTC ( getReport (), "Super Admin flow" ),
-                new GetStreamTC (getReport (), "Get Stream flow")*/
+                new GetStreamTC (getReport (), "Get Stream flow")
         );
     }
 }

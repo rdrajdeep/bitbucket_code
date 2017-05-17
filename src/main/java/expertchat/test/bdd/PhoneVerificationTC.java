@@ -72,5 +72,12 @@ public class PhoneVerificationTC  extends AbstractSteps{
         responseLogger.writeResponseAsLog("Mobile no verify");
     }
 
+    @Then("phone should not get Verified")
+    public void negative(){
 
+        if(parameter.isNegative ()){
+
+            this.checkAndWriteToReport ( response.statusCode () , "Not verified", true);
+        }
+    }
 }

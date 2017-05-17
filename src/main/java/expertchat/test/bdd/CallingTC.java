@@ -301,13 +301,21 @@ public class CallingTC extends AbstractSteps{
     @Then("check the notification")
     public void checkNotification(){
 
+        info("Getting all notifications");
 
+        String notifications=call.getAllNotifications();
+
+        this.checkAndWriteToReport (response.statusCode (), "Notification get-->"+notifications, parameter.isNegative());
     }
 
     @Then("create a card with $nonce")
     public void cardCreation(@Named("nonce")String nonce){
 
+        info ( "Creating a card" );
+
         call.createCard (nonce);
+
+        this.checkAndWriteToReport ( response.statusCode (), "Card created ", false );
     }
 
 }
