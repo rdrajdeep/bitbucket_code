@@ -72,7 +72,9 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
     public boolean isAcceptCall ( ) {
 
-        String url = SESSION +"1"+ "/accept/";
+        String id= getMap ().get ( "scheduled_session_id");
+
+        String url = SESSION +id+ "/accept/";
 
         String expert_device = getMap ( ).get ( "ExpertDevice" );
 
@@ -91,7 +93,10 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
     public boolean isDissconnectCall ( ) {
 
-        String url = SESSION + "1" + "/disconnect/";
+        String id= getMap ().get ( "scheduled_session_id");
+
+        String url = SESSION + id + "/disconnect/";
+
         System.out.println ( url );
 
         String json = "{\"tokbox_session_length\":20}";
@@ -113,7 +118,9 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
     public boolean isDecline ( ) {
 
-        String url = SESSION +"1"+ "/decline/";
+        String id= getMap ().get ( "scheduled_session_id");
+
+        String url = SESSION +id+ "/decline/";
 
         response.setResponse (
                 this.delete ( "", url, session.getExpertToken ( ), true )
@@ -294,14 +301,20 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
     public String  checkRevenue ( ) {
 
-        response.setResponse(this.get (SESSION+"1/", session.getUserToken (), true));
+        String id= getMap ().get ( "scheduled_session_id");
+
+        response.setResponse(this.get (SESSION+id, session.getUserToken (), true));
+
         response.printResponse ();
+
         return parseResponse.getJsonData ( "results.revenue", ResponseDataType.STRING);
     }
 
     public String sessionStatus ( ) {
 
-        response.setResponse(this.get (SESSION+"1/", session.getUserToken (), true));
+        String id= getMap ().get ( "scheduled_session_id");
+
+        response.setResponse(this.get (SESSION+id, session.getUserToken (), true));
 
         response.printResponse ();
 
