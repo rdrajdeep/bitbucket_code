@@ -4,10 +4,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import expertchat.apioperation.apiresponse.ResponseDataType;
 import expertchat.bussinesslogic.Calling;
 import expertchat.params.parameter;
-import org.jbehave.core.annotations.Named;
-import org.jbehave.core.annotations.Pending;
-import org.jbehave.core.annotations.Then;
-import org.jbehave.core.annotations.When;
+import org.jbehave.core.annotations.*;
 
 import static expertchat.usermap.TestUserMap.getMap;
 
@@ -76,7 +73,26 @@ public class CallingTC extends AbstractSteps{
         checkAndWriteToReport(response.statusCode(), "Call initiated", parameter.isNegative ());
     }
 
+    /**
+     *
+     */
+     @Then("initiate the call")
+     public void intiate(){
 
+         if(parameter.isNegative ()){
+
+             call.intiate ("1");
+         }else {
+
+             call.intiate ("1");
+         }
+
+         this.checkAndWriteToReport ( response.statusCode (), "Call Initiated" , parameter.isNegative ());
+     }
+
+    /**
+     *
+     */
     @Then("accept the call")
     public void acceptCall() {
 
@@ -90,6 +106,9 @@ public class CallingTC extends AbstractSteps{
         responseLogger.writeResponseAsLog("Accept Call");
     }
 
+    /**
+     *
+     */
     @Then("decline the call")
     public void declineCall() {
 
@@ -250,6 +269,19 @@ public class CallingTC extends AbstractSteps{
 
     }
 
+    /**
+     *
+     * @param
+     */
+
+    @Then("check the revenue")
+    public void revenue(){
+
+        info("checking revenue");
+        String r=call.checkRevenue();
+        this.checkAndWriteToReport (response.statusCode (), "Revenue is->"+r, parameter.isNegative());
+    }
+
     @Then("extend the session by $time mint and check the revenue")
     public void revenueAfterExtend(@Named ( "time" )String time){
 
@@ -259,6 +291,11 @@ public class CallingTC extends AbstractSteps{
     @Then("check the session status")
     public void sessionStatus(){
 
+        info("checking session status");
+
+        String status=call.sessionStatus();
+
+        this.checkAndWriteToReport (response.statusCode (), "Session status is->"+status, parameter.isNegative());
     }
 
     @Then("check the notification")

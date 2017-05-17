@@ -1,6 +1,6 @@
 Given an expert
 
-When register with {"email": "kishor+test18@atlogys.com","password": "qwerty12" } as expert1
+When register with {"email": "kishor+test23@atlogys.com","password": "qwerty12" } as expert1
 
 Then Verify Email
 
@@ -18,10 +18,9 @@ Then create a calender as    {
 
 
 Then get the avilable slot of expert1
-
 Given an user
 
-When register with {"email": "kishor+test18@atlogys.com","password": "qwerty12" } as user1
+When register with {"email": "kishor+test23@atlogys.com","password": "qwerty12" } as user1
 
 Then Verify Email
 
@@ -49,18 +48,16 @@ Then register a device as {
 
 
 Given an user
-
 Then create a card with fake-masterpass-mastercard-nonce
-
 Then schedule a session as {
                                "title": "a test call",
                                "details": "test",
                                "scheduled_datetime":"2017-05-29T02:40:00Z",
-                               "expert_profile": 2,
-                               "expert":2,
-                               "user_device":3,
+                               "expert_profile":7,
+                               "expert":12,
+                               "user_device":11,
                                "scheduled_duration": 20,
-                               "card": 1,
+                               "card":5,
                                "promo_code": ""
                            }
 

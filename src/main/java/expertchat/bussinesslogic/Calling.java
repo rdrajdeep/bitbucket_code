@@ -72,7 +72,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
     public boolean isAcceptCall ( ) {
 
-        String url = SESSION + getId ( ) + "/accept/";
+        String url = SESSION +"1"+ "/accept/";
 
         String expert_device = getMap ( ).get ( "ExpertDevice" );
 
@@ -91,7 +91,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
     public boolean isDissconnectCall ( ) {
 
-        String url = SESSION + getId ( ) + "/disconnect/";
+        String url = SESSION + "1" + "/disconnect/";
         System.out.println ( url );
 
         String json = "{\"tokbox_session_length\":20}";
@@ -113,7 +113,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
     public boolean isDecline ( ) {
 
-        String url = SESSION + getId ( ) + "/decline/";
+        String url = SESSION +"1"+ "/decline/";
 
         response.setResponse (
                 this.delete ( "", url, session.getExpertToken ( ), true )
@@ -164,7 +164,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
      */
     public void extendSession ( String realTime ) {
 
-        String url=SESSION+getId ()+"extend_session/";
+        String url=SESSION+"1"+"extend_session/";
 
         String json="{\n" +
                 "    \"expert_profile\": "+getMap ().get ( "expertProfileId" )+",\n" +
@@ -185,7 +185,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
      */
     public void addReview(String json){
 
-        String url=SESSION+getId ()+"review/";
+        String url=SESSION+"1"+"review/";
 
         response.setResponse (
 
@@ -285,4 +285,26 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
         }
     }
 
+    public void intiate ( String s ) {
+
+        response.setResponse(this.put ("{}", SESSION+s+"initialize/", session.getUserToken (), true));
+        response.printResponse ();
+    }
+
+
+    public String  checkRevenue ( ) {
+
+        response.setResponse(this.get (SESSION+"1/", session.getUserToken (), true));
+        response.printResponse ();
+        return parseResponse.getJsonData ( "results.revenue", ResponseDataType.STRING);
+    }
+
+    public String sessionStatus ( ) {
+
+        response.setResponse(this.get (SESSION+"1/", session.getUserToken (), true));
+
+        response.printResponse ();
+
+        return parseResponse.getJsonData ( "results.status", ResponseDataType.STRING);
+    }
 }
