@@ -161,7 +161,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
             response.setResponse (this.post ( json, REGISTER_DEVICE, session.getUserToken ( ), true ) );
 
-            getMap ( ).put ( "UserDevice", parseResponse.getJsonData ( "results.id", ResponseDataType.INT ) );
+            getMap ().put ( "UserDevice", parseResponse.getJsonData ("results.id", ResponseDataType.INT));
         }
     }
 
@@ -204,9 +204,59 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
     /**
      * @param
      */
-    public void scheduleSession(String json){
+    public void scheduleSession(){
 
         String url=SESSION+"schedule/";
+
+        String json="{\n" +
+                "  \"title\": \"a test call\",\n" +
+                "  \"details\": \"test\",\n" +
+                "  \"scheduled_datetime\":\"2017-05-30T02:40:00Z\",\n" +
+                "  \"expert_profile\":"+getMap ().get ( "expertProfileId" )+",\n" +
+                "  \"expert\":"+getMap ().get ( "expertId" )+",\n" +
+                "  \"user_device\":"+getMap ().get ("UserDevice")+",\n" +
+                "  \"scheduled_duration\": 20,\n" +
+                "  \"card\":"+getMap ().get( "user_card_id")+",\n" +
+                "  \"promo_code\": \"\"\n" +
+                "  }";
+
+        System.out.println ( "Schedule--->"+json );
+
+        response.setResponse (this.post (json, url, session.getUserToken (), true));
+
+        if(response.statusCode ()==HTTP_ACCEPTED || response.statusCode ()==HTTP_OK) {
+
+            getMap ( ).put ( "scheduled_session_id", parseResponse.getJsonData ( "results.id", ResponseDataType.INT ) );
+
+            getMap ( ).put ( "scheduled_datetime", parseResponse.getJsonData ( "results.scheduled_datetime", ResponseDataType.STRING ));
+
+        }else {
+
+            System.out.println ("SERVER ERROR");
+        }
+
+        response.printResponse ();
+    }
+
+    /**
+     * @param
+     */
+    public void scheduleSession2(){
+
+        String url=SESSION+"schedule/";
+        String json="{\n" +
+                "  \"title\": \"a test call\",\n" +
+                "  \"details\": \"test\",\n" +
+                "  \"scheduled_datetime\":\"2017-05-30T03:00:00Z\",\n" +
+                "  \"expert_profile\":"+getMap ().get ( "expertProfileId" )+",\n" +
+                "  \"expert\":"+getMap ().get ( "expertId" )+",\n" +
+                "  \"user_device\":"+getMap ().get ("UserDevice")+",\n" +
+                "  \"scheduled_duration\": 20,\n" +
+                "  \"card\":"+getMap ().get( "user_card_id")+",\n" +
+                "  \"promo_code\": \"\"\n" +
+                "  }";
+
+        System.out.println ( "Schedule--->"+json );
 
         response.setResponse (this.post (json, url, session.getUserToken (), true));
 

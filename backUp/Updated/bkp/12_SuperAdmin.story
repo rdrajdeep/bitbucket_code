@@ -9,7 +9,7 @@ Given complete super admin flow and celery task(EX:121 Sprint-4)
 
 Given an user
 
-When login with {"email": "anoop+super@atlogys.com", "password": "qwerty12"}
+When login with {"email": "kishor+super@atlogys.com", "password": "qwerty12"}
 
 Then create a super admin content as {
                                          "content_id": "78VeeBFG",

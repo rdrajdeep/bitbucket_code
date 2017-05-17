@@ -1,4 +1,4 @@
-Given an expert
+Given an user
 Then register a device as {
                           "device_type": "ios",
                           "device_name": "USer device",
@@ -22,17 +22,7 @@ Then register a device as {
 
 Given an user
 Then create a card with fake-masterpass-mastercard-nonce
-Then schedule a session as {
-                               "title": "a test call",
-                               "details": "test",
-                               "scheduled_datetime":"2017-05-29T02:40:00Z",
-                               "expert_profile":1,
-                               "expert":1,
-                               "user_device":1,
-                               "scheduled_duration": 20,
-                               "card":1,
-                               "promo_code": ""
-                           }
+Then schedule a session
 
 Then check the session status
 Then initiate the call
@@ -57,17 +47,8 @@ Then provide review as {
 
 Then check the revenue
 
-Then schedule a session as {
-                               "title": "a test call",
-                               "details": "test",
-                               "scheduled_datetime":"2017-05-29T02:50:00Z",
-                               "expert_profile":1,
-                               "expert":1,
-                               "user_device":1,
-                               "scheduled_duration": 20,
-                               "card":1,
-                               "promo_code": ""
-                           }
+Then schedule a session again
+
 Then cancel the session
 
 Then get all the past session and verify

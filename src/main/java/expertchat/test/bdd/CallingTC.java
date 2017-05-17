@@ -162,15 +162,29 @@ public class CallingTC extends AbstractSteps{
         this.checkAndWriteToReport ( response.statusCode (), "Review added" , parameter.isNegative ());
     }
 
-    @Then("schedule a session as $session")
-    public void scheduleSession(@Named ( "session" )String session){
+    @Then("schedule a session")
+    public void scheduleSession1(){
 
         if(parameter.isNegative ()){
 
-            call.scheduleSession ( session );
+            call.scheduleSession ( );
         }else {
 
-            call.scheduleSession ( session );
+            call.scheduleSession ();
+        }
+
+        this.checkAndWriteToReport ( response.statusCode (), "Session scheduled", parameter.isNegative ());
+    }
+
+    @Then("schedule a session again")
+    public void scheduleSession2(){
+
+        if(parameter.isNegative ()){
+
+            call.scheduleSession2 ( );
+        }else {
+
+            call.scheduleSession2 ();
         }
 
         this.checkAndWriteToReport ( response.statusCode (), "Session scheduled", parameter.isNegative ());

@@ -271,9 +271,9 @@ public class ExpertProfileTC extends AbstractSteps{
 
         calender.getAvilableSlot(eId);
 
-        checkAndWriteToReport(response.statusCode(),"All avilable slot listed", parameter.isNegative ());
+        checkAndWriteToReport(response.statusCode(),"All available slot listed", parameter.isNegative ());
 
-        responseLogger.writeResponseAsLog("GET Avilable slots");
+        responseLogger.writeResponseAsLog("GET Available slots");
     }
 
 }

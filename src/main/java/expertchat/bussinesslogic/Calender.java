@@ -1,5 +1,8 @@
 package expertchat.bussinesslogic;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import expertchat.apioperation.AbstractApiFactory;
 import expertchat.apioperation.ExpertChatEndPoints;
 import expertchat.apioperation.apiresponse.ApiResponse;
@@ -61,6 +64,8 @@ public class Calender extends AbstractApiFactory implements HTTPCode, ExpertChat
         response.setResponse(
                 this.get(AVILABLE_SLOTS+epId+"/",session.getExpertToken ())
         );
+
+        String reponse=response.getResponse ().asString ().toString ();
 
 
     }
