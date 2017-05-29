@@ -50,6 +50,11 @@ public interface ExpertChatEndPoints {
 
     String IGNORE_CONTENT = "ignored-contents/";
 
+    String LIKE="user/contents/";
+
+    String DISLIKE="user/contents/";
+
+
     /*PHONE CODE API END POINTS */
 
     String PHONECODEVERIFY = "expert/phonecodeverify/";

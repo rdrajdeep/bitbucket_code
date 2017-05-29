@@ -341,4 +341,71 @@ public class SocialLinks extends AbstractApiFactory implements ExpertChatEndPoin
     }
 
 
+    public void like_contemt ( String id ) {
+
+        response.setResponse (
+                this.post ( "", LIKE+id+"/like", SessionManagement.session ().getUserToken ())
+        );
+
+        response.printResponse ( );
+    }
+
+    public void dislike_contemt ( String id ) {
+
+        response.setResponse (
+                this.post ( "", LIKE+id+"/dislike", SessionManagement.session ().getUserToken ())
+        );
+
+        response.printResponse ( );
+    }
+
+    public void bookmark_contemt ( String id ) {
+
+        response.setResponse (
+                this.post ( "", LIKE+id+"/favorite", SessionManagement.session ().getUserToken ())
+        );
+
+        response.printResponse ( );
+    }
+
+    public void remove_bookmark ( String id ) {
+
+        response.setResponse (
+                this.post ( "", LIKE+id+"/remove_favorite", SessionManagement.session ().getUserToken ())
+        );
+
+        response.printResponse ( );
+    }
+
+    public  boolean verify_like(String id){
+
+        response.setResponse (
+
+                this.get ( LIKE+"?activity-type=like", SessionManagement.session ().getUserToken ())
+        );
+
+        int content_id=response.getResponse ().jsonPath ().getInt ( "results.id" );
+
+        if(id.contains ( String.valueOf ( content_id ) )){
+
+            return true;
+        }
+        return false;
+    }
+
+    public  boolean verify_bookmark(String id){
+
+        response.setResponse (
+
+                this.get ( LIKE+"?activity-type=favorite", SessionManagement.session ().getUserToken ())
+        );
+
+        int content_id=response.getResponse ().jsonPath ().getInt ( "results.id" );
+
+        if(id.contains ( String.valueOf ( content_id ) )){
+
+            return true;
+        }
+        return false;
+    }
 }

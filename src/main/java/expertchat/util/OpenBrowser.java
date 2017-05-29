@@ -54,7 +54,6 @@ public class OpenBrowser {
         WebElement fb = webPage.findElement ( fConnect );
         WebElement yt = webPage.findElement ( yConnect );
         WebElement insta = webPage.findElement ( iConnect );
-
         actions.moveToElement ( aAccount ).click ( ).perform ( );
         actions.moveToElement ( fb ).click ( ).perform ( );
         sleep ( );

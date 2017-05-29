@@ -302,6 +302,61 @@ public class SocialLinkTC extends AbstractSteps implements HTTPCode{
         }
     }
 
+    @Then("like the content published")
+    public void like() {
+
+        String id = getMap ( ).get ( "publishedContentID" );
+
+        socialLinks.like_contemt ( id );
+
+        if ( socialLinks.verify_like ( id ) ) {
+
+            this.checkAndWriteToReport ( response.statusCode ( ), "Content liked by user", parameter.isNegative ( ) );
+        }
+    }
+
+    @Then("dislike the content published")
+    public void dislike() {
+
+        String id = getMap ( ).get ( "publishedContentID" );
+
+        socialLinks.dislike_contemt ( id );
+
+        if ( ! socialLinks.verify_like ( id ) ) {
+
+            this.checkAndWriteToReport ( response.statusCode ( ), "Content disliked by user", parameter.isNegative ( ) );
+
+        }
+    }
+
+    @Then("favorite the content published")
+    public void favorite() {
+
+        String id = getMap ( ).get ( "publishedContentID" );
+
+        socialLinks.bookmark_contemt ( id );
+
+        if ( socialLinks.verify_bookmark ( id ) ) {
+
+            this.checkAndWriteToReport ( response.statusCode ( ), "Content bookmarked by user", parameter.isNegative ( ) );
+
+        }
+    }
+
+    @Then("remove bookmark from the content published")
+    public void remove_bookmark(){
+
+        String id = getMap().get("publishedContentID");
+
+        socialLinks.remove_bookmark ( id );
+
+        if(!socialLinks.verify_bookmark ( id )){
+
+        this.checkAndWriteToReport(response.statusCode(), "remove bookmark by user", parameter.isNegative ());
+      }
+    }
+
+
     @Then("delete that content")
     public void deleteContent() {
 
