@@ -18,6 +18,4 @@ public interface CallStatus {
     String EXPERT_DECLINED = "expert_declined";
     String TIMEOUT = "timeout";
 
-
-
 }

@@ -110,5 +110,9 @@ public interface ExpertChatEndPoints {
     /*Promo code End point*/
 
     String PROMO_CODE= "promo-codes/";
+    /**
+     * Rating / Review session
+     */
+    String REVIEW="/review/";
 
 }

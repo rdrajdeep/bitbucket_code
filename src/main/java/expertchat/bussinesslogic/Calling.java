@@ -114,7 +114,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
         //String json = "{\"tokbox_session_length\":20}"; // Debug needed.
 
         String json="{\n" +
-                " \"tokbox_session_length\":200,\n" +
+                " \"tokbox_session_length\":350,\n" +
                 " \n" +
                 " \"disconnect_reason\": \"expert_declined\"\n" +
                 "}";
@@ -463,6 +463,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
 
             if (isOK()) {
 
+                System.out.println("Expert Session details-->");
                 response.printResponse();
 
                 getMap().put("user_revenue", pr.getJsonData("results.revenue", ResponseDataType.FLOAT));
@@ -470,15 +471,22 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
                 getMap().put("expert_revenue", pr.getJsonData("results.expert_estimated_revenue", ResponseDataType.FLOAT));
                 //getMap().put("call_status",pr.getJsonData("results.status",ResponseDataType.STRING));
                 getMap().put("scheduled_duration",pr.getJsonData("results.scheduled_duration",ResponseDataType.INT));
+                getMap().put("session_status",pr.getJsonData("results.status", ResponseDataType.STRING));
+
+            }else {
+                System.out.println("Error reponse for Session details-->");
+                response.printResponse();
             }
+
         }else {
 
-            System.out.println("---Getting SessionUtil details for session Id: "+sessionId+"---");
+            System.out.println("---Getting Sessionl details for session Id: "+sessionId+"---");
 
             response.setResponse(this.get(SESSION+sessionId+"/", session.getUserToken(), true));
 
             if (isOK()) {
 
+                System.out.println("User Session details-->");
                 response.printResponse();
 
                 getMap().put("user_revenue", pr.getJsonData("results.revenue", ResponseDataType.FLOAT));
@@ -486,8 +494,13 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
                 getMap().put("expert_revenue", pr.getJsonData("results.expert_estimated_revenue", ResponseDataType.FLOAT));
                 //getMap().put("call_status",pr.getJsonData("results.status",ResponseDataType.STRING));
                 getMap().put("scheduled_duration",pr.getJsonData("results.scheduled_duration",ResponseDataType.INT));
+                getMap().put("session_status",pr.getJsonData("results.status", ResponseDataType.STRING));
 
+            }else {
+                System.out.println("Error reponse for Session details-->");
+                response.printResponse();
             }
+
         }
     }
 
@@ -501,10 +514,11 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
         );
 
         if(isOK()){
-
+            System.out.println("--Checking if call arrived--");
             response.printResponse();
 
         }else {
+            System.out.println("something happened in call arrived");
             response.printResponse();
         }
 
@@ -556,4 +570,22 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
         }
     }
 
+    public boolean endSession() {
+
+        String url=SESSION+getMap().get("scheduled_session_id")+"/complete/";
+        response.setResponse(
+                this.put("",url,session.getUserToken(),true)
+        );
+
+        if (isOK()){
+            System.out.println("--Session is successfully ended response is---");
+            response.printResponse();
+            return true;
+
+        }else {
+            System.out.println("--Session end unsuccessfull, response is---");
+            response.printResponse();
+            return false;
+        }
+    }
 }

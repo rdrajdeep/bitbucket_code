@@ -1,6 +1,7 @@
 package expertchat.test.bdd;
 
 import com.relevantcodes.extentreports.ExtentReports;
+import expertchat.apioperation.ExpertChatEndPoints;
 import expertchat.apioperation.apiresponse.ApiResponse;
 import expertchat.apioperation.apiresponse.ResponseDataType;
 import expertchat.bussinesslogic.*;
@@ -321,6 +322,7 @@ public class SessionTC extends AbstractSteps {
         call.getSessionDetails(getMap().get("scheduled_session_id"), parameter.isExpert());
 
         this.checkAndWriteToReport(response.statusCode(), "SessionPrice Id is  " + getMap().get("scheduled_session_id") + " Scheduled duration is "+getMap().get("scheduled_duration"), parameter.isNegative());
+
     }
 
     /**
@@ -466,6 +468,7 @@ public void cancel(){
      *
      * @param status
      */
+    @Pending
     @Then("Call should be in $status status")
     @Aliases(values = {"status should be $status"})
     public void verifyCallStatus(@Named("status")String status){
@@ -549,6 +552,7 @@ public void cancel(){
      * Waiting till extension time is reached, Extensible at 5 min prior to scheduled end time.
      */
 
+    @Pending
     @Then("wait for session extenstion")
     @When("wait for session extenstion")
     @Aliases(values = {"I wait for another session extenstion"})
@@ -629,6 +633,7 @@ public void cancel(){
 
     }
 
+    @Pending
     @When("No slot is available for extension")
     @Then("No slot is available for extension")
     public void checkExtensionSlot(){
@@ -645,10 +650,20 @@ public void cancel(){
 
     }
 
+   @Pending
+    @Then("End the call")
+    public void completeCall(){
+
+        boolean isCallComplete=call.endSession();
+
+      this.AssertAndWriteToReport(isCallComplete,"Call is sucessfully ended");
+
+    }
 
     /**
      * Checking if extension is possible
      */
+    @Pending
     @Then("verify if session extension is possible")
     public void verifySessionExtension(){
 
@@ -661,6 +676,7 @@ public void cancel(){
      * If extension is possible than extend the session for desired duration. By default 10.
      * @param duration
      */
+    @Pending
     @Then("If possible, Extend the call for $duration min")
     public void extendCall(@Named("duration") String duration){
 
