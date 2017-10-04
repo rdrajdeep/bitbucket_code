@@ -71,8 +71,8 @@ Specification warps the basic API call params like base path and Content types .
 # apioperation / session
 # SessionManagement.java
 Handle session . Need to use it as below :
-    Example:
-    
+
+   Example:
    SessionManagement session=SessionManagement.session();
    session.getExpertToken();
    session.getUserToken();
@@ -98,7 +98,6 @@ This class is used to get the Email or password from the Json as Array. The firs
 password .
    
    Example:
-   
    private String expertCredential;
 
     public void setuserCredential ( String userCredential ) {
@@ -124,7 +123,6 @@ ExpertChatEndPoints interface . The implemetation details of method like post, p
 worry about the implementations . 
 
    Example:
-   
    public class Account extends AbstractApiFactory implements ExpertChatEndPoints {
 
     private static String accountId;
@@ -165,8 +163,7 @@ All utility class incuding custom exception handling and Email . New Utility cla
 All test fixtures , that maps a Jbehve story line should go in to this module . Every class should extend AbstractSteps class. 
     
 	Example:
-   
-   public class BasicFlowTC extends AbstractSteps{
+    public class BasicFlowTC extends AbstractSteps{
 
     public BasicFlowTC ( ExtentReports reports, String casName) {
 
@@ -183,13 +180,13 @@ All test fixtures , that maps a Jbehve story line should go in to this module . 
 Once we finished writing a new  Script under bdd , We need tocall it in TestStoryConfig class . Below is the example of  how to use it.
   
    Example:
-   
-    @Override
-    public InjectableStepsFactory stepsFactory ( ) {
+   @Override
+   public InjectableStepsFactory stepsFactory ( ) {
 
         return new InstanceStepsFactory ( configuration ( ),
 
                 new BasicFlowTC ( getReport (), "Log-in and registration flow"),
+            }
 
 One should not change any other method or configuration for a smooth program executions . 
 
@@ -205,7 +202,7 @@ without using command line.
         JUnitCore.runClasses ( TestStoryConfig.class );
     }
 
-}
+   }
 
  
 
