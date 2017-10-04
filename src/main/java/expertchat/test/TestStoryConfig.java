@@ -99,7 +99,7 @@ public class TestStoryConfig extends JUnitStories {
 
         return new InstanceStepsFactory ( configuration ( ),
 
-                new BasicFlowTC ( getReport (), "Log-in and registration flow"),
+            /*    new BasicFlowTC ( getReport (), "Log-in and registration flow"),
                 new BasicProfileTC (getReport (), "Basic profile flow"),
                 new ExpertProfileTC (getReport (), "Expert profile flow"),
                 new SocialLinkTC ( getReport (), "Social Link  flow" ),
@@ -110,8 +110,9 @@ public class TestStoryConfig extends JUnitStories {
                 new SearchTC (getReport (), "SOLR Search flow"),
                 new MyStatesTC (getReport (), "Expert Analytics flow"),
                 new SuperAdminTC ( getReport (), "Super Admin flow" ),
-                new GetStreamTC (getReport (), "Get Stream flow"),
-                new SessionTC(getReport(),"All session related test cases")
+                new GetStreamTC (getReport (), "Get Stream flow"),*/
+                new SessionTC(getReport(),"All session related test cases"),
+                new ReviewSessionTC(getReport(),"Review Session test cases")
         );
     }
 }

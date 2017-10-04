@@ -90,6 +90,9 @@ Then I will accept it
 And status should be accepted
 
 Given an user
+Then I will disconnect the call
+
+Given an user
 Then wait for session extenstion
 And verify if session extension is possible
 Then If possible, Extend the call for 10 min
@@ -102,3 +105,5 @@ And verify if session extension is possible
 Given negative scenario
 When No slot is available for extension
 Then User should not allowed to extend the call
+
+
