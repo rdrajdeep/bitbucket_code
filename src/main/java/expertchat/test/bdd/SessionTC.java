@@ -286,7 +286,7 @@ public class SessionTC extends AbstractSteps {
 
         String sessionId = getMap().get("scheduled_session_id");
 
-        this.checkAndWriteToReport(response.statusCode(), "Session Id "+sessionId + " is created for this session.", parameter.isNegative());
+        this.checkAndWriteToReport(response.statusCode(), "SessionPrice Id "+sessionId + " is created for this session.", parameter.isNegative());
 
     }
 
@@ -298,11 +298,11 @@ public class SessionTC extends AbstractSteps {
 
         if(isCancel){
 
-            AssertAndWriteToReport ( isCancel, "Session cancelled");
+            AssertAndWriteToReport ( isCancel, "SessionPrice cancelled");
 
         }else if(parameter.isNegative () && isCancel==false) {
 
-            AssertAndWriteToReport ( isCancel, "Negative Test--Session could not be canceled");
+            AssertAndWriteToReport ( isCancel, "Negative Test--SessionPrice could not be canceled");
 
         }else {
             AssertAndWriteToReport ( false, "" );
@@ -320,7 +320,7 @@ public class SessionTC extends AbstractSteps {
         //String sessionID= getMap().get("scheduled_session_id");
         call.getSessionDetails(getMap().get("scheduled_session_id"), parameter.isExpert());
 
-        this.checkAndWriteToReport(response.statusCode(), "Session Id is  " + getMap().get("scheduled_session_id") + " Scheduled duration is "+getMap().get("scheduled_duration"), parameter.isNegative());
+        this.checkAndWriteToReport(response.statusCode(), "SessionPrice Id is  " + getMap().get("scheduled_session_id") + " Scheduled duration is "+getMap().get("scheduled_duration"), parameter.isNegative());
     }
 
     /**
@@ -394,7 +394,7 @@ public class SessionTC extends AbstractSteps {
     @Then("I initiate the session")
        public void validateSessionInitiation() throws  Exception{
 
-        info("Intiating a Session with expert");
+        info("Intiating a SessionPrice with expert");
 
         System.out.println("initiating call");
 
@@ -446,7 +446,7 @@ public class SessionTC extends AbstractSteps {
 public void cancel(){
     info("Cancelling the session");
     ISACTIONTAKEN=call.isCancelSession();
-    this.AssertAndWriteToReport(ISACTIONTAKEN,"Session is cancelled successfully");
+    this.AssertAndWriteToReport(ISACTIONTAKEN,"SessionPrice is cancelled successfully");
 }
 
     /**
@@ -554,7 +554,7 @@ public void cancel(){
     @Aliases(values = {"I wait for another session extenstion"})
     public void continueSession() throws InterruptedException {
 
-        info("Call is in-progress and waiting for Session extension");
+        info("Call is in-progress and waiting for SessionPrice extension");
         int duration=Integer.parseInt(getMap().get("scheduled_duration")); //10 min
 
         SessionUtil session=new SessionUtil();
@@ -588,7 +588,7 @@ public void cancel(){
             currentTimeInMilli=0;
 
         }else{
-            this.AssertAndWriteToReport(true,"Session cannot be extended as call is not in accepted state");
+            this.AssertAndWriteToReport(true,"SessionPrice cannot be extended as call is not in accepted state");
         }
        // For extracting current time , a function has to be make..
         currentTimeInMilli=session.getCurrentTimeInMilis();
@@ -636,7 +636,7 @@ public void cancel(){
         if (!isExtensible&&(getMap().get("extn_error_code").equals(ErrorCodes.NO_SLOT))) {
             this.AssertAndWriteToReport(parameter.isNegative(), getMap().get("extn_error_message"));
         }else{
-            this.AssertAndWriteToReport(parameter.isNegative(),"Session cannot be extended due to some other reason "+getMap().get("extn_error_message"));
+            this.AssertAndWriteToReport(parameter.isNegative(),"SessionPrice cannot be extended due to some other reason "+getMap().get("extn_error_message"));
         }
     }
 
@@ -653,7 +653,7 @@ public void cancel(){
     public void verifySessionExtension(){
 
         isExtensible = call.checkExtension(getMap().get("scheduled_session_id"));
-        this.AssertAndWriteToReport(isExtensible,"Session  can be extended now");
+        this.AssertAndWriteToReport(isExtensible,"SessionPrice  can be extended now");
 
     }
 
@@ -673,7 +673,7 @@ public void cancel(){
             System.out.println("Extn Duration " + extnDuration + " and price " + extnPrice);
 
         }
-        this.checkAndWriteToReport(response.statusCode(),"Session exteded for 10 more minute",parameter.isNegative());
+        this.checkAndWriteToReport(response.statusCode(),"SessionPrice exteded for 10 more minute",parameter.isNegative());
 
     }
 

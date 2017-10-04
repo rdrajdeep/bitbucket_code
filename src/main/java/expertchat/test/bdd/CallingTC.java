@@ -79,13 +79,13 @@ public class CallingTC extends AbstractSteps{
      @Then("initiate the call")
      public void intiate(){
 
-         if(parameter.isNegative ()){
+         /*if(parameter.isNegative ()){
 
              call.intiate ("1");
          }else {
 
              call.intiate ("1");
-         }
+         }*/
 
          this.checkAndWriteToReport ( response.statusCode (), "Call Initiated" , parameter.isNegative ());
      }
@@ -164,16 +164,16 @@ public class CallingTC extends AbstractSteps{
 
     @Then("schedule a session")
     public void scheduleSession1(){
-
+/*
         if(parameter.isNegative ()){
 
             call.scheduleSession ( );
         }else {
 
             call.scheduleSession ();
-        }
+        }*/
 
-        this.checkAndWriteToReport ( response.statusCode (), "Session scheduled", parameter.isNegative ());
+        this.checkAndWriteToReport ( response.statusCode (), "SessionPrice scheduled", parameter.isNegative ());
     }
 
     @Then("schedule a session again")
@@ -187,7 +187,7 @@ public class CallingTC extends AbstractSteps{
             call.scheduleSession2 ();
         }
 
-        this.checkAndWriteToReport ( response.statusCode (), "Session scheduled", parameter.isNegative ());
+        this.checkAndWriteToReport ( response.statusCode (), "SessionPrice scheduled", parameter.isNegative ());
     }
 
     @Then("cancel the session")
@@ -197,11 +197,11 @@ public class CallingTC extends AbstractSteps{
 
         if(isCancel){
 
-            AssertAndWriteToReport ( isCancel, "Session canceled");
+            AssertAndWriteToReport ( isCancel, "SessionPrice canceled");
 
         }else if(parameter.isNegative () && isCancel==false) {
 
-            AssertAndWriteToReport ( isCancel, "Negative Test--Session could not be canceled");
+            AssertAndWriteToReport ( isCancel, "Negative Test--SessionPrice could not be canceled");
 
         }else {
             AssertAndWriteToReport ( false, "" );
@@ -219,7 +219,7 @@ public class CallingTC extends AbstractSteps{
             call.extendSession ( time );
         }
 
-        this.checkAndWriteToReport (response.statusCode (), "Session extended by\t\t"+time, parameter.isNegative ());
+        this.checkAndWriteToReport (response.statusCode (), "SessionPrice extended by\t\t"+time, parameter.isNegative ());
     }
 
     @Then ( "get all the past session and verify" )
@@ -309,7 +309,7 @@ public class CallingTC extends AbstractSteps{
 
         String status=call.sessionStatus();
 
-        this.checkAndWriteToReport (response.statusCode (), "Session status is->"+status, parameter.isNegative());
+        this.checkAndWriteToReport (response.statusCode (), "SessionPrice status is->"+status, parameter.isNegative());
     }
 
     @Then("check the notification")

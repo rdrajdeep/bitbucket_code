@@ -1,6 +1,7 @@
 package expertchat.bussinesslogic;
 
 import expertchat.apioperation.AbstractApiFactory;
+import expertchat.apioperation.ExpertChatEndPoints;
 import expertchat.apioperation.apiresponse.ApiResponse;
 import expertchat.apioperation.apiresponse.HTTPCode;
 import expertchat.apioperation.apiresponse.ParseResponse;
@@ -8,6 +9,8 @@ import expertchat.apioperation.apiresponse.ResponseDataType;
 import expertchat.apioperation.session.SessionManagement;
 import expertchat.util.ExpertChatException;
 
+import static expertchat.apioperation.ExpertChatEndPoints.REGISTER_DEVICE;
+import static expertchat.apioperation.ExpertChatEndPoints.SESSION;
 import static expertchat.util.ExpertChatUtility.getValue;
 import static expertchat.usermap.TestUserMap.getMap;
 
@@ -207,7 +210,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
      */
     public void extendSession ( String realTime ) {
 
-        System.out.println("--Session is extending now--");
+        System.out.println("--SessionPrice is extending now--");
 
         String sessionId=getMap().get("scheduled_session_id");
 
@@ -331,7 +334,7 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
                 this.delete ( "", url, session.getUserToken ( ), true ));
 
         if(response.statusCode ()==HTTP_NO_CONTENT||response.statusCode()==HTTP_ACCEPTED||response.statusCode()==HTTP_OK){
-            System.out.println("Session cancelled");
+            System.out.println("SessionPrice cancelled");
             return true;
         }
 

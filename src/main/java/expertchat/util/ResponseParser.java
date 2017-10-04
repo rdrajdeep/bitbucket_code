@@ -9,7 +9,7 @@ import java.util.*;
 
 public class ResponseParser {
 
-    private ArrayList<Session> sessionsPricingList;
+    private ArrayList<SessionPrice> sessionsPricingList;
     private ArrayList<String> mSlotsLengthList;
     private ArrayList<String> slotsTime;
     private String date;
@@ -135,7 +135,7 @@ public class ResponseParser {
 
             for (String slotLength : mSlotsLengthList) {
                 if (sessionsPricingList != null) {
-                    for (Session session : sessionsPricingList) {
+                    for (SessionPrice session : sessionsPricingList) {
                         if (session.getSessionLength() == Integer.parseInt(slotLength)) {
                             slotLength = slotLength + " min ($" + session.getPrice() + ")";
                             break;

@@ -221,14 +221,14 @@ public class ExpertProfileTC extends AbstractSteps{
     @Then("create a calender as $json")
     public void calender(@Named("json") String json) {
 
-        info("Creating a calender...");
+        /*info("Creating a calender...");
         if (parameter.isNegative ()) {
             calender.createCalender(json);
         } else {
             calender.createCalender(json);
         }
         checkAndWriteToReport(response.statusCode(),"Calender Created", parameter.isNegative ());
-        responseLogger.writeResponseAsLog("Calender API");
+        responseLogger.writeResponseAsLog("Calender API");*/
     }
 
     @Then("get the calender")

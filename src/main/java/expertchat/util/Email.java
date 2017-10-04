@@ -27,18 +27,16 @@ public class Email {
         props.put ( "mail.smtp.host", "smtp.gmail.com" );
         props.put ( "mail.smtp.port", "465" );
 
-        Session session = Session.getInstance ( props,
-                new javax.mail.Authenticator ( ) {
+        Authenticator authenticator=new Authenticator() {
+            @Override
+            protected PasswordAuthentication getPasswordAuthentication() {
 
-                    protected PasswordAuthentication getPasswordAuthentication ( ) {
+                return new PasswordAuthentication(username, password);
+            }
+        };
 
-                        return new PasswordAuthentication ( username, password );
-                    }
-                } );
-
-        return session;
+        return Session.getInstance(props, authenticator);
     }
-
 
     public static void sendEmail ( String body,
                                    String from,

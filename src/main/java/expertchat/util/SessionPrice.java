@@ -7,7 +7,7 @@ import java.util.Comparator;
 
 
 
-public class Session implements Comparator<Session>{
+public class SessionPrice implements Comparator<SessionPrice>{
 
    @SerializedName("price")
    @Expose
@@ -34,7 +34,7 @@ public class Session implements Comparator<Session>{
    }
 
    @Override
-   public int compare(Session session1, Session session2) {
+   public int compare(SessionPrice session1, SessionPrice session2) {
 
        if(session1.getSessionLength() == session2.getSessionLength()){
 

@@ -77,14 +77,14 @@ public class MyStatesTC  extends AbstractSteps{
 
             if(count.equals (ActualCount)){
 
-                AssertAndWriteToReport ( true, "Number of Session for\t"+date+"\tis\t"+ActualCount);
+                AssertAndWriteToReport ( true, "Number of SessionPrice for\t"+date+"\tis\t"+ActualCount);
             }else {
 
-                AssertAndWriteToReport ( false, "Number of Session for\t"+date+"\tis\t"+ActualCount);
+                AssertAndWriteToReport ( false, "Number of SessionPrice for\t"+date+"\tis\t"+ActualCount);
             }
         }else {
 
-            AssertAndWriteToReport ( true, "Number of Session for\t"+date+"\tis\t"+size);
+            AssertAndWriteToReport ( true, "Number of SessionPrice for\t"+date+"\tis\t"+size);
         }
     }
 

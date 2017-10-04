@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8693fbd6-8234-4202-ac15-ee04ea59d911" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/SessionTC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/expertchat/util/DatetimeUtility.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/expertchat/util/ResponseParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/expertchat/util/Session.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Story/11_Session.story" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_9.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/Story/5_calling.story" afterPath="$PROJECT_DIR$/today/5_calling.story" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Story/5_Calling.story" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/storyDurations.props" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/expertchat/util/Session.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/util/SessionPrice.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/ExpertChatEndPoints.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/apioperation/ExpertChatEndPoints.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Account.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Account.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/BasicProfile.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/BasicProfile.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calender.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calender.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/CallStatus.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/CallStatus.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calling.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calling.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertChatApi.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertChatApi.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/GetStreamFeeds.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/GetStreamFeeds.java" />
@@ -26,9 +19,19 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/PhoneVerification.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/PhoneVerification.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ProfileComplete.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ProfileComplete.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Searching.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Searching.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SessionStatus.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SessionStatus.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SocialLinks.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SocialLinks.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SuperAdmin.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SuperAdmin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/CallingTC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/CallingTC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/E2ETestCase.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/E2ETestCase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/ExpertProfileTC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/ExpertProfileTC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/MyStatesTC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/MyStatesTC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/SessionTC.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/SessionTC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/util/Email.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/util/Email.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/expertchat/util/ResponseParser.java" afterPath="$PROJECT_DIR$/src/main/java/expertchat/util/ResponseParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Story/4_SocialLinks.story" afterPath="$PROJECT_DIR$/target/classes/Story/4_SocialLinks.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Story/6_PhoneVerification.story" afterPath="$PROJECT_DIR$/target/classes/Story/6_PhoneVerification.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Story/8_paymentInfo.story" afterPath="$PROJECT_DIR$/target/classes/Story/8_paymentInfo.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Story/9_profilestatus.story" afterPath="$PROJECT_DIR$/target/classes/Story/9_profilestatus.story" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,7 +55,18 @@
     <favorites_list name="ExpertChat" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ExpertChatException.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/util/ExpertChatException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -112,16 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/Java/bdd/MyStatesTC.java" />
-        <option value="$PROJECT_DIR$/src/test/Java/bdd/SuperAdminTC.java" />
-        <option value="$PROJECT_DIR$/src/test/Java/bdd/GetStreamTC.java" />
-        <option value="$PROJECT_DIR$/src/test/Java/bdd/E2ETestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/Java/bdd/BasicFlowTC.java" />
-        <option value="$PROJECT_DIR$/src/test/Java/bdd/BasicProfileTC.java" />
-        <option value="$PROJECT_DIR$/src/test/Java/bdd/AbstractSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/Story/3_ExpertProfile.story" />
-        <option value="$PROJECT_DIR$/src/test/resources/Story/4_SocialLinks.story" />
-        <option value="$PROJECT_DIR$/src/test/Java/TestStoryConfig.java" />
         <option value="$PROJECT_DIR$/src/test/Java/bdd/SocialLinkTC.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Story/2_BasicProfileLoad.story" />
         <option value="$PROJECT_DIR$/src/test/resources/Story/5_Calling.story" />
@@ -140,20 +144,14 @@
         <option value="$PROJECT_DIR$/src/main/java/expertchat/params/parameter.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/AbstractSteps.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/apioperation/session/SessionManagement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertChatApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/test/TestStoryConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/PhoneVerificationTC.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/12_SuperAdmin.story" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/CallingTC.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/5_calling.story" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/ExpertProfileTC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calling.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/0_BasicFlow.story" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/util/OpenBrowser.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/10_actiononcontent.story" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/4_SocialLinks.story" />
-        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SocialLinks.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/SocialLinkTC.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/6_PhoneVerification.story" />
         <option value="$PROJECT_DIR$/src/main/resources/Story/8_paymentInfo.story" />
@@ -163,6 +161,22 @@
         <option value="$PROJECT_DIR$/src/main/java/expertchat/apioperation/ExpertChatEndPoints.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/util/DatetimeUtility.java" />
         <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SessionUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/BasicProfile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calling.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertChatApi.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/GetStreamFeeds.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/MeStats.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/PhoneVerification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ProfileComplete.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Searching.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SocialLinks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SuperAdmin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Account.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/CallingTC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/test/bdd/ExpertProfileTC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/util/SessionPrice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/expertchat/util/Email.java" />
       </list>
     </option>
   </component>
@@ -382,7 +396,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bussinesslogic" />
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ec_testing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ec_testing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="expertchat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bdd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -896,6 +944,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -906,7 +955,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47790506" sideWeight="0.4969743" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9394435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27010623" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27010623" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -925,7 +975,6 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -968,91 +1017,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/paymentnonce/CreateNonce.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/BasicProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/report/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/test/bdd/BasicProfileTC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="27" column="16" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/params/parameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertProfile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="108" column="9" lean-forward="false" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/apioperation/httpspecs/Specification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/apioperation/AbstractApiFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="49" column="51" lean-forward="false" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/apioperation/session/SessionManagement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertChatApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="171" column="8" lean-forward="false" selection-start-line="171" selection-start-column="8" selection-end-line="171" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/test/bdd/BasicFlowTC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="44" column="45" lean-forward="false" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Story/11_GetStreamAPI.story" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/test/TestStoryConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="112" column="23" lean-forward="false" selection-start-line="112" selection-start-column="23" selection-end-line="112" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/test/bdd/PhoneVerificationTC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -1075,21 +1039,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/FileUpload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="899">
-          <caret line="36" column="85" lean-forward="false" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.53.1/selenium-api-2.53.1.jar!/org/openqa/selenium/By.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/util/OpenBrowser.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1102,13 +1051,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1295">
           <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SocialLinks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="379" column="31" lean-forward="false" selection-start-line="379" selection-start-column="20" selection-end-line="379" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1130,6 +1072,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1163,14 +1106,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/test/bdd/ExpertProfileTC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1082">
-          <caret line="59" column="58" lean-forward="true" selection-start-line="59" selection-start-column="58" selection-end-line="59" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/Story/6_PhoneVerification.story">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
@@ -1182,14 +1117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/test/bdd/CallingTC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="83" column="21" lean-forward="false" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1242,42 +1169,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ErrorCodes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SessionStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="123" column="0" lean-forward="true" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/CallStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="529" column="70" lean-forward="false" selection-start-line="529" selection-start-column="70" selection-end-line="529" selection-end-column="70" />
           <folding />
         </state>
       </provider>
@@ -1306,14 +1201,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/util/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/util/ResponseParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1322,10 +1209,200 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-520">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/BasicProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="18" column="64" lean-forward="false" selection-start-line="18" selection-start-column="64" selection-end-line="18" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Calling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="20" column="69" lean-forward="false" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/CallStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/EmailVerification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ErrorCodes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertChatApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="17" column="65" lean-forward="false" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ExpertProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="108" column="9" lean-forward="false" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/FileUpload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="36" column="85" lean-forward="false" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/GetStreamFeeds.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="16" column="76" lean-forward="false" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/MeStats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="69" lean-forward="false" selection-start-line="12" selection-start-column="69" selection-end-line="12" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/PhoneVerification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="16" column="69" lean-forward="false" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/ProfileComplete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="10" column="67" lean-forward="false" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Searching.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="9" column="61" lean-forward="false" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SessionStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SessionUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="190">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SocialLinks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="20" column="63" lean-forward="false" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/SuperAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2180">
+          <caret line="17" column="62" lean-forward="false" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/bussinesslogic/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-159">
+          <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/test/bdd/CallingTC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2693">
+          <caret line="180" column="0" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/test/bdd/ExpertProfileTC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="233" column="29" lean-forward="true" selection-start-line="233" selection-start-column="29" selection-end-line="233" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/util/SessionPrice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/util/Email.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-159">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#950#1164#0" expanded="true" />
+            <element signature="e#1163#1164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/expertchat/util/ExpertChatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
