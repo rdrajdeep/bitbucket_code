@@ -82,6 +82,7 @@ public interface ExpertChatEndPoints {
     /*SUPER ADMIN ENDPOINTS*/
 
     String SUPER_ADMIN_CONTENTS = "user/super-admin-contents/";
+    String SUPER_ADMIN_LOGIN = "api-auth/login/";
 
     /*Expert Payment Account*/
     String EXPERT_ACCOUNT = "expert/expert-accounts/";
@@ -103,5 +104,11 @@ public interface ExpertChatEndPoints {
     String SLOTS="expert/slots/";
 
     String AVILABLE_SLOTS="expert/available-slots/";
+
+    String USER_AVILABLE_SLOTS="user/available-slots/";
+
+    /*Promo code End point*/
+
+    String PROMO_CODE= "promo-codes/";
 
 }

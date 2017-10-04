@@ -3,7 +3,6 @@ package expertchat.bussinesslogic;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import expertchat.apioperation.AbstractApiFactory;
-import expertchat.apioperation.ExpertChatEndPoints;
 import expertchat.apioperation.apiresponse.ApiResponse;
 import expertchat.apioperation.apiresponse.HTTPCode;
 import expertchat.apioperation.apiresponse.ParseResponse;
