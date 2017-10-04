@@ -31,20 +31,19 @@ Contains all Stories. Story name should be the module name and start with a numb
   
 # java/expertchat/ apioperation 
 
-This module wrap up Rest Assured APIs . AbstractApiFactory.java has all the PSOT , PUT, DELETE ect. methods . 
+This module wrap up Rest Assured APIs . AbstractApiFactory.java has all the POST , PUT, DELETE ect. methods . 
    
-   Example:
-   @Override
-    public Response post ( String json, String url ) {
-        Response r;
-        r = given ( )
-                .request ( )
-                .spec ( Specification.setupRequestSpecBuilder ( ) )
-                .body ( json )
-                .post ( url );
-
-        return r;
-    }
+ Example:
+ @Override
+ public Response post ( String json, String url ) {
+  Response r;
+  r = given ( )
+  .request ( )
+  .spec ( Specification.setupRequestSpecBuilder ( ) )
+  .body ( json )
+  .post ( url );
+  return r;
+  }
 	
 
 # apioperation / apiresponse /
@@ -72,7 +71,8 @@ Specification warps the basic API call params like base path and Content types .
 # apioperation / session
 # SessionManagement.java
 Handle session . Need to use it as below :
-   Example:
+    Example:
+    
    SessionManagement session=SessionManagement.session();
    session.getExpertToken();
    session.getUserToken();
@@ -96,24 +96,25 @@ This class is used to to set expert or user or if a test case is negative or not
 
 This class is used to get the Email or password from the Json as Array. The first element of  the array is email and second is 
 password .
+   
    Example:
    
    private String expertCredential;
 
     public void setuserCredential ( String userCredential ) {
 
-        this.userCredential = userCredential;
+     this.userCredential = userCredential;
 
     }
 	
    public String[] getExpertCredential ( ) {
 
-        JsonObject jsonObject = ( JsonObject ) new JsonParser ( ).parse ( this.expertCredential );
+    JsonObject jsonObject = ( JsonObject ) new JsonParser ( ).parse ( this.expertCredential );
 
-        String credential[] = { jsonObject.get ( "email" ).getAsString ( ) , jsonObject.get ( "password" ).getAsString ( ) };
+    String credential[] = { jsonObject.get ( "email" ).getAsString ( ) , jsonObject.get ( "password" ).getAsString ( ) };
 
-        return credential;
-    }
+    return credential;
+   }
 
 # expertchat / bussinesslogic /
 
