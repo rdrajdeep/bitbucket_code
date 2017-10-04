@@ -16,6 +16,7 @@ This Repo contains the complete framework and other Utilities to run the framewo
 4. Run git clone https://atlogysQA@bitbucket.org/avihoffer/ec_testing.git
 5. Now Navigate to the Project root folder where pom.xml resides from terminal or Comand prompt .
 6. Run mvn clean compile exec:java
+7. Load the project from IDE.
 
 
 ### Contribution guidelines ###
@@ -33,17 +34,17 @@ Contains all Stories. Story name should be the module name and start with a numb
 
 This module wrap up Rest Assured APIs . AbstractApiFactory.java has all the POST , PUT, DELETE ect. methods . 
    
- Example:
- @Override
- public Response post ( String json, String url ) {
-  Response r;
-  r = given ( )
-  .request ( )
-  .spec ( Specification.setupRequestSpecBuilder ( ) )
-  .body ( json )
-  .post ( url );
-  return r;
-  }
+   Example:
+   @Override
+   public Response post ( String json, String url ) {
+   Response r;
+   r = given ( )
+   .request ( )
+   .spec ( Specification.setupRequestSpecBuilder ( ) )
+   .body ( json )
+   .post ( url );
+   return r;
+   }
 	
 
 # apioperation / apiresponse /
@@ -56,7 +57,8 @@ This module wrap up Rest Assured APIs . AbstractApiFactory.java has all the POST
  This module handles the API reponses . ApiResponse.java is a singleton class. 
  We need to create  object of this calss in every bussiness logic where API call is done . 
  This Module contain ParseResponse.java class that is reponsible for parsing JSON. 
-    Example:
+
+   Example:
    private ApiResponse response=ApiResponse.getObject();
    private ParseResponse pr=new ParseResponse(response);  
    
