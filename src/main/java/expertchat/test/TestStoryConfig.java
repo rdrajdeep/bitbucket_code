@@ -67,7 +67,7 @@ public class TestStoryConfig extends JUnitStories {
 
             @Override
             public long asSeconds ( String timeout ) {
-                return 500;
+                return 300000;
             }
         };
 
@@ -110,7 +110,8 @@ public class TestStoryConfig extends JUnitStories {
                 new SearchTC (getReport (), "SOLR Search flow"),
                 new MyStatesTC (getReport (), "Expert Analytics flow"),
                 new SuperAdminTC ( getReport (), "Super Admin flow" ),
-                new GetStreamTC (getReport (), "Get Stream flow")
+                new GetStreamTC (getReport (), "Get Stream flow"),
+                new SessionTC(getReport(),"All session related test cases")
         );
     }
 }
