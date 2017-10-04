@@ -9,6 +9,10 @@
 *.html
 *.iml
 .idea
+JsonFiles
+today
+Log
+backUp
 
 # Packages #
 ############
