@@ -287,7 +287,7 @@ public class SessionTC extends AbstractSteps {
 
         String sessionId = getMap().get("scheduled_session_id");
 
-        this.checkAndWriteToReport(response.statusCode(), "SessionPrice Id "+sessionId + " is created for this session.", parameter.isNegative());
+        this.checkAndWriteToReport(response.statusCode(), "Session Id "+sessionId + " is created for this session.", parameter.isNegative());
 
     }
 
@@ -299,7 +299,7 @@ public class SessionTC extends AbstractSteps {
 
         if(isCancel){
 
-            AssertAndWriteToReport ( isCancel, "SessionPrice cancelled");
+            AssertAndWriteToReport ( isCancel, "Session cancelled");
 
         }else if(parameter.isNegative () && isCancel==false) {
 
@@ -384,10 +384,10 @@ public class SessionTC extends AbstractSteps {
 
         if (expected.equalsIgnoreCase(actual)) {
 
-            this.AssertAndWriteToReport(true, "SessionUtil final status is " + actual);
+            this.AssertAndWriteToReport(true, "Session final status is " + actual);
         } else {
 
-            this.AssertAndWriteToReport(false, "SessionUtil final status is " + actual);
+            this.AssertAndWriteToReport(false, "Session final status is " + actual);
         }
     }
 
@@ -396,7 +396,7 @@ public class SessionTC extends AbstractSteps {
     @Then("I initiate the session")
        public void validateSessionInitiation() throws  Exception{
 
-        info("Intiating a SessionPrice with expert");
+        info("Intiating a Session with expert");
 
         System.out.println("initiating call");
 
@@ -468,7 +468,7 @@ public void cancel(){
      *
      * @param status
      */
-    @Pending
+
     @Then("Call should be in $status status")
     @Aliases(values = {"status should be $status"})
     public void verifyCallStatus(@Named("status")String status){

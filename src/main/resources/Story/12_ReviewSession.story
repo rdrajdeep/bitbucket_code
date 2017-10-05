@@ -2,15 +2,58 @@ Meta:
 
 Narrative:
 As a user
-I want to perform an action
-So that I can achieve a business goal
+Once I completed a call session, I will send a review / rating of the call session
+So that I can verify review API  is working fine
+
+Scenario: API -"http://connect.qa.experchat.com/v1/sessions/8777/review/"
 
 
 Given an user
 
 When I completed a call
 Then get session details
-Then Send a review as {
+
+Given negative scenario
+When I send rating greater than 5 as {
+                                                  "overall_rating": 6,
+                                                  "knowledge_rating": 3,
+                                                  "communication_rating": 3,
+                                                  "professionalism_rating": 3,
+                                                  "text_review": "Good Experience"
+                                              }
+Then I should not allowed to send review
+
+Given negative scenario
+When I send negative rating  as {
+                                                  "overall_rating": -1,
+                                                  "knowledge_rating": -1,
+                                                  "communication_rating": -5,
+                                                  "professionalism_rating": 3,
+                                                  "text_review": "Good Experience"
+                                              }
+Then I should not allowed to send review
+
+Given negative scenario
+When I send rating 0 as {
+                                                  "overall_rating": 0,
+                                                  "knowledge_rating": 0,
+                                                  "communication_rating": 0,
+                                                  "professionalism_rating": 0,
+                                                  "text_review": "Bad"
+                                              }
+Then I should not allowed to send review
+
+Given negative scenario
+When I send null overall rating as {
+                                                  "overall_rating": 0,
+                                                  "knowledge_rating": 0,
+                                                  "communication_rating": 0,
+                                                  "professionalism_rating": 3,
+                                                  "text_review": "Bad"
+                                              }
+Then I should not allowed to send review
+
+Then Send a valid review as {
                           "overall_rating": 3,
                           "knowledge_rating": 3,
                           "communication_rating": 3,

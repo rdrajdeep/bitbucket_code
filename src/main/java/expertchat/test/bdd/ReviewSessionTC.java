@@ -1,7 +1,9 @@
 package expertchat.test.bdd;
 
 import com.relevantcodes.extentreports.ExtentReports;
+import expertchat.apioperation.apiresponse.ResponseDataType;
 import expertchat.bussinesslogic.Calling;
+import expertchat.bussinesslogic.ErrorCodes;
 import expertchat.bussinesslogic.ReviewSession;
 import expertchat.bussinesslogic.SessionStatus;
 import expertchat.params.parameter;
@@ -59,19 +61,33 @@ public class ReviewSessionTC extends AbstractSteps{
      */
     @Then("Send a review as $review")
     @When("I send review for same session once again as $review")
-    @Aliases(values = {"I send a review as $review"})
+    @Aliases(values = {"I send a review as $review", "I send null overall rating as $review", "I send rating 0 as $review",
+            "I send negative rating  as $review","I send rating greater than 5 as $review","Send a valid review as $review"})
     public void sendReview(@Named("review") String review){
 
         info("Sending review");
-        if (isStatusCompleted){
-            reviewSession.sendUserReview(review);
-            this.checkAndWriteToReport(response.statusCode(),"Review is send successfully", parameter.isNegative());
+        String errorCode=null;
+        if (isStatusCompleted ){
 
-        }else{
+            reviewSession.sendUserReview(review);
+            errorCode=getMap().get("non_field_errors_code");
+            System.out.println("Error codes -- check  "+errorCode);
+
+            if (errorCode==null){
+                System.out.println("I am null--");
+                this.checkAndWriteToReport(response.statusCode(),"Review is send successfully", parameter.isNegative());
+                parameter.setIsNegative(false);
+
+            }else{
+                this.checkAndWriteToReport(response.statusCode(),"You already reviewed this session.", parameter.isNegative());
+                parameter.setIsNegative(false);
+                errorCode=null;
+            }
+        }else {
             this.AssertAndWriteToReport(isStatusCompleted);
+            parameter.setIsNegative(false);
             System.out.println("Review cannot be send as call is not in completed status");
         }
-
     }
 
     /**
@@ -81,8 +97,14 @@ public class ReviewSessionTC extends AbstractSteps{
     @Then("Verify review is successfully send")
     @Aliases(values = {"I should not allowed to send review"})
     public void verifyReview(){
-
+        info("Verify Review Session");
+    boolean isVerified=reviewSession.verifyReviewSession();
+        if(isVerified){
+            System.out.println("Review is success fully send- verified");
+            this.checkAndWriteToReport(response.statusCode(),"Review or Rating is successfully send",parameter.isNegative());
+        }else {
+            this.AssertAndWriteToReport(parameter.isNegative(),"Negative scenario passed, review cannot send in this scenario.");
+        }
     }
-
 
 }
