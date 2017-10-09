@@ -47,8 +47,7 @@ Then i register a device as {
                             }
 Then get a slot
 
-Given An existing promocode 83
-When I validate the promocode
+When I validate the promocode 83
 Then Promocode should be a valid promocode
 
 When schedule a session using promo code 83 and duration 10

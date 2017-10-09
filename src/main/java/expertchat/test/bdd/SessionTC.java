@@ -32,7 +32,7 @@ public class SessionTC extends AbstractSteps {
         super(reports, casName);
     }
 
-    SessionUtil pcode = new SessionUtil();
+    SessionUtil sUtil = new SessionUtil();
     ExpertChatApi expertChatApi = new ExpertChatApi();
     Credentials credentials = Credentials.getCredentials();
 
@@ -47,7 +47,8 @@ public class SessionTC extends AbstractSteps {
     private boolean isCallArived=false;
     private boolean ISACTIONTAKEN =false;
     private boolean isExtensible=false;
-    boolean isWaitOver=false;
+    private boolean isWaitOver=false;
+    private boolean isValid=false;
 
     @When("login as super user $json")
     public void superUserlogin(@Named("json") String json) {
@@ -65,7 +66,7 @@ public class SessionTC extends AbstractSteps {
     public void PromoCode(@Named("promoCode") String promoCode) {
 
         System.out.println("-- Creatin a promo code--");
-        pcode.createPromoCode(promoCode);
+        sUtil.createPromoCode(promoCode);
         String coupon = jsonParser.getJsonData("results.coupon_code", ResponseDataType.STRING);
         this.checkAndWriteToReport(response.statusCode(), "New Promo code " + "\"" + coupon + "\"" + " created successfully", parameter.isNegative());
 
@@ -94,8 +95,12 @@ public class SessionTC extends AbstractSteps {
     public void getSlot() {
 
         System.out.println("--- GETTING A SLOT NOW---");
-        slots=pcode.getAllSlots("10");
+        slots= sUtil.getAllSlots("10");
         System.out.println("Extracted slot is: "+slots.get(0));
+
+        String date_today=dateUtil.currentDateOnly();
+        String slot_datetime=date_today+"T"+slots.get(0)+":00"+"Z";
+        getMap().put("slot_datetime",slot_datetime);
 
         if (!slots.isEmpty()) {
             this.checkAndWriteToReport(response.statusCode(), "Most recent available slot of today is extracted for scheduling a session. Your slot is "+slots.get(0)+":00 UTC", parameter.isNegative());
@@ -107,11 +112,17 @@ public class SessionTC extends AbstractSteps {
     @When("I validate the promocode $coupon")
     public void validatePromocode(@Named("coupon")String coupon){
 
+        info("Validating promo code");
+         isValid=sUtil.isValidCoupon(coupon);
+
+            this.checkAndWriteToReport(response.statusCode(),"Promo Code is valid",parameter.isNegative());
 
     }
 
     @Then("Promocode should be a valid promocode")
     public void checkValidorNot(){
+
+      this.AssertAndWriteToReport(isValid,"Promo code is successfully validated");
 
     }
 
@@ -410,7 +421,7 @@ public class SessionTC extends AbstractSteps {
 
         System.out.println("initiating call");
 
-        pcode.checkAndWaitForCall();
+        sUtil.checkAndWaitForCall();
         call.intiate(getMap().get("scheduled_session_id"), userDeviceId);
         response.printResponse();
 

@@ -43,8 +43,6 @@ public class SessionUtil extends AbstractApiFactory implements HTTPCode, ExpertC
 
          response.setResponse(this.post(json,ExpertChatEndPoints.PROMO_CODE, SessionManagement.session ( ).getUserToken(),true));
 
-         //response.printResponse();
-
         if(response.statusCode()==HTTP_OK|| response.statusCode()==HTTP_ACCEPTED)
 
             System.out.println("Promo code created Success fully");
@@ -52,6 +50,32 @@ public class SessionUtil extends AbstractApiFactory implements HTTPCode, ExpertC
         else
             System.out.println("Ahh Ohh! Something went wrong");
 
+    }
+
+    public boolean isValidCoupon(String promocode) {
+
+        System.out.println("Validatin coupon");
+        String expertID=getMap().get("expertId");
+        String slot_datetime= getMap().get("slot_datetime");
+        String json="{\n" +
+                "    \"promo_code\": \""+promocode+"\",\n" +
+                "    \"expert_id\": "+expertID+",\n"+
+                "    \"session_price\": 15,\n" +
+                "    \"scheduled_datetime\": \""+slot_datetime+"\"\n"+
+                "}";
+        System.out.println("Print json "+json);
+
+        String url=SESSION+"validate-promo-code/";
+        System.out.println("Printing URL "+url);
+        response.setResponse(this.post(json,url,session.getUserToken(),true));
+
+        if (response.statusCode()==HTTP_OK||response.statusCode()==HTTP_ACCEPTED){
+            response.printResponse();
+            return true;
+        }else {
+            response.printResponse();
+            return false;
+        }
     }
 
 
@@ -286,6 +310,7 @@ public class SessionUtil extends AbstractApiFactory implements HTTPCode, ExpertC
           return  day-1;
         }
     }
+
 
 
 }
