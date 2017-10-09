@@ -70,22 +70,21 @@ public class ReviewSessionTC extends AbstractSteps{
         if (isStatusCompleted ){
 
             reviewSession.sendUserReview(review);
-            errorCode=getMap().get("non_field_errors_code");
+            /*errorCode=getMap().get("non_field_errors_code");
             System.out.println("Error codes -- check  "+errorCode);
 
-            if (errorCode==null){
-                System.out.println("I am null--");
-                this.checkAndWriteToReport(response.statusCode(),"Review is send successfully", parameter.isNegative());
-                parameter.setIsNegative(false);
+            if (errorCode==null){*/
 
-            }else{
-                this.checkAndWriteToReport(response.statusCode(),"You already reviewed this session.", parameter.isNegative());
-                parameter.setIsNegative(false);
-                errorCode=null;
-            }
+                this.checkAndWriteToReport(response.statusCode(),"Review is send successfully", parameter.isNegative());
+
+            //}else{
+              //  this.checkAndWriteToReport(response.statusCode(),"You already reviewed this session.", parameter.isNegative());
+
+                //errorCode=null;
+          //  }
         }else {
-            this.AssertAndWriteToReport(isStatusCompleted);
-            parameter.setIsNegative(false);
+            this.AssertAndWriteToReport(isStatusCompleted,"Review cannot be send as call is not in completed status");
+           // parameter.setIsNegative(false);
             System.out.println("Review cannot be send as call is not in completed status");
         }
     }
@@ -94,17 +93,25 @@ public class ReviewSessionTC extends AbstractSteps{
      * Verifying review is successfully sent.
      * Or If review sent once it cannot be send once again
      */
-    @Then("Verify review is successfully send")
-    @Aliases(values = {"I should not allowed to send review"})
-    public void verifyReview(){
+    @Then("Verify that sending review is $status")
+    public void verifyReview(@Named("status")String status) {
+
         info("Verify Review Session");
-    boolean isVerified=reviewSession.verifyReviewSession();
-        if(isVerified){
-            System.out.println("Review is success fully send- verified");
-            this.checkAndWriteToReport(response.statusCode(),"Review or Rating is successfully send",parameter.isNegative());
-        }else {
-            this.AssertAndWriteToReport(parameter.isNegative(),"Negative scenario passed, review cannot send in this scenario.");
+
+        boolean isVerified = reviewSession.verifyReviewSession();
+
+        switch (status) {
+            case ("successfull"):
+                this.AssertAndWriteToReport(isVerified, "Review or Rating is successfully send");
+                break;
+
+            case ("unsuccessfull"):
+                if(isVerified==false) {
+                    this.AssertAndWriteToReport(true, "Negative test case pass, Review or Rating cannot be send");
+                }else {
+                    this.AssertAndWriteToReport(false);
+                }
+                break;
         }
     }
-
 }

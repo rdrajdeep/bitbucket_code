@@ -76,7 +76,7 @@ public class Report extends Steps {
 
         } else if ( isNegative && statusCode == HTTPCode.HTTP_BAD ) {
 
-            pass ( "Negative Test Passed--" + ApiResponse.getObject ( ).getResponse ( ).prettyPrint ( ) );
+            pass ( "Negative Test Case Passed-- " + ApiResponse.getObject ( ).getResponse ( ).prettyPrint ( ) );
             parameter.setIsNegative ( false );
 
         } else {

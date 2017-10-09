@@ -132,7 +132,7 @@ public class SessionUtil extends AbstractApiFactory implements HTTPCode, ExpertC
     }
 
 
-   public void convertDateTime() throws Exception{
+   public void checkAndWaitForCall() throws Exception{
 
        this.getCurrentTimefromServer();
 
@@ -147,14 +147,15 @@ public class SessionUtil extends AbstractApiFactory implements HTTPCode, ExpertC
        DateTimeFormatter schedule = DateTimeFormat.forPattern("MMM dd yyyy, hh:mm a");
 
        long inmillisLocal=getTimeInMillis(serverdtfOut.print(serverjodatime),"MMM dd yyyy, hh:mm a");
+       long diff=0;
 
        inMiliisSchedule = getTimeInMillis(schedule.print(scheduleTimeJoda),"MMM dd yyyy, hh:mm a");
 
        if(inmillisLocal <=inMiliisSchedule){
 
-          long diff=inMiliisSchedule-inmillisLocal;
+           diff=inMiliisSchedule-inmillisLocal;
 
-           System.out.println(" Waiting "+diff/60000+" minute to initiate the call");
+           System.out.println(" Waiting "+diff/60000+" minutes to initiate the call");
 
            Thread.sleep(diff);
        }
@@ -194,7 +195,7 @@ public class SessionUtil extends AbstractApiFactory implements HTTPCode, ExpertC
 
        SessionUtil session=new SessionUtil();
 
-       session.convertDateTime();
+       session.checkAndWaitForCall();
        long scheduleDateTime=session.getScheduleTimeInMillSecond();
        System.out.println(scheduleDateTime+"  Schedule date in mili");
        long durationToMilli=duration*60000;

@@ -1,7 +1,6 @@
 package expertchat.test.bdd;
 
 import com.relevantcodes.extentreports.ExtentReports;
-import expertchat.apioperation.ExpertChatEndPoints;
 import expertchat.apioperation.apiresponse.ApiResponse;
 import expertchat.apioperation.apiresponse.ResponseDataType;
 import expertchat.bussinesslogic.*;
@@ -104,6 +103,17 @@ public class SessionTC extends AbstractSteps {
         }
     }
 
+
+    @When("I validate the promocode $coupon")
+    public void validatePromocode(@Named("coupon")String coupon){
+
+
+    }
+
+    @Then("Promocode should be a valid promocode")
+    public void checkValidorNot(){
+
+    }
 
     /*@
      * Scheduling a session using that PROMO CODE and duration provided**
@@ -400,7 +410,7 @@ public class SessionTC extends AbstractSteps {
 
         System.out.println("initiating call");
 
-        pcode.convertDateTime();
+        pcode.checkAndWaitForCall();
         call.intiate(getMap().get("scheduled_session_id"), userDeviceId);
         response.printResponse();
 

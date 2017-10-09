@@ -35,19 +35,9 @@ public class ReviewSession extends AbstractApiFactory implements ExpertChatEndPo
         if (response.statusCode()==HTTP_OK||response.statusCode()==HTTP_ACCEPTED){
 
             System.out.println("Review is sent--");
-            int errorCode=0;
+            isReviewSuccess=true;
+            response.printResponse();
 
-           getMap().put("non_field_errors_code",jsonParser.getJsonData("errors.non_field_errors.code", ResponseDataType.INT));
-            errorCode=Integer.parseInt(jsonParser.getJsonData("errors.non_field_errors.code", ResponseDataType.INT));
-
-            System.out.println("error code "+errorCode);
-            if(errorCode==ErrorCodes.ALREADY_REVIEW){
-                isReviewSuccess=false;
-                response.printResponse();
-            }else{
-                isReviewSuccess=true;
-                response.printResponse();
-            }
         }else {
             System.out.println("Review sending failed, response is-->");
 
@@ -59,7 +49,7 @@ public class ReviewSession extends AbstractApiFactory implements ExpertChatEndPo
 
     public boolean verifyReviewSession(){
 
-        if (isReviewSuccess){
+        if (this.isReviewSuccess){
             return true;
         }else{
             return false;

@@ -48,7 +48,7 @@ When publish a content
 
 Then check count of unpblished feed again
 
-Given a negative scenario
+Given negative scenario
 
 When publish the same content again
 

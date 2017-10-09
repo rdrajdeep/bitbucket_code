@@ -19,7 +19,7 @@ Then create promocode {
                         "expiry_datetime": "2017-10-30T02:25:00Z",
                         "usage_limit": 10,
                         "description": "100 % Discount on every user",
-                        "coupon_code": "80",
+                        "coupon_code": "83",
                         "status": 1,
                         "is_deleted": false,
                         "user_usage_limit":20,
@@ -46,13 +46,17 @@ Then i register a device as {
                               "device_os": "ios"
                             }
 Then get a slot
-When schedule a session using promo code 80 and duration 10
+
+When I validate the promocode 83
+Then Promocode should be a valid promocode
+
+When schedule a session using promo code 83 and duration 10
 Then it should return session id
 
 Then I cancel my scheduled session
 
 When I get a slot
-Then schedule a session using promo code 80 and duration 10
+Then schedule a session using promo code 83 and duration 10
 
 Then I initiate the session
 
