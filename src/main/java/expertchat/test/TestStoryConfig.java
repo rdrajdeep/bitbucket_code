@@ -112,7 +112,8 @@ public class TestStoryConfig extends JUnitStories {
                 new SuperAdminTC ( getReport (), "Super Admin flow" ),
                 new GetStreamTC (getReport (), "Get Stream flow"),*/
                 new SessionTC(getReport(),"All session related test cases"),
-                new ReviewSessionTC(getReport(),"Review Session test cases")
+                new ReviewSessionTC(getReport(),"Review Session test cases"),
+                new FollowUpTC(getReport(),"Follow up session Test cases")
         );
     }
 }

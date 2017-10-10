@@ -88,7 +88,6 @@ public class SessionTC extends AbstractSteps {
     /**
      * @ Getting a slot from that expert
      */
-
     @Then("get a slot")
     @When("get a slot")
     @Aliases(values = {"I get a slot"})
@@ -342,7 +341,7 @@ public class SessionTC extends AbstractSteps {
         //String sessionID= getMap().get("scheduled_session_id");
         call.getSessionDetails(getMap().get("scheduled_session_id"), parameter.isExpert());
 
-        this.checkAndWriteToReport(response.statusCode(), "SessionPrice Id is  " + getMap().get("scheduled_session_id") + " Scheduled duration is "+getMap().get("scheduled_duration"), parameter.isNegative());
+        this.checkAndWriteToReport(response.statusCode(), "Session Id is  " + getMap().get("scheduled_session_id") + " Scheduled duration is "+getMap().get("scheduled_duration"), parameter.isNegative());
 
     }
 

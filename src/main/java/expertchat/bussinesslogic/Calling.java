@@ -469,9 +469,9 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
                 getMap().put("user_revenue", pr.getJsonData("results.revenue", ResponseDataType.FLOAT));
 
                 getMap().put("expert_revenue", pr.getJsonData("results.expert_estimated_revenue", ResponseDataType.FLOAT));
-                //getMap().put("call_status",pr.getJsonData("results.status",ResponseDataType.STRING));
                 getMap().put("scheduled_duration",pr.getJsonData("results.scheduled_duration",ResponseDataType.INT));
                 getMap().put("session_status",pr.getJsonData("results.status", ResponseDataType.STRING));
+                getMap().put("session_follow_up",pr.getJsonData("results.session_follow_up",ResponseDataType.STRING));
 
             }else {
                 System.out.println("Error reponse for Session details-->");
@@ -492,9 +492,9 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
                 getMap().put("user_revenue", pr.getJsonData("results.revenue", ResponseDataType.FLOAT));
 
                 getMap().put("expert_revenue", pr.getJsonData("results.expert_estimated_revenue", ResponseDataType.FLOAT));
-                //getMap().put("call_status",pr.getJsonData("results.status",ResponseDataType.STRING));
                 getMap().put("scheduled_duration",pr.getJsonData("results.scheduled_duration",ResponseDataType.INT));
                 getMap().put("session_status",pr.getJsonData("results.status", ResponseDataType.STRING));
+                getMap().put("session_follow_up",pr.getJsonData("results.session_follow_up",ResponseDataType.STRING));
 
             }else {
                 System.out.println("Error reponse for Session details-->");
