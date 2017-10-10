@@ -6,6 +6,9 @@ I want to perform an action
 So that I can achieve a business goal
 
 Scenario: scenario description
-Given a system state
-When I do something
-Then system is in a different state
+Given an expert
+When I get the session details
+
+When The session is completed
+Then I send a followup to user
+And Followup should be successfully send
