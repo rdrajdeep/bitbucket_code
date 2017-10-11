@@ -21,7 +21,7 @@ When I send rating greater than 5 as {
                                                   "professionalism_rating": 3,
                                                   "text_review": "Good Experience"
                                               }
-Then I should not allowed to send review
+Then Verify that review sending is unsuccessfull
 
 Given negative scenario
 When I send negative rating  as {
@@ -31,7 +31,7 @@ When I send negative rating  as {
                                                   "professionalism_rating": 3,
                                                   "text_review": "Good Experience"
                                               }
-Then I should not allowed to send review
+Then Verify that review sending is unsuccessfull
 
 Given negative scenario
 When I send rating 0 as {
@@ -41,7 +41,7 @@ When I send rating 0 as {
                                                   "professionalism_rating": 0,
                                                   "text_review": "Bad"
                                               }
-Then I should not allowed to send review
+Then Verify that review sending is unsuccessfull
 
 Given negative scenario
 When I send null overall rating as {
@@ -51,7 +51,7 @@ When I send null overall rating as {
                                                   "professionalism_rating": 3,
                                                   "text_review": "Bad"
                                               }
-Then I should not allowed to send review
+Then Verify that review sending is unsuccessfull
 
 Then Send a valid review as {
                           "overall_rating": 3,
@@ -60,7 +60,7 @@ Then Send a valid review as {
                           "professionalism_rating": 3,
                           "text_review": "Good Experience"
                       }
-Then Verify review is successfully send
+Then Verify that review sending is successfull
 
 Given negative scenario
 When I send review for same session once again as {
@@ -70,7 +70,7 @@ When I send review for same session once again as {
                                                                             "professionalism_rating": 3,
                                                                             "text_review": "Good Experience"
                                                                         }
-Then I should not allowed to send review
+Then Verify that review sending is unsuccessfull
 
 
 
