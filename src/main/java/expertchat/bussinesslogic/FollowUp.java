@@ -31,14 +31,15 @@ public  void sendingFollowup(){
     if (response.statusCode()==HTTP_ACCEPTED||response.statusCode()==HTTP_OK){
         System.out.println("Follow up send successfully");
         response.printResponse();
+        getMap().put("followup_error_code",null);
+        getMap().put("followup_error_message",null);
 
     }else{
         System.out.println("Below Error occured while sending follow up");
-        getMap().put("followup_error_code",jsonParser.getJsonData("results.error.code", ResponseDataType.INT));
-        getMap().put("followup_error_message",jsonParser.getJsonData("results.error.message", ResponseDataType.STRING));
+        getMap().put("followup_error_code",jsonParser.getJsonData("errors.non_field_errors.code", ResponseDataType.INT));
+        getMap().put("followup_error_message",jsonParser.getJsonData("errors.non_field_errors.message", ResponseDataType.STRING));
 
         response.printResponse();
-
         }
     }
 
@@ -52,14 +53,12 @@ public  void sendingFollowup(){
             response.printResponse();
 
             String followup_details=response.getResponse().jsonPath().getString("results.session_follow_up");
+            System.out.println("followup details: "+followup_details);
             if (followup_details!=null){
                 getMap().put("follow_up_text",jsonParser.getJsonData("results.session_follow_up.text",ResponseDataType.STRING));
                 getMap().put("follow_up_filename",jsonParser.getJsonData("results.session_follow_up.filename",ResponseDataType.STRING));
 
-            }else{
-                followup_details=null;
             }
-
         }else {
             System.out.println("Error reponse for follow up Session details-->");
             response.printResponse();

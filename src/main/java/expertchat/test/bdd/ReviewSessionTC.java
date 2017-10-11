@@ -24,6 +24,7 @@ public class ReviewSessionTC extends AbstractSteps{
 
      private boolean isStatusCompleted=false;
      private boolean isSessionEnded=false;
+     private boolean isSuccess=false;
 
     @When("I completed a call")
     public void getCallStatus(){
@@ -63,55 +64,49 @@ public class ReviewSessionTC extends AbstractSteps{
     @When("I send review for same session once again as $review")
     @Aliases(values = {"I send a review as $review", "I send null overall rating as $review", "I send rating 0 as $review",
             "I send negative rating  as $review","I send rating greater than 5 as $review","Send a valid review as $review"})
-    public void sendReview(@Named("review") String review){
+    public void sendReview(@Named("review") String review) {
 
         info("Sending review");
-        String errorCode=null;
-        if (isStatusCompleted ){
-
-            reviewSession.sendUserReview(review);
-            /*errorCode=getMap().get("non_field_errors_code");
-            System.out.println("Error codes -- check  "+errorCode);
-
-            if (errorCode==null){*/
-
-                this.checkAndWriteToReport(response.statusCode(),"Review is send successfully", parameter.isNegative());
-
-            //}else{
-              //  this.checkAndWriteToReport(response.statusCode(),"You already reviewed this session.", parameter.isNegative());
-
-                //errorCode=null;
-          //  }
-        }else {
-            this.AssertAndWriteToReport(isStatusCompleted,"Review cannot be send as call is not in completed status");
-           // parameter.setIsNegative(false);
-            System.out.println("Review cannot be send as call is not in completed status");
-        }
+            if (isStatusCompleted) {
+                reviewSession.sendUserReview(review);
+                this.checkAndWriteToReport(response.statusCode(), "Review success fully sent.", parameter.isNegative());
+            } else {
+                System.out.println("Review cannot be send as call is not in completed status");
+                this.AssertAndWriteToReport(isStatusCompleted);
+            }
     }
 
     /**
      * Verifying review is successfully sent.
      * Or If review sent once it cannot be send once again
      */
-    @Then("Verify that sending review is $status")
-    public void verifyReview(@Named("status")String status) {
 
-        info("Verify Review Session");
+    @Then("Verify that review sending is $status")
+    public void verifyReview(@Named("status") String status){
 
-        boolean isVerified = reviewSession.verifyReviewSession();
+            info("Verify Review Session");
 
-        switch (status) {
-            case ("successfull"):
-                this.AssertAndWriteToReport(isVerified, "Review or Rating is successfully send");
-                break;
+            boolean isVerified = reviewSession.verifyReviewSession();
 
-            case ("unsuccessfull"):
-                if(isVerified==false) {
-                    this.AssertAndWriteToReport(true, "Negative test case pass, Review or Rating cannot be send");
-                }else {
-                    this.AssertAndWriteToReport(false);
-                }
-                break;
+            switch (status) {
+                case ("successfull"):
+                    if (isVerified) {
+                        this.AssertAndWriteToReport(true, "Review or Rating is successfully send");
+                    } else {
+                        this.AssertAndWriteToReport(false);
+                    }
+                    break;
+
+                case ("unsuccessfull"):
+                    if (!isVerified) {
+                        this.AssertAndWriteToReport(true, "Verified, sending this review is not possible");
+                    } else {
+                        this.AssertAndWriteToReport(false);
+                    }
+                    break;
+            }
         }
-    }
 }
+
+
+

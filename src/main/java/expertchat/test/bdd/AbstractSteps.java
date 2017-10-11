@@ -50,6 +50,7 @@ public abstract class AbstractSteps extends Report {
     @Given("negative scenario")
     public void negative() {
 
+        info("-- This is for negative scenario --");
         parameter.setIsNegative ( true );
     }
 

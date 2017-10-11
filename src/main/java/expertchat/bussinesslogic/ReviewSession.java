@@ -25,26 +25,20 @@ public class ReviewSession extends AbstractApiFactory implements ExpertChatEndPo
     public void sendUserReview( String json){
 
         String url=SESSION+getMap().get("scheduled_session_id")+"/review/";
+        response.setResponse( this.post(json,url,session.getUserToken(),true));
 
-        response.setResponse(
-                this.post(json,url,session.getUserToken(),true)
-        );
-
-        System.out.println("status code "+response.statusCode());
-
+        System.out.println("Server Response code "+response.statusCode());
         if (response.statusCode()==HTTP_OK||response.statusCode()==HTTP_ACCEPTED){
-
             System.out.println("Review is sent--");
             isReviewSuccess=true;
             response.printResponse();
 
         }else {
             System.out.println("Review sending failed, response is-->");
-
             isReviewSuccess=false;
             response.printResponse();
-        }
 
+            }
     }
 
     public boolean verifyReviewSession(){

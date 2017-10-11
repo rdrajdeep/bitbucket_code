@@ -5,6 +5,7 @@ import expertchat.bussinesslogic.Calling;
 import expertchat.bussinesslogic.FollowUp;
 import expertchat.bussinesslogic.SessionStatus;
 import expertchat.params.parameter;
+import org.jbehave.core.annotations.Aliases;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import static expertchat.usermap.TestUserMap.getMap;
@@ -26,6 +27,7 @@ public class FollowUpTC extends AbstractSteps {
 
     @When("I send a followup to user")
     @Then("I send a followup to user")
+    @Aliases(values = {"I send another followup for same session"})
         public void sendFollowUp(){
 
             info("Sendig follow Up");
@@ -34,15 +36,20 @@ public class FollowUpTC extends AbstractSteps {
     }
 
     @Then("Followup should be successfully send")
+    @Aliases(values = {"I should not allowed to send followup"})
+
     public void verifyFollowup(){
 
             info("Verify follow up is send successfully");
             followup.getFollowupDetails(getMap().get("scheduled_session_id"));
 
             String followup_status=getMap().get("follow_up_text");
-            if (followup_status!=null){
-                this.AssertAndWriteToReport(true,"Verified, Follow up sent successfully");
-            }else {
+            String followup_error=getMap().get("followup_error_message");
+            if (followup_status!=null ){
+                this.checkAndWriteToReport(response.statusCode(),"Verified, Follow up is sent successfully",parameter.isNegative());
+            }else
+            {
+                System.out.println("follow up sending failed");
                 this.AssertAndWriteToReport(false);
             }
         }
