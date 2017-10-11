@@ -37,7 +37,6 @@ public class ReviewSession extends AbstractApiFactory implements ExpertChatEndPo
             System.out.println("Review sending failed, response is-->");
             isReviewSuccess=false;
             response.printResponse();
-
             }
     }
 
