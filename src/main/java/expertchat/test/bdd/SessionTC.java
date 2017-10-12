@@ -95,7 +95,7 @@ public class SessionTC extends AbstractSteps {
 
         System.out.println("--- GETTING A SLOT NOW---");
         slots= sUtil.getAllSlots("10");
-        System.out.println("Extracted slot is: "+slots.get(0));
+        System.out.println("Extracted slot is today at : "+slots.get(0));
 
         String date_today=dateUtil.currentDateOnly();
         String slot_datetime=date_today+"T"+slots.get(0)+":00"+"Z";
