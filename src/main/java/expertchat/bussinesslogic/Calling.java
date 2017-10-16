@@ -266,7 +266,8 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
                 "  \"expert\":"+getMap ().get ( "expertId" )+",\n" +
                 "  \"user_device\":"+getMap ().get ("UserDevice")+",\n" +
                 "  \"scheduled_duration\":"+duration+",\n" +
-                "  \"card\":"+getMap ().get( "user_card_id")+",\n" +
+                //"  \"card\":"+getMap ().get( "user_card_id")+",\n" +
+                "  \"card\":157,\n" +
                 "  \"promo_code\":\""+promo+"\"\n" +
                 "  }";
 
@@ -277,8 +278,8 @@ public class Calling extends AbstractApiFactory implements HTTPCode, ExpertChatE
         if(response.statusCode ()==HTTP_ACCEPTED || response.statusCode ()==HTTP_OK) {
 
             getMap ( ).put ( "scheduled_session_id", pr.getJsonData ( "results.id", ResponseDataType.INT ) );
-
             getMap ( ).put ( "scheduled_datetime", pr.getJsonData ( "results.scheduled_datetime", ResponseDataType.STRING ));
+            getMap().put("appointment_status",pr.getJsonData("results.status",ResponseDataType.STRING));
 
         }else {
 

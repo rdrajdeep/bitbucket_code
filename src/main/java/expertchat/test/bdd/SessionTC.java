@@ -312,6 +312,7 @@ public class SessionTC extends AbstractSteps {
     }
 
     @Then("I cancel my scheduled session")
+    @When("I cancel my scheduled session")
     public void cancelSession(){
         info("Cancelling the call");
 
@@ -333,6 +334,7 @@ public class SessionTC extends AbstractSteps {
      * @ Get SessionUtil Details
      */
     @When("I get the session details")
+    @Then("I get the session details")
     @Aliases(values = {"I pass on session id in session details API",
     "I pass on session id in session details API show me estimated revenue of user and expert"})
     public void getSessionDetails() {
@@ -712,12 +714,9 @@ public void cancel(){
         this.checkAndWriteToReport(response.statusCode(),"SessionPrice exteded for 10 more minute",parameter.isNegative());
 
     }
-
-    public static void main(String[] args){
-
-
-
-    }
+/**
+ *  For Testing purpose for module Notification......
+ */
 
 
 }

@@ -113,7 +113,9 @@ public class TestStoryConfig extends JUnitStories {
                 new GetStreamTC (getReport (), "Get Stream flow"),*/
                 new SessionTC(getReport(),"All session related test cases"),
                 new ReviewSessionTC(getReport(),"Review Session test cases"),
-                new FollowUpTC(getReport(),"Follow up session Test cases")
+                new FollowUpTC(getReport(),"Follow up session Test cases"),
+                new NotificationsTC(getReport(),"Test cases for notification")
+
         );
     }
 }
