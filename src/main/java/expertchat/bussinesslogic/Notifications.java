@@ -40,7 +40,7 @@ public class Notifications extends AbstractApiFactory implements HTTPCode,Expert
                     notificationIDs.add(notificationId_list.get(i));
                 }
             }
-            System.out.println("Notification ids against session id "+sessionID+" are: "+ notificationIDs);
+            System.out.println("Expert Notification ids against session id "+sessionID+" are: "+ notificationIDs);
 
         }else{
             response.setResponse(this.get(NOTIFICATION,session.getUserToken(),true));
@@ -54,66 +54,147 @@ public class Notifications extends AbstractApiFactory implements HTTPCode,Expert
                     notificationIDs.add(notificationId_list.get(i));
                 }
             }
-            System.out.println("Notification ids against session id "+sessionID+" are: "+ notificationIDs);
+            System.out.println("User Notification ids against session id "+sessionID+" are: "+ notificationIDs);
         }
 
     }
 
-    public void getNotification(){
+    public void getNotification(String NotificationStatus){
 
         this.getAllNotifications();
         String code=null;
+        boolean flag=false;
+
         if (parameter.isExpert()) {
 
             for (int i = 0; i < notificationIDs.size(); i++) {
+
                 response.setResponse(this.get(NOTIFICATION + notificationIDs.get(i).toString(), session.getExpertToken(), true));
-                System.out.println(notificationIDs.get(i));
+
                 if (response.statusCode() == HTTP_OK || response.statusCode() == HTTP_ACCEPTED) {
-                    response.printResponse();
-                    code = jsonParser.getJsonData("results.code", ResponseDataType.STRING);
-                    if (code.equals(NotificationCodes.SCHEDULE_NOTIFICATION)) {
-                        getMap().put("schedule_notification_code", code);
-                        getMap().put("schedule_notification_text", jsonParser.getJsonData("results.message", ResponseDataType.STRING));
+                    if(NotificationStatus.equals(jsonParser.getJsonData("results.code",ResponseDataType.STRING))){
                         getMap().put("notification_text", jsonParser.getJsonData("results.message", ResponseDataType.STRING));
-
-                        code = null;
-                    } else if (code.equals(NotificationCodes.CANCEL_NOTIFICATION)) {
-                        getMap().put("cancel_notification_code", code);
-                        getMap().put("cancel_notification_text", jsonParser.getJsonData("results.message", ResponseDataType.STRING));
-                        getMap().put("notification_text", jsonParser.getJsonData("results.message", ResponseDataType.STRING));
-
-                        code = null;
+                        flag = true;
+                        break;
                     }
 
                 }else {
                     System.out.println("+++SERVER ERROR+++");
                     response.printResponse();
+                    break;
                 }
+
             }
+
+            if(flag==false){
+                System.out.println("Some problem occur ,expert Notification was not sent");
+            }
+
         }else{
 
+            System.out.println("count of user noti--"+notificationIDs.size());
             for (int i = 0; i < notificationIDs.size(); i++) {
-                response.setResponse(this.get(NOTIFICATION + notificationIDs.get(i).toString(), session.getUserToken(),true));
-                if (response.statusCode()==HTTP_OK||response.statusCode()==HTTP_ACCEPTED) {
-                    System.out.println(notificationIDs.get(i));
-                    response.printResponse();
-                    code = jsonParser.getJsonData("results.code", ResponseDataType.STRING);
-                    if (code.equals(NotificationCodes.SCHEDULE_NOTIFICATION)) {
-                        getMap().put("schedule_notification_code", code);
-                        getMap().put("schedule_notification_text", jsonParser.getJsonData("results.message", ResponseDataType.STRING));
+
+                response.setResponse(this.get(NOTIFICATION + notificationIDs.get(i).toString(), session.getUserToken(), true));
+
+                if (response.statusCode() == HTTP_OK || response.statusCode() == HTTP_ACCEPTED) {
+
+                    if(NotificationStatus.equals(jsonParser.getJsonData("results.code",ResponseDataType.STRING))){
+
                         getMap().put("notification_text", jsonParser.getJsonData("results.message", ResponseDataType.STRING));
-                        code = null;
-                    } else if (code.equals(NotificationCodes.CANCEL_NOTIFICATION)) {
-                        getMap().put("cancel_notification_code", code);
-                        getMap().put("cancel_notification_text", jsonParser.getJsonData("results.message", ResponseDataType.STRING));
-                        getMap().put("notification_text", jsonParser.getJsonData("results.message", ResponseDataType.STRING));
-                        code = null;
+                        flag = true;
+                        break;
                     }
-                }else{
-                    System.out.println("+++SERVER ERROR++++");
+
+                }else {
+                    System.out.println("+++SERVER ERROR+++");
+                    response.printResponse();
+                    break;
+                }
+
+            }
+
+            if(flag==false){
+                System.out.println("Some problem occur ,user Notification was not sent");
+            }
+
+        }
+    }
+
+    public void markNotificationRead(String notification){
+        if (parameter.isExpert()){
+            for (int i = 0; i < notificationIDs.size(); i++) {
+                response.setResponse(this.get(NOTIFICATION+notificationIDs.get(i),session.getExpertToken(),true));
+                if((response.statusCode()==HTTP_ACCEPTED||response.statusCode()==HTTP_OK) && jsonParser.getJsonData("results.code",ResponseDataType.STRING)==notification){
+                    response.setResponse(this.put("{}", NOTIFICATION + notificationIDs.get(i) + "/mark_read/", session.getExpertToken(),true));
+                    System.out.println(notification+" notification marked as read");
+                }else if(jsonParser.getJsonData("results.code",ResponseDataType.STRING)!=notification){
+                    System.out.println(notification+" matching code do not found");
+                }else {
+                    System.out.println("==SERVER ERROR");
+                    response.printResponse();
+                }
+            }
+
+        }else {
+            for (int i = 0; i < notificationIDs.size(); i++) {
+                response.setResponse(this.get(NOTIFICATION+notificationIDs.get(i),session.getUserToken(),true));
+                if((response.statusCode()==HTTP_ACCEPTED||response.statusCode()==HTTP_OK) && jsonParser.getJsonData("results.code",ResponseDataType.STRING)==notification){
+                    response.setResponse(this.put("{}", NOTIFICATION + notificationIDs.get(i) + "/mark_read/", session.getExpertToken(),true));
+                    System.out.println(notification+" notification marked as read");
+                }else if(jsonParser.getJsonData("results.code",ResponseDataType.STRING)!=notification){
+                    System.out.println(notification+" matching code do not found");
+                }else {
+                    System.out.println("==SERVER ERROR");
                     response.printResponse();
                 }
             }
         }
+
     }
+
+    public boolean isMarkRead(String type){
+        boolean isMarkRead=false;
+
+        if (parameter.isExpert()){
+            for (int i=0;i<notificationIDs.size();i++){
+                response.setResponse(this.get(NOTIFICATION+notificationIDs.get(i),session.getExpertToken(),true));
+                String isRead=jsonParser.getJsonData("results.is_read",ResponseDataType.BOOLEAN);
+                String code=jsonParser.getJsonData("results.code",ResponseDataType.STRING);
+                if (isResponseOk() && code.equals(type)&&isRead=="true"){
+                    isMarkRead= true;
+                }else if (!isResponseOk()){
+                    System.out.println("++Server response error++");
+                    response.printResponse();
+                }else {
+                    isMarkRead= false;
+                }
+            }
+        }else{
+            for (int i=0;i<notificationIDs.size();i++){
+                response.setResponse(this.get(NOTIFICATION+notificationIDs.get(i),session.getUserToken(),true));
+                String isRead=jsonParser.getJsonData("results.is_read",ResponseDataType.BOOLEAN);
+                String code=jsonParser.getJsonData("results.code",ResponseDataType.STRING);
+                if (isResponseOk() && code.equals(type)&&isRead=="true"){
+                    isMarkRead= true;
+                }else if (!isResponseOk()){
+                    System.out.println("++Server response error++");
+                    response.printResponse();
+                }else {
+                    isMarkRead= false;
+                }
+            }
+        }
+    return isMarkRead;
+
+    }
+
+    public boolean isResponseOk(){
+        if(response.statusCode()==HTTP_OK||response.statusCode()==HTTP_ACCEPTED||response.statusCode()==HTTP_NO_CONTENT){
+            return  true;
+        }
+        return false;
+    }
+
+
 }

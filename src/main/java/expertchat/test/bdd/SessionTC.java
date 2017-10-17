@@ -143,7 +143,7 @@ public class SessionTC extends AbstractSteps {
         String finalSlot=today+"T"+slots.get(0)+":00"+"Z";
         System.out.println("Print final booking slot "+finalSlot);
         call.scheduleSession(finalSlot , code, duration);
-        response.printResponse();
+       // response.printResponse();
         this.checkAndWriteToReport(response.statusCode(), "A session is scheduled today at  "+slots.get(0)+":00", parameter.isNegative());
         userDeviceId = jsonParser.getJsonData("results.user_device", ResponseDataType.STRING);
 

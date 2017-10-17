@@ -19,7 +19,7 @@ Then create promocode {
                         "expiry_datetime": "2017-10-30T02:25:00Z",
                         "usage_limit": 10,
                         "description": "100 % Discount on every user",
-                        "coupon_code": "104",
+                        "coupon_code": "107",
                         "status": 1,
                         "is_deleted": false,
                         "user_usage_limit":20,
@@ -36,7 +36,7 @@ Then get profile of the logged in expert
 And i create a calender of 20 min for today
 
 Given an user
-When i login with {"email":"kishor+user@atlogys.com","password":"testing123"}
+When i login with {"email":"yassar@atlogys.com","password":"expert12"}
 Then i register a device as {
                               "device_type":"ios",
                               "device_name": "iPhone 6",
@@ -47,27 +47,31 @@ Then i register a device as {
                             }
 Then get a slot
 
-When I validate the promocode 104
+When I validate the promocode 107
 Then Promocode should be a valid promocode
 
-When schedule a session using promo code 104 and duration 10
+When schedule a session using promo code 107 and duration 10
 Then it should return session id
 
 When I get the session details
 
 When A appointment is booked
-Then Appointment confirmation notification should be sent to user
-And Verify that notification message sent is Booked Appointment Confirmation
+Then Verify appointment booked notification is sent to user
 
 When I cancel my scheduled session
 
 Then I get the session details
 When A appointment is cancelled
-Then Appointment cancelled notification should be sent to user
-And Verify that notification message sent is Cancelled Appointment Notification
+Then Verify appointment cancelled notification is sent to user
+
+When I read the notification of booked confirmation
+Then Verify that booked confirmation notification is only marked as read
+
+When I read the notification of booked confirmation
+Then Verify that cancelled confirmation notification is only marked as read
 
 When I get a slot
-Then schedule a session using promo code 104 and duration 10
+Then schedule a session using promo code 107 and duration 10
 Then I initiate the session
 
 Given an expert
