@@ -10,6 +10,7 @@ import expertchat.util.ExpertChatUtility;
 import org.jbehave.core.annotations.AfterStory;
 import org.jbehave.core.steps.Steps;
 import static expertchat.apioperation.apiresponse.HTTPCode.HTTP_BAD;
+import static expertchat.apioperation.apiresponse.HTTPCode.HTTP_NO_CONTENT;
 import static expertchat.apioperation.apiresponse.HTTPCode.HTTP_OK;
 
 
@@ -70,7 +71,7 @@ public class Report extends Steps {
      */
     public void checkAndWriteToReport ( int statusCode, String successMessage, boolean isNegative ) {
 
-        if ( statusCode == HTTPCode.HTTP_OK || statusCode == HTTPCode.HTTP_ACCEPTED ) {
+        if ( statusCode == HTTPCode.HTTP_OK || statusCode == HTTPCode.HTTP_ACCEPTED ||statusCode==HTTP_NO_CONTENT) {
 
             pass ( successMessage );
 
@@ -80,7 +81,7 @@ public class Report extends Steps {
             parameter.setIsNegative ( false );
 
         } else {
-            fail ( "Something went wrong. Please check--" +
+            fail ( "Something went wrong. Please check--++" +
                     ApiResponse.getObject ( ).getResponse ( ).prettyPrint ( ) );
 
         }

@@ -19,10 +19,10 @@ Then create promocode {
                         "expiry_datetime": "2017-10-30T02:25:00Z",
                         "usage_limit": 10,
                         "description": "100 % Discount on every user",
-                        "coupon_code": "107",
+                        "coupon_code": "1002",
                         "status": 1,
                         "is_deleted": false,
-                        "user_usage_limit":20,
+                        "user_usage_limit":10,
                         "success_message": null,
                         "error_message": null,
                         "payment_type": 1,
@@ -47,10 +47,10 @@ Then i register a device as {
                             }
 Then get a slot
 
-When I validate the promocode 107
+When I validate the promocode 1002
 Then Promocode should be a valid promocode
 
-When schedule a session using promo code 107 and duration 10
+When schedule a session using promo code 1002 and duration 10
 Then it should return session id
 
 When I get the session details
@@ -67,11 +67,11 @@ Then Verify appointment cancelled notification is sent to user
 When I read the notification of booked confirmation
 Then Verify that booked confirmation notification is only marked as read
 
-When I read the notification of booked confirmation
+When I read the notification of cancelled confirmation
 Then Verify that cancelled confirmation notification is only marked as read
 
 When I get a slot
-Then schedule a session using promo code 107 and duration 10
+Then schedule a session using promo code 1002 and duration 10
 Then I initiate the session
 
 Given an expert

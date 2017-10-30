@@ -55,10 +55,14 @@ public class NotificationsTC extends AbstractSteps{
 
         info("Checking Notification");
         switch (status){
-            case"booked": notification.getNotification(NotificationCodes.SCHEDULE_NOTIFICATION);
+            case"booked":
+                System.out.println("For booked noti--");
+                notification.getNotification(NotificationCodes.SCHEDULE_NOTIFICATION);
                 break;
 
-            case "cancelled": notification.getNotification(NotificationCodes.CANCEL_NOTIFICATION);
+            case "cancelled":
+                System.out.println("For Cancel noti--");
+                notification.getNotification(NotificationCodes.CANCEL_NOTIFICATION);
                 break;
 
                 default:
@@ -73,7 +77,15 @@ public class NotificationsTC extends AbstractSteps{
     @When("I read the notification of $notificationType confirmation")
     public void markNotificationRead(@Named("notificationType")String notificationType){
         info("marking notification as read for notification type "+notificationType);
-        notification.markNotificationRead(notificationType);
+
+        switch (notificationType){
+            case"booked":
+                notification.markNotificationRead(NotificationCodes.SCHEDULE_NOTIFICATION);
+                break;
+            case "cancelled":
+                notification.markNotificationRead(NotificationCodes.CANCEL_NOTIFICATION);
+               break;
+        }
         this.checkAndWriteToReport(response.statusCode(),"Notification is marked as read",parameter.isNegative());
     }
 
@@ -97,8 +109,8 @@ public class NotificationsTC extends AbstractSteps{
      */
     public static void main(String[] args){
 
-        //String token="eyJ1c2VyX2lkIjo1NDYsImlwX2FkZHJlc3MiOiI2MS4yNDYuNDcuOTMiLCJ0aW1lc3RhbXAiOjE1MDgyMTk4NDEuMTYyOTgyfQ:1e4KsT:k6-qDxDLcd6XOCT5X3KPnPab1Qs";
-        String token="eyJ1c2VyX2lkIjozLCJ0aW1lc3RhbXAiOjE1MDgyNDQwMzcuNzA2NTY4LCJpcF9hZGRyZXNzIjoiNjEuMjQ2LjQ3LjkzIn0:1e4RAj:1jevlLgV1fQ871P2_RJ3Xn3BP3U";
+       // String token="eyJ0aW1lc3RhbXAiOjE1MDkzNTA5MjkuODIyNjI0LCJpcF9hZGRyZXNzIjoiNjEuMjQ2LjQ3LjkzIiwidXNlcl9pZCI6NTQ2fQ:1e957p:a2YzuXFH6PEfwNN0wl3WyWL7qNQ";
+        String token="eyJ0aW1lc3RhbXAiOjE1MDkzNTA4MTkuNzM2Nzc5LCJpcF9hZGRyZXNzIjoiNjEuMjQ2LjQ3LjkzIiwidXNlcl9pZCI6MTgxfQ:1e9563:gKWFZIhQ1zi8QaAwLIKbaKFJMGc";
         DeleteAllExpertSlot objDelete=new DeleteAllExpertSlot();
         //objDelete.deleteAllExpertSlots(token);
         objDelete.deleteAllFutureSession(token);
