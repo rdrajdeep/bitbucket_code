@@ -34,7 +34,7 @@ public class FileUpload {
     public void uploadMedia ( String mediaPath, String ExpertEmail, String password, Boolean isExpert ) {
 
         try {
-            System.setProperty ( "webdriver.chrome.driver", "Driver/chromedriver.exe" );
+            System.setProperty ( "webdriver.chrome.driver", "Driver/chromedriver" );
 
             driver = new ChromeDriver ( );
 
@@ -89,8 +89,9 @@ public class FileUpload {
         }
     }
 
-    /*public static void main(String [] args){
+    public static void main(String [] args){
+        String mediapath="/home/rajdeep/Atlogys_project/Bitbucket_code/ec_testing/TestData/4.jpg";
+        new FileUpload().uploadMedia(mediapath,"rajdeep+x1@atlogys.com","testing123",true);
 
-        new FileUpload().uploadMedia("C:\\Users\\Kishor\\Desktop\\fp.jpg","kishor+expert70@atlogys.com","qerty123");
-    }*/
+    }
 }

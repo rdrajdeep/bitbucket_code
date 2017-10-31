@@ -23,11 +23,13 @@ public class ProfileComplete extends AbstractApiFactory implements ExpertChatEnd
     public boolean isProfileComplete ( ) {
         return isProfileComplete;
     }
-  public void sethas_availibility_slot(String has_availibility_slot){
+
+    public void sethas_availibility_slot(String has_availibility_slot){
 
         this.has_availibility_slot=has_availibility_slot;
 
-  }
+     }
+
     public void setProfileComplete ( boolean profileComplete ) {
         isProfileComplete = profileComplete;
     }
