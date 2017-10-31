@@ -184,6 +184,8 @@ public class Notifications extends AbstractApiFactory implements HTTPCode,Expert
 
     public boolean isMarkRead(String type){
         boolean isMarkRead=false;
+        String code=null;
+        String isRead=null;
 
         if (parameter.isExpert()){
             for (int i=0;i<notificationIDs.size();i++){
@@ -191,8 +193,8 @@ public class Notifications extends AbstractApiFactory implements HTTPCode,Expert
 
                 if (isResponseOk()){
 
-                    String isRead=jsonParser.getJsonData("results.is_read",ResponseDataType.BOOLEAN);
-                    String code=jsonParser.getJsonData("results.code",ResponseDataType.STRING);
+                    isRead=jsonParser.getJsonData("results.is_read",ResponseDataType.BOOLEAN);
+                    code=jsonParser.getJsonData("results.code",ResponseDataType.STRING);
                     // System.out.println("API code--" +code+" parameter--"+type);
 
                     if (code.equals(type) && isRead.equals("true")){
@@ -206,12 +208,13 @@ public class Notifications extends AbstractApiFactory implements HTTPCode,Expert
             }
         }else{
             for (int i=0;i<notificationIDs.size();i++){
+
                 response.setResponse(this.get(NOTIFICATION+notificationIDs.get(i).toString(),session.getUserToken(),true));
 
                 if (isResponseOk()){
 
-                    String isRead=jsonParser.getJsonData("results.is_read",ResponseDataType.BOOLEAN);
-                    String code=jsonParser.getJsonData("results.code",ResponseDataType.STRING);
+                    isRead=jsonParser.getJsonData("results.is_read",ResponseDataType.BOOLEAN);
+                    code=jsonParser.getJsonData("results.code",ResponseDataType.STRING);
                    // System.out.println("API code--" +code+" parameter--"+type);
 
                     if (code.equals(type) && isRead.equals("true")){
@@ -219,10 +222,9 @@ public class Notifications extends AbstractApiFactory implements HTTPCode,Expert
                         isMarkRead= true;
                     }
                 }else {
-                    System.out.println("++Server response error++");
+                    System.out.println("++3333 Server response error++");
                     response.printResponse();
                 }
-
             }
         }
     return isMarkRead;
