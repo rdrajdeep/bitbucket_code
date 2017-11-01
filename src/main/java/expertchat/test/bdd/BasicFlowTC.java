@@ -5,6 +5,7 @@ import expertchat.apioperation.apiresponse.ResponseDataType;
 import expertchat.bussinesslogic.ExpertChatApi;
 import expertchat.usermap.TestUserMap;
 import org.jbehave.core.annotations.Named;
+import org.jbehave.core.annotations.Pending;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import expertchat.params.*;
@@ -77,6 +78,7 @@ public class BasicFlowTC extends AbstractSteps{
     /**
      * Email verification
      */
+
     @Then ("Verify Email")
     public void verifyUser() {
 

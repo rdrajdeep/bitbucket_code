@@ -7,6 +7,7 @@ API name: "Submit Expert Profile for Review": "http://api.qa.experchat.com/v1/ex
 Scenario: scenario description
 
 Given an expert
+When login with {"email": "rajdeep+x1@atlogys.com","password": "testing123" }
 When I get the expert profile
 
 Given negative scenario
@@ -25,7 +26,7 @@ Given an user
 Then login with {"email":"kishor+super@atlogys.com","password":"testing123"} as superUser
 
 
-Given an expert profile
+When I get the expert profile
 When I approved the expert profile
 Then Verify the profile is approved
 

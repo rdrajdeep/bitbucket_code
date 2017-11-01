@@ -53,7 +53,7 @@
 					<i class='mdi-hardware-desktop-windows'></i>
 				</li>
 				<li>
-					<span class='suite-started-time'>2017-10-31 10:20:42</span>
+					<span class='suite-started-time'>2017-11-01 15:56:40</span>
 				</li>
 				<li>
 					<span>v2.41.1</span>
@@ -83,25 +83,25 @@
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-current'> 
 							<span class='panel-name'>Total Time Taken (Current Run)</span> 
-							<span class='suite-total-time-current-value panel-lead'>0h 3m 20s+234ms</span> 
+							<span class='suite-total-time-current-value panel-lead'>0h 0m 4s+921ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-overall'> 
 							<span class='panel-name'>Total Time Taken (Overall)</span> 
-							<span class='suite-total-time-overall-value panel-lead'>0h 3m 20s+234ms</span> 
+							<span class='suite-total-time-overall-value panel-lead'>0h 0m 4s+921ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-start-time'>
 						<div class='card accent green-accent'> 
 							<span class='panel-name'>Start</span> 
-							<span class='panel-lead suite-started-time'>2017-10-31 10:17:22</span> 
+							<span class='panel-lead suite-started-time'>2017-11-01 15:56:35</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-end-time'>
 						<div class='card accent pink-accent'> 
 							<span class='panel-name'>End</span> 
-							<span class='panel-lead suite-ended-time'>2017-10-31 10:20:42</span> 
+							<span class='panel-lead suite-ended-time'>2017-11-01 15:56:40</span> 
 						</div> 
 					</div>
 				</div>
@@ -205,6 +205,7 @@
 								<ul id='tests-toggle' class='dropdown-content'>
 									<li class='pass'><a href='#!'>Pass</a></li>
 									<li class='fail'><a href='#!'>Fail</a></li>
+										<li class='fatal'><a href='#!'>Fatal</a></li>
 									<li class='skip'><a href='#!'>Skip</a></li>
 										<li class='unknown'><a href='#!'>Unknown</a></li>
 									<li class='divider'></li>
@@ -238,17 +239,83 @@
 						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
 							<div class='wrapper'>
 								<ul id='test-collection' class='test-collection'>
-										<li class='collection-item test displayed active fail ' extentid='5a520770-077b-43fa-89c2-b6b8b124996d'>
+										<li class='collection-item test displayed active fatal ' extentid='cd547640-1dcb-441c-9623-4a65c9bf07d1'>
 											<div class='test-head'>
-												<span class='test-name'>All session related test cases </span>
+												<span class='test-name'>Log-in and registration flow </span>
+												<span class='test-status label right outline capitalize fatal'>fatal</span>
+												<span class='category-assigned hide '></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-11-01 15:56:35</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-11-01 15:56:39</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 3s+752ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>15:56:36</td>
+																	<td class='step-details'>....Expert registration and login flow....</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>15:56:37</td>
+																	<td class='step-details'>Registration</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>15:56:39</td>
+																	<td class='step-details'>Something went wrong. Please check--++{
+    "errors": {
+        "email": [
+            {
+                "message": "This email address is already tied to an existing account.",
+                "code": 1001
+            }
+        ]
+    }
+}</td>
+																</tr>
+																<tr>
+																	<td class='status fatal' title='fatal' alt='fatal'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>15:56:39</td>
+																	<td class='step-details'>This email address is already tied to an existing account.</td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>15:56:39</td>
+																	<td class='step-details'>....Basic profile flow....</td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active fail ' extentid='3a9061eb-7f53-461b-a02b-142084d30e37'>
+											<div class='test-head'>
+												<span class='test-name'>Basic profile flow </span>
 												<span class='test-status label right outline capitalize fail'>fail</span>
 												<span class='category-assigned hide '></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-10-31 10:17:22</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-10-31 10:17:24</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+79ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-11-01 15:56:35</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-11-01 15:56:39</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 3s+717ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -265,830 +332,22 @@
 														<tbody>
 																<tr>
 																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:17:24</td>
-																	<td class='step-details'>....Expert registration and login flow....</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:17:29</td>
-																	<td class='step-details'>Logged in as Super User{"email":"kishor+super@atlogys.com","password":"testing123"}</td>
+																	<td class='timestamp'>15:56:39</td>
+																	<td class='step-details'>Load basic profile of -expert1</td>
 																</tr>
 																<tr>
 																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
-																	<td class='timestamp'>10:17:30</td>
+																	<td class='timestamp'>15:56:40</td>
 																	<td class='step-details'>Something went wrong. Please check--++{
     "errors": {
-        "coupon_code": [
-            {
-                "message": "Promo Codes with this coupon code already exists.",
-                "code": 1000
-            }
-        ]
+        "detail": "Invalid token."
     }
 }</td>
 																</tr>
 																<tr>
 																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:17:30</td>
-																	<td class='step-details'>Login</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:17:31</td>
-																	<td class='step-details'>Logged in to experChat by expert rajdeep+expert@atlogys.com</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:17:31</td>
-																	<td class='step-details'>Get Expert Profile</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:17:31</td>
-																	<td class='step-details'>Expert profile loaded for expert:- rajdeep+expert@atlogys.com</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:17:31</td>
-																	<td class='step-details'>Creating a calender...</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:17:32</td>
-																	<td class='step-details'>A calender  is created successfully</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:17:32</td>
-																	<td class='step-details'>Login</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:17:33</td>
-																	<td class='step-details'>Logged in to experChat by user yassar@atlogys.com</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:17:34</td>
-																	<td class='step-details'>A Device with id 9082 is Registered.</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:17:34</td>
-																	<td class='step-details'>Most recent available slot of today is extracted for scheduling a session. Your slot is 04:50:00 UTC</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:17:35</td>
-																	<td class='step-details'>Validating promo code</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:17:35</td>
-																	<td class='step-details'>Promo Code is valid</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:17:35</td>
-																	<td class='step-details'>Promo code is successfully validated</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:17:36</td>
-																	<td class='step-details'>A session is scheduled today at  04:50:00</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:17:36</td>
-																	<td class='step-details'>Getting session Id from scheduled session</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:17:36</td>
-																	<td class='step-details'>Session Id 9547 is created for this session.</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:17:36</td>
-																	<td class='step-details'>Getting sesion details</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:17:37</td>
-																	<td class='step-details'>Session Id is  9547 Scheduled duration is 10</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:17:54</td>
-																	<td class='step-details'>Cancelling the call</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:17:55</td>
-																	<td class='step-details'>Session cancelled</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:17:55</td>
-																	<td class='step-details'>Getting sesion details</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:17:55</td>
-																	<td class='step-details'>Session Id is  9547 Scheduled duration is 10</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:18:21</td>
-																	<td class='step-details'>Most recent available slot of today is extracted for scheduling a session. Your slot is 04:50:00 UTC</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:18:22</td>
-																	<td class='step-details'>A session is scheduled today at  04:50:00</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:18:22</td>
-																	<td class='step-details'>Intiating a Session with expert</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:24</td>
-																	<td class='step-details'>Successfully call initiated</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:25</td>
-																	<td class='step-details'>A Device with id 9083 is Registered.</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:25</td>
-																	<td class='step-details'>Checking if call arrived</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:25</td>
-																	<td class='step-details'>Call arrived at expert end</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:25</td>
-																	<td class='step-details'>Expert accept the call</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:27</td>
-																	<td class='step-details'>Expert accepted the call</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:27</td>
-																	<td class='step-details'>Verify if call status is  accepted</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:27</td>
-																	<td class='step-details'>Call is "accepted" successfully</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:27</td>
-																	<td class='step-details'>disconnect the call</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:28</td>
-																	<td class='step-details'>Call action is-->disconnect</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:28</td>
-																	<td class='step-details'>Verify if call status is  disconnected</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:28</td>
-																	<td class='step-details'>Call is "disconnected" successfully</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:28</td>
-																	<td class='step-details'>reconnect the call</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:29</td>
-																	<td class='step-details'>Call action is-->reconnect</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:29</td>
-																	<td class='step-details'>Verify reconnect</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:29</td>
-																	<td class='step-details'>Call is reconnected successfully</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:29</td>
-																	<td class='step-details'>decline the call</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:29</td>
-																	<td class='step-details'>Call action is-->decline</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:29</td>
-																	<td class='step-details'>Verify if call status is  declined</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:29</td>
-																	<td class='step-details'>Call is "declined" successfully</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:29</td>
-																	<td class='step-details'>reconnect the call</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:30</td>
-																	<td class='step-details'>Call action is-->reconnect</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:30</td>
-																	<td class='step-details'>Verify reconnect</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:30</td>
-																	<td class='step-details'>Call is reconnected successfully</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:30</td>
-																	<td class='step-details'>Expert accept the call</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:31</td>
-																	<td class='step-details'>Expert accepted the call</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:31</td>
-																	<td class='step-details'>Verify if call status is  accepted</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:31</td>
-																	<td class='step-details'>Call is "accepted" successfully</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:31</td>
-																	<td class='step-details'>disconnect the call</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:32</td>
-																	<td class='step-details'>Call action is-->disconnect</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:32</td>
-																	<td class='step-details'>Verify if call status is  disconnected</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:32</td>
-																	<td class='step-details'>Call is "disconnected" successfully</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:33</td>
-																	<td class='step-details'>-- This is for negative scenario --</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:34</td>
-																	<td class='step-details'>-- This is for negative scenario --</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:35</td>
-																	<td class='step-details'>-- This is for negative scenario --</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:35</td>
-																	<td class='step-details'>-- This is for negative scenario --</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:37</td>
-																	<td class='step-details'>-- This is for negative scenario --</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:38</td>
-																	<td class='step-details'>Getting sesion details</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:38</td>
-																	<td class='step-details'>Session Id is  9548 Scheduled duration is 10</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:40</td>
-																	<td class='step-details'>-- This is for negative scenario --</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:41</td>
-																	<td class='step-details'>....Basic profile flow....</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:41</td>
-																	<td class='step-details'>....expert profile flow....</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:41</td>
-																	<td class='step-details'>Get Expert Profile</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:42</td>
-																	<td class='step-details'>Expert profile loaded for expert:- rajdeep+expert@atlogys.com</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:42</td>
-																	<td class='step-details'>-- This is for negative scenario --</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:42</td>
-																	<td class='step-details'>....Social link flow....</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='d5b1f83a-712e-4d98-b1ac-b3a122862d35'>
-											<div class='test-head'>
-												<span class='test-name'>Review Session test cases </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-10-31 10:17:22</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-10-31 10:17:24</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+3ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:32</td>
-																	<td class='step-details'>Checking if call is completed</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:32</td>
-																	<td class='step-details'>Call is  completed, you can send a review now</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:32</td>
-																	<td class='step-details'>Getting sesion details</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:33</td>
-																	<td class='step-details'>Session status is completed</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:33</td>
-																	<td class='step-details'>Sending review</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:34</td>
-																	<td class='step-details'>Negative Test Case Passed-- {
-    "errors": {
-        "overall_rating": [
-            {
-                "message": "\"6\" is not a valid choice.",
-                "code": 1000
-            }
-        ]
-    }
-}</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:34</td>
-																	<td class='step-details'>Verify Review Session</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:34</td>
-																	<td class='step-details'>Verified, sending this review is not possible</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:34</td>
-																	<td class='step-details'>Sending review</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:35</td>
-																	<td class='step-details'>Negative Test Case Passed-- {
-    "errors": {
-        "knowledge_rating": [
-            {
-                "message": "\"-1\" is not a valid choice.",
-                "code": 1000
-            }
-        ],
-        "communication_rating": [
-            {
-                "message": "\"-5\" is not a valid choice.",
-                "code": 1000
-            }
-        ],
-        "overall_rating": [
-            {
-                "message": "\"-1\" is not a valid choice.",
-                "code": 1000
-            }
-        ]
-    }
-}</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:35</td>
-																	<td class='step-details'>Verify Review Session</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:35</td>
-																	<td class='step-details'>Verified, sending this review is not possible</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:35</td>
-																	<td class='step-details'>Sending review</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:35</td>
-																	<td class='step-details'>Negative Test Case Passed-- {
-    "errors": {
-        "knowledge_rating": [
-            {
-                "message": "\"0\" is not a valid choice.",
-                "code": 1000
-            }
-        ],
-        "communication_rating": [
-            {
-                "message": "\"0\" is not a valid choice.",
-                "code": 1000
-            }
-        ],
-        "professionalism_rating": [
-            {
-                "message": "\"0\" is not a valid choice.",
-                "code": 1000
-            }
-        ],
-        "overall_rating": [
-            {
-                "message": "\"0\" is not a valid choice.",
-                "code": 1000
-            }
-        ]
-    }
-}</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:35</td>
-																	<td class='step-details'>Verify Review Session</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:35</td>
-																	<td class='step-details'>Verified, sending this review is not possible</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:35</td>
-																	<td class='step-details'>Sending review</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:36</td>
-																	<td class='step-details'>Negative Test Case Passed-- {
-    "errors": {
-        "knowledge_rating": [
-            {
-                "message": "\"0\" is not a valid choice.",
-                "code": 1000
-            }
-        ],
-        "communication_rating": [
-            {
-                "message": "\"0\" is not a valid choice.",
-                "code": 1000
-            }
-        ],
-        "overall_rating": [
-            {
-                "message": "\"0\" is not a valid choice.",
-                "code": 1000
-            }
-        ]
-    }
-}</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:36</td>
-																	<td class='step-details'>Verify Review Session</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:36</td>
-																	<td class='step-details'>Verified, sending this review is not possible</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:36</td>
-																	<td class='step-details'>Sending review</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:37</td>
-																	<td class='step-details'>Review success fully sent.</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:37</td>
-																	<td class='step-details'>Verify Review Session</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:37</td>
-																	<td class='step-details'>Review or Rating is successfully send</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:37</td>
-																	<td class='step-details'>Sending review</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:38</td>
-																	<td class='step-details'>Negative Test Case Passed-- {
-    "errors": {
-        "non_field_errors": [
-            {
-                "message": "You have already reviewed this session.",
-                "code": 5011
-            }
-        ]
-    }
-}</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:38</td>
-																	<td class='step-details'>Verify Review Session</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:38</td>
-																	<td class='step-details'>Verified, sending this review is not possible</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='68751b06-9ab0-41f9-a27c-19484fcccc75'>
-											<div class='test-head'>
-												<span class='test-name'>Follow up session Test cases </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-10-31 10:17:22</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-10-31 10:17:25</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+34ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:38</td>
-																	<td class='step-details'>Session is in completed state</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:38</td>
-																	<td class='step-details'>Sendig follow Up</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:39</td>
-																	<td class='step-details'>Follow up send successfully</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:39</td>
-																	<td class='step-details'>Verify follow up is send successfully</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:40</td>
-																	<td class='step-details'>Verified, Follow up is sent successfully</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:40</td>
-																	<td class='step-details'>Sendig follow Up</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:40</td>
-																	<td class='step-details'>Follow up send successfully</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:20:40</td>
-																	<td class='step-details'>Verify follow up is send successfully</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:20:41</td>
-																	<td class='step-details'>Verified, Follow up is sent successfully</td>
-																</tr>
-														</tbody>
-													</table>
-													<ul class='collapsible node-list' data-collapsible='accordion'>
-													</ul>
-												</div>
-											</div>
-										</li>
-										<li class='collection-item test displayed active pass ' extentid='0f1571da-7d63-42b3-b501-7cbabff79a4f'>
-											<div class='test-head'>
-												<span class='test-name'>Test cases for notification </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
-												<span class='category-assigned hide '></span>
-											</div>
-											<div class='test-body'>
-												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2017-10-31 10:17:23</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2017-10-31 10:17:25</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+66ms</span>
-												</div>
-												<div class='test-desc'></div>
-												<div class='test-attributes'>
-												</div>
-												<div class='test-steps'>
-													<table class='bordered table-results'>
-														<thead>
-															<tr>
-																<th>Status</th>
-																<th>Timestamp</th>
-																<th>Details</th>
-															</tr>
-														</thead>
-														<tbody>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:17:37</td>
-																	<td class='step-details'>Notification for appointment booked</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:17:37</td>
-																	<td class='step-details'>Appointment is booked. A notification will soon be send to user and expert</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:17:37</td>
-																	<td class='step-details'>Checking Notification</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:17:54</td>
-																	<td class='step-details'>Notification sent successfully, message is: Booked Appointment Confirmation</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:17:55</td>
-																	<td class='step-details'>Notification for appointment cancelled</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:17:55</td>
-																	<td class='step-details'>Appointment is cancelled. A notification will soon be send to user and expert</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:17:55</td>
-																	<td class='step-details'>Checking Notification</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:18:13</td>
-																	<td class='step-details'>Notification sent successfully, message is: Confirming your cancelled appointment.</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:18:13</td>
-																	<td class='step-details'>marking notification as read for notification type booked</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:18:15</td>
-																	<td class='step-details'>Notification is marked as read</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:18:15</td>
-																	<td class='step-details'>Verifying notification mark status</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:18:17</td>
-																	<td class='step-details'>Verified booked notification marked as read</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:18:17</td>
-																	<td class='step-details'>marking notification as read for notification type cancelled</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:18:19</td>
-																	<td class='step-details'>Notification is marked as read</td>
-																</tr>
-																<tr>
-																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>10:18:19</td>
-																	<td class='step-details'>Verifying notification mark status</td>
-																</tr>
-																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>10:18:20</td>
-																	<td class='step-details'>Verified cancelled notification marked as read</td>
+																	<td class='timestamp'>15:56:40</td>
+																	<td class='step-details'>Verify a Email of user-expert1</td>
 																</tr>
 														</tbody>
 													</table>
