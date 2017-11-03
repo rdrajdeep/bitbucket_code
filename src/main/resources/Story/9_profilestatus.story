@@ -21,7 +21,7 @@ Then check profile completness
 
 Then add name as {"name": "Sarma Kishor"}
 
-Then add profile photo as testData/4.jpg
+Then add profile photo as TestData/4.jpg
 
 Then check profile completness
 

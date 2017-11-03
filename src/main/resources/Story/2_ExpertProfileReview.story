@@ -7,28 +7,22 @@ API name: "Submit Expert Profile for Review": "http://api.qa.experchat.com/v1/ex
 Scenario: scenario description
 
 Given an expert
-When login with {"email": "rajdeep+x1@atlogys.com","password": "testing123" }
+When please login with {"email": "rajdeep+x1@atlogys.com","password": "testing123" }
+
+Given an expert
 When I get the expert profile
-
-Given negative scenario
-When The profile is not complete
+Then I will check the profile completeness
 Then I will submit profile for review
-Then Verify that incomplete profile cannot be submitted for review
-
-When I complete the expert Profile
-Then I get the expert profile
-
-And I will submit profile for review
 And Verify expert profile is submitted successfully
 
 
 Given an user
-Then login with {"email":"kishor+super@atlogys.com","password":"testing123"} as superUser
-
+Then please login with {"email":"kishor+super@atlogys.com","password":"testing123"} as superUser
 
 When I get the expert profile
 When I approved the expert profile
 Then Verify the profile is approved
+
 
 Given negative scenario
 When I reject the same profile

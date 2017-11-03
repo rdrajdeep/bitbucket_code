@@ -75,7 +75,8 @@ public class ExpertChatApi extends AbstractApiFactory implements ExpertChatEndPo
         } else {
 
             response.setResponse ( this.post ( json, ExpertChatEndPoints.LOGIN_USER ) );
-
+            System.out.println("Super user loging problem");
+            response.printResponse();
             SessionManagement.session ( ).setUserToken (
                     jsonParser.getJsonData ( "results.token", ResponseDataType.STRING )
             );
