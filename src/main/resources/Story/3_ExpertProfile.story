@@ -39,7 +39,7 @@ Then update information on expert profile as
 
 Then create a calender as
     {
-    "title": "a test",
+    "title": "a test Calendar",
     "start_time": "02:00",
     "end_time": "04:00",
     "timezone": "Asia/Kolkata",

@@ -201,6 +201,7 @@ public class ExpertChatApi extends AbstractApiFactory implements ExpertChatEndPo
             System.out.println ( "Updated data after reset" + userData.toString ( ) );
 
             System.out.println ( "Updated data after reset" + TestUserMap.getUserCredentialsByKey ( user ) );
+
         }
     }
 

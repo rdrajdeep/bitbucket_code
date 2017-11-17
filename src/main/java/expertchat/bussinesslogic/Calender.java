@@ -36,18 +36,27 @@ public class Calender extends AbstractApiFactory implements HTTPCode, ExpertChat
                 "    ]\n" +
                 "}";
 
-
-        System.out.println("----->"+json);
-
-        response.setResponse(
-                this.post(json, SLOTS, session.getExpertToken ())
-        );
-
+        System.out.println("---Creating calendar---Response-->");
+        response.setResponse( this.post(json, SLOTS, session.getExpertToken ()));
         response.printResponse();
 
-        System.out.println(response.statusCode());
+       // System.out.println(response.statusCode());
         if(response.statusCode()==HTTP_OK || response.statusCode()==HTTP_ACCEPTED ){
+            calenderId=pr.getJsonData("results.id", ResponseDataType.INT);
+        }
+    }
 
+    //Calender Method overload
+
+    public void createCalender(String calendar) throws  Exception{
+
+        SessionUtil obj= new SessionUtil();
+
+        System.out.println("---Creating calendar-Response-->");
+        response.setResponse(this.post(calendar, SLOTS, session.getExpertToken ()));
+        response.printResponse();
+      //  System.out.println(response.statusCode());
+        if(response.statusCode()==HTTP_OK || response.statusCode()==HTTP_ACCEPTED ){
             calenderId=pr.getJsonData("results.id", ResponseDataType.INT);
         }
     }

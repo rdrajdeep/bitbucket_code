@@ -11,7 +11,7 @@ Given a complete profile status check flow
 
 Given an expert
 
-When register with {"email":"kishor+expert53@atlogys.com","password":"testing123"} as expert2
+When register with {"email":"rajdeep+xx1@atlogys.com","password":"testing123"} as expert2
 
 Then Verify Email
 
@@ -19,7 +19,7 @@ Then login with expert2
 
 Then check profile completness
 
-Then add name as {"name": "Sarma Kishor"}
+Then add name as {"name": "D Das"}
 
 Then add profile photo as TestData/4.jpg
 
@@ -55,8 +55,8 @@ Then create a payment account as {
 Then check profile completness
 
 Then we provide phone number as {
-                                    "country_code":91 ,
-                                    "mobile": "8447053658"
+                                    "country_code":+91 ,
+                                    "mobile": "9717278118"
                                 }
 Then phone should be verified
 

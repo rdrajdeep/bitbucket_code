@@ -12,8 +12,8 @@ Given an expert
 Given a complete phone no verify flow
 
 When we provide phone number as {
-                                    "country_code":91 ,
-                                    "mobile": "8447053658"
+                                    "country_code":+91 ,
+                                    "mobile": "9717278118"
                                 }
 
 Then verification code should be sent
@@ -23,7 +23,7 @@ Then phone should be verified
 Given a negative scenario
 
 When we provide phone number as {
-                                    "country_code":91 ,
+                                    "country_code":+91 ,
                                     "mobile": "4584"
                                 }
 

@@ -39,6 +39,16 @@ public abstract class AbstractSteps extends Report {
         parameter.setExpert ( false );
     }
 
+    @Given("an superuser")
+    @Then ("an superuser")
+    @When ("an superuser")
+    public void superuser() {
+
+        System.out.println ( "I am super user now" );
+        parameter.setExpert ( false );
+
+    }
+
     @Given("an expert")
     @Then("an expert")
     @When("an expert")

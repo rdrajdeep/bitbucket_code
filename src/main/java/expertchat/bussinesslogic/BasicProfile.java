@@ -32,7 +32,7 @@ public class BasicProfile extends AbstractApiFactory implements ExpertChatEndPoi
             );
         } else {
             response.setResponse (
-                    this.get ( U_BASIC_PROFILE, SessionManagement.session ( ).getExpertToken ( ) )
+                    this.get ( U_BASIC_PROFILE, SessionManagement.session ( ).getUserToken ( ) )
             );
 
         }
@@ -45,8 +45,9 @@ public class BasicProfile extends AbstractApiFactory implements ExpertChatEndPoi
         String actualEmail = parseResponse.getJsonData ( "results.email", ResponseDataType.STRING );
 
         String expectedEmail = TestUserMap.getEmailOf ( user );
-        System.out.println ( "same opopopop" + TestUserMap.getEmailOf ( user ) );
+        System.out.println ( "Expeted Email Id is: " + TestUserMap.getEmailOf ( user ) );
         return actualEmail.equals ( expectedEmail );
+
     }
 
 
@@ -54,15 +55,11 @@ public class BasicProfile extends AbstractApiFactory implements ExpertChatEndPoi
 
         if ( isExpert ) {
             response.setResponse (
-                    this.put (
-
-                            name, BASIC_PROFILE, SessionManagement.session ( ).getExpertToken ( ) ) );
+                    this.put (name, BASIC_PROFILE, SessionManagement.session ( ).getExpertToken ( ) ) );
         } else {
 
             response.setResponse (
-                    this.put (
-
-                            name, U_BASIC_PROFILE, SessionManagement.session ( ).getExpertToken ( ) ) );
+                    this.put (name, U_BASIC_PROFILE, SessionManagement.session ( ).getUserToken ( ) ) );
         }
 
         response.printResponse ( );
@@ -82,6 +79,8 @@ public class BasicProfile extends AbstractApiFactory implements ExpertChatEndPoi
         String b64String = "\"" + "data:image/png;base64," + Base64.getEncoder ( ).encodeToString ( imageInByte ) + "\"";
         String json = "{\"image\":" + b64String + "}";
 
+        System.out.println("Image url: "+b64String);
+
         if ( isExpert ) {
 
             response.setResponse (
@@ -91,7 +90,7 @@ public class BasicProfile extends AbstractApiFactory implements ExpertChatEndPoi
 
             response.setResponse (
                     this.post (
-                            json, U_ME_PHOTO, SessionManagement.session ( ).getExpertToken ( ) ) );
+                            json, U_ME_PHOTO, SessionManagement.session ( ).getUserToken ( ) ) );
         }
 
         response.printResponse ( );

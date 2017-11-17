@@ -8,6 +8,7 @@ import expertchat.apioperation.apiresponse.ParseResponse;
 import expertchat.apioperation.apiresponse.ResponseDataType;
 import expertchat.apioperation.session.SessionManagement;
 import expertchat.params.parameter;
+import org.jbehave.core.annotations.Then;
 
 import static expertchat.usermap.TestUserMap.getMap;
 
@@ -70,10 +71,14 @@ public class ExpertProfileReview extends AbstractApiFactory implements HTTPCode,
             response.setResponse(this.get(EXPERT_PROFILE, session.getExpertToken()));
 
             if (this.isResponseOK()) {
-                getMap().put("expert_profile_id", jsonParser.getJsonData("results.id ", ResponseDataType.STRING));
+                String expert_profile_id=jsonParser.getJsonData("results.id ", ResponseDataType.STRING);
+                String profileID=expert_profile_id.substring(expert_profile_id.lastIndexOf('[')+1, expert_profile_id.lastIndexOf(']'));
+
+                getMap().put("expert_profile_id",profileID);
                 getMap().put("profile_submission_timestamp", jsonParser.getJsonData("results.profile_submission_timestamp ", ResponseDataType.STRING));
                 getMap().put("review_status",jsonParser.getJsonData("results.review_status",ResponseDataType.STRING));
                response.printResponse();
+
             }else
             {
                 System.out.println("++Bad Response++");
@@ -82,7 +87,10 @@ public class ExpertProfileReview extends AbstractApiFactory implements HTTPCode,
         }else {
             response.setResponse(this.get(EXPERT_PROFILE, session.getUserToken()));
             if (this.isResponseOK()) {
-                getMap().put("expert_profile_id", jsonParser.getJsonData("results.expert.expert_profile_id ", ResponseDataType.INT));
+                String expert_profile_id=jsonParser.getJsonData("results.id ", ResponseDataType.STRING);
+                String profileID=expert_profile_id.substring(expert_profile_id.lastIndexOf('[')+1, expert_profile_id.lastIndexOf(']'));
+
+                getMap().put("expert_profile_id",profileID);
                 getMap().put("profile_submission_timestamp", jsonParser.getJsonData("results.profile_submission_timestamp ", ResponseDataType.STRING));
                 getMap().put("review_status",jsonParser.getJsonData("results.review_status",ResponseDataType.STRING));
                 response.printResponse();
@@ -110,7 +118,7 @@ public class ExpertProfileReview extends AbstractApiFactory implements HTTPCode,
             if (this.isResponseOK()) {
                 getMap().put("review_status",jsonParser.getJsonData("results.review_status",ResponseDataType.STRING));
             } else {
-                System.out.println("++Bad Response++");
+                System.out.println("++Bad Response from expertprofiles api++");
                 response.printResponse();
             }
         }
@@ -147,6 +155,42 @@ public class ExpertProfileReview extends AbstractApiFactory implements HTTPCode,
             response.printResponse();
         }
     }
+
+    public void updateReviewStatus(String profileId, String reviewStatus){
+
+        String json="{\n" +
+                "    \"review_status\": "+reviewStatus +
+                "}";
+        String url=EXPERT_PROFILE+profileId+"/update_review_status/";
+        response.setResponse(this.put(json,url,session.getUserToken()));
+
+        if (isResponseOK()){
+            response.printResponse();
+            System.out.println("Review status updated successfully");
+        }else{
+            response.printResponse();
+            System.out.println("Review status cannot be updated");
+        }
+    }
+
+
+    public boolean isVerifiedReviewUpdate() {
+        boolean flag=false;
+        if (isResponseOK()) {
+            if (jsonParser.getJsonData("results.review_status", ResponseDataType.STRING).equals("3")) {
+                flag= true;
+
+            } else {
+                flag= false;
+                getMap().put("error_code",jsonParser.getJsonData("errors.non_field_errors.code",ResponseDataType.STRING));
+                getMap().put("error_message",jsonParser.getJsonData("errors.non_field_errors.message",ResponseDataType.STRING));
+            }
+        }
+        return flag;
+
+    }
+
+
 
     public boolean isResponseOK(){
         if (response.statusCode()==HTTP_OK||response.statusCode()==HTTP_ACCEPTED){return true;}

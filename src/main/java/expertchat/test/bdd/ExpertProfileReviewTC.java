@@ -3,11 +3,13 @@ package expertchat.test.bdd;
 import com.relevantcodes.extentreports.ExtentReports;
 import expertchat.apioperation.apiresponse.ApiResponse;
 import expertchat.apioperation.apiresponse.ResponseDataType;
+import expertchat.apioperation.session.SessionManagement;
 import expertchat.bussinesslogic.ExpertChatApi;
 import expertchat.bussinesslogic.ExpertProfileReview;
 import expertchat.bussinesslogic.ProfileComplete;
 import expertchat.params.Credentials;
 import expertchat.params.parameter;
+import expertchat.test.TestStoryConfig;
 import expertchat.usermap.TestUserMap;
 import org.jbehave.core.annotations.*;
 
@@ -111,13 +113,13 @@ public class ExpertProfileReviewTC  extends AbstractSteps{
         profileComplete.checkProfileCompletemness();
         boolean isProfileComplete=profileComplete.isProfileComplete();
         String expert_profile_id=getMap().get("expert_profile_id");
-        String profileID=expert_profile_id.substring(expert_profile_id.lastIndexOf('[')+1, expert_profile_id.lastIndexOf(']'));
+       /* String profileID=expert_profile_id.substring(expert_profile_id.lastIndexOf('[')+1, expert_profile_id.lastIndexOf(']'));
         getMap().put("profile_id",profileID);
-
-        System.out.println(profileID);
+*/
+        System.out.println(expert_profile_id);
         if (isProfileComplete){
 
-            expertProfile.submitProfile(profileID);
+            expertProfile.submitProfile(expert_profile_id);
             String submissiontime=getMap().get("profile_submission_time");
             this.checkAndWriteToReport(response.statusCode(),"Profile submitted successfully, submission timestamp: "+submissiontime,parameter.isNegative());
 
@@ -145,23 +147,100 @@ public class ExpertProfileReviewTC  extends AbstractSteps{
 
     }
 
-@When("I approved the expert profile")
+@When("I approved the same expert profile")
+@Then("I approved the same expert profile")
     public void approveProfile(){
         info("Approve profile--");
 
-
-    expertProfile.approveProfile(getMap().get("profile_id"));
-    this.checkAndWriteToReport(response.statusCode(),"Expert Profile is approved",parameter.isNegative());
+    expertProfile.approveProfile(getMap().get("expert_profile_id"));
+    this.checkAndWriteToReport(
+            response.statusCode(),"Expert Profile is approved by super user",parameter.isNegative()
+    );
 
     }
+
 @Then("Verify the profile is approved")
     public void verifyApprove(){
         info("Verifying if profile is approved");
 
-        expertProfile.getExpertprofile(getMap().get("profile_id"));
+        expertProfile.getExpertprofile(getMap().get("expert_profile_id"));
 
-            this.AssertAndWriteToReport(getMap().get("review_status").equals("3"),"Verifed, profile is approved");
+            this.AssertAndWriteToReport(
+                    getMap().get("review_status").equals("3"),"Verifed, profile is approved by super user"
+            );
 
     }
+@When("I update the review status to $updateToStatus")
+    public void updateReviewProfile(@Named("updateToStatus")String updateToStatus){
+
+        info("Update review status");
+    String reviewStatus=null;
+        if (updateToStatus.equalsIgnoreCase("NOT_SUBMITTED_FOR_REVIEW")||
+                updateToStatus.equalsIgnoreCase("NOT_SUBMITTED")||
+                updateToStatus.equalsIgnoreCase("NOT SUBMITTED")||
+                updateToStatus.equalsIgnoreCase("NOT SUBMITTED FOR REVIEW")){
+
+             reviewStatus="1";
+
+        }
+                else if (updateToStatus.equalsIgnoreCase("SUBMITTED_FOR_REVIEW")||
+                updateToStatus.equalsIgnoreCase("SUBMITTED")||
+                updateToStatus.equalsIgnoreCase("SUBMITTED FOR REVIEW")){
+
+             reviewStatus="2";
+         }
+                else if(updateToStatus.equalsIgnoreCase("APPROVED_BY_SUPER_ADMIN")||
+                updateToStatus.equalsIgnoreCase("APPROVED")||
+                updateToStatus.equalsIgnoreCase("APPROVED BY SUPER ADMIN")){
+
+                     reviewStatus="3";}
+                     else if (updateToStatus.equals("1")||updateToStatus.equals("2")||updateToStatus.equals("3")){
+                    reviewStatus=updateToStatus;
+        }
+
+             expertProfile.updateReviewStatus(getMap().get("expert_profile_id"),reviewStatus);
+                this.checkAndWriteToReport(
+                        response.statusCode(),"Review updated successfully to review_status:"
+                                +response.getResponse().jsonPath().getString("results.review_status"),parameter.isNegative()
+                );
+
+}
+
+@Then("Verify review status of already approved profile cannot be changed to NOT_SUBMITTED_FOR_REVIEW")
+@Aliases(values = {"Verify submitted status cannot be updated to approved",
+        "Verify already approved profile cannot be changed to submitted status"})
+public void verifyReviewUpdate(){
+        info("Verifying Review  update");
+
+        if (!expertProfile.isVerifiedReviewUpdate()){
+            this.AssertAndWriteToReport(true,"Verified review profile cannot be updated");
+        }else {
+            this.AssertAndWriteToReport(false);
+        }
+
+}
+@Then("Verify review status is updated to Approved")
+public void verifyReviewUpdatedToApprove(){
+    info("Verify  Review  status updated to approve");
+
+    if (expertProfile.isVerifiedReviewUpdate()){
+        this.AssertAndWriteToReport(true,"Verified review profile updated to approve");
+    }else {
+        this.AssertAndWriteToReport(false);
+    }
+}
+
+
+
+public static void main(String[] args){
+    SessionManagement.session().setUserToken("eyJ0aW1lc3RhbXAiOjE1MTA4OTk2NzQuMjU4NjcsImlwX2FkZHJlc3MiOiI2MS4yNDYuNDcuOTMiLCJ1c2VyX2lkIjoxNjF9:1eFa1a:ZdYDvj_kOq7i9oTApQ7gkcL0pcY");
+    SessionManagement.session().setExpertToken("");
+    TestStoryConfig obj1=new TestStoryConfig();
+
+    ExpertProfileReviewTC obj= new ExpertProfileReviewTC(obj1.getReport(),"From main function");
+    obj.updateReviewProfile("2");
+
+
+}
 
 }
