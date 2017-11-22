@@ -31,7 +31,8 @@ Then create promocode {
                       }
 
 Given an expert
-When i login with {"email":"rajdeep+expert@atlogys.com","password":"testing123"}
+When i login with {"email":"rajdeep+x10@atlogys.com","password":"testing123"}
+
 Then get profile of the logged in expert
 And i create a calender of 20 min for today
 

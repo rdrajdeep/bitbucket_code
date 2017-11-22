@@ -11,7 +11,7 @@ Given a complete profile status check flow
 
 Given an expert
 
-When register with {"email":"rajdeep+xx1@atlogys.com","password":"testing123"} as expert2
+When register with {"email":"rajdeep+xx2@atlogys.com","password":"testing123"} as expert2
 
 Then Verify Email
 

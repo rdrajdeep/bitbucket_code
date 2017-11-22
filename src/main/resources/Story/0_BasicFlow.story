@@ -4,11 +4,11 @@ Given complete Expert registration and login flow
 
 Given an expert
 
-When register with {"email": "rajdeep+x10@atlogys.com","password": "rajdeep123" } as expert1
+When register with {"email": "rajdeep+x14@atlogys.com","password": "rajdeep123" } as expert1
 
 Then check success code 2001
 
-When Resend email verification instructions for {"email": "rajdeep+x10@atlogys.com"}
+When Resend email verification instructions for {"email": "rajdeep+x14@atlogys.com"}
 
 Then check success code 2042
 
@@ -27,7 +27,7 @@ Then Reset password to testing123 for expert1
 Then check success code 2032
 
 Given an user
-When register with {"email": "rajdeep+u8@atlogys.com","password": "testing123" } as user1
+When register with {"email": "rajdeep+u13@atlogys.com","password": "testing123" } as user1
 Then Verify Email
 
 Given an expert
